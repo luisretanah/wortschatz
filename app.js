@@ -26,6 +26,8 @@ const ICON = {
   globe: svg('<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/>'),
   check: svg('<path d="m5.5 12.5 4 4 9-9"/>'),
   x: svg('<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>'),
+  heart: svg('<path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/>'),
+  spark: svg('<path d="M12 4l1.8 5.2L19 11l-5.2 1.8L12 18l-1.8-5.2L5 11l5.2-1.8z"/>'),
 };
 
 // ---------- storage ----------
@@ -119,27 +121,27 @@ function syllables(e, title) {
   return esc(title);
 }
 const verbAux = (aux, part) => (aux === 'sein' ? 'ist ' : 'hat ') + part;
-function gramHTML(e, short) {
+function gramHTML(e, short, noKind) {
   const p = [];
   if (isNoun(e)) {
-    if (e.pluralOnly) p.push('<i>Substantiv, nur Plural</i>');
+    if (e.pluralOnly) { if (!noKind) p.push('<i>Substantiv, nur Plural</i>'); }
     else {
       const g = (e.genus || []).map(x => GENUS_WORD[x]).join(' oder ');
-      p.push(`<i>Substantiv${g ? ', ' + g : ''}</i>`);
+      if (!noKind) p.push(`<i>Substantiv${g ? ', ' + g : ''}</i>`);
       if (e.plural) p.push(`Plural <b>die ${esc(e.plural)}</b>`);
       else p.push('kein Plural');
       if (e.genitive && !short) p.push(`Genitiv <b>${e.genus[0] === 'f' ? 'der' : 'des'} ${esc(e.genitive)}</b>`);
     }
   } else if (e.verb) {
-    p.push('<i>Verb</i>');
+    if (!noKind) p.push('<i>Verb</i>');
     if (e.verb.er) p.push(`er <b>${esc(e.verb.er)}</b>`);
     if (e.verb.praet) p.push(`<b>${esc(e.verb.praet)}</b>`);
     if (e.verb.part) p.push(`<b>${esc(verbAux(e.verb.aux, e.verb.part))}</b>${e.verb.aux2 ? ` / <b>${esc(verbAux(e.verb.aux2, e.verb.part))}</b>` : ''}`);
   } else if (e.adj) {
-    p.push('<i>Adjektiv</i>');
+    if (!noKind) p.push('<i>Adjektiv</i>');
     if (e.adj.komp && e.adj.komp !== '—') p.push(`<b>${esc(e.adj.komp)}</b>`);
     if (e.adj.sup && e.adj.sup !== '—') p.push(`am <b>${esc(e.adj.sup)}</b>`);
-  } else p.push(`<i>${esc(e.pos || '')}</i>`);
+  } else if (!noKind) p.push(`<i>${esc(e.pos || '')}</i>`);
   return p.map(x => `<span class="g">${x}</span>`).join(' ');
 }
 function splitLabel(text) {
@@ -256,7 +258,20 @@ function renderSearch(q) {
   const showInstall = isIOS && !standalone && !store.get('installSeen', false);
   view.innerHTML = `
     ${showInstall ? `<div class="banner" id="install">${ICON.share}<div>Als App speichern: unten auf <b>Teilen</b> tippen, dann <b>Zum Home-Bildschirm</b>.</div><button id="install-ok">OK</button></div>` : ''}
-    <header class="masthead"><div class="date">${esc(date)}</div><h1>Wortschatz</h1><p>Wörterbuch Deutsch-Deutsch</p></header>
+    <div class="brand"><span class="mark">W</span><span class="name">Wortschatz</span><span class="tag">${esc(date)}</span></div>
+    <header class="hero"><svg class="art-ill" viewBox="0 0 92 92" aria-hidden="true">
+      <circle cx="50" cy="46" r="34" fill="var(--accent-soft)"/>
+      <path d="M24 34c8-4 15-4 22 1v30c-7-5-14-5-22-1z" fill="var(--page-solid)" stroke="var(--accent-2)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M68 34c-8-4-15-4-22 1v30c7-5 14-5 22-1z" fill="var(--page-solid)" stroke="var(--accent-2)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M30 42c4-1.5 7-1.5 10 0M30 48c4-1.5 7-1.5 10 0M52 42c3-1.5 6-1.5 10 0M52 48c3-1.5 6-1.5 10 0" stroke="var(--accent-2)" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".55"/>
+      <path d="M74 14l2.2 5.6 5.8 2.2-5.8 2.2L74 30l-2.2-5.8-5.8-2.2 5.8-2.2z" fill="#E7A24A"/>
+      <path d="M18 66l1.4 3.6 3.6 1.4-3.6 1.4L18 76l-1.4-3.6-3.6-1.4 3.6-1.4z" fill="var(--accent-2)"/>
+      <circle cx="20" cy="22" r="2.6" fill="#E58AA8"/>
+    </svg>
+      <h1>Jeden Tag ein Wort mehr. <em>Dein Schatz wächst.</em></h1>
+      <p>Nachschlagen auf Deutsch, verstehen und behalten, in deinem Tempo.</p>
+      ${total ? `<a class="treasure" href="#/woerter"><i>${ICON.spark.replace('class="i"', 'class="i" style="width:13px;height:13px;fill:currentColor;stroke:none"')}</i>Dein Schatz: <b>${total} ${total === 1 ? 'Wort' : 'Wörter'}</b></a>` : ''}
+    </header>
     ${searchBar('')}
     <div class="lbl">Wort des Tages</div>
     <a class="card wotd" href="#/suchen/${encodeURIComponent(w.lemma)}">
@@ -330,11 +345,11 @@ function exHTML(x, hidden) {
   return `<p class="ex"${hidden ? ' hidden' : ''}>${markEx(x.text)}<button class="say" data-say="${esc(plainEx(x.text))}" aria-label="Satz vorlesen">${ICON.play}</button><a class="tr" href="https://www.deepl.com/translator#de/en/${encodeURIComponent(plainEx(x.text))}" target="_blank" rel="noopener">EN ↗</a></p>`;
 }
 
-function senseHTML(e, s) {
+function senseHTML(e, s, j, count) {
   const { label, text } = splitLabel(s.text);
   const exs = examplesFor(e, s.n);
   const extra = exs.slice(2, 8);
-  return `<li class="sense"><span class="num">${esc(s.n)}</span>
+  return `<li class="sense"><span class="num">${count > 1 ? 'Bedeutung ' + esc(s.n) : 'Bedeutung'}</span>
     <div class="def">${label ? `<span class="label">${esc(label)}</span> ` : ''}${esc(text)}</div>
     <div class="exs">${exs.slice(0, 2).map(x => exHTML(x)).join('')}${extra.map(x => exHTML(x, true)).join('')}
     ${extra.length ? `<button class="more" data-more>Weitere Beispiele (${extra.length})</button>` : ''}</div>
@@ -350,21 +365,31 @@ function entryHTML(r, e, i) {
   const syn = e.syn.filter(s => s.close).concat(e.syn.filter(s => !s.close)).slice(0, 12);
   const idioms = e.idioms.slice(0, 5);
   const notes = e.notes.filter(n => !/Person|Indikativ|Konjunktiv/.test(n)).slice(0, 1);
+  const kind = isNoun(e) ? (e.pluralOnly ? 'Substantiv · nur Plural' : 'Substantiv' + (e.genus.length ? ' · ' + e.genus.map(g => GENUS_WORD[g]).join(' oder ') : '')) : (e.pos || '');
   return `<article class="entry" data-i="${i}">
-    <button class="ribbon ${saved ? 'on' : ''}" data-save="${i}" aria-label="${saved ? 'Aus Meine Wörter entfernen' : 'In Meine Wörter speichern'}" aria-pressed="${saved}"><span></span></button>
-    <h1 class="headword" lang="de">${artSpan(e)}${syllables(e, title)}</h1>
-    <p class="gram">${gramHTML(e)}</p>
-    <div class="pron"><button class="say-btn" data-speak="${esc((art ? art.split('/')[0] + ' ' : '') + title)}">${ICON.speak} Anhören</button>${e.ipa ? `<span class="ipa">[${esc(e.ipa)}]</span>` : ''}</div>
-    ${hint && i === 0 ? `<div class="usage"><small>So benutzt man es</small>${esc(hint)}</div>` : ''}
+    <div class="entry-top">
+      <div class="eyebrow">${esc(kind)}</div>
+      <h1 class="headword" lang="de">${artSpan(e)}${syllables(e, title)}</h1>
+      <p class="gram">${gramHTML(e, false, true)}</p>
+      ${e.ipa ? `<p class="ipa">[${esc(e.ipa)}]</p>` : ''}
+      <div class="actions">
+        <button class="act" data-speak="${esc((art ? art.split('/')[0] + ' ' : '') + title)}">${ICON.speak}Anhören</button>
+        <button class="act ${saved ? 'on' : ''}" data-save="${i}" aria-pressed="${saved}">${ICON.heart}<span>${saved ? 'Gemerkt' : 'Merken'}</span></button>
+        <button class="act" data-en="${i}" aria-expanded="false">${ICON.globe}<span>Englisch</span></button>
+      </div>
+      <div class="en-slot"></div>
+    </div>
+    <div class="entry-body">
+    ${hint && i === 0 ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
     ${notes.map(n => `<p class="note">${esc(n)}</p>`).join('')}
-    <ol class="senses">${e.senses.map(s => senseHTML(e, s)).join('')}</ol>
+    <ol class="senses">${e.senses.map((s, j) => senseHTML(e, s, j, e.senses.length)).join('')}</ol>
     ${syn.length ? `<div class="lbl">Synonyme</div><div class="chips">${syn.map(s => `<a class="chip" href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join('')}</div>` : ''}
     ${i === 0 ? '<div id="ot" hidden></div>' : ''}
     ${e.ant.length ? `<div class="lbl">Gegenteil</div><div class="chips">${e.ant.slice(0, 8).map(s => `<a class="chip" href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join('')}</div>` : ''}
     ${e.combos.length ? `<div class="lbl">Typische Verbindungen</div><ul class="combo-list">${e.combos.slice(0, 8).map(c => `<li>${esc(c.text)}</li>`).join('')}</ul>` : ''}
     ${idioms.length ? `<div class="lbl">Redewendungen</div><ul class="combo-list">${idioms.map(c => `<li>${esc(c.text)}</li>`).join('')}</ul>` : ''}
+    </div>
     <div class="entry-foot">
-      <button class="en-btn" data-en="${i}" aria-expanded="false">${ICON.globe} Notfall: Englisch</button><div class="en-slot"></div>
       <div class="links">
         <a href="https://www.duden.de/suchen/dudenonline/${encodeURIComponent(title)}" target="_blank" rel="noopener">Duden ↗</a>
         <a href="https://www.dwds.de/wb/${encodeURIComponent(title)}" target="_blank" rel="noopener">DWDS ↗</a>
@@ -392,13 +417,13 @@ function bindResult(r) {
     if (t.dataset.save !== undefined) {
       const e = r.entries[+t.dataset.save];
       const key = wordKey(r.title, e);
-      if (words[key]) { delete words[key]; toast('Aus Meine Wörter entfernt'); }
-      else { words[key] = { key, title: r.title, snap: snapshot(r.title, e), added: Date.now(), srs: null, hint: HINTS[r.title] || '' }; toast('In Meine Wörter gespeichert'); }
+      if (words[key]) { delete words[key]; toast('Aus deinem Schatz entfernt'); }
+      else { words[key] = { key, title: r.title, snap: snapshot(r.title, e), added: Date.now(), srs: null, hint: HINTS[r.title] || '' }; toast('In deinem Schatz gemerkt'); }
       saveWords();
       const on = !!words[key];
       t.classList.toggle('on', on);
       t.setAttribute('aria-pressed', on);
-      t.setAttribute('aria-label', on ? 'Aus Meine Wörter entfernen' : 'In Meine Wörter speichern');
+      t.querySelector('span').textContent = on ? 'Gemerkt' : 'Merken';
       return;
     }
     if (t.dataset.en !== undefined) return toggleEnglish(r, +t.dataset.en, t);
@@ -415,8 +440,8 @@ function bindResult(r) {
 
 const enCache = {};
 async function toggleEnglish(r, i, btn) {
-  const slot = btn.nextElementSibling;
   const card = btn.closest('.entry');
+  const slot = card.querySelector('.en-slot');
   if (btn.classList.contains('on')) { btn.classList.remove('on'); btn.setAttribute('aria-expanded', 'false'); slot.innerHTML = ''; card.classList.remove('en-mode'); return; }
   btn.classList.add('on'); btn.setAttribute('aria-expanded', 'true'); card.classList.add('en-mode');
   const e = r.entries[i];
@@ -456,7 +481,7 @@ function renderWords(filter) {
   });
   flush();
   view.innerHTML = `
-    <div class="toolbar"><div><h1 class="page-title">Meine Wörter</h1>${all.length ? `<p class="page-sub">${all.length} ${all.length === 1 ? 'Wort' : 'Wörter'} gesammelt</p>` : ''}</div>
+    <div class="toolbar"><div><h1 class="page-title">Mein <em>Schatz</em></h1>${all.length ? `<p class="page-sub">${all.length} ${all.length === 1 ? 'Wort' : 'Wörter'} gesammelt</p>` : ''}</div>
       <button class="round" id="menu" aria-label="Sicherung und Infos">${ICON.more}</button></div>
     ${all.length ? `<div class="seg" role="tablist">${Object.keys(names).filter(k => k === 'alle' || groups[k].length).map(k => `<button role="tab" aria-selected="${k === filter}" class="${k === filter ? 'on' : ''}" data-f="${k}">${names[k]}<span>${groups[k].length}</span></button>`).join('')}</div>` : ''}
     ${!all.length ? `<div class="empty"><h2>Noch leer</h2><p>Tippe bei einem Eintrag auf das Lesezeichen oben rechts. Oder nimm ein ganzes Thema auf einmal.</p><a class="btn primary" href="#/themen">Themen ansehen</a></div>`
@@ -510,7 +535,7 @@ function importData(file, close) {
 function renderThemes() {
   view.className = '';
   const savedTitles = new Set(Object.values(words).map(w => w.title));
-  view.innerHTML = `<div class="head"><h1 class="page-title">Themen</h1><p class="page-sub">Wörter, die in B2-Kursen immer wieder vorkommen.</p></div>
+  view.innerHTML = `<div class="head"><h1 class="page-title">Themen <em>für B2</em></h1><p class="page-sub">Wörter, die in B2-Kursen immer wieder vorkommen.</p></div>
     <div class="tiles">${THEMES.map((t, i) => {
       const s = t.items.filter(x => savedTitles.has(x.lemma)).length;
       const sample = t.items.slice(0, 3).map(x => x.bare).join(', ');
@@ -587,7 +612,7 @@ function renderPractice() {
   view.className = '';
   const c = practiceCounts();
   const st = streak(), td = stats.days[today()] || 0;
-  view.innerHTML = `<div class="head"><h1 class="page-title">Üben</h1>
+  view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>ohne Druck.</em></h1>
     <p class="page-sub">${td ? `Heute ${td} ${td === 1 ? 'Aufgabe' : 'Aufgaben'} geübt` : 'Heute noch nicht geübt'}${st > 1 ? ` · ${st} Tage in Folge` : ''}</p></div>
     <button class="card mode" data-go="karten" ${c.total ? '' : 'disabled'}>
       <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter` : 'Erst Wörter speichern'}</p></div><span class="chev">${ICON.chev}</span></button>
@@ -676,7 +701,7 @@ function flashSession(extra) {
       <div class="indexcard"><div class="face">${front}</div><div class="answer" hidden>
         <div class="big">${artSpan(e)}<span>${esc(e.title)}</span><button class="say-btn" data-speak="${esc((noun ? artOf(e).split('/')[0] + ' ' : '') + e.title)}" aria-label="Vorlesen">${ICON.speak}</button></div>
         <p class="gram">${gramHTML(e, true)}</p>
-        <ol class="senses" style="border:0;margin-top:6px">${e.senses.slice(0, 2).map(s => `<li class="sense"><span class="num">${esc(s.n)}</span><div class="def">${esc(splitLabel(s.text).text)}</div></li>`).join('')}</ol>
+        <ol class="senses">${e.senses.slice(0, 2).map((s, j, a) => `<li class="sense"><span class="num">Bedeutung ${esc(s.n)}</span><div class="def">${esc(splitLabel(s.text).text)}</div></li>`).join('')}</ol>
         ${ex ? `<p class="ex" style="margin-top:12px">${markEx(ex.text)}</p>` : ''}
       </div></div>
       <div class="dock"><button class="btn primary wide" id="flip">Antwort zeigen</button>
