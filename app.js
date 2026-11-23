@@ -40,6 +40,9 @@ let words = store.get('words', {});
 let history = store.get('history', []);
 let cache = store.get('cache', {});
 let prefs = store.get('prefs', { dir: 'mix' });
+// 2026-11-23: practice now starts on all words; reset an earlier 'mine' choice once.
+if (!prefs.v2) { delete prefs.src; prefs.v2 = 1; store.set('prefs', prefs); }
+const allMode = () => (prefs.src || 'all') === 'all';
 let stats = store.get('stats', { days: {}, gender: {} });
 const saveWords = () => store.set('words', words);
 const saveStats = () => store.set('stats', stats);
@@ -652,7 +655,7 @@ function virtualWord(p) {
     senses: s[0].map((m, i) => ({ n: String(i + 1), text: m })), examples: [], syn: [], ant: [], combos: [], idioms: [], en: [], notes: [] } };
 }
 function practiceWords() {
-  if (prefs.src !== 'all') return Object.values(words);
+  if (!allMode()) return Object.values(words);
   const k = prefs.lvl || 2;
   if (!pwCache[k]) pwCache[k] = POOL.filter(p => p[3] === k && !/\s/.test(p[0])).map(virtualWord).filter(Boolean);
   return pwCache[k];
@@ -676,7 +679,7 @@ view.addEventListener('click', ev => {
 });
 function practiceCounts() {
   const all = Object.values(words);
-  const pool = prefs.src === 'all' ? practiceWords().length : 0;
+  const pool = allMode() ? practiceWords().length : 0;
   const now = Date.now();
   return {
     total: all.length,
@@ -700,23 +703,23 @@ async function renderPractice() {
   view.className = '';
   await Promise.all([simpleReady, poolReady]);
   if (!location.hash.startsWith('#/ueben') || location.hash.split('/')[2]) return;
-  const all = prefs.src === 'all';
+  const all = allMode();
   const c = practiceCounts();
   const own = all ? ' · deine Wörter' : '';
   const st = streak(), td = stats.days[today()] || 0;
   view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>jeden Tag ein bisschen.</em></h1>
     <p class="page-sub">${td ? `Heute ${td} ${td === 1 ? 'Aufgabe' : 'Aufgaben'} geübt` : 'Heute noch nicht geübt'}${st > 1 ? ` · ${st} Tage in Folge` : ''}</p></div>
     <div class="src">
-      <div class="seg" aria-label="Üben mit">${[['mine', 'Meine Wörter'], ['all', 'Alle Wörter']].map(([k, n]) => `<button class="${(prefs.src || 'mine') === k ? 'on' : ''}" data-src="${k}">${n}</button>`).join('')}</div>
+      <div class="seg" aria-label="Üben mit">${[['all', 'Alle Wörter'], ['mine', 'Meine Wörter']].map(([k, n]) => `<button class="${(prefs.src || 'all') === k ? 'on' : ''}" data-src="${k}">${n}</button>`).join('')}</div>
       ${all ? `<div class="seg" aria-label="Stufe">${[[1, 'Leicht'], [2, 'Mittel'], [3, 'Schwer']].map(([k, n]) => `<button class="${(prefs.lvl || 2) === k ? 'on' : ''}" data-lvl="${k}">${n}</button>`).join('')}</div>
-      <p class="src-note">${c.pool.toLocaleString('de-DE')} Wörter mit einfacher Erklärung. Was dir gefällt, kannst du merken.</p>` : ''}
+      <p class="src-note">Was dir gefällt, kannst du merken.</p>` : ''}
     </div>
     <button class="card mode" data-go="karten" ${c.total ? '' : 'disabled'}>
-      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter${own}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due ? `Heute ${c.due} fällig` : 'Heute nichts fällig'}${own}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     ${c.total ? `<div class="dir">Zuerst zeigen:<div class="seg">${[['mix', 'Gemischt'], ['wb', 'Wort'], ['bw', 'Bedeutung']].map(([k, n]) => `<button class="${prefs.dir === k ? 'on' : ''}" data-dir="${k}">${n}</button>`).join('')}</div></div>` : ''}
-    <button class="card mode" data-go="artikel" style="margin-top:14px">
+    <button class="card mode" data-go="artikel" style="margin-top:14px" ${c.nouns ? '' : 'disabled'}>
       <span class="ico art3"><i style="background:var(--der)"></i><i style="background:var(--die)"></i><i style="background:var(--das)"></i></span>
-      <div><h2>der, die oder das?</h2><p>${c.nouns} Nomen · mit Tipps</p></div><span class="chev">${ICON.chev}</span></button>
+      <div><h2>der, die oder das?</h2><p>${c.nouns ? 'Den Artikel finden, mit Tipps' : 'Erst Nomen merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="bedeutung" ${c.meaning ? '' : 'disabled'}>
       <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Was passt? Wähl ein Wort.' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="formen" ${c.forms ? '' : 'disabled'}>
@@ -862,12 +865,11 @@ function ruleFor(word) {
 }
 
 function genderPool() {
-  if (prefs.src === 'all') {
+  if (allMode()) {
     const k = prefs.lvl || 2;
     return POOL.filter(p => p[3] === k && p[2] === 'n' && p[1] && !/\s/.test(p[0])).map(p => ({ word: p[0], g: { der: 'm', die: 'f', das: 'n' }[p[1]], plural: '', virtual: true }));
   }
   const map = new Map();
-  ALL_THEME.forEach(i => { if (i.g && !PLURAL_ONLY.has(i.raw) && !/\s/.test(i.lemma)) map.set(i.lemma, { word: i.lemma, g: i.g, plural: '' }); });
   Object.values(words).forEach(w => {
     const e = w.snap;
     if (e && isNoun(e) && e.genus.length === 1 && !e.pluralOnly && !/\s/.test(e.title)) map.set(e.title, { word: e.title, g: e.genus[0], plural: e.plural || '', saved: true });
@@ -1111,7 +1113,7 @@ function meaningSession() {
 // --- own sentence with a self-check (nothing is graded automatically) ---
 let sentences = store.get('sentences', {});
 function sentencePool() {
-  if (prefs.src === 'all') return shuffle(practiceWords().slice());
+  if (allMode()) return shuffle(practiceWords().slice());
   return Object.values(words).filter(w => w.snap).sort((a, b) => (sentences[a.key] ? 1 : 0) - (sentences[b.key] ? 1 : 0) || level(a) - level(b));
 }
 
