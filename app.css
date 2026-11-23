@@ -398,6 +398,20 @@ a.card { display: block; text-decoration: none; color: inherit; }
 .near { margin-top: 8px; font-size: 15.5px; color: var(--ink-2); }
 .near a { font-weight: 600; text-decoration: none; }
 
+/* ---------- practice source ---------- */
+.src { margin: -6px 0 18px; }
+.src .seg { margin-bottom: 8px; }
+.src-note { font-size: 13.5px; color: var(--ink-2); margin: 2px 4px 0; }
+.keep {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 52px; padding: 0 16px; border-radius: 16px;
+  border: 1px solid var(--rule-2); background: var(--page-solid); color: var(--ink); font-weight: 650; font-size: 15px; flex: 1;
+}
+.keep svg { width: 18px; height: 18px; color: var(--accent); }
+.keep.on { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+.keep.on svg { fill: currentColor; }
+.btn-row .btn.primary { flex: 1; }
+#after .btn-row { margin-top: 14px; }
+
 /* ---------- new exercises ---------- */
 .mode .ico.opts { background: var(--page-solid); border: 1px solid var(--rule); grid-template-columns: 1fr 1fr; gap: 4px; padding: 13px; }
 .mode .ico.opts i { width: 11px; height: 8px; border-radius: 3px; background: var(--rule-2); }

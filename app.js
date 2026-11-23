@@ -57,6 +57,9 @@ function cacheGet(q) {
 
 // ---------- simple explanations (build/: subtitle frequency top words, written at B1) ----------
 let SIMPLE = {};
+let POOL = [];
+let pwCache = {};
+const poolReady = fetch('pool.json').then(r => r.ok ? r.json() : []).then(d => { POOL = d || []; pwCache = {}; }).catch(() => {});
 const simpleReady = fetch('simple.json').then(r => r.ok ? r.json() : {}).then(d => { SIMPLE = d || {}; SIMPLE_LC = null; }).catch(() => {});
 let SIMPLE_LC = null;
 function simpleFor(title) {
@@ -255,9 +258,15 @@ function bindSearch() {
   clear.addEventListener('click', () => { input.value = ''; clear.hidden = true; list.hidden = true; input.focus(); });
 }
 
+function localDay() { const d = new Date(); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / DAY); }
+// A new word at local midnight, from the middle level of the pool (useful B1-B2 words with a simple explanation).
 function wordOfDay() {
-  const d = Math.floor(Date.now() / DAY);
-  return ALL_THEME[(d * 7919) % ALL_THEME.length];
+  const list = POOL.filter(p => p[3] === 2 && 'nva'.includes(p[2]) && !/\s/.test(p[0]));
+  if (list.length) {
+    const p = list[(localDay() * 7919) % list.length];
+    return { raw: p[0], lemma: p[0], bare: p[0], g: { der: 'm', die: 'f', das: 'n' }[p[1]] || null, hint: '', kind: POSNAME[p[2]] };
+  }
+  return ALL_THEME[(localDay() * 7919) % ALL_THEME.length];
 }
 
 const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
@@ -270,7 +279,6 @@ function renderSearch(q) {
     bindSearch();
     return doLookup(q);
   }
-  const w = wordOfDay();
   const date = new Date().toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' });
   const due = Object.values(words).filter(x => x.snap && (!x.srs || x.srs.due <= Date.now())).length;
   const total = Object.keys(words).length;
@@ -293,9 +301,9 @@ function renderSearch(q) {
     </header>
     ${searchBar('')}
     <div class="lbl">Wort des Tages</div>
-    <a class="card wotd" href="#/suchen/${encodeURIComponent(w.lemma)}">
-      <div class="hw">${w.g ? `<span class="art ${PLURAL_ONLY.has(w.raw) ? 'p' : w.g}">${ART[w.g]}</span>` : ''}${esc(w.bare)}</div>
-      <div class="gram" id="wotd-gram">${esc(THEMES.find(t => t.items.includes(w)).name)}</div>
+    <a class="card wotd" id="wotd" href="#/suchen">
+      <div class="hw" id="wotd-hw"><div class="skel w60" style="height:30px"></div></div>
+      <div class="gram" id="wotd-gram"></div>
       <div id="wotd-body"><div class="skel w80"></div><div class="skel w60"></div></div>
       <span class="open">Mehr lesen ${ICON.chev.replace('class="i"', 'class="i" style="width:16px;height:16px"')}</span>
     </a>
@@ -308,23 +316,36 @@ function renderSearch(q) {
   bindSearch();
   const ok = $('#install-ok');
   if (ok) ok.onclick = () => { store.set('installSeen', true); $('#install').remove(); };
-  fillWotd(w);
+  Promise.all([poolReady, simpleReady]).then(() => {
+    const w = wordOfDay();
+    const card = $('#wotd');
+    if (!card) return;
+    card.href = '#/suchen/' + encodeURIComponent(w.lemma);
+    $('#wotd-hw').innerHTML = (w.g ? `<span class="art ${PLURAL_ONLY.has(w.raw) ? 'p' : w.g}">${ART[w.g]}</span>` : '') + esc(w.bare);
+    const theme = THEMES.find(t => t.items.includes(w));
+    $('#wotd-gram').textContent = theme ? theme.name : (w.kind || '');
+    fillWotd(w);
+  });
 }
 
 async function fillWotd(w) {
-  let r = cacheGet(w.lemma);
-  if (!r) { try { r = await Wiki.lookup(w.lemma); if (r) cachePut(w.lemma, r); } catch (e) { r = null; } }
   const body = $('#wotd-body');
   if (!body) return;
-  if (!r) { body.innerHTML = w.hint ? `<p class="def">${esc(w.hint)}</p>` : ''; return; }
+  const sim = simpleFor(w.lemma);
+  // the simple explanation shows at once; Wiktionary only adds the grammar line
+  if (sim) body.innerHTML = `<p class="def">${esc(sim[0][0])}</p>` + (sim[1] ? `<p class="ex">${markEx(sim[1])}</p>` : '');
+  let r = cacheGet(w.lemma);
+  if (!r) { try { r = await Wiki.lookup(w.lemma); if (r) cachePut(w.lemma, r); } catch (e) { r = null; } }
+  if (!document.body.contains(body)) return;
+  if (!r) { if (!sim) body.innerHTML = w.hint ? `<p class="def">${esc(w.hint)}</p>` : ''; return; }
   let e = r.entries[0];
   if (w.g) e = r.entries.find(x => isNoun(x) && x.genus.includes(w.g)) || e;
   $('#wotd-gram').innerHTML = gramHTML(e, true);
-  await simpleReady;
-  const sim = simpleFor(r.title);
-  const s = e.senses[0];
-  const ex = sim && sim[1] ? { text: sim[1] } : (s && examplesFor(e, s.n)[0]);
-  body.innerHTML = (s || sim ? `<p class="def">${esc(sim ? sim[0][0] : splitLabel(s.text).text)}</p>` : '') + (ex && !ex.quote ? `<p class="ex">${markEx(ex.text)}</p>` : '');
+  if (!sim) {
+    const s = e.senses[0];
+    const ex = s && examplesFor(e, s.n)[0];
+    body.innerHTML = (s ? `<p class="def">${esc(splitLabel(s.text).text)}</p>` : '') + (ex && !ex.quote ? `<p class="ex">${markEx(ex.text)}</p>` : '');
+  }
 }
 
 let lookupToken = 0;
@@ -388,6 +409,7 @@ function entryHTML(r, e, i) {
   const idioms = e.idioms.slice(0, 5);
   const notes = e.notes.filter(n => !/Person|Indikativ|Konjunktiv/.test(n)).slice(0, 1);
   const simple = i === 0 ? simpleFor(title) : null;
+  const mySentences = [...(sentences[key] || []), ...(i === 0 ? sentences['pool|' + title] || [] : [])];
   // easy-first for words without a simple explanation: only synonyms that are common words themselves
   const near = simple ? [] : e.syn.filter(s => !/\s/.test(s.w) && simpleFor(s.w)).slice(0, 2);
   const kind = isNoun(e) ? (e.pluralOnly ? 'Substantiv · nur Plural' : 'Substantiv' + (e.genus.length ? ' · ' + e.genus.map(g => GENUS_WORD[g]).join(' oder ') : '')) : (e.pos || '');
@@ -409,7 +431,7 @@ function entryHTML(r, e, i) {
     ${simple ? `<div class="simple"><small>Einfach erklärt</small>${simple[0].length > 1 ? `<ol>${simple[0].map(m => `<li>${esc(m)}</li>`).join('')}</ol>` : `<p class="m">${esc(simple[0][0])}</p>`}${simple[1] ? exHTML({ text: simple[1] }) : ''}</div>` : ''}
     ${hint && i === 0 ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
     ${simple ? '<div class="lbl" style="margin-top:26px">Im Wörterbuch</div>' : ''}
-    ${(sentences[key] || []).length ? `<div class="mine"><small>Deine Sätze</small>${sentences[key].map(s => `<p>${esc(s.text)}</p>`).join('')}</div>` : ''}
+    ${mySentences.length ? `<div class="mine"><small>Deine Sätze</small>${mySentences.map(s => `<p>${esc(s.text)}</p>`).join('')}</div>` : ''}
     ${notes.map(n => `<p class="note">${esc(n)}</p>`).join('')}
     <ol class="senses">${e.senses.map((s, j) => senseHTML(e, s, j, e.senses.length)).join('')}</ol>
     ${syn.length ? `<div class="lbl">Synonyme</div><div class="chips">${syn.map(s => `<a class="chip" href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join('')}</div>` : ''}
@@ -620,8 +642,41 @@ async function hydrate() {
 }
 
 // ---------- practice ----------
+const POSNAME = { n: 'Substantiv', v: 'Verb', a: 'Adjektiv', d: 'Adverb' };
+function virtualWord(p) {
+  const [w, art, pos] = p;
+  const s = simpleFor(w);
+  if (!s) return null;
+  const g = { der: 'm', die: 'f', das: 'n' }[art];
+  return { key: 'pool|' + w, title: w, virtual: true, g, snap: { title: w, pos: POSNAME[pos] || '', genus: g ? [g] : [],
+    senses: s[0].map((m, i) => ({ n: String(i + 1), text: m })), examples: [], syn: [], ant: [], combos: [], idioms: [], en: [], notes: [] } };
+}
+function practiceWords() {
+  if (prefs.src !== 'all') return Object.values(words);
+  const k = prefs.lvl || 2;
+  if (!pwCache[k]) pwCache[k] = POOL.filter(p => p[3] === k && !/\s/.test(p[0])).map(virtualWord).filter(Boolean);
+  return pwCache[k];
+}
+function isSaved(title) { return Object.values(words).some(w => w.title === title); }
+function keepBtn(title, g) {
+  const on = isSaved(title);
+  return `<button class="keep ${on ? 'on' : ''}" type="button" data-keep="${esc(title)}" data-g="${g || ''}">${ICON.heart}<span>${on ? 'Gemerkt' : 'Merken'}</span></button>`;
+}
+view.addEventListener('click', ev => {
+  const b = ev.target.closest('[data-keep]');
+  if (!b || b.classList.contains('on')) return;
+  const title = b.dataset.keep;
+  if (!isSaved(title)) {
+    const key = 'stub|' + title;
+    words[key] = { key, title, display: title, g: b.dataset.g || null, hint: HINTS[title] || '', snap: null, added: Date.now(), srs: null };
+    saveWords(); hydrate();
+  }
+  b.classList.add('on'); b.querySelector('span').textContent = 'Gemerkt';
+  toast('Gemerkt');
+});
 function practiceCounts() {
   const all = Object.values(words);
+  const pool = prefs.src === 'all' ? practiceWords().length : 0;
   const now = Date.now();
   return {
     total: all.length,
@@ -630,6 +685,7 @@ function practiceCounts() {
     cloze: clozePool().length,
     forms: formsPool().length,
     meaning: meaningPool().length,
+    pool,
   };
 }
 
@@ -640,14 +696,23 @@ function streak() {
   return n;
 }
 
-function renderPractice() {
+async function renderPractice() {
   view.className = '';
+  await Promise.all([simpleReady, poolReady]);
+  if (!location.hash.startsWith('#/ueben') || location.hash.split('/')[2]) return;
+  const all = prefs.src === 'all';
   const c = practiceCounts();
+  const own = all ? ' · deine Wörter' : '';
   const st = streak(), td = stats.days[today()] || 0;
   view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>jeden Tag ein bisschen.</em></h1>
     <p class="page-sub">${td ? `Heute ${td} ${td === 1 ? 'Aufgabe' : 'Aufgaben'} geübt` : 'Heute noch nicht geübt'}${st > 1 ? ` · ${st} Tage in Folge` : ''}</p></div>
+    <div class="src">
+      <div class="seg" aria-label="Üben mit">${[['mine', 'Meine Wörter'], ['all', 'Alle Wörter']].map(([k, n]) => `<button class="${(prefs.src || 'mine') === k ? 'on' : ''}" data-src="${k}">${n}</button>`).join('')}</div>
+      ${all ? `<div class="seg" aria-label="Stufe">${[[1, 'Leicht'], [2, 'Mittel'], [3, 'Schwer']].map(([k, n]) => `<button class="${(prefs.lvl || 2) === k ? 'on' : ''}" data-lvl="${k}">${n}</button>`).join('')}</div>
+      <p class="src-note">${c.pool.toLocaleString('de-DE')} Wörter mit einfacher Erklärung. Was dir gefällt, kannst du merken.</p>` : ''}
+    </div>
     <button class="card mode" data-go="karten" ${c.total ? '' : 'disabled'}>
-      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter${own}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     ${c.total ? `<div class="dir">Zuerst zeigen:<div class="seg">${[['mix', 'Gemischt'], ['wb', 'Wort'], ['bw', 'Bedeutung']].map(([k, n]) => `<button class="${prefs.dir === k ? 'on' : ''}" data-dir="${k}">${n}</button>`).join('')}</div></div>` : ''}
     <button class="card mode" data-go="artikel" style="margin-top:14px">
       <span class="ico art3"><i style="background:var(--der)"></i><i style="background:var(--die)"></i><i style="background:var(--das)"></i></span>
@@ -655,13 +720,15 @@ function renderPractice() {
     <button class="card mode" data-go="bedeutung" ${c.meaning ? '' : 'disabled'}>
       <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Was passt? Wähl ein Wort.' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="formen" ${c.forms ? '' : 'disabled'}>
-      <span class="ico gap">Pl.</span><div><h2>Formen üben</h2><p>${c.forms ? 'Plural, Vergangenheit, Komparativ' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico gap">Pl.</span><div><h2>Formen üben</h2><p>${c.forms ? `Plural, Vergangenheit, Komparativ${own}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="luecken" ${c.cloze ? '' : 'disabled'}>
       <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
-    <button class="card mode" data-go="satz" ${c.total && c.meaning ? '' : 'disabled'}>
+    <button class="card mode" data-go="satz" ${c.meaning ? '' : 'disabled'}>
       <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
+  $$('[data-src]').forEach(b => b.onclick = () => { prefs.src = b.dataset.src; store.set('prefs', prefs); renderPractice(); });
+  $$('[data-lvl]').forEach(b => b.onclick = () => { prefs.lvl = +b.dataset.lvl; store.set('prefs', prefs); renderPractice(); });
   hydrate();
 }
 
@@ -678,8 +745,9 @@ function doneScreen(title, statsHTML, again) {
   $('#again').onclick = again;
 }
 
-function startSession(kind) {
+async function startSession(kind) {
   view.className = '';
+  await Promise.all([simpleReady, poolReady]);
   if (kind === 'karten') return flashSession();
   if (kind === 'artikel') return genderSession();
   if (kind === 'luecken') return clozeSession();
@@ -794,6 +862,10 @@ function ruleFor(word) {
 }
 
 function genderPool() {
+  if (prefs.src === 'all') {
+    const k = prefs.lvl || 2;
+    return POOL.filter(p => p[3] === k && p[2] === 'n' && p[1] && !/\s/.test(p[0])).map(p => ({ word: p[0], g: { der: 'm', die: 'f', das: 'n' }[p[1]], plural: '', virtual: true }));
+  }
   const map = new Map();
   ALL_THEME.forEach(i => { if (i.g && !PLURAL_ONLY.has(i.raw) && !/\s/.test(i.lemma)) map.set(i.lemma, { word: i.lemma, g: i.g, plural: '' }); });
   Object.values(words).forEach(w => {
@@ -834,12 +906,13 @@ function genderSession() {
       countPractice();
       $$('.gender-btns button').forEach(o => o.classList.add(o.dataset.g === x.g ? 'right' : 'wrong'));
       const rule = ruleFor(x.word);
-      $('.res').innerHTML = `<span class="${ok ? 'ok' : 'bad'}">${ok ? 'Richtig' : 'Leider nicht'}:</span> <span class="art ${x.g}">${ART[x.g]}</span> ${esc(x.word)}${x.plural ? `<br><span class="pl">Plural: die ${esc(x.plural)}</span>` : ''}`;
+      $('.res').innerHTML = `<span class="${ok ? 'ok' : 'bad'}">${ok ? 'Richtig' : 'Leider nicht'}:</span> <span class="art ${x.g}">${ART[x.g]}</span> ${esc(x.word)}${x.plural ? `<br><span class="pl">Plural: die ${esc(x.plural)}</span>` : ''}${x.virtual && simpleFor(x.word) ? `<br><span class="pl">${esc(simpleFor(x.word)[0][0])}</span>` : ''}`;
       speak(ART[x.g] + ' ' + x.word);
-      if (ok) { right++; stats.gender[x.word] = Math.max(0, (stats.gender[x.word] || 0) - 1); saveStats(); setTimeout(() => { idx++; show(); }, 900); }
+      if (ok && !x.virtual) { right++; stats.gender[x.word] = Math.max(0, (stats.gender[x.word] || 0) - 1); saveStats(); setTimeout(() => { idx++; show(); }, 900); }
+      else if (ok) { right++; $('#after').innerHTML = `<div class="btn-row">${keepBtn(x.word, x.g)}<button class="btn primary" id="next">Weiter</button></div>`; $('#next').onclick = () => { idx++; show(); }; }
       else {
         wrong.push(x); stats.gender[x.word] = (stats.gender[x.word] || 0) + 1; saveStats();
-        $('#after').innerHTML = `${rule ? `<div class="rule">Tipp: ${rule}</div>` : ''}<button class="btn primary wide" id="next" style="margin-top:16px">Weiter</button>`;
+        $('#after').innerHTML = `${rule ? `<div class="rule">Tipp: ${rule}</div>` : ''}<div class="btn-row">${x.virtual ? keepBtn(x.word, x.g) : ''}<button class="btn primary${x.virtual ? '' : ' wide'}" id="next">Weiter</button></div>`;
         $('#next').onclick = () => { idx++; show(); };
       }
     });
@@ -850,13 +923,14 @@ function genderSession() {
 // --- cloze ---
 function clozePool() {
   const out = [];
-  Object.values(words).forEach(w => {
+  practiceWords().forEach(w => {
     const e = w.snap; if (!e) return;
     const sim = simpleFor(e.title);
     const exs = sim && sim[1] ? [{ text: sim[1], n: (e.senses[0] || {}).n, quote: false, simple: true }, ...e.examples] : e.examples;
     exs.forEach(x => {
       if (!/⟦/.test(x.text) || x.text.length > 170) return;
       const marks = [...x.text.matchAll(/⟦(.*?)⟧/g)].map(m => m[1]);
+      if (marks.length > 1) return;   // split verbs ("legt ... ein") make a poor gap
       const stem = e.title.toLowerCase().slice(0, 3);
       const target = marks.find(m => m.toLowerCase().includes(stem)) || marks.sort((a, b) => b.length - a.length)[0];
       if (!target || target.split(' ').length > 2 || /…/.test(target)) return;
@@ -900,7 +974,7 @@ function clozeSession() {
       const gap = $('.gap'); gap.classList.add('shown'); if (!ok) gap.classList.add('bad');
       $('.verdict').innerHTML = msg;
       if (ok) right++;
-      $('.btn-row').innerHTML = `<button class="btn primary wide" id="next" type="button">Weiter</button>`;
+      $('.btn-row').innerHTML = `${c.w.virtual ? keepBtn(c.e.title, c.w.g) : ''}<button class="btn primary${c.w.virtual ? '' : ' wide'}" id="next" type="button">Weiter</button>`;
       $('#next').onclick = () => { idx++; show(); };
       $('#next').focus();
     };
@@ -986,7 +1060,7 @@ function formsSession() {
 }
 
 // --- meaning: one definition, four words ---
-function meaningPool() { return Object.values(words).filter(w => w.snap && w.snap.senses.length); }
+function meaningPool() { return practiceWords().filter(w => w.snap && w.snap.senses.length); }
 
 function meaningSession() {
   const pool = meaningPool();
@@ -1027,7 +1101,7 @@ function meaningSession() {
       $$('.option').forEach(o => { o.disabled = true; if (opts[+o.dataset.i].ok) o.classList.add('right'); });
       if (!ok) b.classList.add('wrong'); else right++;
       speak((isNoun(e) && e.genus.length ? artOf(e).split('/')[0] + ' ' : '') + e.title);
-      $('#after').innerHTML = `${ex ? `<p class="ex">${markEx(ex.text)}</p>` : ''}<button class="btn primary wide" id="next" style="margin-top:14px">Weiter</button>`;
+      $('#after').innerHTML = `${ex ? `<p class="ex">${markEx(ex.text)}</p>` : ''}<div class="btn-row">${w.virtual ? keepBtn(e.title, w.g) : ''}<button class="btn primary${w.virtual ? '' : ' wide'}" id="next">Weiter</button></div>`;
       $('#next').onclick = () => { idx++; show(); };
     });
   };
@@ -1037,6 +1111,7 @@ function meaningSession() {
 // --- own sentence with a self-check (nothing is graded automatically) ---
 let sentences = store.get('sentences', {});
 function sentencePool() {
+  if (prefs.src === 'all') return shuffle(practiceWords().slice());
   return Object.values(words).filter(w => w.snap).sort((a, b) => (sentences[a.key] ? 1 : 0) - (sentences[b.key] ? 1 : 0) || level(a) - level(b));
 }
 

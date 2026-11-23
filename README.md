@@ -22,4 +22,4 @@ Files: `index.html`, `app.css`, `app.js` (UI), `wiki.js` (Wiktionary parser),
 Checks:
 - `node tools/verify_words.js` checks every theme word's article against Wiktionary.
 - `node tools/test_wiki.js Wort ...` prints the parsed entry.
-- `python3 tools/e2e.py <outdir>` walks the app headlessly (serve on :8765 first).
+- `python3 tools/e2e.py <outdir>` walks the app headlessly (serve on :8765 first); `tools/e2e_pool.py` covers practice with all words and the word of the day.
