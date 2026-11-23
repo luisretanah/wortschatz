@@ -208,8 +208,8 @@ function searchBar(value) {
   return `<div class="search-wrap">
     <form class="search" role="search" autocomplete="off">
       ${ICON.search}
-      <input id="q" type="text" inputmode="search" enterkeyhint="search" placeholder="Wort nachschlagen" value="${esc(value)}"
-        autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Wort nachschlagen">
+      <input id="q" type="text" inputmode="search" enterkeyhint="search" placeholder="Wort suchen" value="${esc(value)}"
+        autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Wort suchen">
       <button type="button" class="clear" aria-label="Eingabe löschen" ${value ? '' : 'hidden'}>${ICON.x.replace('class="i"', 'class="i" style="width:14px;height:14px;stroke-width:2.4"')}</button>
     </form>
     <ul class="suggest" hidden></ul>
@@ -270,7 +270,7 @@ function renderSearch(q) {
       <circle cx="20" cy="22" r="2.6" fill="#E58AA8"/>
     </svg>
       <h1>Jeden Tag ein Wort mehr. <em>Dein Schatz wächst.</em></h1>
-      <p>Nachschlagen auf Deutsch, verstehen und behalten, in deinem Tempo.</p>
+      <p>Ein Wort suchen, verstehen, üben. So schnell oder langsam, wie du willst.</p>
       ${total ? `<a class="treasure" href="#/woerter"><i>${ICON.spark.replace('class="i"', 'class="i" style="width:13px;height:13px;fill:currentColor;stroke:none"')}</i>Dein Schatz: <b>${total} ${total === 1 ? 'Wort' : 'Wörter'}</b></a>` : ''}
     </header>
     ${searchBar('')}
@@ -279,13 +279,13 @@ function renderSearch(q) {
       <div class="hw">${w.g ? `<span class="art ${PLURAL_ONLY.has(w.raw) ? 'p' : w.g}">${ART[w.g]}</span>` : ''}${esc(w.bare)}</div>
       <div class="gram" id="wotd-gram">${esc(THEMES.find(t => t.items.includes(w)).name)}</div>
       <div id="wotd-body"><div class="skel w80"></div><div class="skel w60"></div></div>
-      <span class="open">Eintrag öffnen ${ICON.chev.replace('class="i"', 'class="i" style="width:16px;height:16px"')}</span>
+      <span class="open">Mehr lesen ${ICON.chev.replace('class="i"', 'class="i" style="width:16px;height:16px"')}</span>
     </a>
     ${total ? `<a class="card due" href="${due ? '#/ueben/karten' : '#/ueben'}" style="margin-top:14px">
       <span class="stack">${ICON.cards}</span>
-      <div><h2>${due ? `${due} ${due === 1 ? 'Wort wartet' : 'Wörter warten'} auf dich` : 'Für heute alles wiederholt'}</h2><p>${due ? 'Karteikarten jetzt üben' : `${total} Wörter in deiner Sammlung`}</p></div>
+      <div><h2>${due ? `${due} ${due === 1 ? 'Wort wartet' : 'Wörter warten'} auf dich` : 'Für heute alles geübt'}</h2><p>${due ? 'Karteikarten jetzt üben' : `${total} Wörter in deiner Sammlung`}</p></div>
       <span class="chev">${ICON.chev}</span></a>` : ''}
-    ${history.length ? `<div class="lbl">Zuletzt nachgeschlagen</div>
+    ${history.length ? `<div class="lbl">Zuletzt gesucht</div>
       <div class="index">${history.slice(0, 6).map(h => `<a class="row" href="#/suchen/${encodeURIComponent(h)}"><div class="main"><div class="w">${esc(h)}</div></div><span class="chev">${ICON.chev}</span></a>`).join('')}</div>` : ''}`;
   bindSearch();
   const ok = $('#install-ok');
@@ -311,7 +311,7 @@ let lookupToken = 0;
 async function doLookup(q) {
   const token = ++lookupToken;
   const out = $('#result');
-  out.innerHTML = `<div class="loading"><div class="spinner"></div>Schlage „${esc(q)}“ nach …</div>`;
+  out.innerHTML = `<div class="loading"><div class="spinner"></div>Suche „${esc(q)}“ …</div>`;
   let r = cacheGet(q);
   if (!r) {
     try {
@@ -320,7 +320,7 @@ async function doLookup(q) {
     } catch (e) {
       const saved = Object.values(words).filter(w => w.snap && w.title.toLowerCase() === q.toLowerCase());
       if (saved.length) r = { title: saved[0].title, entries: saved.map(w => w.snap), offline: true };
-      else { if (token === lookupToken) out.innerHTML = `<div class="empty"><h2>Keine Verbindung</h2><p>Ohne Internet funktionieren nur gespeicherte Wörter.</p></div>`; return; }
+      else { if (token === lookupToken) out.innerHTML = `<div class="empty"><h2>Keine Verbindung</h2><p>Ohne Internet gehen nur deine gemerkten Wörter.</p></div>`; return; }
     }
   }
   if (token !== lookupToken || !document.body.contains(out)) return;
@@ -353,7 +353,7 @@ function senseHTML(e, s, j, count) {
   return `<li class="sense"><span class="num">${count > 1 ? 'Bedeutung ' + esc(s.n) : 'Bedeutung'}</span>
     <div class="def">${label ? `<span class="label">${esc(label)}</span> ` : ''}${esc(text)}</div>
     <div class="exs">${exs.slice(0, 2).map(x => exHTML(x)).join('')}${extra.map(x => exHTML(x, true)).join('')}
-    ${extra.length ? `<button class="more" data-more>Weitere Beispiele (${extra.length})</button>` : ''}</div>
+    ${extra.length ? `<button class="more" data-more>Mehr Beispiele (${extra.length})</button>` : ''}</div>
   </li>`;
 }
 
@@ -388,7 +388,7 @@ function entryHTML(r, e, i) {
     ${syn.length ? `<div class="lbl">Synonyme</div><div class="chips">${syn.map(s => `<a class="chip" href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join('')}</div>` : ''}
     ${i === 0 ? '<div id="ot" hidden></div>' : ''}
     ${e.ant.length ? `<div class="lbl">Gegenteil</div><div class="chips">${e.ant.slice(0, 8).map(s => `<a class="chip" href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join('')}</div>` : ''}
-    ${e.combos.length ? `<div class="lbl">Typische Verbindungen</div><ul class="combo-list">${e.combos.slice(0, 8).map(c => `<li>${esc(c.text)}</li>`).join('')}</ul>` : ''}
+    ${e.combos.length ? `<div class="lbl">Oft zusammen</div><ul class="combo-list">${e.combos.slice(0, 8).map(c => `<li>${esc(c.text)}</li>`).join('')}</ul>` : ''}
     ${idioms.length ? `<div class="lbl">Redewendungen</div><ul class="combo-list">${idioms.map(c => `<li>${esc(c.text)}</li>`).join('')}</ul>` : ''}
     </div>
     <div class="entry-foot">
@@ -484,9 +484,9 @@ function renderWords(filter) {
   flush();
   view.innerHTML = `
     <div class="toolbar"><div><h1 class="page-title">Mein <em>Schatz</em></h1>${all.length ? `<p class="page-sub">${all.length} ${all.length === 1 ? 'Wort' : 'Wörter'} gesammelt</p>` : ''}</div>
-      <button class="round" id="menu" aria-label="Sicherung und Infos">${ICON.more}</button></div>
+      <button class="round" id="menu" aria-label="Kopie und Infos">${ICON.more}</button></div>
     ${all.length ? `<div class="seg" role="tablist">${Object.keys(names).filter(k => k === 'alle' || groups[k].length).map(k => `<button role="tab" aria-selected="${k === filter}" class="${k === filter ? 'on' : ''}" data-f="${k}">${names[k]}<span>${groups[k].length}</span></button>`).join('')}</div>` : ''}
-    ${!all.length ? `<div class="empty"><h2>Noch leer</h2><p>Tippe bei einem Eintrag auf das Lesezeichen oben rechts. Oder nimm ein ganzes Thema auf einmal.</p><a class="btn primary" href="#/themen">Themen ansehen</a></div>`
+    ${!all.length ? `<div class="empty"><h2>Noch leer</h2><p>Such ein Wort und tippe auf „Merken“. Oder speichere ein ganzes Thema.</p><a class="btn primary" href="#/themen">Themen ansehen</a></div>`
       : list.length ? rows.join('') : `<div class="empty"><p>In dieser Auswahl ist gerade nichts.</p></div>`}`;
   $$('.seg button').forEach(b => b.onclick = () => go('#/woerter/' + b.dataset.f));
   $('#menu').onclick = openMenu;
@@ -494,10 +494,10 @@ function renderWords(filter) {
 
 function openMenu() {
   const n = Object.keys(words).length;
-  sheet(`<h2>Sicherung</h2>
-    <p>Deine Wörter und dein Lernstand liegen nur auf diesem Gerät. Speichere ab und zu eine Sicherung, zum Beispiel in der Dateien-App.</p>
-    <button class="btn primary wide" id="exp">Sicherung speichern (${n} ${n === 1 ? 'Wort' : 'Wörter'})</button>
-    <label class="btn wide">Sicherung laden<input type="file" id="imp" accept="application/json,.json" hidden></label>
+  sheet(`<h2>Kopie speichern</h2>
+    <p>Deine Wörter sind nur auf diesem iPhone. Speichere manchmal eine Kopie, zum Beispiel in der App „Dateien“.</p>
+    <button class="btn primary wide" id="exp">Kopie speichern (${n} ${n === 1 ? 'Wort' : 'Wörter'})</button>
+    <label class="btn wide">Kopie laden<input type="file" id="imp" accept="application/json,.json" hidden></label>
     <h2 style="margin-top:28px">Über Wortschatz</h2>
     <p>Die Einträge kommen aus dem freien Wörterbuch Wiktionary (CC BY-SA 4.0), weitere Synonyme aus OpenThesaurus. Jeder Eintrag verlinkt zu Duden und DWDS. Englisch gibt es nur im Notfall: aus dem englischen Wiktionary, Sätze über DeepL.</p>`, (bg, close) => {
     $('#exp', bg).onclick = exportData;
@@ -510,7 +510,7 @@ async function exportData() {
   const name = `wortschatz-${today()}.json`;
   const file = new File([data], name, { type: 'application/json' });
   if (navigator.canShare && navigator.canShare({ files: [file] })) {
-    try { await navigator.share({ files: [file], title: 'Wortschatz Sicherung' }); return; } catch (e) { if (e.name === 'AbortError') return; }
+    try { await navigator.share({ files: [file], title: 'Wortschatz Kopie' }); return; } catch (e) { if (e.name === 'AbortError') return; }
   }
   const a = document.createElement('a');
   a.href = URL.createObjectURL(file); a.download = name; a.click();
@@ -620,19 +620,19 @@ function renderPractice() {
   view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>ohne Druck.</em></h1>
     <p class="page-sub">${td ? `Heute ${td} ${td === 1 ? 'Aufgabe' : 'Aufgaben'} geübt` : 'Heute noch nicht geübt'}${st > 1 ? ` · ${st} Tage in Folge` : ''}</p></div>
     <button class="card mode" data-go="karten" ${c.total ? '' : 'disabled'}>
-      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter` : 'Erst Wörter speichern'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     ${c.total ? `<div class="dir">Zuerst zeigen:<div class="seg">${[['mix', 'Gemischt'], ['wb', 'Wort'], ['bw', 'Bedeutung']].map(([k, n]) => `<button class="${prefs.dir === k ? 'on' : ''}" data-dir="${k}">${n}</button>`).join('')}</div></div>` : ''}
     <button class="card mode" data-go="artikel" style="margin-top:14px">
       <span class="ico art3"><i style="background:var(--der)"></i><i style="background:var(--die)"></i><i style="background:var(--das)"></i></span>
-      <div><h2>der, die oder das?</h2><p>${c.nouns} Nomen · mit Merkregeln</p></div><span class="chev">${ICON.chev}</span></button>
+      <div><h2>der, die oder das?</h2><p>${c.nouns} Nomen · mit Tipps</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="bedeutung" ${c.meaning ? '' : 'disabled'}>
-      <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Eine Erklärung, vier Wörter' : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Was passt? Vier Wörter zur Wahl' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="formen" ${c.forms ? '' : 'disabled'}>
-      <span class="ico gap">Pl.</span><div><h2>Formen abrufen</h2><p>${c.forms ? 'Plural, Präteritum, Perfekt, Komparativ' : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico gap">Pl.</span><div><h2>Formen üben</h2><p>${c.forms ? 'Plural, Vergangenheit, Komparativ' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="luecken" ${c.cloze ? '' : 'disabled'}>
-      <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="satz" ${c.total && c.meaning ? '' : 'disabled'}>
-      <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben, dann selbst prüfen' : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>`;
+      <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
   hydrate();
@@ -810,7 +810,7 @@ function genderSession() {
       if (ok) { right++; stats.gender[x.word] = Math.max(0, (stats.gender[x.word] || 0) - 1); saveStats(); setTimeout(() => { idx++; show(); }, 900); }
       else {
         wrong.push(x); stats.gender[x.word] = (stats.gender[x.word] || 0) + 1; saveStats();
-        $('#after').innerHTML = `${rule ? `<div class="rule">Merkregel: ${rule}</div>` : ''}<button class="btn primary wide" id="next" style="margin-top:16px">Weiter</button>`;
+        $('#after').innerHTML = `${rule ? `<div class="rule">Tipp: ${rule}</div>` : ''}<button class="btn primary wide" id="next" style="margin-top:16px">Weiter</button>`;
         $('#next').onclick = () => { idx++; show(); };
       }
     });
@@ -1026,10 +1026,10 @@ function sentenceSession() {
         <h2 class="ex-word">${label3(e)}</h2>
         <p class="ex-mean">${esc(splitLabel(sense.text).text)}</p>
         ${hint ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
-        <p class="ex-task">Schreib einen Satz aus deinem Alltag, der zeigt, was das Wort bedeutet.</p>
+        <p class="ex-task">Schreib einen Satz mit diesem Wort. Am besten über dein Leben.</p>
         <textarea id="draft" rows="3" placeholder="Mein Satz …" autocapitalize="sentences" spellcheck="false" aria-label="Dein Satz">${esc(prev ? prev.text : '')}</textarea>
         <div id="check" aria-live="polite"></div>
-        <div class="btn-row" id="row"><button class="btn" id="skip" type="button">Überspringen</button><button class="btn primary" id="selfcheck" type="button">Selbstcheck</button></div>
+        <div class="btn-row" id="row"><button class="btn" id="skip" type="button">Überspringen</button><button class="btn primary" id="selfcheck" type="button">Prüfen</button></div>
       </div>`;
     bindQuit();
     const ta = $('#draft');
@@ -1045,13 +1045,13 @@ function sentenceSession() {
       if (!hasWord) tips.push(`Ich finde <b>${esc(e.title)}</b> nicht in deinem Satz. Hast du das Wort benutzt?`);
       if (!/^[A-ZÄÖÜ„"]/.test(t)) tips.push('Ein Satz beginnt mit einem Großbuchstaben.');
       if (!/[.!?…“"]$/.test(t)) tips.push('Am Ende fehlt ein Satzzeichen.');
-      if (t.split(/\s+/).length < 5) tips.push('Versuch es mit etwas mehr Kontext: wer, wo, warum?');
+      if (t.split(/\s+/).length < 5) tips.push('Schreib etwas mehr: wer, wo, warum?');
       const ex = e.examples.find(x => !x.quote);
       $('#check').innerHTML = `<div class="checklist">
         ${tips.length ? `<div class="tips">${tips.map(x => `<p>${x}</p>`).join('')}</div>` : '<p class="ok" style="font-weight:600">Sieht gut aus. Prüfe noch selbst:</p>'}
-        <label><input type="checkbox"> Die Bedeutung passt zu meinem Satz.</label>
+        <label><input type="checkbox"> Das Wort passt in meinen Satz.</label>
         ${isNoun(e) ? `<label><input type="checkbox"> Der Artikel stimmt (<span class="art ${gclass(e)}">${esc(artOf(e))}</span>, im Satz vielleicht dem, den, der …).</label>` : ''}
-        ${e.verb ? `<label><input type="checkbox"> Das Verb steht an der richtigen Stelle und passt zur Person.</label>` : ''}
+        ${e.verb ? `<label><input type="checkbox"> Das Verb steht an der richtigen Stelle.</label>` : ''}
         <label><input type="checkbox"> Ich habe ihn einmal laut gelesen.</label>
         ${ex ? `<p class="compare">Zum Vergleich:</p><p class="ex">${markEx(ex.text)}</p>` : ''}
       </div>`;
