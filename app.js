@@ -42,7 +42,7 @@ let cache = store.get('cache', {});
 let prefs = store.get('prefs', { dir: 'mix' });
 // 2026-11-23: practice now starts on all words; reset an earlier 'mine' choice once.
 if (!prefs.v2) { delete prefs.src; prefs.v2 = 1; store.set('prefs', prefs); }
-const allMode = () => (prefs.src || 'all') === 'all';
+
 let stats = store.get('stats', { days: {}, gender: {} });
 const saveWords = () => store.set('words', words);
 const saveStats = () => store.set('stats', stats);
@@ -655,10 +655,17 @@ function virtualWord(p) {
     senses: s[0].map((m, i) => ({ n: String(i + 1), text: m })), examples: [], syn: [], ant: [], combos: [], idioms: [], en: [], notes: [] } };
 }
 function practiceWords() {
-  if (!allMode()) return Object.values(words);
   const k = prefs.lvl || 2;
   if (!pwCache[k]) pwCache[k] = POOL.filter(p => p[3] === k && !/\s/.test(p[0])).map(virtualWord).filter(Boolean);
-  return pwCache[k];
+  const own = Object.values(words).filter(w => w.snap);
+  const mine = new Set(own.map(w => w.title));
+  return own.concat(pwCache[k].filter(v => !mine.has(v.title)));
+}
+// A round: up to a third from priority items (her saved words, her mistakes), the rest from the level's pool.
+function pickMix(pool, n, pri = x => !x.virtual) {
+  const a = shuffle(pool.filter(pri)), b = shuffle(pool.filter(x => !pri(x)));
+  const k = Math.min(a.length, Math.ceil(n / 3));
+  return shuffle(a.slice(0, k).concat(b.slice(0, n - k), a.slice(k)).slice(0, n));
 }
 function isSaved(title) { return Object.values(words).some(w => w.title === title); }
 function keepBtn(title, g) {
@@ -679,8 +686,7 @@ view.addEventListener('click', ev => {
 });
 function practiceCounts() {
   const all = Object.values(words);
-  const pool = allMode() ? practiceWords().length : 0;
-  const now = Date.now();
+    const now = Date.now();
   return {
     total: all.length,
     due: all.filter(w => w.snap && (!w.srs || w.srs.due <= now)).length,
@@ -688,7 +694,6 @@ function practiceCounts() {
     cloze: clozePool().length,
     forms: formsPool().length,
     meaning: meaningPool().length,
-    pool,
   };
 }
 
@@ -703,19 +708,13 @@ async function renderPractice() {
   view.className = '';
   await Promise.all([simpleReady, poolReady]);
   if (!location.hash.startsWith('#/ueben') || location.hash.split('/')[2]) return;
-  const all = allMode();
-  const c = practiceCounts();
-  const own = all ? ' · deine Wörter' : '';
-  const st = streak(), td = stats.days[today()] || 0;
+    const c = practiceCounts();
+    const st = streak(), td = stats.days[today()] || 0;
   view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>jeden Tag ein bisschen.</em></h1>
     <p class="page-sub">${td ? `Heute ${td} ${td === 1 ? 'Aufgabe' : 'Aufgaben'} geübt` : 'Heute noch nicht geübt'}${st > 1 ? ` · ${st} Tage in Folge` : ''}</p></div>
-    <div class="src">
-      <div class="seg" aria-label="Üben mit">${[['all', 'Alle Wörter'], ['mine', 'Meine Wörter']].map(([k, n]) => `<button class="${(prefs.src || 'all') === k ? 'on' : ''}" data-src="${k}">${n}</button>`).join('')}</div>
-      ${all ? `<div class="seg" aria-label="Stufe">${[[1, 'Leicht'], [2, 'Mittel'], [3, 'Schwer']].map(([k, n]) => `<button class="${(prefs.lvl || 2) === k ? 'on' : ''}" data-lvl="${k}">${n}</button>`).join('')}</div>
-      <p class="src-note">Was dir gefällt, kannst du merken.</p>` : ''}
-    </div>
+    <div class="seg level" role="group" aria-label="Stufe">${[[1, 'Leicht'], [2, 'Mittel'], [3, 'Schwer']].map(([k, n]) => `<button class="${(prefs.lvl || 2) === k ? 'on' : ''}" data-lvl="${k}" aria-pressed="${(prefs.lvl || 2) === k}">${n}</button>`).join('')}</div>
     <button class="card mode" data-go="karten" ${c.total ? '' : 'disabled'}>
-      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due ? `Heute ${c.due} fällig` : 'Heute nichts fällig'}${own}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due ? `Heute ${c.due} fällig` : 'Heute nichts fällig'}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     ${c.total ? `<div class="dir">Zuerst zeigen:<div class="seg">${[['mix', 'Gemischt'], ['wb', 'Wort'], ['bw', 'Bedeutung']].map(([k, n]) => `<button class="${prefs.dir === k ? 'on' : ''}" data-dir="${k}">${n}</button>`).join('')}</div></div>` : ''}
     <button class="card mode" data-go="artikel" style="margin-top:14px" ${c.nouns ? '' : 'disabled'}>
       <span class="ico art3"><i style="background:var(--der)"></i><i style="background:var(--die)"></i><i style="background:var(--das)"></i></span>
@@ -723,14 +722,13 @@ async function renderPractice() {
     <button class="card mode" data-go="bedeutung" ${c.meaning ? '' : 'disabled'}>
       <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Was passt? Wähl ein Wort.' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="formen" ${c.forms ? '' : 'disabled'}>
-      <span class="ico gap">Pl.</span><div><h2>Formen üben</h2><p>${c.forms ? `Plural, Vergangenheit, Komparativ${own}` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico gap">Pl.</span><div><h2>Formen üben</h2><p>${c.forms ? 'Plural, Vergangenheit, Komparativ' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="luecken" ${c.cloze ? '' : 'disabled'}>
       <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="satz" ${c.meaning ? '' : 'disabled'}>
       <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
-  $$('[data-src]').forEach(b => b.onclick = () => { prefs.src = b.dataset.src; store.set('prefs', prefs); renderPractice(); });
   $$('[data-lvl]').forEach(b => b.onclick = () => { prefs.lvl = +b.dataset.lvl; store.set('prefs', prefs); renderPractice(); });
   hydrate();
 }
@@ -865,11 +863,9 @@ function ruleFor(word) {
 }
 
 function genderPool() {
-  if (allMode()) {
-    const k = prefs.lvl || 2;
-    return POOL.filter(p => p[3] === k && p[2] === 'n' && p[1] && !/\s/.test(p[0])).map(p => ({ word: p[0], g: { der: 'm', die: 'f', das: 'n' }[p[1]], plural: '', virtual: true }));
-  }
+  const k = prefs.lvl || 2;
   const map = new Map();
+  POOL.forEach(p => { if (p[3] === k && p[2] === 'n' && p[1] && !/\s/.test(p[0])) map.set(p[0], { word: p[0], g: { der: 'm', die: 'f', das: 'n' }[p[1]], plural: '', virtual: true }); });
   Object.values(words).forEach(w => {
     const e = w.snap;
     if (e && isNoun(e) && e.genus.length === 1 && !e.pluralOnly && !/\s/.test(e.title)) map.set(e.title, { word: e.title, g: e.genus[0], plural: e.plural || '', saved: true });
@@ -879,15 +875,7 @@ function genderPool() {
 
 function genderSession() {
   const pool = genderPool();
-  const weight = x => 1 + (stats.gender[x.word] || 0) * 3 + (x.saved ? 1 : 0);
-  const picked = [];
-  const bag = pool.slice();
-  while (picked.length < Math.min(20, pool.length)) {
-    const sum = bag.reduce((a, x) => a + weight(x), 0);
-    let r = Math.random() * sum, i = 0;
-    while (r > weight(bag[i])) { r -= weight(bag[i]); i++; }
-    picked.push(bag.splice(i, 1)[0]);
-  }
+  const picked = pickMix(pool, 20, x => x.saved || stats.gender[x.word] > 0);
   let idx = 0, right = 0;
   const wrong = [];
   const show = () => {
@@ -946,7 +934,7 @@ function clozeSession() {
   const pool = clozePool();
   const byWord = new Map();
   shuffle(pool.slice()).sort((a, b) => (b.x.simple ? 1 : 0) - (a.x.simple ? 1 : 0) || a.quote - b.quote).forEach(c => { if (!byWord.has(c.e.title)) byWord.set(c.e.title, c); });
-  const picked = shuffle([...byWord.values()]).slice(0, 10);
+  const picked = pickMix([...byWord.values()], 10, c => !c.w.virtual);
   let idx = 0, right = 0;
   const norm = s => s.toLowerCase().replace(/[.,;:!?„“"']/g, '').replace(/\s+/g, ' ').trim();
   const show = () => {
@@ -1066,7 +1054,7 @@ function meaningPool() { return practiceWords().filter(w => w.snap && w.snap.sen
 
 function meaningSession() {
   const pool = meaningPool();
-  const picked = shuffle(pool.slice()).slice(0, 10);
+  const picked = pickMix(pool, 10);
   let idx = 0, right = 0;
   const label = e => (isNoun(e) && e.genus.length ? `<span class="art ${gclass(e)}">${esc(artOf(e))}</span> ` : '') + esc(e.title);
   const show = () => {
@@ -1113,8 +1101,7 @@ function meaningSession() {
 // --- own sentence with a self-check (nothing is graded automatically) ---
 let sentences = store.get('sentences', {});
 function sentencePool() {
-  if (allMode()) return shuffle(practiceWords().slice());
-  return Object.values(words).filter(w => w.snap).sort((a, b) => (sentences[a.key] ? 1 : 0) - (sentences[b.key] ? 1 : 0) || level(a) - level(b));
+  return pickMix(practiceWords(), 5, w => !w.virtual && !sentences[w.key]);
 }
 
 function sentenceSession() {
