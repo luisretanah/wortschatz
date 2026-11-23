@@ -1,4 +1,4 @@
-# Wortschatz
+# Wort für Wort
 
 German-German dictionary and vocabulary trainer for B2 learners, built as a
 static web app (no server, no account). Install on iPhone: open in Safari,

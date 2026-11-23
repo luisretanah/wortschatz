@@ -277,7 +277,7 @@ function renderSearch(q) {
   const showInstall = isIOS && !standalone && !store.get('installSeen', false);
   view.innerHTML = `
     ${showInstall ? `<div class="banner" id="install">${ICON.share}<div>Als App speichern: unten auf <b>Teilen</b> tippen, dann <b>Zum Home-Bildschirm</b>.</div><button id="install-ok">OK</button></div>` : ''}
-    <div class="brand"><span class="mark">W</span><span class="name">Wortschatz</span><span class="tag">${esc(date)}</span></div>
+    <div class="brand"><span class="mark">W</span><span class="name">Wort für Wort</span><span class="tag">${esc(date)}</span></div>
     <header class="hero"><svg class="art-ill" viewBox="0 0 92 92" aria-hidden="true">
       <circle cx="50" cy="46" r="34" fill="var(--accent-soft)"/>
       <path d="M24 34c8-4 15-4 22 1v30c-7-5-14-5-22-1z" fill="var(--page-solid)" stroke="var(--accent-2)" stroke-width="2" stroke-linejoin="round"/>
@@ -525,7 +525,7 @@ function openMenu() {
     <p>Deine Wörter sind nur auf diesem iPhone. Speichere manchmal eine Kopie, zum Beispiel in der App „Dateien“.</p>
     <button class="btn primary wide" id="exp">Kopie speichern (${n} ${n === 1 ? 'Wort' : 'Wörter'})</button>
     <label class="btn wide">Kopie laden<input type="file" id="imp" accept="application/json,.json" hidden></label>
-    <h2 style="margin-top:28px">Über Wortschatz</h2>
+    <h2 style="margin-top:28px">Über Wort für Wort</h2>
     <p>Die Einträge kommen aus dem freien Wörterbuch Wiktionary (CC BY-SA 4.0), weitere Synonyme aus OpenThesaurus. Jeder Eintrag verlinkt zu Duden und DWDS. Englisch gibt es nur im Notfall: aus dem englischen Wiktionary, Sätze über DeepL.</p>`, (bg, close) => {
     $('#exp', bg).onclick = exportData;
     $('#imp', bg).onchange = ev => importData(ev.target.files[0], close);
@@ -534,10 +534,10 @@ function openMenu() {
 
 async function exportData() {
   const data = JSON.stringify({ app: 'wortschatz', v: 1, at: new Date().toISOString(), words, prefs, stats, sentences }, null, 1);
-  const name = `wortschatz-${today()}.json`;
+  const name = `wort-fuer-wort-${today()}.json`;
   const file = new File([data], name, { type: 'application/json' });
   if (navigator.canShare && navigator.canShare({ files: [file] })) {
-    try { await navigator.share({ files: [file], title: 'Wortschatz Kopie' }); return; } catch (e) { if (e.name === 'AbortError') return; }
+    try { await navigator.share({ files: [file], title: 'Wort für Wort Kopie' }); return; } catch (e) { if (e.name === 'AbortError') return; }
   }
   const a = document.createElement('a');
   a.href = URL.createObjectURL(file); a.download = name; a.click();

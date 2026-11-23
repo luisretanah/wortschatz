@@ -1,6 +1,6 @@
 {
-  "name": "Wortschatz",
-  "short_name": "Wortschatz",
+  "name": "Wort für Wort",
+  "short_name": "Wort für Wort",
   "description": "Deutsch-deutsches Wörterbuch und Vokabeltrainer für B2",
   "lang": "de",
   "start_url": "./#/suchen",
