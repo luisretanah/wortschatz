@@ -1,0 +1,1699 @@
+[
+{
+"w": "handeln",
+"m": [
+"etwas tun, aktiv werden",
+"Dinge kaufen und verkaufen"
+],
+"x": "Wir müssen jetzt schnell ⟦handeln⟧."
+},
+{
+"w": "einigen",
+"m": [
+"nach einem Streit eine gemeinsame Lösung finden"
+],
+"x": "Wir ⟦einigen⟧ uns auf einen Preis."
+},
+{
+"w": "daraus",
+"m": [
+"aus dieser Sache heraus"
+],
+"x": "Nimm ein Glas und trink ⟦daraus⟧."
+},
+{
+"w": "Luke",
+"m": [
+"eine kleine Tür im Boden, im Dach oder auf dem Schiff"
+],
+"x": "Der Mann steigt durch die ⟦Luke⟧ nach unten."
+},
+{
+"w": "schwären",
+"skip": true
+},
+{
+"w": "bergen",
+"m": [
+"jemanden oder etwas aus Gefahr holen und in Sicherheit bringen"
+],
+"x": "Die Feuerwehr ⟦birgt⟧ die Katze vom Baum."
+},
+{
+"w": "verteidigen",
+"m": [
+"sich gegen einen Angriff wehren",
+"sagen, warum man etwas richtig findet"
+],
+"x": "Er ⟦verteidigt⟧ seine Meinung ruhig und klar."
+},
+{
+"w": "Labor",
+"m": [
+"ein Raum, in dem man Tests und Versuche macht"
+],
+"x": "Im ⟦Labor⟧ untersuchen sie das Blut."
+},
+{
+"w": "Rechnung",
+"m": [
+"ein Zettel, auf dem steht, was man bezahlen muss"
+],
+"x": "Wir bitten den Kellner um die ⟦Rechnung⟧."
+},
+{
+"w": "Bank",
+"m": [
+"ein Ort, wo man Geld hat und Geld holt"
+],
+"x": "Ich hole Geld von der ⟦Bank⟧."
+},
+{
+"w": "sichern",
+"m": [
+"dafür sorgen, dass nichts passiert"
+],
+"x": "Wir ⟦sichern⟧ die Tür mit einem Schloss."
+},
+{
+"w": "Zufall",
+"m": [
+"etwas, das ohne Plan einfach passiert"
+],
+"x": "Es war ein ⟦Zufall⟧, dass wir uns trafen."
+},
+{
+"w": "prima",
+"m": [
+"sehr gut"
+],
+"x": "Das Wetter ist heute ⟦prima⟧."
+},
+{
+"w": "zulassen",
+"m": [
+"erlauben, dass etwas passiert"
+],
+"x": "Die Schule ⟦lässt⟧ keine Handys im Unterricht ⟦zu⟧."
+},
+{
+"w": "fair",
+"m": [
+"so, dass alle gleich und gerecht behandelt werden"
+],
+"x": "Der Schiedsrichter war sehr ⟦fair⟧."
+},
+{
+"w": "Gewalt",
+"m": [
+"starke Kraft, mit der man andere verletzt oder zwingt"
+],
+"x": "In dem Film gibt es viel ⟦Gewalt⟧."
+},
+{
+"w": "wahnsinnig",
+"m": [
+"verrückt, ohne Verstand",
+"sehr groß, sehr stark"
+],
+"x": "Der Verkehr ist heute ⟦wahnsinnig⟧ schlimm."
+},
+{
+"w": "begegnen",
+"m": [
+"jemanden zufällig treffen"
+],
+"x": "Ich bin ihr gestern im Supermarkt ⟦begegnet⟧."
+},
+{
+"w": "Krankheit",
+"m": [
+"wenn man nicht gesund ist"
+],
+"x": "Wegen einer ⟦Krankheit⟧ war er drei Tage zu Hause."
+},
+{
+"w": "Streit",
+"m": [
+"wenn zwei Personen laut und böse reden, weil sie nicht gleich denken"
+],
+"x": "Die Kinder haben einen ⟦Streit⟧ um das Spielzeug."
+},
+{
+"w": "steuern",
+"m": [
+"ein Auto, Boot oder Gerät lenken"
+],
+"x": "Er ⟦steuert⟧ das Boot sicher in den Hafen."
+},
+{
+"w": "Meile",
+"m": [
+"ein Wort für eine lange Strecke, zum Beispiel in den USA"
+],
+"x": "In den USA misst man Strecken in ⟦Meilen⟧."
+},
+{
+"w": "Schwanz",
+"m": [
+"der Teil hinten am Körper von vielen Tieren"
+],
+"x": "Der Hund wedelt mit dem ⟦Schwanz⟧."
+},
+{
+"w": "aufstehen",
+"m": [
+"das Bett verlassen",
+"von einem Stuhl hoch gehen"
+],
+"x": "Ich ⟦stehe⟧ jeden Tag um sechs Uhr ⟦auf⟧."
+},
+{
+"w": "sommer",
+"skip": true
+},
+{
+"w": "ankommen",
+"m": [
+"an einem Ort sein, wo man hin wollte"
+],
+"x": "Wir ⟦kommen⟧ um acht Uhr in Berlin ⟦an⟧."
+},
+{
+"w": "Bad",
+"m": [
+"wenn man in heißem Wasser liegt"
+],
+"x": "Ich nehme abends ein warmes ⟦Bad⟧."
+},
+{
+"w": "City",
+"skip": true
+},
+{
+"w": "Zustand",
+"m": [
+"wie etwas gerade ist"
+],
+"x": "Das Auto ist in einem guten ⟦Zustand⟧."
+},
+{
+"w": "Tatsache",
+"m": [
+"etwas, das wirklich so ist"
+],
+"x": "Das ist eine ⟦Tatsache⟧, nicht nur meine Meinung."
+},
+{
+"w": "begehen",
+"m": [
+"etwas Schlechtes tun, zum Beispiel einen Fehler machen"
+],
+"x": "Jeder ⟦begeht⟧ einmal einen Fehler."
+},
+{
+"w": "Kate",
+"skip": true
+},
+{
+"w": "blöde",
+"m": [
+"dumm; nicht schön und ein bisschen böse"
+],
+"x": "Das ist eine ⟦blöde⟧ Idee."
+},
+{
+"w": "Kurs",
+"m": [
+"Unterricht für eine Gruppe, die etwas lernt",
+"die Richtung, in die ein Schiff oder Flugzeug fährt"
+],
+"x": "Ich besuche einen ⟦Kurs⟧ für Spanisch."
+},
+{
+"w": "angeln",
+"m": [
+"mit einem Stock Fische aus dem Wasser holen"
+],
+"x": "Mein Opa ⟦angelt⟧ gern am See."
+},
+{
+"w": "College",
+"skip": true
+},
+{
+"w": "heben",
+"m": [
+"etwas nach oben bewegen"
+],
+"x": "Kannst du bitte den schweren Koffer ⟦heben⟧?"
+},
+{
+"w": "Absicht",
+"m": [
+"das, was man mit Plan und Willen tun will"
+],
+"x": "Ich habe das nicht mit ⟦Absicht⟧ gemacht."
+},
+{
+"w": "betrachten",
+"m": [
+"etwas lange und genau ansehen"
+],
+"x": "Wir ⟦betrachten⟧ die Bilder im Museum."
+},
+{
+"w": "pressen",
+"m": [
+"etwas stark drücken"
+],
+"x": "Sie ⟦presst⟧ eine Zitrone in das Glas."
+},
+{
+"w": "dunkel",
+"m": [
+"ohne oder mit wenig Licht",
+"mit einer starken Farbe"
+],
+"x": "Im Keller ist es sehr ⟦dunkel⟧."
+},
+{
+"w": "ähnlich",
+"m": [
+"fast gleich, aber nicht ganz"
+],
+"x": "Die zwei Brüder sehen sich sehr ⟦ähnlich⟧."
+},
+{
+"w": "schwach",
+"m": [
+"ohne viel Kraft"
+],
+"x": "Nach der Krankheit fühlt er sich noch ⟦schwach⟧."
+},
+{
+"w": "verarschen",
+"skip": true
+},
+{
+"w": "schlau",
+"m": [
+"klug und schnell im Denken"
+],
+"x": "Das ist ein ⟦schlauer⟧ Plan."
+},
+{
+"w": "icht",
+"skip": true
+},
+{
+"w": "dextrogyr",
+"skip": true
+},
+{
+"w": "vollkommen",
+"m": [
+"ohne Fehler; ganz und gar"
+],
+"x": "Du hast ⟦vollkommen⟧ recht."
+},
+{
+"w": "Natur",
+"m": [
+"Pflanzen, Tiere und Berge, die nicht vom Menschen kommen"
+],
+"x": "Am Wochenende gehen wir in die ⟦Natur⟧."
+},
+{
+"w": "aufregen",
+"m": [
+"sich ärgern oder nervös werden"
+],
+"x": "Reg dich bitte nicht so ⟦auf⟧!"
+},
+{
+"w": "Bürgermeister",
+"m": [
+"der Chef einer Stadt oder Gemeinde"
+],
+"x": "Der ⟦Bürgermeister⟧ eröffnet das Fest."
+},
+{
+"w": "Erklärung",
+"m": [
+"Worte, die zeigen, warum etwas so ist",
+"eine offizielle Aussage"
+],
+"x": "Der Lehrer gibt eine kurze ⟦Erklärung⟧."
+},
+{
+"w": "pfeifen",
+"m": [
+"mit dem Mund einen hohen Ton machen"
+],
+"x": "Er ⟦pfeift⟧ ein Lied auf dem Heimweg."
+},
+{
+"w": "längst",
+"m": [
+"schon seit langer Zeit"
+],
+"x": "Der Film hat ⟦längst⟧ angefangen."
+},
+{
+"w": "Einsatz",
+"m": [
+"eine Aufgabe, bei der man hilft",
+"das Geld, das man bei einem Spiel gibt"
+],
+"x": "Die Feuerwehr hatte heute Nacht einen ⟦Einsatz⟧."
+},
+{
+"w": "drüber",
+"m": [
+"über dieser Sache"
+],
+"x": "Der Tisch ist zu niedrig, wir kommen nicht ⟦drüber⟧."
+},
+{
+"w": "anbieten",
+"m": [
+"jemandem etwas geben oder zeigen, das er nehmen kann",
+"etwas zum Kaufen zeigen"
+],
+"x": "Sie ⟦bietet⟧ den Gästen Kaffee und Kuchen ⟦an⟧."
+},
+{
+"w": "beibringen",
+"m": [
+"jemandem zeigen, wie etwas geht"
+],
+"x": "Mein Vater ⟦bringt⟧ mir das Schwimmen ⟦bei⟧."
+},
+{
+"w": "huren",
+"skip": true
+},
+{
+"w": "hingehen",
+"m": [
+"an einen Ort gehen"
+],
+"x": "Ich ⟦gehe⟧ morgen zum Arzt ⟦hin⟧."
+},
+{
+"w": "mindestens",
+"m": [
+"nicht weniger als"
+],
+"x": "Ich brauche ⟦mindestens⟧ eine Stunde dafür."
+},
+{
+"w": "unschuldig",
+"m": [
+"nicht schuld an etwas",
+"ohne etwas Böses"
+],
+"x": "Der Mann war ⟦unschuldig⟧ und durfte gehen."
+},
+{
+"w": "entspannen",
+"m": [
+"ruhig werden und sich gut fühlen"
+],
+"x": "Am Sonntag will ich mich zu Hause ⟦entspannen⟧."
+},
+{
+"w": "Kugel",
+"m": [
+"etwas ganz rund wie ein Ball"
+],
+"x": "Die Kinder spielen mit einer bunten ⟦Kugel⟧."
+},
+{
+"w": "normalerweise",
+"m": [
+"so, wie es meistens ist"
+],
+"x": "⟦Normalerweise⟧ stehe ich um sieben Uhr auf."
+},
+{
+"w": "rauf",
+"m": [
+"nach oben"
+],
+"x": "Komm schnell ⟦rauf⟧, die Aussicht ist toll!"
+},
+{
+"w": "wenden",
+"m": [
+"in eine andere Richtung drehen"
+],
+"x": "Der Fahrer muss auf der engen Straße ⟦wenden⟧."
+},
+{
+"w": "Rom",
+"skip": true
+},
+{
+"w": "absehen",
+"m": [
+"vorher erkennen, was kommt",
+"etwas nicht tun"
+],
+"x": "Wir können noch nicht ⟦absehen⟧, wie es weitergeht."
+},
+{
+"w": "zähnen",
+"skip": true
+},
+{
+"w": "Dan",
+"skip": true
+},
+{
+"w": "Vampir",
+"m": [
+"eine Figur aus Geschichten, die nachts Blut trinkt"
+],
+"x": "Im Film kommt ein ⟦Vampir⟧ vor."
+},
+{
+"w": "morgens",
+"m": [
+"jeden Tag früh am Tag"
+],
+"x": "Ich trinke ⟦morgens⟧ immer einen Kaffee."
+},
+{
+"w": "Van",
+"skip": true
+},
+{
+"w": "duschen",
+"m": [
+"sich unter Wasser von oben waschen"
+],
+"x": "Ich ⟦dusche⟧ jeden Morgen kurz."
+},
+{
+"w": "Direktor",
+"m": [
+"der Chef einer Schule oder Firma"
+],
+"x": "Der ⟦Direktor⟧ spricht mit den Eltern."
+},
+{
+"w": "langweilig",
+"m": [
+"so, dass man keine Lust hat und die Zeit lang wird"
+],
+"x": "Der Film war leider sehr ⟦langweilig⟧."
+},
+{
+"w": "erfinden",
+"m": [
+"etwas ganz Neues bauen, das es vorher nicht gab",
+"sich etwas Falsches überlegen"
+],
+"x": "Er hat eine neue Maschine ⟦erfunden⟧."
+},
+{
+"w": "Lager",
+"m": [
+"ein Raum, wo man viele Waren hat",
+"ein Platz, wo man in Zelt schläft"
+],
+"x": "Die Kisten stehen im ⟦Lager⟧."
+},
+{
+"w": "Strand",
+"m": [
+"der Platz mit Sand direkt am Meer"
+],
+"x": "Wir liegen den ganzen Tag am ⟦Strand⟧."
+},
+{
+"w": "kehren",
+"m": [
+"den Boden mit einem Besen sauber machen"
+],
+"x": "Sie ⟦kehrt⟧ jeden Samstag den Hof."
+},
+{
+"w": "Song",
+"m": [
+"ein Lied, das man im Radio hört"
+],
+"x": "Dieser ⟦Song⟧ läuft jeden Tag im Radio."
+},
+{
+"w": "teuer",
+"m": [
+"kostet viel Geld"
+],
+"x": "Das Hotel ist mir zu ⟦teuer⟧."
+},
+{
+"w": "Vogel",
+"m": [
+"ein Tier mit Federn, das meistens fliegen kann"
+],
+"x": "Ein ⟦Vogel⟧ singt vor meinem Fenster."
+},
+{
+"w": "Fisch",
+"m": [
+"ein Tier, das im Wasser lebt",
+"das Fleisch von diesem Tier zum Essen"
+],
+"x": "Zum Mittagessen gibt es ⟦Fisch⟧ mit Reis."
+},
+{
+"w": "proben",
+"m": [
+"etwas üben, bevor man es zeigt"
+],
+"x": "Die Band ⟦probt⟧ für das Konzert."
+},
+{
+"w": "blauen",
+"skip": true
+},
+{
+"w": "entlassen",
+"m": [
+"jemandem sagen, dass er die Arbeit nicht mehr hat",
+"jemanden gehen lassen"
+],
+"x": "Die Firma muss zehn Leute ⟦entlassen⟧."
+},
+{
+"w": "Fähigkeit",
+"m": [
+"etwas, das jemand gut kann"
+],
+"x": "Sie hat die ⟦Fähigkeit⟧, schnell zu lernen."
+},
+{
+"w": "Fass",
+"m": [
+"ein großer Behälter für Wein oder Bier"
+],
+"x": "Der Wein liegt in einem ⟦Fass⟧ aus Holz."
+},
+{
+"w": "Kuchen",
+"m": [
+"etwas Süßes zum Essen, das man im Ofen macht"
+],
+"x": "Zum Geburtstag backe ich einen ⟦Kuchen⟧."
+},
+{
+"w": "Anzug",
+"skip": true
+},
+{
+"w": "Wunsch",
+"m": [
+"das, was man gern haben oder tun will"
+],
+"x": "Mein größter ⟦Wunsch⟧ ist eine Reise nach Japan."
+},
+{
+"w": "Gast",
+"m": [
+"jemand, der zu Besuch ist oder im Hotel oder Restaurant ist"
+],
+"x": "Heute Abend haben wir drei ⟦Gäste⟧."
+},
+{
+"w": "Wesen",
+"m": [
+"ein Lebewesen",
+"die Art, wie ein Mensch ist"
+],
+"x": "Sie hat ein freundliches ⟦Wesen⟧."
+},
+{
+"w": "versagen",
+"m": [
+"nicht funktionieren, wie es sollte"
+],
+"x": "Plötzlich ⟦versagen⟧ die Bremsen."
+},
+{
+"w": "Koffer",
+"m": [
+"eine große Tasche für Kleidung auf Reisen"
+],
+"x": "Mein ⟦Koffer⟧ ist für die Reise zu schwer."
+},
+{
+"w": "besiegen",
+"m": [
+"im Kampf oder Spiel gewinnen"
+],
+"x": "Unsere Mannschaft hat den Gegner ⟦besiegt⟧."
+},
+{
+"w": "Mond",
+"m": [
+"das große Licht am Himmel in der Nacht"
+],
+"x": "Heute Nacht ist der ⟦Mond⟧ sehr hell."
+},
+{
+"w": "tauchen",
+"m": [
+"unter Wasser gehen"
+],
+"x": "Wir ⟦tauchen⟧ im Urlaub im Meer."
+},
+{
+"w": "anhalten",
+"m": [
+"stehen bleiben oder etwas stoppen"
+],
+"x": "Der Bus ⟦hält⟧ an der nächsten Ecke ⟦an⟧."
+},
+{
+"w": "Zweiter",
+"m": [
+"die Person, die nach dem Ersten kommt"
+],
+"x": "Er wurde beim Rennen ⟦Zweiter⟧."
+},
+{
+"w": "Radio",
+"m": [
+"ein Gerät, mit dem man Musik und Nachrichten hört"
+],
+"x": "Im Auto höre ich gern ⟦Radio⟧."
+},
+{
+"w": "unbedingt",
+"m": [
+"auf jeden Fall; ohne Ausnahme"
+],
+"x": "Du musst den Film ⟦unbedingt⟧ sehen."
+},
+{
+"w": "wecken",
+"m": [
+"jemanden aus dem Schlaf holen"
+],
+"x": "Bitte ⟦weck⟧ mich morgen um sechs Uhr."
+},
+{
+"w": "Stuhl",
+"m": [
+"ein Möbel zum Sitzen für eine Person"
+],
+"x": "Bring bitte noch einen ⟦Stuhl⟧ an den Tisch."
+},
+{
+"w": "Mitglied",
+"m": [
+"jemand, der zu einer Gruppe gehört"
+],
+"x": "Sie ist ⟦Mitglied⟧ in einem Sportverein."
+},
+{
+"w": "Amerikaner",
+"m": [
+"ein Mensch aus den USA"
+],
+"x": "Mein Nachbar ist ⟦Amerikaner⟧."
+},
+{
+"w": "Programm",
+"m": [
+"der Plan, was am Abend oder Tag passiert",
+"ein Teil auf dem Computer, den man öffnet"
+],
+"x": "Das ⟦Programm⟧ für den Abend ist sehr schön."
+},
+{
+"w": "warm",
+"m": [
+"nicht kalt, aber auch nicht heiß"
+],
+"x": "Im Sommer ist es hier sehr ⟦warm⟧."
+},
+{
+"w": "Fick",
+"skip": true
+},
+{
+"w": "Toilette",
+"m": [
+"ein Raum, wo man zum Klo geht"
+],
+"x": "Entschuldigung, wo ist die ⟦Toilette⟧?"
+},
+{
+"w": "Dunkles",
+"skip": true
+},
+{
+"w": "Scherz",
+"m": [
+"etwas, das man nicht ernst meint, um zu lachen"
+],
+"x": "Das war nur ein ⟦Scherz⟧!"
+},
+{
+"w": "Karriere",
+"m": [
+"wenn jemand im Beruf immer weiter nach oben kommt"
+],
+"x": "Sie macht in der Bank schnell ⟦Karriere⟧."
+},
+{
+"w": "Wichser",
+"skip": true
+},
+{
+"w": "stürzen",
+"m": [
+"plötzlich nach unten fallen"
+],
+"x": "Er ⟦stürzt⟧ von der Leiter."
+},
+{
+"w": "Glas",
+"m": [
+"das, woraus Fenster sind",
+"ein Ding zum Trinken"
+],
+"x": "Ich trinke ein ⟦Glas⟧ Wasser."
+},
+{
+"w": "Amerikanisch",
+"skip": true
+},
+{
+"w": "womit",
+"m": [
+"mit welcher Sache"
+],
+"x": "⟦Womit⟧ schneidest du das Brot?"
+},
+{
+"w": "My",
+"skip": true
+},
+{
+"w": "listen",
+"skip": true
+},
+{
+"w": "nachher",
+"m": [
+"später, nach etwas anderem"
+],
+"x": "Ich rufe dich ⟦nachher⟧ an."
+},
+{
+"w": "Zelle",
+"m": [
+"ein kleiner Raum, zum Beispiel im Gefängnis",
+"der kleinste Teil von jedem Lebewesen"
+],
+"x": "Der Mann sitzt in einer ⟦Zelle⟧."
+},
+{
+"w": "abschließen",
+"m": [
+"mit dem Schlüssel die Tür zu machen",
+"etwas zu Ende bringen"
+],
+"x": "Vergiss nicht, die Tür ⟦abzuschließen⟧."
+},
+{
+"w": "Zigarette",
+"m": [
+"etwas, das man mit Feuer an macht und raucht"
+],
+"x": "Er raucht jeden Tag eine ⟦Zigarette⟧ nach dem Essen."
+},
+{
+"w": "Reiche",
+"skip": true
+},
+{
+"w": "Rache",
+"m": [
+"wenn man jemandem auch etwas Schlechtes tut, weil er einem wehgetan hat"
+],
+"x": "Er will ⟦Rache⟧ für den Streit."
+},
+{
+"w": "schämen",
+"m": [
+"sich schlecht fühlen, weil man etwas Dummes getan hat"
+],
+"x": "Ich ⟦schäme⟧ mich für meinen Fehler."
+},
+{
+"w": "vermessen",
+"m": [
+"genau messen, wie groß oder wie lang etwas ist"
+],
+"x": "Der Mann ⟦vermisst⟧ das Grundstück."
+},
+{
+"w": "bewahren",
+"m": [
+"etwas behalten und nicht verlieren"
+],
+"x": "Bitte ⟦bewahre⟧ in jeder Lage die Ruhe."
+},
+{
+"w": "auftauchen",
+"m": [
+"nach oben ins Freie kommen",
+"plötzlich zu sehen sein"
+],
+"x": "Plötzlich ⟦taucht⟧ er auf der Party ⟦auf⟧."
+},
+{
+"w": "woran",
+"m": [
+"an welcher Sache"
+],
+"x": "⟦Woran⟧ denkst du gerade?"
+},
+{
+"w": "telefonieren",
+"m": [
+"mit dem Telefon mit jemandem sprechen"
+],
+"x": "Ich ⟦telefoniere⟧ jeden Abend mit meiner Mutter."
+},
+{
+"w": "durcheinander",
+"m": [
+"ohne Ordnung",
+"verwirrt, nicht klar im Kopf"
+],
+"x": "In meinem Zimmer ist alles ⟦durcheinander⟧."
+},
+{
+"w": "aufwachen",
+"m": [
+"nicht mehr schlafen"
+],
+"x": "Ich ⟦wache⟧ jeden Morgen um sieben Uhr ⟦auf⟧."
+},
+{
+"w": "Me",
+"skip": true
+},
+{
+"w": "Großmutter",
+"m": [
+"die Mutter von Vater oder Mutter"
+],
+"x": "Meine ⟦Großmutter⟧ backt sehr gute Kuchen."
+},
+{
+"w": "Mister",
+"skip": true
+},
+{
+"w": "Detail",
+"m": [
+"ein kleiner Teil einer Sache"
+],
+"x": "Er erzählt die Geschichte mit vielen ⟦Details⟧."
+},
+{
+"w": "Opa",
+"m": [
+"der Vater von Vater oder Mutter"
+],
+"x": "Mein ⟦Opa⟧ erzählt gern Geschichten."
+},
+{
+"w": "wild",
+"m": [
+"nicht bei Menschen, sondern frei in der Natur",
+"laut und ohne Kontrolle"
+],
+"x": "Im Wald leben ⟦wilde⟧ Tiere."
+},
+{
+"w": "dadurch",
+"m": [
+"wegen dieser Sache",
+"durch diesen Ort"
+],
+"x": "Ich habe viel geübt und spreche ⟦dadurch⟧ besser."
+},
+{
+"w": "üben",
+"m": [
+"etwas oft machen, um es besser zu können"
+],
+"x": "Ich ⟦übe⟧ jeden Tag Klavier."
+},
+{
+"w": "Signal",
+"m": [
+"ein Zeichen, das etwas bedeutet"
+],
+"x": "Das rote Licht ist ein ⟦Signal⟧ zum Anhalten."
+},
+{
+"w": "stoßen",
+"m": [
+"mit Kraft gegen etwas gehen",
+"mit Kraft wegdrücken"
+],
+"x": "Ich ⟦stoße⟧ mit dem Fuß an den Tisch."
+},
+{
+"w": "Untersuchung",
+"m": [
+"wenn man etwas ganz genau ansieht"
+],
+"x": "Morgen habe ich eine ⟦Untersuchung⟧ beim Arzt."
+},
+{
+"w": "empfinden",
+"m": [
+"etwas fühlen"
+],
+"x": "Ich ⟦empfinde⟧ große Freude."
+},
+{
+"w": "Zweifel",
+"m": [
+"wenn man nicht sicher ist, ob etwas stimmt"
+],
+"x": "Ich habe ⟦Zweifel⟧, ob das stimmt."
+},
+{
+"w": "freundlich",
+"m": [
+"nett zu anderen Menschen"
+],
+"x": "Die Nachbarin ist immer sehr ⟦freundlich⟧."
+},
+{
+"w": "Projekt",
+"m": [
+"ein Vorhaben mit einem Ziel, das man plant"
+],
+"x": "Wir arbeiten an einem neuen ⟦Projekt⟧."
+},
+{
+"w": "brauen",
+"m": [
+"Bier machen"
+],
+"x": "In dieser Firma ⟦brauen⟧ sie Bier."
+},
+{
+"w": "Hinweis",
+"m": [
+"eine Information, die bei etwas hilft"
+],
+"x": "Danke für den ⟦Hinweis⟧!"
+},
+{
+"w": "verurteilen",
+"m": [
+"vor Gericht sagen, dass jemand eine Strafe bekommt",
+"etwas sehr schlecht finden"
+],
+"x": "Der Richter ⟦verurteilt⟧ den Dieb."
+},
+{
+"w": "verschwenden",
+"m": [
+"etwas unnötig viel benutzen und wegwerfen"
+],
+"x": "Wir wollen kein Wasser ⟦verschwenden⟧."
+},
+{
+"w": "fluchen",
+"m": [
+"böse Wörter sagen, weil man sauer ist"
+],
+"x": "Er ⟦flucht⟧ laut, weil der Bus weg ist."
+},
+{
+"w": "sowieso",
+"m": [
+"in jedem Fall, auch ohne Grund"
+],
+"x": "Ich komme ⟦sowieso⟧ vorbei."
+},
+{
+"w": "senden",
+"m": [
+"etwas schicken",
+"im Radio oder Fernsehen zeigen"
+],
+"x": "Ich ⟦sende⟧ dir die Fotos heute Abend."
+},
+{
+"w": "Boot",
+"m": [
+"ein kleines Fahrzeug für das Wasser"
+],
+"x": "Wir fahren mit dem ⟦Boot⟧ über den See."
+},
+{
+"w": "räumen",
+"m": [
+"etwas wegnehmen, damit Platz frei wird"
+],
+"x": "Bitte ⟦räum⟧ dein Zimmer auf."
+},
+{
+"w": "grüßen",
+"m": [
+"jemandem Hallo sagen",
+"jemandem schöne Worte schicken"
+],
+"x": "Bitte ⟦grüß⟧ deine Eltern von mir."
+},
+{
+"w": "Cousin",
+"m": [
+"der Sohn von Onkel oder Tante"
+],
+"x": "Mein ⟦Cousin⟧ wohnt in Hamburg."
+},
+{
+"w": "bravo",
+"m": [
+"ruft man, wenn jemand etwas sehr gut gemacht hat"
+],
+"x": "Alle klatschen und rufen ⟦Bravo⟧."
+},
+{
+"w": "Dieb",
+"m": [
+"jemand, der etwas nimmt, das ihm nicht gehört"
+],
+"x": "Die Polizei hat den ⟦Dieb⟧ gefasst."
+},
+{
+"w": "bar",
+"m": [
+"mit Geld aus der Hand, nicht mit Karte"
+],
+"x": "Ich zahle lieber ⟦bar⟧ als mit Karte."
+},
+{
+"w": "Feind",
+"m": [
+"jemand, den man nicht mag und der gegen einen ist"
+],
+"x": "Er hat im Büro keinen ⟦Feind⟧."
+},
+{
+"w": "frisch",
+"m": [
+"gerade neu gemacht oder gekauft",
+"angenehm kühl"
+],
+"x": "Das Brot ist noch ganz ⟦frisch⟧."
+},
+{
+"w": "schalten",
+"m": [
+"mit einem Knopf etwas an- oder ausmachen",
+"beim Auto den Gang wechseln"
+],
+"x": "Beim Anfahren muss man in den ersten Gang ⟦schalten⟧."
+},
+{
+"w": "hereinkommen",
+"m": [
+"von draußen nach drinnen gehen"
+],
+"x": "Bitte ⟦komm⟧ doch ⟦herein⟧!"
+},
+{
+"w": "Schutz",
+"m": [
+"etwas, das vor Gefahr oder Schaden bewahrt"
+],
+"x": "Bei Regen suchen wir ⟦Schutz⟧ unter dem Dach."
+},
+{
+"w": "bestrafen",
+"m": [
+"jemandem etwas Schlechtes geben, weil er etwas Falsches getan hat"
+],
+"x": "Die Eltern ⟦bestrafen⟧ das Kind nicht."
+},
+{
+"w": "Doc",
+"skip": true
+},
+{
+"w": "Gericht",
+"m": [
+"ein Ort, wo man über Streit und Gesetz entscheidet",
+"ein Essen, das man kocht"
+],
+"x": "Der Fall wird vor ⟦Gericht⟧ besprochen."
+},
+{
+"w": "verursachen",
+"m": [
+"der Grund für etwas sein"
+],
+"x": "Der Regen ⟦verursacht⟧ viel Verkehr."
+},
+{
+"w": "Vorstellung",
+"m": [
+"ein Bild im Kopf",
+"eine Show im Theater oder Kino"
+],
+"x": "Die ⟦Vorstellung⟧ beginnt um acht Uhr."
+},
+{
+"w": "aufmachen",
+"m": [
+"etwas öffnen"
+],
+"x": "Kannst du bitte das Fenster ⟦aufmachen⟧?"
+},
+{
+"w": "prüfen",
+"m": [
+"genau ansehen, ob etwas stimmt",
+"jemandem Fragen stellen, um sein Wissen zu testen"
+],
+"x": "Der Lehrer ⟦prüft⟧ die Hausaufgaben."
+},
+{
+"w": "lehren",
+"m": [
+"jemandem etwas beibringen"
+],
+"x": "Sie ⟦lehrt⟧ Kinder das Lesen."
+},
+{
+"w": "anstellen",
+"m": [
+"jemandem eine Arbeit geben",
+"ein Gerät an machen"
+],
+"x": "Die Firma ⟦stellt⟧ zwei neue Leute ⟦an⟧."
+},
+{
+"w": "unternehmen",
+"m": [
+"etwas Schönes zusammen tun",
+"etwas tun, damit sich etwas ändert"
+],
+"x": "Am Wochenende ⟦unternehmen⟧ wir etwas mit Freunden."
+},
+{
+"w": "neulich",
+"m": [
+"vor kurzer Zeit"
+],
+"x": "Ich habe ihn ⟦neulich⟧ im Park gesehen."
+},
+{
+"w": "Kunst",
+"m": [
+"Bilder und Musik, die schön oder besonders sind",
+"etwas, das man sehr gut kann"
+],
+"x": "Sie liebt moderne ⟦Kunst⟧."
+},
+{
+"w": "mühen",
+"m": [
+"sich viel Mühe geben"
+],
+"x": "Er ⟦müht⟧ sich, pünktlich zu sein."
+},
+{
+"w": "Inneres",
+"m": [
+"der Teil, der innen liegt",
+"die Gefühle eines Menschen"
+],
+"x": "Das ⟦Innere⟧ des Hauses ist sehr schön."
+},
+{
+"w": "übersetzen",
+"m": [
+"etwas in eine andere Sprache bringen"
+],
+"x": "Kannst du mir diesen Satz ⟦übersetzen⟧?"
+},
+{
+"w": "blind",
+"m": [
+"so, dass man nichts sehen kann"
+],
+"x": "Der alte Mann ist ⟦blind⟧."
+},
+{
+"w": "peinlich",
+"m": [
+"so, dass man am liebsten weg wäre"
+],
+"x": "Der Fehler war mir sehr ⟦peinlich⟧."
+},
+{
+"w": "Kapitän",
+"m": [
+"der Chef auf einem Schiff"
+],
+"x": "Der ⟦Kapitän⟧ steht auf der Brücke."
+},
+{
+"w": "woanders",
+"m": [
+"an einem anderen Ort"
+],
+"x": "Hier ist es voll, lass uns ⟦woanders⟧ essen."
+},
+{
+"w": "Kuss",
+"m": [
+"wenn man jemandem die Lippen auf die Haut oder die Lippen drückt"
+],
+"x": "Sie gibt ihm einen ⟦Kuss⟧ auf die Wange."
+},
+{
+"w": "Sieg",
+"m": [
+"wenn man ein Spiel oder einen Kampf gewinnt"
+],
+"x": "Der ⟦Sieg⟧ macht die Mannschaft sehr froh."
+},
+{
+"w": "Kraft",
+"m": [
+"wie stark jemand ist; Energie"
+],
+"x": "Ich habe nicht mehr genug ⟦Kraft⟧."
+},
+{
+"w": "leihen",
+"m": [
+"jemandem etwas für kurze Zeit geben",
+"etwas für kurze Zeit von jemandem nehmen"
+],
+"x": "Kannst du mir bitte dein Fahrrad ⟦leihen⟧?"
+},
+{
+"w": "schick",
+"m": [
+"schön und gut angezogen"
+],
+"x": "Du siehst in dem Kleid sehr ⟦schick⟧ aus."
+},
+{
+"w": "beschließen",
+"m": [
+"sich entscheiden, etwas zu tun"
+],
+"x": "Wir ⟦beschließen⟧, im Sommer nach Spanien zu fahren."
+},
+{
+"w": "selbstverständlich",
+"m": [
+"klar; so, dass man nicht fragen muss"
+],
+"x": "Das ist doch ⟦selbstverständlich⟧!"
+},
+{
+"w": "Gewehr",
+"m": [
+"eine lange Waffe, mit der man schießt"
+],
+"x": "Der Jäger trägt ein ⟦Gewehr⟧."
+},
+{
+"w": "sparen",
+"m": [
+"Geld nicht ausgeben und für später behalten",
+"weniger benutzen"
+],
+"x": "Wir ⟦sparen⟧ für ein neues Auto."
+},
+{
+"w": "Milch",
+"m": [
+"das weiße Zeug von der Kuh zum Trinken"
+],
+"x": "Ich trinke meinen Kaffee mit ⟦Milch⟧."
+},
+{
+"w": "raten",
+"m": [
+"versuchen, die Antwort zu finden, ohne es sicher zu wissen"
+],
+"x": "Ich weiß es nicht, ich muss ⟦raten⟧."
+},
+{
+"w": "Geräusch",
+"m": [
+"etwas, das man hört, aber kein Wort und keine Musik"
+],
+"x": "Ich höre ein komisches ⟦Geräusch⟧ im Keller."
+},
+{
+"w": "zielen",
+"m": [
+"etwas genau auf einen Punkt richten"
+],
+"x": "Er ⟦zielt⟧ mit dem Ball auf das Tor."
+},
+{
+"w": "Schwarzer",
+"skip": true
+},
+{
+"w": "opfern",
+"m": [
+"etwas Wichtiges für ein Ziel aufgeben"
+],
+"x": "Sie ⟦opfert⟧ ihre Freizeit für die Familie."
+},
+{
+"w": "Stock",
+"m": [
+"ein langes Stück Holz",
+"eine Etage im Haus"
+],
+"x": "Der alte Mann geht mit einem ⟦Stock⟧."
+},
+{
+"w": "Kuh",
+"m": [
+"ein großes Tier auf dem Land, das Milch gibt"
+],
+"x": "Die ⟦Kuh⟧ steht auf der Wiese."
+},
+{
+"w": "Motor",
+"m": [
+"die Maschine, die ein Auto fahren lässt"
+],
+"x": "Der ⟦Motor⟧ vom Auto ist sehr laut."
+},
+{
+"w": "Botschaft",
+"m": [
+"eine Nachricht für jemanden",
+"das Haus eines Landes in einem anderen Land"
+],
+"x": "Ich gehe zur ⟦Botschaft⟧, um ein Visum zu holen."
+},
+{
+"w": "hinein",
+"m": [
+"von draußen nach drinnen"
+],
+"x": "Die Tür ist offen, geh ruhig ⟦hinein⟧."
+},
+{
+"w": "identifizieren",
+"m": [
+"genau sagen oder erkennen, wer oder was etwas ist"
+],
+"x": "Die Polizei kann den Mann schnell ⟦identifizieren⟧."
+},
+{
+"w": "Loch",
+"m": [
+"eine Stelle, an der etwas fehlt oder offen ist"
+],
+"x": "In meiner Hose ist ein ⟦Loch⟧."
+},
+{
+"w": "Flughafen",
+"m": [
+"ein Ort, wo Flugzeuge starten und landen"
+],
+"x": "Wir fahren mit dem Taxi zum ⟦Flughafen⟧."
+},
+{
+"w": "einsam",
+"m": [
+"allein und ohne Freunde",
+"weit weg von anderen Menschen"
+],
+"x": "Er fühlt sich in der großen Stadt ⟦einsam⟧."
+},
+{
+"w": "bereuen",
+"m": [
+"traurig sein, weil man etwas Falsches getan hat"
+],
+"x": "Ich ⟦bereue⟧, dass ich so laut war."
+},
+{
+"w": "zurückkehren",
+"m": [
+"wieder an den Ort gehen, von dem man gekommen ist"
+],
+"x": "Er ⟦kehrt⟧ im Mai nach Hause ⟦zurück⟧."
+},
+{
+"w": "dieselelektrisch",
+"skip": true
+},
+{
+"w": "Dessau-Roßlau",
+"skip": true
+},
+{
+"w": "vergehen",
+"m": [
+"zu Ende gehen, weil Zeit läuft"
+],
+"x": "Die Zeit ⟦vergeht⟧ im Urlaub sehr schnell."
+},
+{
+"w": "Ratte",
+"m": [
+"ein kleines Tier mit langem Schwanz, ähnlich wie eine Maus"
+],
+"x": "Im Keller haben wir eine ⟦Ratte⟧ gesehen."
+},
+{
+"w": "unterstützen",
+"m": [
+"jemandem bei etwas helfen"
+],
+"x": "Meine Eltern ⟦unterstützen⟧ mich beim Studium."
+},
+{
+"w": "Aufmerksamkeit",
+"m": [
+"wenn man genau zuhört und hinsieht",
+"ein kleines Geschenk"
+],
+"x": "Die Kinder hören mit großer ⟦Aufmerksamkeit⟧ zu."
+},
+{
+"w": "King",
+"skip": true
+},
+{
+"w": "zuhören",
+"m": [
+"aufmerksam hören, was jemand sagt"
+],
+"x": "Bitte ⟦hör⟧ mir kurz ⟦zu⟧."
+},
+{
+"w": "Form",
+"m": [
+"wie etwas von außen aussieht",
+"eine Art und Weise"
+],
+"x": "Der Tisch hat eine runde ⟦Form⟧."
+},
+{
+"w": "Wunde",
+"m": [
+"eine offene Stelle auf der Haut nach einer Verletzung"
+],
+"x": "Er legt ein Pflaster auf die ⟦Wunde⟧."
+},
+{
+"w": "albern",
+"skip": true
+},
+{
+"w": "umsonst",
+"m": [
+"ohne zu bezahlen",
+"ohne Erfolg"
+],
+"x": "Der Eintritt ins Museum ist heute ⟦umsonst⟧."
+},
+{
+"w": "anfassen",
+"m": [
+"mit der Hand berühren"
+],
+"x": "Bitte nichts im Museum ⟦anfassen⟧!"
+},
+{
+"w": "Übersetzung",
+"m": [
+"ein Text in einer anderen Sprache"
+],
+"x": "Die ⟦Übersetzung⟧ von dem Buch ist sehr gut."
+},
+{
+"w": "nirgendwo",
+"m": [
+"an keinem Ort"
+],
+"x": "Ich finde meinen Schlüssel ⟦nirgendwo⟧."
+},
+{
+"w": "Vorschlag",
+"m": [
+"ein Rat, was man tun könnte"
+],
+"x": "Ich habe einen ⟦Vorschlag⟧ für das Wochenende."
+},
+{
+"w": "namens",
+"m": [
+"so heißt jemand oder etwas"
+],
+"x": "Ich habe einen Freund ⟦namens⟧ Paul."
+},
+{
+"w": "Schatten",
+"m": [
+"ein Platz, wo keine Sonne ist"
+],
+"x": "Im Sommer sitzen wir gern im ⟦Schatten⟧."
+},
+{
+"w": "einstellen",
+"m": [
+"jemandem eine Arbeit geben",
+"ein Gerät richtig machen"
+],
+"x": "Die Firma ⟦stellt⟧ neue Mitarbeiter ⟦ein⟧."
+},
+{
+"w": "posen",
+"skip": true
+},
+{
+"w": "Mark",
+"skip": true
+},
+{
+"w": "Ergebnis",
+"m": [
+"das, was am Ende da ist"
+],
+"x": "Das ⟦Ergebnis⟧ der Prüfung ist sehr gut."
+},
+{
+"w": "Gnade",
+"m": [
+"wenn man jemandem eine Strafe nicht gibt"
+],
+"x": "Der Richter hatte ⟦Gnade⟧ mit dem jungen Mann."
+},
+{
+"w": "Schande",
+"m": [
+"etwas, wofür man sich sehr schämen muss"
+],
+"x": "Es ist eine ⟦Schande⟧, dass er so spricht."
+},
+{
+"w": "satt",
+"m": [
+"nicht mehr hungrig"
+],
+"x": "Danke, ich bin schon ⟦satt⟧."
+},
+{
+"w": "wundervoll",
+"m": [
+"sehr schön und toll"
+],
+"x": "Wir hatten einen ⟦wundervollen⟧ Urlaub."
+},
+{
+"w": "Blödsinn",
+"m": [
+"etwas Dummes, das keinen Sinn hat"
+],
+"x": "Das ist doch ⟦Blödsinn⟧!"
+},
+{
+"w": "zeugen",
+"m": [
+"zeigen, dass etwas da ist",
+"vor Gericht sagen, was man gesehen hat"
+],
+"x": "Seine Arbeit ⟦zeugt⟧ von viel Mühe."
+},
+{
+"w": "versichern",
+"m": [
+"einen Vertrag machen, damit eine Firma bei Schaden zahlt",
+"fest sagen, dass etwas stimmt"
+],
+"x": "Ich habe mein Auto gut ⟦versichert⟧."
+},
+{
+"w": "komplizieren",
+"skip": true
+},
+{
+"w": "scharf",
+"m": [
+"so, dass es gut schneidet",
+"so, dass es im Mund brennt"
+],
+"x": "Das Messer ist sehr ⟦scharf⟧."
+},
+{
+"w": "verwirren",
+"m": [
+"jemanden unsicher machen, sodass er nicht mehr klar denkt"
+],
+"x": "Die vielen Zahlen ⟦verwirren⟧ mich."
+},
+{
+"w": "desto",
+"m": [
+"zeigt: wenn das eine mehr wird, wird das andere auch mehr"
+],
+"x": "Je früher wir gehen, ⟦desto⟧ besser ist es."
+},
+{
+"w": "gasen",
+"skip": true
+},
+{
+"w": "einsperren",
+"m": [
+"jemanden in einen Raum bringen und die Tür schließen"
+],
+"x": "Man darf einen Hund nicht den ganzen Tag ⟦einsperren⟧."
+}
+]

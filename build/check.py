@@ -16,6 +16,18 @@ for i, line in enumerate(open(os.path.join(HERE, 'de_50k.txt'), encoding='utf-8'
     allowed.add(line.rsplit(' ', 1)[0].lower())
 allowed |= {'jemand', 'jemandem', 'jemanden', 'etwas', 'z', 'b', 'usw'}
 
+def known(t):
+    # accept inflected forms of common words: bunter -> bunt, dünnes -> dünn, aufpasst -> aufpassen
+    t = t.lower()
+    if t in allowed:
+        return True
+    for end in ('es', 'er', 'em', 'en', 'e', 'n', 's', 'st', 't'):
+        if t.endswith(end) and len(t) - len(end) >= 3:
+            base = t[:-len(end)]
+            if base in allowed or base + 'en' in allowed or base + 'n' in allowed or base + 'e' in allowed:
+                return True
+    return False
+
 flags, total = [], 0
 for path in sys.argv[1:]:
     for it in json.load(open(path)):
@@ -29,7 +41,7 @@ for path in sys.argv[1:]:
             toks = re.findall(r"[A-Za-zÄÖÜäöüß]+", m)
             if len(toks) > 14:
                 flags.append((path, w, 'meaning too long', m))
-            hard = [t for t in toks if t.lower() not in allowed and not fam(t)]
+            hard = [t for t in toks if not known(t) and not fam(t)]
             if hard:
                 flags.append((path, w, 'hard: ' + ', '.join(hard), m))
             if any(fam(t) for t in toks) and len(w) > 3:
