@@ -269,9 +269,9 @@ function renderSearch(q) {
       <path d="M18 66l1.4 3.6 3.6 1.4-3.6 1.4L18 76l-1.4-3.6-3.6-1.4 3.6-1.4z" fill="var(--accent-2)"/>
       <circle cx="20" cy="22" r="2.6" fill="#E58AA8"/>
     </svg>
-      <h1>Jeden Tag ein Wort mehr. <em>Dein Schatz wächst.</em></h1>
-      <p>Ein Wort suchen, verstehen, üben. So schnell oder langsam, wie du willst.</p>
-      ${total ? `<a class="treasure" href="#/woerter"><i>${ICON.spark.replace('class="i"', 'class="i" style="width:13px;height:13px;fill:currentColor;stroke:none"')}</i>Dein Schatz: <b>${total} ${total === 1 ? 'Wort' : 'Wörter'}</b></a>` : ''}
+      <h1>Jeden Tag ein neues Wort. <em>Auf Deutsch erklärt.</em></h1>
+      <p>Suchen, verstehen, üben. In deinem Tempo.</p>
+      ${total ? `<a class="treasure" href="#/woerter"><i>${ICON.spark.replace('class="i"', 'class="i" style="width:13px;height:13px;fill:currentColor;stroke:none"')}</i>Meine Wörter: <b>${total}</b></a>` : ''}
     </header>
     ${searchBar('')}
     <div class="lbl">Wort des Tages</div>
@@ -419,8 +419,8 @@ function bindResult(r) {
     if (t.dataset.save !== undefined) {
       const e = r.entries[+t.dataset.save];
       const key = wordKey(r.title, e);
-      if (words[key]) { delete words[key]; toast('Aus deinem Schatz entfernt'); }
-      else { words[key] = { key, title: r.title, snap: snapshot(r.title, e), added: Date.now(), srs: null, hint: HINTS[r.title] || '' }; toast('In deinem Schatz gemerkt'); }
+      if (words[key]) { delete words[key]; toast('Nicht mehr gemerkt'); }
+      else { words[key] = { key, title: r.title, snap: snapshot(r.title, e), added: Date.now(), srs: null, hint: HINTS[r.title] || '' }; toast('Gemerkt'); }
       saveWords();
       const on = !!words[key];
       t.classList.toggle('on', on);
@@ -483,7 +483,7 @@ function renderWords(filter) {
   });
   flush();
   view.innerHTML = `
-    <div class="toolbar"><div><h1 class="page-title">Mein <em>Schatz</em></h1>${all.length ? `<p class="page-sub">${all.length} ${all.length === 1 ? 'Wort' : 'Wörter'} gesammelt</p>` : ''}</div>
+    <div class="toolbar"><div><h1 class="page-title">Meine <em>Wörter</em></h1>${all.length ? `<p class="page-sub">${all.length} ${all.length === 1 ? 'Wort' : 'Wörter'} gesammelt</p>` : ''}</div>
       <button class="round" id="menu" aria-label="Kopie und Infos">${ICON.more}</button></div>
     ${all.length ? `<div class="seg" role="tablist">${Object.keys(names).filter(k => k === 'alle' || groups[k].length).map(k => `<button role="tab" aria-selected="${k === filter}" class="${k === filter ? 'on' : ''}" data-f="${k}">${names[k]}<span>${groups[k].length}</span></button>`).join('')}</div>` : ''}
     ${!all.length ? `<div class="empty"><h2>Noch leer</h2><p>Such ein Wort und tippe auf „Merken“. Oder speichere ein ganzes Thema.</p><a class="btn primary" href="#/themen">Themen ansehen</a></div>`
@@ -617,7 +617,7 @@ function renderPractice() {
   view.className = '';
   const c = practiceCounts();
   const st = streak(), td = stats.days[today()] || 0;
-  view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>ohne Druck.</em></h1>
+  view.innerHTML = `<div class="head"><h1 class="page-title">Üben, <em>jeden Tag ein bisschen.</em></h1>
     <p class="page-sub">${td ? `Heute ${td} ${td === 1 ? 'Aufgabe' : 'Aufgaben'} geübt` : 'Heute noch nicht geübt'}${st > 1 ? ` · ${st} Tage in Folge` : ''}</p></div>
     <button class="card mode" data-go="karten" ${c.total ? '' : 'disabled'}>
       <span class="ico cards">${ICON.cards}</span><div><h2>Karteikarten</h2><p>${c.total ? `${c.due} fällig · ${c.total} Wörter` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
@@ -626,7 +626,7 @@ function renderPractice() {
       <span class="ico art3"><i style="background:var(--der)"></i><i style="background:var(--die)"></i><i style="background:var(--das)"></i></span>
       <div><h2>der, die oder das?</h2><p>${c.nouns} Nomen · mit Tipps</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="bedeutung" ${c.meaning ? '' : 'disabled'}>
-      <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Was passt? Vier Wörter zur Wahl' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+      <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Was passt? Wähl ein Wort.' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="formen" ${c.forms ? '' : 'disabled'}>
       <span class="ico gap">Pl.</span><div><h2>Formen üben</h2><p>${c.forms ? 'Plural, Vergangenheit, Komparativ' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="luecken" ${c.cloze ? '' : 'disabled'}>
