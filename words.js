@@ -2,6 +2,9 @@
 // works offline. Every gender here is checked against Wiktionary by
 // tools/verify_words.py (run it after any edit).
 // "hint" shows typical B2 usage under the word.
+// Plural-only nouns: always "die", left out of the der/die/das drill.
+window.PLURAL_ONLY = ['die Nebenkosten', 'die Schulden', 'die Daten'];
+
 window.THEMES = [
   { id: 'arbeit', name: 'Arbeit & Beruf', words: [
     'die Bewerbung', 'das Vorstellungsgespräch', 'der Lebenslauf', 'die Voraussetzung', 'die Erfahrung',
