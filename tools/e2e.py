@@ -1,0 +1,41 @@
+# End-to-end walk through the app in headless Chromium at iPhone size.
+import asyncio, sys
+from playwright.async_api import async_playwright
+OUT = sys.argv[1]; BASE = 'http://127.0.0.1:8765/'
+async def main():
+    async with async_playwright() as p:
+        b = await p.chromium.launch()
+        ctx = await b.new_context(viewport={'width': 390, 'height': 844}, device_scale_factor=2, is_mobile=True, has_touch=True, locale='de-DE')
+        pg = await ctx.new_page()
+        errs = []
+        pg.on('console', lambda m: errs.append(m.text) if m.type == 'error' else None)
+        pg.on('pageerror', lambda e: errs.append('PAGEERROR ' + str(e)))
+        async def shot(n, full=False): await pg.screenshot(path=f'{OUT}/{n}.png', full_page=full)
+        await pg.goto(BASE); await pg.wait_for_timeout(800); await shot('01-home')
+        await pg.fill('#q', 'entsch'); await pg.wait_for_timeout(1500); await shot('02-suggest')
+        await pg.goto(BASE + '#/suchen/Entscheidung'); await pg.wait_for_selector('.entry', timeout=15000); await pg.wait_for_timeout(1500)
+        await shot('03-entry', True)
+        await pg.click('[data-save="0"]'); await pg.click('[data-en="0"]'); await pg.wait_for_selector('.en-panel h3', timeout=15000); await shot('04-en', True)
+        for w in ['ging', 'nachhaltig', 'Bank', 'Häuser']:
+            await pg.goto(BASE + '#/suchen/' + w); await pg.wait_for_selector('.entry', timeout=20000); await pg.wait_for_timeout(600)
+            await pg.click('[data-save="0"]')
+        await shot('05-ging-like', True)
+        await pg.goto(BASE + '#/suchen/xqzwvt'); await pg.wait_for_selector('.empty', timeout=15000); await pg.wait_for_timeout(1200); await shot('06-notfound')
+        await pg.goto(BASE + '#/themen'); await pg.wait_for_timeout(300); await shot('07-themes')
+        await pg.goto(BASE + '#/themen/verben-praep'); await pg.wait_for_timeout(300); await shot('08-theme')
+        await pg.goto(BASE + '#/woerter'); await pg.wait_for_timeout(300); await shot('09-words')
+        await pg.goto(BASE + '#/ueben'); await pg.wait_for_timeout(300); await shot('10-practice')
+        await pg.goto(BASE + '#/ueben/karten'); await pg.wait_for_timeout(300); await shot('11-card-front')
+        await pg.click('#flip'); await pg.wait_for_timeout(200); await shot('12-card-back', True)
+        await pg.click('[data-g="2"]'); await pg.wait_for_timeout(200)
+        await pg.goto(BASE + '#/ueben/artikel'); await pg.wait_for_timeout(300); await shot('13-gender')
+        word = await pg.inner_text('.gender-word .big')
+        await pg.click('.gender-btns .n'); await pg.wait_for_timeout(300); await shot('14-gender-answer')
+        await pg.goto(BASE + '#/ueben/luecken'); await pg.wait_for_timeout(300); await shot('15-cloze')
+        await pg.fill('#ans', 'falsch'); await pg.click('#check'); await pg.wait_for_timeout(200); await shot('16-cloze-answer')
+        await pg.goto(BASE + '#/woerter'); await pg.click('#menu'); await pg.wait_for_timeout(300); await shot('17-menu')
+        n = await pg.evaluate("Object.keys(JSON.parse(localStorage.getItem('ws.words'))).length")
+        print('saved words:', n, '| gender word was', word)
+        print('ERRORS:', errs or 'none')
+        await b.close()
+asyncio.run(main())
