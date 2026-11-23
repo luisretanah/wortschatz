@@ -1,39 +1,332 @@
 [
-{"w": "verbringen", "m": ["Zeit an einem Ort oder mit etwas haben"], "x": "Wir ⟦verbringen⟧ den Sommer am Meer."},
-{"w": "Weihnachten", "m": ["ein Fest im Dezember, an dem man sich Geschenke macht"], "x": "Zu ⟦Weihnachten⟧ fahren wir zu meinen Eltern."},
-{"w": "Sommer", "m": ["die warme Zeit im Jahr, nach dem Frühling"], "x": "Im ⟦Sommer⟧ gehen wir oft schwimmen."},
-{"w": "Anzug", "m": ["Hose und Jacke, die zusammenpassen, oft für Männer"], "x": "Für die Hochzeit kauft er einen neuen ⟦Anzug⟧."},
-{"w": "albern", "m": ["wie ein Kind, ein bisschen dumm, aber lustig"], "x": "Hör auf, so ⟦albern⟧ zu sein!"},
-{"w": "erschaffen", "m": ["etwas ganz Neues machen, das es vorher nicht gab"], "x": "Der Künstler hat ein schönes Bild ⟦erschaffen⟧."},
-{"w": "clever", "m": ["klug; man findet schnell eine gute Lösung"], "x": "Das war eine ⟦clevere⟧ Idee!"},
-{"w": "Klamotten", "m": ["Kleidung, die man trägt (locker gesagt)"], "x": "Ich muss noch meine ⟦Klamotten⟧ waschen."},
-{"w": "Norden", "m": ["die Richtung, die auf der Karte oben ist"], "x": "Hamburg liegt im ⟦Norden⟧ von Deutschland."},
-{"w": "Osten", "m": ["die Richtung, aus der morgens die Sonne kommt"], "x": "Die Sonne geht im ⟦Osten⟧ auf."},
-{"w": "Socke", "m": ["etwas Weiches, das man im Schuh an den Füßen trägt"], "x": "Ich finde meine zweite ⟦Socke⟧ nicht."},
-{"w": "Bord", "m": ["an Bord: auf einem Schiff oder in einem Flugzeug"], "x": "Alle Leute sind jetzt an ⟦Bord⟧."},
-{"w": "Deutsche", "m": ["ein Mensch aus Deutschland"], "x": "Viele ⟦Deutsche⟧ fahren im Sommer nach Italien."},
-{"w": "Gefangene", "m": ["ein Mensch, der im Gefängnis ist"], "x": "Der ⟦Gefangene⟧ wartet auf seinen Anwalt."},
-{"w": "Suppe", "m": ["ein warmes, flüssiges Essen, das man mit dem Löffel isst"], "x": "Heute gibt es ⟦Suppe⟧ mit Brot."},
-{"w": "Käse", "m": ["ein Essen aus Milch, oft gelb, zum Beispiel für Brot"], "x": "Ich esse gern Brot mit ⟦Käse⟧."},
-{"w": "Höhe", "m": ["wie hoch etwas ist"], "x": "Der Turm hat eine ⟦Höhe⟧ von hundert Metern."},
-{"w": "Kohle", "m": ["schwarze Steine, die man verbrennt, damit es warm wird", "Geld (locker gesagt)"], "x": "Früher hat man mit ⟦Kohle⟧ geheizt."},
-{"w": "Scheibe", "m": ["ein flaches, dünnes Stück, zum Beispiel vom Brot", "das Glas im Fenster oder im Auto"], "x": "Möchtest du eine ⟦Scheibe⟧ Brot?"},
-{"w": "Felsen", "m": ["ein sehr großer Stein"], "x": "Die Kinder klettern auf den ⟦Felsen⟧."},
-{"w": "Kälte", "m": ["wenn es sehr kalt ist"], "x": "Eine warme Jacke hilft gegen die ⟦Kälte⟧."},
-{"w": "Wüste", "m": ["ein großes, heißes Land mit viel Sand und fast ohne Wasser"], "x": "In der ⟦Wüste⟧ regnet es fast nie."},
-{"w": "Ritter", "m": ["früher: ein Mann mit Pferd und Waffen, der für einen König kämpft"], "x": "Mein Sohn spielt gern ⟦Ritter⟧."},
-{"w": "Münze", "m": ["Geld aus Metall, kein Papier"], "x": "Hast du eine ⟦Münze⟧ für den Automaten?"},
-{"w": "Puppe", "m": ["ein Spielzeug, das wie ein kleiner Mensch aussieht"], "x": "Meine Tochter spielt mit ihrer ⟦Puppe⟧."},
-{"w": "Tipp", "m": ["ein guter Rat, eine kleine Hilfe"], "x": "Danke für den ⟦Tipp⟧!"},
-{"w": "Pause", "m": ["eine kurze Zeit, in der man nicht arbeitet oder lernt"], "x": "Um zwölf machen wir eine ⟦Pause⟧."},
-{"w": "Hälfte", "m": ["einer von zwei gleichen Teilen"], "x": "Ich esse nur die ⟦Hälfte⟧ von der Pizza."},
-{"w": "Liste", "m": ["Dinge, die man untereinander aufschreibt"], "x": "Ich schreibe eine ⟦Liste⟧ für den Einkauf."},
-{"w": "Karte", "m": ["ein Ticket, zum Beispiel für Kino, Bus oder Konzert", "ein Papier mit einem Bild von einem Land oder einer Stadt"], "x": "Hast du schon eine ⟦Karte⟧ für das Konzert?"},
-{"w": "Fenster", "m": ["eine Öffnung mit Glas in der Wand, für Licht und Luft"], "x": "Kannst du bitte das ⟦Fenster⟧ aufmachen?"},
-{"w": "Kehle", "m": ["der vordere Teil vom Hals, innen"], "x": "Ich habe eine ganz trockene ⟦Kehle⟧."},
-{"w": "Asche", "m": ["das Graue, das nach einem Feuer übrig bleibt"], "x": "Nach dem Feuer war nur noch ⟦Asche⟧ da."},
-{"w": "Kur", "m": ["eine Zeit an einem ruhigen Ort, damit man wieder gesund wird"], "x": "Meine Oma macht eine ⟦Kur⟧ an der Ostsee."},
-{"w": "Mittel", "m": ["etwas, mit dem man ein Ziel erreicht", "eine Medizin"], "x": "Hast du ein ⟦Mittel⟧ gegen Kopfschmerzen?"},
-{"w": "Champagner", "m": ["ein teurer Wein aus Frankreich, mit kleinen Luftblasen"], "x": "Zum Geburtstag trinken wir ⟦Champagner⟧."},
-{"w": "Ball", "m": ["ein runder Gegenstand zum Spielen", "ein großes Fest mit Tanz"], "x": "Die Kinder spielen mit dem ⟦Ball⟧."}
+{
+"w": "verbringen",
+"m": [
+"Zeit an einem Ort oder mit etwas haben"
+],
+"x": "Wir ⟦verbringen⟧ den Sommer am Meer."
+},
+{
+"w": "Weihnachten",
+"m": [
+"ein Fest im Dezember, an dem man sich Geschenke macht"
+],
+"x": "Zu ⟦Weihnachten⟧ fahren wir zu meinen Eltern."
+},
+{
+"w": "Sommer",
+"m": [
+"die warme Zeit im Jahr, nach dem Frühling"
+],
+"x": "Im ⟦Sommer⟧ gehen wir oft schwimmen."
+},
+{
+"w": "Anzug",
+"m": [
+"Hose und Jacke, die zusammenpassen, oft für Männer"
+],
+"x": "Für die Hochzeit kauft er einen neuen ⟦Anzug⟧."
+},
+{
+"w": "albern",
+"m": [
+"wie ein Kind, ein bisschen dumm, aber lustig"
+],
+"x": "Hör auf, so ⟦albern⟧ zu sein!"
+},
+{
+"w": "erschaffen",
+"m": [
+"etwas ganz Neues machen, das es vorher nicht gab"
+],
+"x": "Der Künstler hat ein schönes Bild ⟦erschaffen⟧."
+},
+{
+"w": "clever",
+"m": [
+"klug; man findet schnell eine gute Lösung"
+],
+"x": "Das war eine ⟦clevere⟧ Idee!"
+},
+{
+"w": "Klamotten",
+"m": [
+"Kleidung, die man trägt (locker gesagt)"
+],
+"x": "Ich muss noch meine ⟦Klamotten⟧ waschen."
+},
+{
+"w": "Norden",
+"m": [
+"die Richtung, die auf der Karte oben ist"
+],
+"x": "Hamburg liegt im ⟦Norden⟧ von Deutschland."
+},
+{
+"w": "Osten",
+"m": [
+"die Richtung, aus der morgens die Sonne kommt"
+],
+"x": "Die Sonne geht im ⟦Osten⟧ auf."
+},
+{
+"w": "Socke",
+"m": [
+"etwas Weiches, das man im Schuh an den Füßen trägt"
+],
+"x": "Ich finde meine zweite ⟦Socke⟧ nicht."
+},
+{
+"w": "Bord",
+"m": [
+"an Bord: auf einem Schiff oder in einem Flugzeug"
+],
+"x": "Alle Leute sind jetzt an ⟦Bord⟧."
+},
+{
+"w": "Deutsche",
+"m": [
+"ein Mensch aus Deutschland"
+],
+"x": "Viele ⟦Deutsche⟧ fahren im Sommer nach Italien."
+},
+{
+"w": "Gefangene",
+"m": [
+"ein Mensch, der im Gefängnis ist"
+],
+"x": "Der ⟦Gefangene⟧ wartet auf seinen Anwalt."
+},
+{
+"w": "Suppe",
+"m": [
+"ein warmes, flüssiges Essen, das man mit dem Löffel isst"
+],
+"x": "Heute gibt es ⟦Suppe⟧ mit Brot."
+},
+{
+"w": "Käse",
+"m": [
+"ein Essen aus Milch, oft gelb, zum Beispiel für Brot"
+],
+"x": "Ich esse gern Brot mit ⟦Käse⟧."
+},
+{
+"w": "Höhe",
+"m": [
+"wie hoch etwas ist"
+],
+"x": "Der Turm hat eine ⟦Höhe⟧ von hundert Metern."
+},
+{
+"w": "Kohle",
+"m": [
+"schwarze Steine, die man verbrennt, damit es warm wird",
+"Geld (locker gesagt)"
+],
+"x": "Früher hat man mit ⟦Kohle⟧ geheizt."
+},
+{
+"w": "Scheibe",
+"m": [
+"ein flaches, dünnes Stück, zum Beispiel vom Brot",
+"das Glas im Fenster oder im Auto"
+],
+"x": "Möchtest du eine ⟦Scheibe⟧ Brot?"
+},
+{
+"w": "Felsen",
+"m": [
+"ein sehr großer Stein"
+],
+"x": "Die Kinder klettern auf den ⟦Felsen⟧."
+},
+{
+"w": "Kälte",
+"m": [
+"wenn es sehr kalt ist"
+],
+"x": "Eine warme Jacke hilft gegen die ⟦Kälte⟧."
+},
+{
+"w": "Wüste",
+"m": [
+"ein großes, heißes Land mit viel Sand und fast ohne Wasser"
+],
+"x": "In der ⟦Wüste⟧ regnet es fast nie."
+},
+{
+"w": "Ritter",
+"m": [
+"früher: ein Mann mit Pferd und Waffen, der für einen König kämpft"
+],
+"x": "Mein Sohn spielt gern ⟦Ritter⟧."
+},
+{
+"w": "Münze",
+"m": [
+"Geld aus Metall, kein Papier"
+],
+"x": "Hast du eine ⟦Münze⟧ für den Automaten?"
+},
+{
+"w": "Puppe",
+"m": [
+"ein Spielzeug, das wie ein kleiner Mensch aussieht"
+],
+"x": "Meine Tochter spielt mit ihrer ⟦Puppe⟧."
+},
+{
+"w": "Tipp",
+"m": [
+"ein guter Rat, eine kleine Hilfe"
+],
+"x": "Danke für den ⟦Tipp⟧!"
+},
+{
+"w": "Pause",
+"m": [
+"eine kurze Zeit, in der man nicht arbeitet oder lernt"
+],
+"x": "Um zwölf machen wir eine ⟦Pause⟧."
+},
+{
+"w": "Hälfte",
+"m": [
+"einer von zwei gleichen Teilen"
+],
+"x": "Ich esse nur die ⟦Hälfte⟧ von der Pizza."
+},
+{
+"w": "Liste",
+"m": [
+"Dinge, die man untereinander aufschreibt"
+],
+"x": "Ich schreibe eine ⟦Liste⟧ für den Einkauf."
+},
+{
+"w": "Karte",
+"m": [
+"ein Ticket, zum Beispiel für Kino, Bus oder Konzert",
+"ein Papier mit einem Bild von einem Land oder einer Stadt"
+],
+"x": "Hast du schon eine ⟦Karte⟧ für das Konzert?"
+},
+{
+"w": "Fenster",
+"m": [
+"eine Öffnung mit Glas in der Wand, für Licht und Luft"
+],
+"x": "Kannst du bitte das ⟦Fenster⟧ aufmachen?"
+},
+{
+"w": "Kehle",
+"m": [
+"der vordere Teil vom Hals, innen"
+],
+"x": "Ich habe eine ganz trockene ⟦Kehle⟧."
+},
+{
+"w": "Asche",
+"m": [
+"das Graue, das nach einem Feuer übrig bleibt"
+],
+"x": "Nach dem Feuer war nur noch ⟦Asche⟧ da."
+},
+{
+"w": "Kur",
+"m": [
+"eine Zeit an einem ruhigen Ort, damit man wieder gesund wird"
+],
+"x": "Meine Oma macht eine ⟦Kur⟧ an der Ostsee."
+},
+{
+"w": "Mittel",
+"m": [
+"etwas, mit dem man ein Ziel erreicht",
+"eine Medizin"
+],
+"x": "Hast du ein ⟦Mittel⟧ gegen Kopfschmerzen?"
+},
+{
+"w": "Champagner",
+"m": [
+"ein teurer Wein aus Frankreich, mit kleinen Luftblasen"
+],
+"x": "Zum Geburtstag trinken wir ⟦Champagner⟧."
+},
+{
+"w": "Ball",
+"m": [
+"ein runder Gegenstand zum Spielen",
+"ein großes Fest mit Tanz"
+],
+"x": "Die Kinder spielen mit dem ⟦Ball⟧."
+},
+{
+"w": "Leinwand",
+"m": [
+"die große weiße Fläche, auf der man im Kino den Film sieht",
+"ein Stoff, auf den Künstler malen"
+],
+"x": "Der Film läuft auf einer riesigen ⟦Leinwand⟧."
+},
+{
+"w": "Beule",
+"m": [
+"eine runde Stelle, die nach einem Stoß dick wird"
+],
+"x": "Nach dem Sturz hatte er eine ⟦Beule⟧ am Kopf."
+},
+{
+"w": "Lappen",
+"m": [
+"ein Stück Stoff zum Putzen"
+],
+"x": "Wisch den Tisch mit einem nassen ⟦Lappen⟧ ab."
+},
+{
+"w": "Krabbe",
+"m": [
+"ein kleines Tier aus dem Meer mit harter Schale, das man essen kann"
+],
+"x": "Am Strand läuft eine kleine ⟦Krabbe⟧."
+},
+{
+"w": "Kontinent",
+"m": [
+"ein sehr großes Stück Land, zum Beispiel Europa oder Afrika"
+],
+"x": "Afrika ist ein großer ⟦Kontinent⟧."
+},
+{
+"w": "Vanille",
+"m": [
+"ein süßer Geschmack, zum Beispiel für Eis oder Kuchen"
+],
+"x": "Ich nehme ein Eis mit ⟦Vanille⟧."
+},
+{
+"w": "Motte",
+"m": [
+"ein kleines Tier mit Flügeln, das nachts fliegt und Kleidung kaputt macht"
+],
+"x": "Eine ⟦Motte⟧ fliegt um die Lampe."
+},
+{
+"w": "zustande",
+"m": [
+"zustande kommen: am Ende passieren, klappen",
+"etwas zustande bringen: etwas schaffen"
+],
+"x": "Das Treffen ist leider nicht ⟦zustande⟧ gekommen."
+},
+{
+"w": "Portal",
+"m": [
+"ein großes, schönes Tor, zum Beispiel an einer Kirche",
+"eine Seite im Internet, auf der man vieles findet"
+],
+"x": "Wir gehen durch das alte ⟦Portal⟧ in die Kirche."
+}
 ]

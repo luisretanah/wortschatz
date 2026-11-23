@@ -11,7 +11,7 @@ Share, "Zum Home-Bildschirm".
   cloze sentences. Progress lives in the browser (localStorage), with a JSON
   backup export/import in "Meine Wörter".
 
-- Einfach erklärt: simple B1-level explanations for the ~5,000 most common German words plus all
+- Einfach erklärt: simple B1-level explanations for the ~10,000 most common German words plus all
   theme words (simple.json, CC BY-SA 4.0). Built in build/: word list from FrequencyWords
   (OpenSubtitles frequencies, CC BY-SA 4.0) mapped onto German Wiktionary base words; written
   against build/BRIEF.md; checked with build/check.py (only the 8,000 most common forms allowed).

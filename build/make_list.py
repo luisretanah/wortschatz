@@ -89,4 +89,7 @@ json.dump(out, open(os.path.join(HERE, 'top_words.json'), 'w'), ensure_ascii=Fal
 print(len(out), 'words. First 40:', ', '.join(o['word'] for o in out[:40]))
 print('Around 1000:', ', '.join(o['word'] for o in out[995:1010]))
 print('Around 4990:', ', '.join(o['word'] for o in out[4985:5000]))
+if N > 5000:
+    print('Around 7500:', ', '.join(o['word'] for o in out[7495:7510]))
+    print(f'Around {N}:', ', '.join(o['word'] for o in out[N - 15:N]))
 print('Classes:', collections.Counter(o['pos'] for o in out).most_common())

@@ -1,0 +1,2121 @@
+[
+{
+"word": "Flugzeugabsturz",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Unfall, bei dem ein Flugzeug zu Boden (oder ins Wasser) stürzt"
+]
+},
+{
+"word": "verbiegen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"aus der (richtigen) Form bringen (so dass etwas nicht mehr so wie zuvor zu nutzen ist)",
+"aus der (richtigen) Form geraten (so dass etwas nicht mehr so aussieht, wie zuvor, sondern eine Biegung aufweist)"
+]
+},
+{
+"word": "bemalen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit Malereien verzieren, dekorieren",
+"Farbe mit einem Pinsel aufbringen, vollflächig mit Farbe versehen"
+]
+},
+{
+"word": "Witwer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Mann, dessen Ehepartnerin beziehungsweise Ehepartner verstorben ist (und der [noch] nicht wieder geheiratet hat)"
+]
+},
+{
+"word": "Haltestelle",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Stelle, Ort, an dem Verkehrsmittel planmäßig halten"
+]
+},
+{
+"word": "Bauunternehmer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Betreiber/Inhaber einer Baufirma, eines Bauunternehmens"
+]
+},
+{
+"word": "Veilchen",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"kleine, meist violettfarben blühende, stark duftende Blume der Gattung Viola",
+"durch Schlag oder Stoß blau verfärbte Haut um das Auge"
+]
+},
+{
+"word": "Vernehmung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Befragung einer Person zu einem bestimmten Sachverhalt durch eine Behörde",
+"das Auffassen/die Erfassung von etwas mit dem Geist"
+]
+},
+{
+"word": "aufwärts",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"nach oben"
+]
+},
+{
+"word": "landesweit",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"das gesamte Gebiet eines Landes betreffend"
+]
+},
+{
+"word": "Karo",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"eine der vier Farben (=Symbole) des französischen Kartenspielblatts",
+"Symbol in Form einer Raute"
+]
+},
+{
+"word": "Närrin",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"weibliche Person, die sich unklug verhält",
+"weibliche Person, die von jemandem oder von etwas besessen ist"
+]
+},
+{
+"word": "Umfang",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Länge des Randes einer Fläche",
+"das Ausmaß"
+]
+},
+{
+"word": "Sportsfreund",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Anhänger, Liebhaber des Sports (selbst aktiv oder als Zuschauer)",
+"Mitglied im gleichen Sportklub; Freund, mit dem jemand Sport betreibt"
+]
+},
+{
+"word": "Feldmarschall",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Offiziersdienstgrad, ursprünglich Befehlshaber der Reiterei mit richterlichen Vollmachten, später verliert er diese und entspricht einem General der Kavallerie, bald darauf überhaupt einem General. Im 18. Jahrhundert erlangt der Feldmarschall den höchsten militärischen Grad.",
+"Offizier im Range eines Feldmarschalls"
+]
+},
+{
+"word": "Vollgas",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"höchstmögliche Beschleunigung/Geschwindigkeit"
+]
+},
+{
+"word": "Zahnfee",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eine Märchengestalt, welche angeblich die ausgefallenen Milchzähne von Kindern gegen Münzen tauscht"
+]
+},
+{
+"word": "reinhauen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden schlagen (vorzugsweise ins Gesicht oder in die Magengrube), in etwas hineinschlagen (beispielsweise in einen Boxsack), etwas in etwas hineinschlagen (beispielsweise eine Nagel in Holz)",
+"hart und schnell arbeiten"
+]
+},
+{
+"word": "Reptil",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Landwirbeltier, das mit Schuppen oder Hornplatten bedeckt ist und kein Larvenstadium durchlebt"
+]
+},
+{
+"word": "ehelichen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit einer Person ein kirchlich und/oder standesamtlich geschlossenes Ehebündnis eingehen"
+]
+},
+{
+"word": "Badehose",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Kleidungsstück, das zum Schwimmen oder um sich zu sonnen über den Unterleib angezogen wird"
+]
+},
+{
+"word": "Geysir",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"eine Art von heißer, durch Vulkanismus hervorgerufener Wasserquelle, die ihr Wasser periodisch oder auch episodisch ausstößt; der Wasserstrahl oder Wasserschwall kann dabei beispielsweise als Fontäne, Dampfsäule oder auch auf andere Art austreten"
+]
+},
+{
+"word": "Aufkleber",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"ein selbstklebendes Bild mit beliebiger Kontur"
+]
+},
+{
+"word": "Kontext",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"der Zusammenhang oder das Umfeld eines Wortes oder einer Handlung",
+"Zusammenhang, in dem bestimmte Dinge stehen oder betrachtet werden müssen"
+]
+},
+{
+"word": "Versuchskaninchen",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Kaninchen, an dem Testversuche durchgeführt werden (zum Beispiel für die Kosmetikindustrie)",
+"Mensch, an dem etwas getestet wird, der etwas ausprobieren muss"
+]
+},
+{
+"word": "Herausgeber",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"eine Person oder Personengruppe, die für die Veröffentlichung von künstlerischen oder wissenschaftlichen Werken in Wort, Schrift, Ton oder Bild rechtlich und publizistisch verantwortlich zeichnet",
+"eine Person, die die journalistische Leitlinie eines periodischen Mediums (Zeitschrift etc.) bestimmt und deren Umsetzung überwacht"
+]
+},
+{
+"word": "Einzelkind",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Kind oder Jugendlicher ohne Geschwister"
+]
+},
+{
+"word": "Flohmarkt",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Markt, auf dem alte, gebrauchte, oft geringwertige Waren zum Verkauf angeboten werden, überwiegend von Privatpersonen"
+]
+},
+{
+"word": "Bauchgefühl",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"eine auf Intuition und nicht auf rationaler Überlegung beruhende Einschätzung von etwas"
+]
+},
+{
+"word": "Jockey",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Reiter von Rennpferden im Galopprennen"
+]
+},
+{
+"word": "Handgranate",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"mit einer Sprengladung gefüllter und einem Zeit- oder Aufschlagzünder versehener Metallhohlkörper, welcher mit der Hand geworfen wird"
+]
+},
+{
+"word": "entmutigen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"den Mut nehmen"
+]
+},
+{
+"word": "Entflohener",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"entflohene, erfolgreich entkommene Person"
+]
+},
+{
+"word": "prallen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit großer Wucht auf/gegen etwas stoßen",
+"intensiv strahlen, stark scheinen"
+]
+},
+{
+"word": "Sexleben",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Gesamtheit der sexuellen Gewohnheiten und Praktiken"
+]
+},
+{
+"word": "Verzug",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Verspätung, Rückstand bei der Erfüllung einer ausstehenden Schuld oder Pflicht"
+]
+},
+{
+"word": "Punsch",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"(zumeist heißes) alkoholisches Mischgetränk aus Arrak (oder Rum) mit Wasser (oder Tee beziehungsweise Wein) und Zitrone (oder Limette beziehungsweise Zitronen- oder Limettensaft), Zucker sowie Gewürzen (sowie in zahlreichen – auch alkoholfreien – Varianten)"
+]
+},
+{
+"word": "Lebenszeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Zeit, die ein Lebewesen biologisch aktiv ist",
+"die Zeit, die ein Gegenstand hat, bis er unbrauchbar wird"
+]
+},
+{
+"word": "Lutscher",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Bonbon am Stiel",
+"Versager, Schmarotzer"
+]
+},
+{
+"word": "Flugbahn",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Bahn, die ein fliegender Körper beschreibt"
+]
+},
+{
+"word": "Freizeichen",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Tonsignal im Telefon, das anzeigt, dass der/die Angerufene nicht gerade einen anderen Anruf hat"
+]
+},
+{
+"word": "Wartezimmer",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Raum, in dem man sich während einer Wartezeit aufhalten kann"
+]
+},
+{
+"word": "Schwimmer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"schwimmender Mensch",
+"ein Auftriebskörper"
+]
+},
+{
+"word": "festsitzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"in einer Position/Stellung bleiben, die fest/starr ist",
+"durch bestimmte Umstände einen Ort nicht verlassen können"
+]
+},
+{
+"word": "Robe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"festliches Kleid, das nur zu bestimmten Anlässen getragen wird",
+"Talar"
+]
+},
+{
+"word": "Ministerpräsident",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Oberhaupt eines deutschen Bundeslandes oder eines Staates"
+]
+},
+{
+"word": "Trauernder",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die zutiefst betrübt über einen Verlust – besonders über jemandes Tod – ist"
+]
+},
+{
+"word": "getrauen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas wagen, den Mut haben etwas zu tun"
+]
+},
+{
+"word": "Pariser",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Einwohner der Stadt Paris",
+"Kondom"
+]
+},
+{
+"word": "Dynastie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Familie, aus der eine Abfolge von Herrschern hervorgegangen ist",
+"Familie, die auf einem bestimmten Gebiet bahnbrechend/bestimmend wirkt/gewirkt hat"
+]
+},
+{
+"word": "Anstieg",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Aufwärts verlaufende Strecke",
+"Erhöhung eines Wertes"
+]
+},
+{
+"word": "Narkose",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"medikamentös herbeigeführter, kontrollierter Zustand der Bewusstlosigkeit, bei Bedarf mit Schmerzausschaltung und Muskelerschlaffung"
+]
+},
+{
+"word": "Zurückhaltung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"zurückhaltendes, nicht aufdringliches Verhalten, zurückhaltende Art",
+"abwartendes, zögerndes, vorsichtiges Verhalten"
+]
+},
+{
+"word": "untätig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nichts tuend, keine Aktivität zeigend"
+]
+},
+{
+"word": "Hagen",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"männliches, nicht kastriertes Rind"
+]
+},
+{
+"word": "Lava",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eruptiertes Magma und das beim Erkalten daraus entstehende Gestein"
+]
+},
+{
+"word": "Getue",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"gekünsteltes Benehmen, Verhalten"
+]
+},
+{
+"word": "Wilderer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"eine Person, die illegal Wild erlegt"
+]
+},
+{
+"word": "mappen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"in eine Landkarte eintragen, in die Openstreetmap-Datenbank eintragen",
+"Informatik: Datenelemente zwischen unterschiedlichen Datenmodellen mittels Mapping aufeinander abbilden oder berechnen"
+]
+},
+{
+"word": "Redner",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"jemand, der eine öffentliche Rede oder Ansprache hält"
+]
+},
+{
+"word": "problematisch",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"mit Problemen verbunden; so, dass Schwierigkeiten auftreten können"
+]
+},
+{
+"word": "Wortwahl",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"(bewusste) Auswahl der Wörter, die man für eine mündliche oder schriftliche Äußerung benutzt"
+]
+},
+{
+"word": "verstauchen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"das Gelenk (auch dessen Bänder) einer Gliedmaße schädigen, indem es einem heftigen Druck/Stoß (einer Stauchung) ausgesetzt wird"
+]
+},
+{
+"word": "runterziehen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Gegenstand physisch nach unten ziehen",
+"jemanden emotional belasten, schlechte Stimmung verbreiten"
+]
+},
+{
+"word": "Kronprinz",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"nachfolgeberechtigter Sohn oder Enkel eines Königs oder Kaisers"
+]
+},
+{
+"word": "Hirngespinst",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Erzeugnis einer fehlgeleiteten oder übersteigerten Einbildungskraft; Idee, die fantastisch, abwegig, absurd ist"
+]
+},
+{
+"word": "Award",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Preis, der von einer Jury verliehen wird",
+"Entscheidung, die durch ein Schiedsgericht gefällt wird"
+]
+},
+{
+"word": "Koreanisch",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"von mehr als 78 Millionen Menschen in Nord- und Südkorea sowie in den an die Koreanische Halbinsel angrenzenden chinesischen Provinzen (vor allem Jilins Yanbian) gesprochene Sprache, deren genetische Zugehörigkeit unklar ist (isolierte Sprache), von manchen Forschern jedoch eine Verwandtschaft mit den altaischen Sprachen und/oder dem Japanischen sowie mit den austronesischen und dravidischen Sprachen vermutet wird"
+]
+},
+{
+"word": "verwahren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"(etwas für jemanden) vorübergehend in den eigenen sicheren Besitz übernehmen (nicht als Eigentum)",
+"(einer Behauptung) widersprechen, (eine Behauptung) für unwahr erklären"
+]
+},
+{
+"word": "einfügen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ein Teil passend zu etwas hinzufügen; in eine bestimmte Stelle platzieren, legen",
+"sich an eine fremde, veränderte Umgebung, Lebensverhältnisse gewöhnen und anpassen"
+]
+},
+{
+"word": "ausmalen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Innenraum kolorieren",
+"sich eine Vorstellung von etwas machen"
+]
+},
+{
+"word": "Port",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Portwein"
+]
+},
+{
+"word": "Pointe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"aufschlussreicher, unvorhergesehener Gipfel/Kulminationspunkt einer Erzählung/Entwicklung"
+]
+},
+{
+"word": "Schiller",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"(wechselnder) Glanz"
+]
+},
+{
+"word": "Lieblingsfarbe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Farbe, die eine Person(engruppe) am meisten mag"
+]
+},
+{
+"word": "Orientierung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Sich-zurecht-Finden im Raum, zum Beispiel im Gelände, in Bauwerken, in Städten",
+"das Sich-zurecht-Finden der eigenen Person in Raum und Zeit, das Sich-Verschaffen eines Überblickes, auch in unübersichtlichen Situationen, die grundlegende Bedingung für Handlungsfähigkeit"
+]
+},
+{
+"word": "lümmeln",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"seinen Körper (unangemessen, ungehörig) ungezwungen und entspannt platzieren"
+]
+},
+{
+"word": "biologisch",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"die Biologie betreffend, den Gesetzen der Biologie entsprechend",
+"die natürlichen Ressourcen nutzend; auf den Einsatz von Chemie verzichtend"
+]
+},
+{
+"word": "ausbluten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"so lange Blut verlieren, bis keins mehr vorhanden ist",
+"aufhören Blut zu verlieren"
+]
+},
+{
+"word": "ausspannen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Zugtiere vom gezogenen Fahrzeug trennen",
+"sich eine Zeit der Ruhe gönnen"
+]
+},
+{
+"word": "vordringen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"nach Überwindung von Hindernissen, mit Gewalt, unter Mühen zu einem bestimmten, vorher nicht erreichten Ort gelangen",
+"sich ausbreiten"
+]
+},
+{
+"word": "umhören",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"darauf achten oder nachfragen, was zu einer bestimmten Angelegenheit gesagt wird"
+]
+},
+{
+"word": "koppeln",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas durch ein Seil, Gurt oder Riemen oder eine technische Vorrichtung verbinden",
+"etwas von etwas abhängig machen"
+]
+},
+{
+"word": "Bakterie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"sich teilendes, einzelliges, prokaryotisches Lebewesen ohne Zellkern",
+"eine der drei Domänen des aktuellen biologisch-taxonomischen Systems"
+]
+},
+{
+"word": "Bakterium",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"sich teilendes, einzelliges, prokaryotisches Lebewesen ohne Zellkern"
+]
+},
+{
+"word": "Rassismus",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"oft implizit oder unterbewusst praktizierte Lehre beziehungsweise Geisteshaltung zur Rechtfertigung von Diskriminierung, nach der bestimmte Menschengruppen aufgrund willkürlich festgelegter äußerer Merkmale anderen generell überlegen seien"
+]
+},
+{
+"word": "mini",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht bis zum Knie reichend",
+"sehr klein"
+]
+},
+{
+"word": "Stacheldraht",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Draht, an dem sich Stacheln oder Klingen befinden (dient dazu, etwas unzugänglich zu machen)"
+]
+},
+{
+"word": "Luftraum",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"der mit Luft gefüllte Raum über der Erdoberfläche",
+"Hoheitsgebiet eines Landes"
+]
+},
+{
+"word": "aufheitern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandes Stimmung verbessern",
+"besser werden"
+]
+},
+{
+"word": "einrosten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"schwer/gar nicht zu bewegen/benutzen sein, weil sich Rost gebildet hat",
+"unbeweglich/steif sein, weil man sich zu wenig bewegt hat unsicher/zögerlich/unflexibel sein, weil man etwas länger nicht getan hat"
+]
+},
+{
+"word": "Beachtung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Bemerken und die Aufmerksamkeit einer Sache oder Person gegenüber",
+"das Bemerken und die Befolgung von etwas"
+]
+},
+{
+"word": "Schlückchen",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"kleiner Schluck"
+]
+},
+{
+"word": "durchsickern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"langsam durch poröses Material fließen",
+"inoffiziell an Außenstehende gelangen"
+]
+},
+{
+"word": "expandieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich oder etwas ausbauen beziehungsweise vergrößern"
+]
+},
+{
+"word": "stimulieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"eine Reaktion provozieren"
+]
+},
+{
+"word": "Kondition",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Liefer- und Zahlungsbedingungen",
+"körperliche Leistungsfähigkeit"
+]
+},
+{
+"word": "Steinbruch",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Tagebau für die Gewinnung von Steinen",
+"etwas Unfertiges oder Unaufgeräumtes"
+]
+},
+{
+"word": "Meisterin",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Meisterin ihres Fachs, die ihrerseits angehende Gesellen oder Facharbeiter ausbilden darf",
+"weibliche Person mit besonderen Fähigkeiten, speziell wenn diese Schüler ausbildet; ehrende Anrede eines Schülers derselben"
+]
+},
+{
+"word": "Kult",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"auf bestimmten Abläufen und Riten beruhende Verehrung einer Gottheit",
+"übertriebene und unverhältnismäßige Verehrung einer Sache oder einer Person"
+]
+},
+{
+"word": "Rentner",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die nicht mehr überwiegend erwerbstätig ist und ihren Lebensunterhalt aus einer Rente, also einer gesetzlichen oder privaten Versicherungsleistung, bestreitet"
+]
+},
+{
+"word": "dabeihaben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit sich führen, bei sich haben",
+"an seiner Seite haben, mitmachen/teilnehmen lassen"
+]
+},
+{
+"word": "Speisesaal",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Raum, in dem eine größere Zahl Menschen speisen kann"
+]
+},
+{
+"word": "ahm",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"eben, tatsächlich"
+]
+},
+{
+"word": "Meineid",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Verbrechen, das darin besteht, vor Gericht oder vor einer anderen zur Abnahme von Eiden zuständigen Stelle eine falsche Aussage zu beschwören (§ 154 StGB)"
+]
+},
+{
+"word": "Verdammnis",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Verurteilung der Sünder zu ihrer Bestrafung in der Hölle",
+"(schuldhafter) Verlust der Gnade Gottes, Zustand schwerer Schuld"
+]
+},
+{
+"word": "Brosche",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Schmuckstück, das eine Nadel zum Anstecken enthält"
+]
+},
+{
+"word": "jawoll",
+"pos": "particle",
+"art": "",
+"wiktionary": [
+"gibt eine positive Antwort auf eine Entscheidungsfrage; drückt Bekräftigung, Zustimmung aus"
+]
+},
+{
+"word": "grübeln",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"über etwas angestrengt, intensiv nachdenken; sich mit quälenden Gedanken herumschlagen"
+]
+},
+{
+"word": "gesetzlich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"gesetzmäßig, dem Gesetz nach"
+]
+},
+{
+"word": "Kriegsheld",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die im Krieg Ruhm erworben hat"
+]
+},
+{
+"word": "Einflussreicher",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person mit viel Einfluss"
+]
+},
+{
+"word": "Tulpe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Blütenpflanze (Tulipa) aus der Familie der Liliengewächse (Liliaceae)",
+"Stielglas, dessen Form der einer Tulpenblüte ähnelt und aus dem insbesondere Bier (Pils), Wein oder Sekt getrunken wird"
+]
+},
+{
+"word": "Crewmitglied",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Person, die Teil einer Crew ist"
+]
+},
+{
+"word": "Verwundete",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"weibliche Person, die eine Verwundung erlitten hat"
+]
+},
+{
+"word": "anziehend",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"hübsch, reizvoll",
+"beginnen zu steigen (beispielsweise Aktienkurse, Preise)"
+]
+},
+{
+"word": "Gewächshaus",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"eine lichtdurchlässige Konstruktion, die das Aufziehen von Pflanzen ermöglicht"
+]
+},
+{
+"word": "unwürdig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"so geartet, dass jemand etwas nicht verdient, jemandem etwas nicht zustehen; jemandes oder etwas nicht würdig sein",
+"keine Würde, keinen Respekt verdienend"
+]
+},
+{
+"word": "Mechanismus",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"System von Elementen, die in festgelegter, vorhersehbarer Weise zusammenwirken",
+"Komplex von Bauelementen, bei dem die Bewegung eines Teils die Bewegung anderer hervorruft"
+]
+},
+{
+"word": "unzuverlässig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"so, dass man nicht darauf vertrauen kann"
+]
+},
+{
+"word": "pausenlos",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"ohne Unterbrechung, andauernd",
+"abwertend, häufig, in kurzen Abständen auftretend, immer wieder"
+]
+},
+{
+"word": "Normalität",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zustand ohne außergewöhnliche Umstände",
+"Äquivalentkonzentration"
+]
+},
+{
+"word": "Transplantation",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Entnahme und Neueinpflanzung eines Organs in ein anderes Lebewesen",
+"festes Verbinden zweier Pflanzenteile miteinander, so dass diese an der Kontaktfläche zusammenwachsen"
+]
+},
+{
+"word": "Bruchteil",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"kleiner Teil eines Ganzen"
+]
+},
+{
+"word": "Komfort",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Bequemlichkeit durch äußere Gegebenheiten"
+]
+},
+{
+"word": "Gon",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Maßeinheit für den 100. Teil eines rechten Winkels (90°) beziehungsweise den 400. Teil eines Vollkreiswinkels (360°): 0,9°"
+]
+},
+{
+"word": "Mobiltelefon",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"schnurloses Telefon, das über ein Funknetz funktioniert"
+]
+},
+{
+"word": "Sternschnuppe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"kleiner Meteor, dessen Lichtschein von der Erde aus kurz zu sehen ist"
+]
+},
+{
+"word": "muhen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"die Geräusche einer Kuh machen"
+]
+},
+{
+"word": "nagen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit den Zähnen kleine Stücke einer harten Substanz abbeißen, trennen",
+"jemanden quälen, peinigen, zerfressen"
+]
+},
+{
+"word": "transferieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Geld von einem Konto auf ein anderes überführen",
+"als Person (zum Beispiel Fußballer) einen anderen Arbeitsplatz zugewiesen bekommen"
+]
+},
+{
+"word": "blinken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"rhythmisch kurze Lichtsignale aussenden",
+"den Fahrtrichtungsanzeiger im Auto benutzen, um anzuzeigen, dass man abbiegen oder überholen möchte"
+]
+},
+{
+"word": "Bambi",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Jungtier des Rehs"
+]
+},
+{
+"word": "mager",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"dünn, dürr",
+"arm an Fett"
+]
+},
+{
+"word": "Malaria",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"fieberhafte, durch wiederkehrende, oft periodische Schübe gekennzeichnete Infektionskrankheit, hervorgerufen durch einzellige Sporentierchen (Protozoen der Gattung Plasmodium), die vor allem durch Übertragung durch Stechmücken ins Blut gelangen"
+]
+},
+{
+"word": "allerletzte",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"letzte"
+]
+},
+{
+"word": "Ader",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Bezeichnung für alle Blutgefäße",
+"Blattader"
+]
+},
+{
+"word": "Arsenal",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Einrichtung zur Lagerung, Wartung und Reparatur von Waffen",
+"eine große Menge mit reicher Auswahl"
+]
+},
+{
+"word": "unerreichbar",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht zu erreichen"
+]
+},
+{
+"word": "Hocker",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"einfaches Sitzmöbel ohne Rücken- und Armlehne",
+"auf der Seite liegender Toter mit angezogenen Beinen"
+]
+},
+{
+"word": "Zeitbombe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Bombe, die mit einem Zeitzünder versehen ist"
+]
+},
+{
+"word": "Damentoilette",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"sanitäre Anlage, die nur für Damen, für Frauen vorgesehen ist",
+"festliche Garderobe für Damen"
+]
+},
+{
+"word": "Videokamera",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"technisches Gerät, mit dem Filmsequenzen elektronisch aufgezeichnet werden können"
+]
+},
+{
+"word": "Verrücktheit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zustand geistiger Verwirrung",
+"unerwartetes, auf gewisse Ablehnung stoßendes Tun"
+]
+},
+{
+"word": "baumeln",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"von etwas meist senkrecht und frei herabhängen und dabei schwingen",
+"mit etwas Hängendem hin und her schwingen"
+]
+},
+{
+"word": "zusetzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"durch etwas verstopfen",
+"jemanden stark belasten, jemanden mit seinem Anliegen nicht in Ruhe lassen, jemanden beständig ansprechen/angreifen"
+]
+},
+{
+"word": "Gottloser",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"gottlose Person, Mensch ohne religiösen Glauben"
+]
+},
+{
+"word": "Bar",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Maßeinheit für den Druck; 1 bar = 10⁵ N/m² = 10⁵ Pa"
+]
+},
+{
+"word": "derweil",
+"pos": "conj",
+"art": "",
+"wiktionary": [
+"veraltend; Namibia alltagssprachlich:",
+"in der Zeit, als/da…"
+]
+},
+{
+"word": "Zeitvertreib",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Tätigkeit, die man tut, um sich die Zeit zu vertreiben"
+]
+},
+{
+"word": "Meditation",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Meditieren, tiefes sinnendes Nachdenken"
+]
+},
+{
+"word": "Heuhaufen",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"größere Menge aufeinandergeworfenes Heu"
+]
+},
+{
+"word": "Verlies",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"zumeist kleiner, unterirdisch gelegener Raum (der historisch vor allem als Gefängnis diente)"
+]
+},
+{
+"word": "Cracker",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"kleines, gewürztes Gebäck",
+"Person, die illegal technische Sicherheitsbarrieren überwindet und in fremde Systeme eindringt, um den Betroffenen zu schaden (beispielsweise durch den Diebstahl beispielsweise von Passwörtern oder Kreditkartennummern)"
+]
+},
+{
+"word": "Bürokratie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"bürokratisches (sich sehr streng an die [amtlichen] Vorschriften haltendes) Handeln",
+"Verwaltungsapparat, Gesamtheit der Beamten"
+]
+},
+{
+"word": "Knüller",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"etwas, oft ein Witz, das als sehr aufregend oder sehr lustig empfunden wird"
+]
+},
+{
+"word": "Kartenspiel",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Art und Weise, mit Karten zu spielen",
+"ein durchgeführtes Spiel von [1]"
+]
+},
+{
+"word": "Variable",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Platzhalter für Unbekannte/Unbestimmte/Veränderliche in Formulierungen oder Formeln der Mathematik; Rechengröße, die unterschiedliche Werte annehmen kann",
+"Bezeichnung eines Speicherplatzes, der verschiedene Werte aufnehmen kann"
+]
+},
+{
+"word": "Einschränkung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Begrenzen oder die Begrenzung von etwas",
+"unter Beifügung einer Bedingung einen Freiraum reduzieren"
+]
+},
+{
+"word": "wegpusten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Luft auf etwas blasen und es damit vom Ort, an dem es ist, entfernen",
+"erschießen"
+]
+},
+{
+"word": "amputieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Teil eines Armes oder eines Beines aus medizinischen Gründen operativ entfernen"
+]
+},
+{
+"word": "Parallele",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Linie, die parallel zu einer anderen verläuft",
+"etwas sehr Ähnliches und Vergleichbares"
+]
+},
+{
+"word": "Erregung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eine Art seelischer Hochspannung",
+"die Erzeugung von elektrischen und magnetischen Feldern durch elektrische Ströme und umgekehrt"
+]
+},
+{
+"word": "Holländer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Bürger der Niederlande",
+"Bewohner der Region Holland"
+]
+},
+{
+"word": "Tori",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"im Judo die Person, die angreift beziehungsweise die die Technik ausführt"
+]
+},
+{
+"word": "Monarchie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Staatsform mit einem durch seine Herkunft berechtigten Herrscher an der Spitze",
+"Staat mit einer monarchischen Staatsform"
+]
+},
+{
+"word": "portugiesisch",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"zu Portugal gehörig",
+"zum Volk der Portugiesen gehörig"
+]
+},
+{
+"word": "ankämpfen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"versuchen, einen Widerstand zu überwinden; mit Ausdauer gegen jemanden/etwas vorgehen; versuchen, jemanden/etwas zu besiegen"
+]
+},
+{
+"word": "Anstellung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Vereinbarung, dass jemand eine bestimmte Arbeitsstelle einnehmen soll",
+"berufliche Position"
+]
+},
+{
+"word": "Plasma",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Protoplasma, der die Zellen von Lebewesen ausfüllende Inhalt",
+"Blutplasma, hauptsächlich aus Wasser bestehende Transportflüssigkeit für Blutzellen und Nährstoffe"
+]
+},
+{
+"word": "anfällig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"so, dass eine Person oder eine Sache leicht durch etwas beeinflusst oder auch verlockt werden kann",
+"zu Krankheiten neigend; ohne Widerstandskraft gegen schädliche Einflüsse"
+]
+},
+{
+"word": "Abitur",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Abschlussprüfung an einer höheren Schule",
+"höchster allgemeinbildender Schulabschluss, der zum Hochschulstudium berechtigt"
+]
+},
+{
+"word": "Crash",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Zusammenstoß von Fahrzeugen",
+"wirtschaftlicher, finanzieller Zusammenbruch"
+]
+},
+{
+"word": "Gymnasium",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"weiterführende Schule mit dem Abitur (bzw. der Matura) als Abschluss",
+"Gebäude, in dem sich [1] befindet"
+]
+},
+{
+"word": "einstimmig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"mit voller Zustimmung, ohne Gegenstimmen",
+"aus nur einer Stimme bestehend"
+]
+},
+{
+"word": "Halbzeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"einer von zwei gleichlangen Abschnitten eines Spieles (zum Beispiel eines Fußballspieles)",
+"Zeitpunkt bei einem Spiel, an dem die erste Spielhälfte endet und abgepfiffen wird sowie der Zeitraum der Pause zwischen den beiden Spielhälften"
+]
+},
+{
+"word": "Kathedrale",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Kirche, die als Bischofssitz dient"
+]
+},
+{
+"word": "Telefonanruf",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"das Kontaktieren per Telefon"
+]
+},
+{
+"word": "vernaschen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"genüsslich und komplett aufessen; verputzen",
+"mit jemandem Geschlechtsverkehr haben"
+]
+},
+{
+"word": "schänden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"durch eine frevelhafte Tat jemandes Ehre verletzen",
+"sexuell misshandeln, die sexuelle Unschuld einer Person rauben"
+]
+},
+{
+"word": "Qualle",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Wassertier mit radiär-symmetrischem Körper von gallertig-knorpeliger Konsistenz",
+"ein Lebensstadium von Nesseltieren und Rippenquallen"
+]
+},
+{
+"word": "schwirren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich mit surrendem, zitterndem Geräusch schnell durch die Luft bewegen"
+]
+},
+{
+"word": "Oxford",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"bunter Baumwollstoff, der hauptsächlich für die Herstellung von Hemden verwendet wird"
+]
+},
+{
+"word": "Ballast",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Stoff oder Bauteil, das für seine Größe vergleichsweise schwer ist und zur Stabilisierung des Objektes, auf welchem es geladen ist (zum Beispiel auf Schiffen, Ballonen, U-Booten und anderen Tauchfahrzeugen) dient",
+"überflüssige Ladung, nicht benötigtes Gepäck"
+]
+},
+{
+"word": "Anziehungskraft",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"anziehend wirkende, auf einen Punkt gerichtete Kraft",
+"Eigenschaft, Interesse zu erwecken, zu faszinieren"
+]
+},
+{
+"word": "Schriftstellerin",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"weibliche Person, die schriftliche Werke verfasst"
+]
+},
+{
+"word": "unvorbereitet",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"(noch) nicht vorbereitet; ohne Planung, Vorbereitung; ohne sich auf etwas einzustellen"
+]
+},
+{
+"word": "Steuermann",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Nautik, Wassersport: (zum Beispiel im Rudern) derjenige, der das Boot steuert"
+]
+},
+{
+"word": "bladen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit Inlineskates fahren"
+]
+},
+{
+"word": "Wenn",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"einschränkende Bedingung"
+]
+},
+{
+"word": "Dialekt",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die ursprüngliche, landschaftlich verschiedene Redeweise einer Region im Gegensatz zur dort geltenden Schrift- und Umgangssprache (Hochsprache)"
+]
+},
+{
+"word": "zappeln",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich heftig und schnell hin und her bewegen",
+"bewegen (lassen) der Dämpfer beim Klavier, wenn man ihre Funktion durch kleine wackelnde Pedalbewegungen überprüft"
+]
+},
+{
+"word": "Frack",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"festliche (schwarze) Männerjacke, die vorne nur bis zur Taille reicht und hinten charakteristische lange Schöße hat"
+]
+},
+{
+"word": "Aufpasser",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die jemanden oder etwas behütet"
+]
+},
+{
+"word": "Interpretation",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Versuch, die Bedeutung zu erschließen, die in einem geistigen Produkt (Kunstwerk, Text) steckt",
+"Versuch, den einem Sachverhalt innewohnenden Sinn zu erschließen"
+]
+},
+{
+"word": "einäschern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"durch Feuer vollständig zerstören",
+"einen Leichnam verbrennen, um die Asche in einer Urne beizusetzen"
+]
+},
+{
+"word": "irisch",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"Irland, die Iren betreffend",
+"die Sprache Irisch betreffend"
+]
+},
+{
+"word": "hinzuziehen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"die Meinung von jemand anderem einholen"
+]
+},
+{
+"word": "annullieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas auflösen, für ungültig erklären"
+]
+},
+{
+"word": "erwirken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"nach den Regeln entsprechenden Bemühungen, zum Beispiel einem formgerechten Antrag auf ein Begehren, einen positiven Bescheid erhalten"
+]
+},
+{
+"word": "anlangen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"zu einem Ort, einer Stelle gelangen",
+"etwas oder jemanden anlangen: betreffen"
+]
+},
+{
+"word": "Schlips",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Krawatte; ein schmaler Streifen aus Stoff, der um den Hals gebunden und typischerweise zu Hemd und Anzug getragen wird"
+]
+},
+{
+"word": "Bernstein",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"fossiles Harz; findet als Schmuckstein Verwendung"
+]
+},
+{
+"word": "Müdigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zustand des Schlafmangels oder des Unausgeruhtseins",
+"Zustand der Überanstrengung"
+]
+},
+{
+"word": "herumsitzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"untätig irgendwo länger sitzen",
+"rund um etwas sitzen, etwas sitzend umgeben"
+]
+},
+{
+"word": "verstricken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"in eine Situation bringen, die unangenehm ist und aus der man sich nicht leicht befreien kann",
+"sich in eine heikle Lage bringen"
+]
+},
+{
+"word": "Cornflakes",
+"pos": "noun",
+"art": "",
+"wiktionary": [
+"meist gezuckerte Flocken, aus gekochtem, dann breitgewalztem und anschließend getrocknetem Mais"
+]
+},
+{
+"word": "Lounge",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"ein Raum im Eingangsbereich eines Hotels, in dem bequeme Sitzmöbel stehen und sich Gäste ungezwungen aufhalten können",
+"ein Raum mit Sitzmöbeln auf einem Flughafen oder einem Bahnhof, in dem Reisende warten können"
+]
+},
+{
+"word": "Grips",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"kognitive Leistungsfähigkeit",
+"Menge der Gehirnmasse"
+]
+},
+{
+"word": "Falschgeld",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"widerrechtlich hergestellte Münzen und Banknoten eines Staates"
+]
+},
+{
+"word": "netzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"(Oberflächen) mit Flüssigkeitstropfen versehen",
+"Pflanzen mit Wasser versorgen"
+]
+},
+{
+"word": "vorankommen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"auf einem Weg weiterkommen, vorwärtskommen",
+"sich weiterentwickeln, Fortschritte machen"
+]
+},
+{
+"word": "knirschen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ein helles, hartes, reibendes Geräusch machen"
+]
+},
+{
+"word": "beaufsichtigen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ein Auge auf etwas haben; kontrollierend überwachen"
+]
+},
+{
+"word": "Kunststück",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Handlung/Aktion, die besondere Geschicklichkeit, Aufwand und/oder Kenntnisse erfordert"
+]
+},
+{
+"word": "anbrüllen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"brüllende Laute in die Richtung von jemandem/etwas ausstoßen (von Tieren)",
+"laute Worte an jemanden richten, jemanden laut, aggressiv zurechtweisen"
+]
+},
+{
+"word": "Hülse",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"feste und meist längliche Hülle, in die etwas hineingesteckt werden kann",
+"längliche Frucht, in der Samen aufgereiht sind, zum Beispiel von Bohnen oder Erbsen"
+]
+},
+{
+"word": "16-Jähriger",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person im Alter von 16 Jahren"
+]
+},
+{
+"word": "Glaube",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"religiöses Bekenntnis",
+"sicheres Dafürhalten; unbewiesene Überzeugung"
+]
+},
+{
+"word": "Glauben",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"religiöses Bekenntnis, Religion",
+"sicheres Dafür-Halten; eine unbewiesene Überzeugung"
+]
+},
+{
+"word": "Watt",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"seichter Meeresboden an der Küste, bei Ebbe trocken, bei Flut von Wasser überdeckt"
+]
+},
+{
+"word": "Geiger",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die Geige spielt"
+]
+},
+{
+"word": "Exorzismus",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die Austreibung von (vermeintlich vorhandenen) Dämonen, bösen Geistern beziehungsweise des Teufels aus Lebewesen, Orten oder Dingen"
+]
+},
+{
+"word": "Lagebericht",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Bericht über eine Sachlage"
+]
+},
+{
+"word": "überfüllen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas übermäßig füllen"
+]
+},
+{
+"word": "unnatürlich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht natürlich, nicht der Natur entsprechend, nicht in der Art und Weise der Natur"
+]
+},
+{
+"word": "litauisch",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"Litauen betreffend, aus Litauen kommend",
+"zum Volk der Litauer gehörig"
+]
+},
+{
+"word": "Brutalität",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"brutales Verhalten, gewalttätige Handlung",
+"die Eigenschaft, brutal zu sein"
+]
+},
+{
+"word": "sagenhaft",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"auf eine Sage beruhend",
+"auf überlieferte Erzählungen beruhend"
+]
+},
+{
+"word": "Magnum",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Patrone mit höherer ballistischer Leistung"
+]
+},
+{
+"word": "kapern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich eines Schiffs bemächtigen",
+"etwas übernehmen, sich in Besitz eines (fremden) Guts setzen"
+]
+},
+{
+"word": "Ration",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"zugeteilte Menge von beschränkt vorhandenen Gütern oder Dienstleistungen"
+]
+},
+{
+"word": "wegblasen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas durch Blasen wegbewegen"
+]
+},
+{
+"word": "schnaufen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"nach Luft ringen, heftig keuchen",
+"atmen"
+]
+},
+{
+"word": "pensionieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden, insbesondere einen Beamten oder eine Beamtin in den Ruhestand versetzen; sich versetzen lassen"
+]
+},
+{
+"word": "Elektronik",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Teilgebiet der Elektrotechnik, das sich mit elektronischen Bauelementen, also zum Beispiel Kondensatoren, Transistoren, Spulen oder Fotozellen befasst",
+"elektronischer Teil eines Geräts oder einer Anlage"
+]
+},
+{
+"word": "Lebensgeschichte",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Ablauf dessen, was sich im Leben einer Person ereignet hat"
+]
+},
+{
+"word": "Funkstille",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zeit, in der nicht gefunkt wird",
+"Pause zwischen Rundfunksendungen"
+]
+},
+{
+"word": "Popo",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Gesäß (menschlicher Körperteil, auf dem gesessen wird)"
+]
+},
+{
+"word": "revolutionär",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"neuartig, umkrempelnd, verändernd"
+]
+},
+{
+"word": "Journalismus",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die praktische Arbeit eines Journalisten, zum Beispiel für Zeitungen, Zeitschriften, Fernsehen und Radio",
+"das gesamte Zeitungs- und Pressewesen"
+]
+},
+{
+"word": "Haarfarbe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Farbe der Haare",
+"Mittel zum Färben der Haare"
+]
+},
+{
+"word": "Kidnapper",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"jemand, der eine Person gekidnappt hat"
+]
+},
+{
+"word": "Ziegel",
+"pos": "noun",
+"art": "",
+"wiktionary": [
+"Quader aus gebranntem Ton, der für den Bau einer Mauer verwendet wird",
+"Platte aus gebranntem Ton, die zum Decken von Schrägdächern verwendet wird"
+]
+},
+{
+"word": "Put",
+"pos": "noun",
+"art": "",
+"wiktionary": [
+"Verkaufsoption"
+]
+},
+{
+"word": "zimt",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"in, von der für Zimt typischen gelblich rotbraunen Farbe"
+]
+},
+{
+"word": "Anmeldung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"offizielles Sich-Einschreiben; die Handlung des Anmeldens",
+"Formular oder schriftlicher Nachweis für [1]"
+]
+},
+{
+"word": "linden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Mehl oder Käse leicht anrösten"
+]
+},
+{
+"word": "Motorengeräusch",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"bestimmte Töne, die ein laufender Motor erzeugt"
+]
+},
+{
+"word": "Kollateralschaden",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"unbeabsichtigter Schaden (insbesondere zivile Opfer), der durch einen militärischen Einsatz entstanden ist",
+"Nebenwirkung, durch die Schaden entsteht"
+]
+}
+]
