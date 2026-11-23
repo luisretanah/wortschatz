@@ -1,7 +1,7 @@
 // Offline support. App files: network first, so an update shows on the very
 // next open; the cache is only the fallback when there is no connection.
 // Dictionary requests: network, falling back to the last cached answer.
-const VERSION = 'wortschatz-v4';
+const VERSION = 'wortschatz-v5';
 const SHELL = ['./', 'index.html', 'app.css', 'app.js', 'wiki.js', 'words.js', 'manifest.webmanifest',
   'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });

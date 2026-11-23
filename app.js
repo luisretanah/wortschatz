@@ -27,6 +27,7 @@ const ICON = {
   check: svg('<path d="m5.5 12.5 4 4 9-9"/>'),
   x: svg('<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>'),
   heart: svg('<path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/>'),
+  pen: svg('<path d="M4.5 19.5l1-4L15.8 5.2a2 2 0 0 1 2.9 0l.1.1a2 2 0 0 1 0 2.9L8.5 18.5z"/><path d="M13.5 7.5l3 3"/>'),
   spark: svg('<path d="M12 4l1.8 5.2L19 11l-5.2 1.8L12 18l-1.8-5.2L5 11l5.2-1.8z"/>'),
 };
 
@@ -381,6 +382,7 @@ function entryHTML(r, e, i) {
     </div>
     <div class="entry-body">
     ${hint && i === 0 ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
+    ${(sentences[key] || []).length ? `<div class="mine"><small>Deine Sätze</small>${sentences[key].map(s => `<p>${esc(s.text)}</p>`).join('')}</div>` : ''}
     ${notes.map(n => `<p class="note">${esc(n)}</p>`).join('')}
     <ol class="senses">${e.senses.map((s, j) => senseHTML(e, s, j, e.senses.length)).join('')}</ol>
     ${syn.length ? `<div class="lbl">Synonyme</div><div class="chips">${syn.map(s => `<a class="chip" href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join('')}</div>` : ''}
@@ -504,7 +506,7 @@ function openMenu() {
 }
 
 async function exportData() {
-  const data = JSON.stringify({ app: 'wortschatz', v: 1, at: new Date().toISOString(), words, prefs, stats }, null, 1);
+  const data = JSON.stringify({ app: 'wortschatz', v: 1, at: new Date().toISOString(), words, prefs, stats, sentences }, null, 1);
   const name = `wortschatz-${today()}.json`;
   const file = new File([data], name, { type: 'application/json' });
   if (navigator.canShare && navigator.canShare({ files: [file] })) {
@@ -524,6 +526,7 @@ function importData(file, close) {
       if (d.app !== 'wortschatz' || !d.words) throw new Error('bad');
       let added = 0;
       Object.values(d.words).forEach(w => { if (!words[w.key]) { words[w.key] = w; added++; } else if ((w.srs?.reps || 0) > (words[w.key].srs?.reps || 0)) words[w.key] = w; });
+      if (d.sentences) { sentences = { ...d.sentences, ...sentences }; store.set('sentences', sentences); }
       if (d.stats) stats = { ...d.stats, ...stats, days: { ...d.stats.days, ...stats.days }, gender: { ...d.stats.gender, ...stats.gender } };
       saveWords(); saveStats(); close(); toast(added + ' Wörter geladen'); route();
     } catch (e) { toast('Diese Datei passt nicht'); }
@@ -598,6 +601,8 @@ function practiceCounts() {
     due: all.filter(w => w.snap && (!w.srs || w.srs.due <= now)).length,
     nouns: genderPool().length,
     cloze: clozePool().length,
+    forms: formsPool().length,
+    meaning: meaningPool().length,
   };
 }
 
@@ -620,8 +625,14 @@ function renderPractice() {
     <button class="card mode" data-go="artikel" style="margin-top:14px">
       <span class="ico art3"><i style="background:var(--der)"></i><i style="background:var(--die)"></i><i style="background:var(--das)"></i></span>
       <div><h2>der, die oder das?</h2><p>${c.nouns} Nomen · mit Merkregeln</p></div><span class="chev">${ICON.chev}</span></button>
+    <button class="card mode" data-go="bedeutung" ${c.meaning ? '' : 'disabled'}>
+      <span class="ico opts"><i></i><i></i><i class="on"></i><i></i></span><div><h2>Bedeutung wählen</h2><p>${c.meaning ? 'Eine Erklärung, vier Wörter' : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>
+    <button class="card mode" data-go="formen" ${c.forms ? '' : 'disabled'}>
+      <span class="ico gap">Pl.</span><div><h2>Formen abrufen</h2><p>${c.forms ? 'Plural, Präteritum, Perfekt, Komparativ' : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="luecken" ${c.cloze ? '' : 'disabled'}>
-      <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>`;
+      <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>
+    <button class="card mode" data-go="satz" ${c.total && c.meaning ? '' : 'disabled'}>
+      <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben, dann selbst prüfen' : 'Braucht gespeicherte Wörter'}</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
   hydrate();
@@ -645,6 +656,9 @@ function startSession(kind) {
   if (kind === 'karten') return flashSession();
   if (kind === 'artikel') return genderSession();
   if (kind === 'luecken') return clozeSession();
+  if (kind === 'formen') return formsSession();
+  if (kind === 'bedeutung') return meaningSession();
+  if (kind === 'satz') return sentenceSession();
   go('#/ueben');
 }
 
@@ -874,6 +888,188 @@ function clozeSession() {
   };
   show();
 }
+
+// --- forms: plural, past tense, perfect, comparative ---
+function formsPool() {
+  const out = [];
+  Object.values(words).forEach(w => {
+    const e = w.snap; if (!e) return;
+    if (isNoun(e) && e.plural && !e.pluralOnly && e.genus.length === 1)
+      out.push({ e, q: `Plural von <span class="art ${e.genus[0]}">${ART[e.genus[0]]}</span> ${esc(e.title)}`, pre: 'die', answer: e.plural, label: 'Plural' });
+    if (e.verb && e.verb.praet)
+      out.push({ e, q: `Präteritum von <b>${esc(e.title)}</b>`, pre: 'er/sie', answer: e.verb.praet, label: 'Präteritum' });
+    if (e.verb && e.verb.part && e.verb.aux)
+      out.push({ e, q: `Perfekt von <b>${esc(e.title)}</b>`, pre: 'er/sie', answer: verbAux(e.verb.aux, e.verb.part), part: e.verb.part, aux: e.verb.aux, label: 'Perfekt' });
+    if (e.adj && e.adj.komp && e.adj.komp !== '—')
+      out.push({ e, q: `Komparativ von <b>${esc(e.title)}</b>`, pre: '', answer: e.adj.komp, label: 'Komparativ' });
+  });
+  return out;
+}
+
+function formsSession() {
+  const picked = shuffle(formsPool()).slice(0, 12);
+  let idx = 0, right = 0;
+  const norm = s => s.toLowerCase().replace(/[.,;:!?]/g, '').replace(/\s+/g, ' ').trim();
+  const show = () => {
+    if (location.hash !== '#/ueben/formen') return;
+    const c = picked[idx];
+    if (!c) return doneScreen('Runde geschafft', `<div class="stat-row"><div><b>${right} / ${picked.length}</b><span>richtig</span></div></div>`, formsSession);
+    view.innerHTML = sessionTop(idx, picked.length) + `
+      <div class="card ex-card">
+        <div class="eyebrow">${esc(c.label)}</div>
+        <h2 class="ex-q">${c.q}?</h2>
+        <form id="ff" class="form-line">${c.pre ? `<span class="pre">${esc(c.pre)}</span>` : ''}<input id="ans" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" enterkeyhint="done" placeholder="Form eintippen" aria-label="Antwort"></form>
+        <div class="verdict" aria-live="polite"></div>
+        <div class="btn-row"><button class="btn" id="reveal" type="button">Lösung</button><button class="btn primary" id="check" type="button">Prüfen</button></div>
+      </div>`;
+    bindQuit();
+    const input = $('#ans');
+    setTimeout(() => input.focus(), 50);
+    let finished = false;
+    const finish = (ok, msg) => {
+      finished = true; countPractice();
+      if (ok) right++;
+      $('.verdict').innerHTML = msg;
+      $('.btn-row').innerHTML = `<button class="btn primary wide" id="next" type="button">Weiter</button>`;
+      $('#next').onclick = () => { idx++; show(); };
+      $('#next').focus();
+      speak((c.pre && c.pre !== 'er/sie' ? c.pre + ' ' : c.pre === 'er/sie' ? 'er ' : '') + c.answer);
+    };
+    const check = () => {
+      if (finished) return;
+      let a = norm(input.value);
+      if (!a) return input.focus();
+      if (c.pre === 'die') a = a.replace(/^die /, '');
+      if (c.pre === 'er/sie') a = a.replace(/^(er|sie|es|er\/sie) /, '');
+      const sol = `<b>${esc((c.pre ? c.pre + ' ' : '') + c.answer)}</b>`;
+      if (a === norm(c.answer)) return finish(true, `<span class="ok">Richtig!</span> ${sol}`);
+      if (c.part && a === norm(c.part)) return finish(false, `<span class="bad">Fast.</span> Das Partizip stimmt, aber das Hilfsverb fehlt: ${sol}`);
+      if (c.part && a.endsWith(norm(c.part))) return finish(false, `<span class="bad">Fast.</span> Das Partizip stimmt, das Hilfsverb ist <b>${c.aux === 'sein' ? 'sein' : 'haben'}</b>: ${sol}`);
+      finish(false, `<span class="bad">Richtig wäre:</span> ${sol}`);
+    };
+    $('#ff').onsubmit = ev => { ev.preventDefault(); finished ? (idx++, show()) : check(); };
+    $('#check').onclick = check;
+    $('#reveal').onclick = () => { if (!finished) finish(false, `Lösung: <b>${esc((c.pre ? c.pre + ' ' : '') + c.answer)}</b>`); };
+  };
+  show();
+}
+
+// --- meaning: one definition, four words ---
+function meaningPool() { return Object.values(words).filter(w => w.snap && w.snap.senses.length); }
+
+function meaningSession() {
+  const pool = meaningPool();
+  const picked = shuffle(pool.slice()).slice(0, 10);
+  let idx = 0, right = 0;
+  const label = e => (isNoun(e) && e.genus.length ? `<span class="art ${gclass(e)}">${esc(artOf(e))}</span> ` : '') + esc(e.title);
+  const show = () => {
+    if (location.hash !== '#/ueben/bedeutung') return;
+    const w = picked[idx];
+    if (!w) return doneScreen(right === picked.length ? 'Alles richtig' : 'Runde geschafft', `<div class="stat-row"><div><b>${right} / ${picked.length}</b><span>richtig</span></div></div>`, meaningSession);
+    const e = w.snap;
+    const sense = e.senses[0];
+    // wrong answers: other saved words first (same word class if possible), then theme words
+    const others = shuffle(pool.filter(x => x !== w && x.snap.title !== e.title)).sort((a, b) => (b.snap.pos === e.pos) - (a.snap.pos === e.pos));
+    const opts = others.slice(0, 3).map(x => ({ html: label(x.snap), ok: false }));
+    const themeFill = shuffle(ALL_THEME.filter(t => t.lemma !== e.title && !others.some(o => o.snap.title === t.lemma)));
+    while (opts.length < 3 && themeFill.length) {
+      const t = themeFill.shift();
+      opts.push({ html: (t.g ? `<span class="art ${PLURAL_ONLY.has(t.raw) ? 'p' : t.g}">${ART[t.g]}</span> ` : '') + esc(t.bare), ok: false });
+    }
+    opts.push({ html: label(e), ok: true });
+    shuffle(opts);
+    const ex = examplesFor(e, sense.n).find(x => !x.quote);
+    view.innerHTML = sessionTop(idx, picked.length) + `
+      <div class="card ex-card">
+        <div class="eyebrow">Welches Wort passt?</div>
+        <p class="ex-def">${esc(splitLabel(sense.text).text)}</p>
+        <div class="options">${opts.map((o, i) => `<button class="option" data-i="${i}">${o.html}</button>`).join('')}</div>
+        <div id="after" aria-live="polite"></div>
+      </div>`;
+    bindQuit();
+    let answered = false;
+    $$('.option').forEach(b => b.onclick = () => {
+      if (answered) return; answered = true;
+      const ok = opts[+b.dataset.i].ok;
+      countPractice();
+      $$('.option').forEach(o => { o.disabled = true; if (opts[+o.dataset.i].ok) o.classList.add('right'); });
+      if (!ok) b.classList.add('wrong'); else right++;
+      speak((isNoun(e) && e.genus.length ? artOf(e).split('/')[0] + ' ' : '') + e.title);
+      $('#after').innerHTML = `${ex ? `<p class="ex">${markEx(ex.text)}</p>` : ''}<button class="btn primary wide" id="next" style="margin-top:14px">Weiter</button>`;
+      $('#next').onclick = () => { idx++; show(); };
+    });
+  };
+  show();
+}
+
+// --- own sentence with a self-check (nothing is graded automatically) ---
+let sentences = store.get('sentences', {});
+function sentencePool() {
+  return Object.values(words).filter(w => w.snap).sort((a, b) => (sentences[a.key] ? 1 : 0) - (sentences[b.key] ? 1 : 0) || level(a) - level(b));
+}
+
+function sentenceSession() {
+  const pool = sentencePool();
+  const picked = pool.slice(0, 5);
+  let idx = 0, written = 0;
+  const show = () => {
+    if (location.hash !== '#/ueben/satz') return;
+    const w = picked[idx];
+    if (!w) return doneScreen('Gut gemacht', `<div class="stat-row"><div><b>${written}</b><span>eigene Sätze</span></div></div><p style="margin-bottom:24px">Deine Sätze stehen jetzt auch im Eintrag des Wortes.</p>`, sentenceSession);
+    const e = w.snap;
+    const sense = e.senses[0] || { text: '' };
+    const hint = w.hint || HINTS[e.title] || '';
+    const prev = (sentences[w.key] || []).slice(-1)[0];
+    view.innerHTML = sessionTop(idx, picked.length) + `
+      <div class="card ex-card">
+        <div class="eyebrow">Dein eigener Satz</div>
+        <h2 class="ex-word">${label3(e)}</h2>
+        <p class="ex-mean">${esc(splitLabel(sense.text).text)}</p>
+        ${hint ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
+        <p class="ex-task">Schreib einen Satz aus deinem Alltag, der zeigt, was das Wort bedeutet.</p>
+        <textarea id="draft" rows="3" placeholder="Mein Satz …" autocapitalize="sentences" spellcheck="false" aria-label="Dein Satz">${esc(prev ? prev.text : '')}</textarea>
+        <div id="check" aria-live="polite"></div>
+        <div class="btn-row" id="row"><button class="btn" id="skip" type="button">Überspringen</button><button class="btn primary" id="selfcheck" type="button">Selbstcheck</button></div>
+      </div>`;
+    bindQuit();
+    const ta = $('#draft');
+    setTimeout(() => ta.focus(), 50);
+    $('#skip').onclick = () => { idx++; show(); };
+    $('#selfcheck').onclick = () => {
+      const t = ta.value.trim();
+      if (!t) { toast('Schreib zuerst deinen Satz'); return ta.focus(); }
+      const stem = e.title.toLowerCase().slice(0, Math.max(4, Math.min(6, e.title.length - 2)));
+      const verbStems = e.verb ? [e.verb.praet, e.verb.part, e.verb.er].filter(Boolean).map(x => x.toLowerCase().slice(0, 4)) : [];
+      const hasWord = t.toLowerCase().includes(stem) || verbStems.some(v => t.toLowerCase().includes(v));
+      const tips = [];
+      if (!hasWord) tips.push(`Ich finde <b>${esc(e.title)}</b> nicht in deinem Satz. Hast du das Wort benutzt?`);
+      if (!/^[A-ZÄÖÜ„"]/.test(t)) tips.push('Ein Satz beginnt mit einem Großbuchstaben.');
+      if (!/[.!?…“"]$/.test(t)) tips.push('Am Ende fehlt ein Satzzeichen.');
+      if (t.split(/\s+/).length < 5) tips.push('Versuch es mit etwas mehr Kontext: wer, wo, warum?');
+      const ex = e.examples.find(x => !x.quote);
+      $('#check').innerHTML = `<div class="checklist">
+        ${tips.length ? `<div class="tips">${tips.map(x => `<p>${x}</p>`).join('')}</div>` : '<p class="ok" style="font-weight:600">Sieht gut aus. Prüfe noch selbst:</p>'}
+        <label><input type="checkbox"> Die Bedeutung passt zu meinem Satz.</label>
+        ${isNoun(e) ? `<label><input type="checkbox"> Der Artikel stimmt (<span class="art ${gclass(e)}">${esc(artOf(e))}</span>, im Satz vielleicht dem, den, der …).</label>` : ''}
+        ${e.verb ? `<label><input type="checkbox"> Das Verb steht an der richtigen Stelle und passt zur Person.</label>` : ''}
+        <label><input type="checkbox"> Ich habe ihn einmal laut gelesen.</label>
+        ${ex ? `<p class="compare">Zum Vergleich:</p><p class="ex">${markEx(ex.text)}</p>` : ''}
+      </div>`;
+      $('#row').innerHTML = `<button class="btn" id="say" type="button">${ICON.speak} Anhören</button><button class="btn primary" id="keep" type="button">Speichern</button>`;
+      $('#say').onclick = () => speak(ta.value.trim());
+      $('#keep').onclick = () => {
+        const v = ta.value.trim();
+        if (v) {
+          sentences[w.key] = [...(sentences[w.key] || []).filter(s => s.text !== v), { text: v, at: Date.now() }].slice(-3);
+          store.set('sentences', sentences); written++; countPractice();
+        }
+        idx++; show();
+      };
+    };
+  };
+  show();
+}
+function label3(e) { return (isNoun(e) && e.genus.length ? `<span class="art ${gclass(e)}">${esc(artOf(e))}</span> ` : '') + esc(e.title); }
 
 // ---------- boot ----------
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
