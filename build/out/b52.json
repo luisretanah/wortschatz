@@ -1,0 +1,1707 @@
+[
+{
+"w": "R-Gespräch",
+"m": [
+"ein Anruf, den der bezahlt, der angerufen wird"
+],
+"x": "Ein ⟦R-Gespräch⟧ ist teuer für den, der es annimmt."
+},
+{
+"w": "wohlwollen",
+"m": [
+"freundlich zu jemandem sein und ihm Gutes wünschen"
+],
+"x": "Der Chef ⟦wohlwollt⟧ seinen neuen Mitarbeitern."
+},
+{
+"w": "Brustkrebs",
+"m": [
+"eine schwere Krankheit in der Brust, vor allem bei Frauen"
+],
+"x": "Die Ärztin spricht mit ihr über ⟦Brustkrebs⟧."
+},
+{
+"w": "präparieren",
+"m": [
+"ein totes Tier so behandeln, dass man es zeigen kann",
+"etwas für später fertig machen"
+],
+"x": "Im Museum ⟦präpariert⟧ man tote Vögel."
+},
+{
+"w": "Abstieg",
+"m": [
+"der Weg nach unten, zum Beispiel vom Berg"
+],
+"x": "Der ⟦Abstieg⟧ vom Berg dauert zwei Stunden."
+},
+{
+"w": "blitzschnell",
+"m": [
+"sehr, sehr schnell"
+],
+"x": "Die Katze lief ⟦blitzschnell⟧ aus dem Zimmer."
+},
+{
+"w": "Innenseite",
+"m": [
+"die Seite, die innen ist"
+],
+"x": "Auf der ⟦Innenseite⟧ der Tür hängt ein Spiegel."
+},
+{
+"w": "zurückfallen",
+"m": [
+"hinter den anderen bleiben",
+"schlechter werden als vorher"
+],
+"x": "Beim Lauf ⟦fiel⟧ er langsam ⟦zurück⟧."
+},
+{
+"w": "Vermählung",
+"m": [
+"die Hochzeit von zwei Menschen"
+],
+"x": "Zur ⟦Vermählung⟧ kamen viele Gäste."
+},
+{
+"w": "tough",
+"skip": true
+},
+{
+"w": "Riesenspaß",
+"m": [
+"sehr viel Freude"
+],
+"x": "Der Ausflug war ein ⟦Riesenspaß⟧ für die Kinder."
+},
+{
+"w": "Fleckchen",
+"m": [
+"ein kleiner Platz",
+"ein kleiner schmutziger Punkt"
+],
+"x": "Wir fanden ein schönes ⟦Fleckchen⟧ am See."
+},
+{
+"w": "Plädoyer",
+"m": [
+"eine lange Rede, in der man für etwas oder gegen etwas spricht"
+],
+"x": "Der Anwalt hielt ein langes ⟦Plädoyer⟧."
+},
+{
+"w": "Ger",
+"skip": true
+},
+{
+"w": "Kode",
+"skip": true
+},
+{
+"w": "Empfangsdame",
+"m": [
+"die Frau, die am Eingang die Gäste begrüßt"
+],
+"x": "Die ⟦Empfangsdame⟧ gibt mir den Schlüssel."
+},
+{
+"w": "Gesuch",
+"m": [
+"ein Brief an ein Amt, in dem man um etwas bittet"
+],
+"x": "Er schrieb ein ⟦Gesuch⟧ an die Stadt."
+},
+{
+"w": "Doppelmord",
+"m": [
+"wenn jemand zwei Menschen tötet"
+],
+"x": "Die Zeitung schrieb über einen ⟦Doppelmord⟧."
+},
+{
+"w": "abenteuern",
+"m": [
+"etwas Neues und Gefährliches suchen und tun"
+],
+"x": "Im Urlaub ⟦abenteuern⟧ wir gern in den Bergen."
+},
+{
+"w": "Zwillingsschwester",
+"m": [
+"die Schwester, die am selben Tag geboren wurde"
+],
+"x": "Meine ⟦Zwillingsschwester⟧ sieht genau aus wie ich."
+},
+{
+"w": "abgefuckt",
+"m": [
+"in ganz schlechtem Zustand, kaputt und schmutzig; ein grobes Wort"
+],
+"x": "Die Wohnung war total ⟦abgefuckt⟧."
+},
+{
+"w": "jonglieren",
+"m": [
+"mehrere Dinge in die Luft werfen und wieder fangen"
+],
+"x": "Der Clown kann mit fünf Bällen ⟦jonglieren⟧."
+},
+{
+"w": "Waffenlager",
+"m": [
+"ein Ort, an dem man viele Waffen aufbewahrt"
+],
+"x": "Die Polizei fand ein geheimes ⟦Waffenlager⟧."
+},
+{
+"w": "Parameter",
+"m": [
+"eine Zahl, die man vorher bestimmt"
+],
+"x": "Du kannst die ⟦Parameter⟧ im Programm ändern."
+},
+{
+"w": "Gletscher",
+"m": [
+"ein sehr großes Stück Eis in den Bergen"
+],
+"x": "Wir wanderten zu einem ⟦Gletscher⟧ in den Alpen."
+},
+{
+"w": "Eskimo",
+"skip": true
+},
+{
+"w": "Kriegsgefangene",
+"m": [
+"eine Frau, die im Krieg vom Feind festgehalten wird"
+],
+"x": "Die ⟦Kriegsgefangene⟧ durfte nach Hause fahren."
+},
+{
+"w": "mindern",
+"m": [
+"etwas kleiner oder weniger machen"
+],
+"x": "Gute Schuhe ⟦mindern⟧ die Schmerzen beim Gehen."
+},
+{
+"w": "spezifisch",
+"m": [
+"ganz typisch für eine bestimmte Sache"
+],
+"x": "Das ist ein ⟦spezifisches⟧ Problem dieser Stadt."
+},
+{
+"w": "Amazone",
+"m": [
+"eine starke Frau, die kämpft, in alten Geschichten"
+],
+"x": "In der Sage kämpfte eine ⟦Amazone⟧ auf dem Pferd."
+},
+{
+"w": "Rowdy",
+"m": [
+"ein Mann, der laut ist und andere Leute ärgert"
+],
+"x": "Ein ⟦Rowdy⟧ warf eine Flasche auf die Straße."
+},
+{
+"w": "übertrumpfen",
+"m": [
+"besser sein als ein anderer"
+],
+"x": "Er wollte seinen Bruder beim Spiel ⟦übertrumpfen⟧."
+},
+{
+"w": "Aal",
+"m": [
+"ein langer Fisch, der wie eine Schlange aussieht"
+],
+"x": "Zum Essen gab es geräucherten ⟦Aal⟧."
+},
+{
+"w": "Notausgang",
+"m": [
+"eine Tür, durch die man bei Gefahr schnell rausgeht"
+],
+"x": "Der ⟦Notausgang⟧ ist hinten im Saal."
+},
+{
+"w": "Landeplatz",
+"m": [
+"ein Platz, auf dem ein Flugzeug oder Hubschrauber landet"
+],
+"x": "Der Hubschrauber flog zum ⟦Landeplatz⟧."
+},
+{
+"w": "wahllos",
+"m": [
+"ohne zu überlegen, irgendwie"
+],
+"x": "Er nahm ⟦wahllos⟧ ein Buch aus dem Regal."
+},
+{
+"w": "Personenschutz",
+"m": [
+"Schutz für einen Menschen, damit ihm nichts passiert"
+],
+"x": "Der Politiker hat ⟦Personenschutz⟧ von der Polizei."
+},
+{
+"w": "Zweikampf",
+"m": [
+"ein Kampf zwischen zwei Menschen"
+],
+"x": "Im ⟦Zweikampf⟧ gewann der Jüngere."
+},
+{
+"w": "Auspuff",
+"m": [
+"das Rohr hinten am Auto, aus dem schlechte Luft kommt"
+],
+"x": "Aus dem ⟦Auspuff⟧ kommt schwarzer Rauch."
+},
+{
+"w": "Vordermann",
+"m": [
+"der Mensch, der direkt vor einem steht oder fährt"
+],
+"x": "Halte immer Abstand zu deinem ⟦Vordermann⟧."
+},
+{
+"w": "Rächer",
+"m": [
+"ein Mensch, der sich für Unrecht an anderen wehrt"
+],
+"x": "Im Film ist er ein ⟦Rächer⟧ mit einer Maske."
+},
+{
+"w": "Reifenquietschen",
+"m": [
+"das laute Geräusch, wenn ein Auto stark bremst"
+],
+"x": "Ich hörte ⟦Reifenquietschen⟧ und dann einen Knall."
+},
+{
+"w": "Quint",
+"skip": true
+},
+{
+"w": "Stoffwechsel",
+"m": [
+"wie der Körper aus dem Essen Kraft macht"
+],
+"x": "Sport macht den ⟦Stoffwechsel⟧ schneller."
+},
+{
+"w": "unverwundbar",
+"m": [
+"so, dass man nicht verletzt werden kann"
+],
+"x": "Der Held im Film ist ⟦unverwundbar⟧."
+},
+{
+"w": "Gestaltwandler",
+"m": [
+"ein Wesen im Märchen, das seine Form ändern kann"
+],
+"x": "Der ⟦Gestaltwandler⟧ wurde erst ein Wolf, dann ein Vogel."
+},
+{
+"w": "Überlegenheit",
+"m": [
+"wenn jemand besser oder stärker ist als andere"
+],
+"x": "Das Team zeigte seine ⟦Überlegenheit⟧ im Spiel."
+},
+{
+"w": "Schatzkammer",
+"m": [
+"ein Raum, in dem man wertvolle Dinge aufbewahrt"
+],
+"x": "Im Schloss gibt es eine große ⟦Schatzkammer⟧."
+},
+{
+"w": "Kronleuchter",
+"m": [
+"eine große schöne Lampe mit vielen Lichtern an der Decke"
+],
+"x": "Im Saal hängt ein riesiger ⟦Kronleuchter⟧."
+},
+{
+"w": "Hashtag",
+"skip": true
+},
+{
+"w": "Brautkleid",
+"m": [
+"das Kleid, das die Frau bei der Hochzeit trägt"
+],
+"x": "Sie kaufte ein weißes ⟦Brautkleid⟧."
+},
+{
+"w": "Pein",
+"m": [
+"großer Schmerz oder Leid"
+],
+"x": "Das Warten war eine echte ⟦Pein⟧."
+},
+{
+"w": "festigen",
+"m": [
+"etwas fester und sicherer machen"
+],
+"x": "Mit Übung kannst du dein Wissen ⟦festigen⟧."
+},
+{
+"w": "schüren",
+"m": [
+"etwas stärker machen, zum Beispiel Streit oder Angst"
+],
+"x": "Er ⟦schürt⟧ mit seinen Worten den Streit."
+},
+{
+"w": "Säugetier",
+"m": [
+"ein Tier, dessen Junge Milch von der Mutter trinken"
+],
+"x": "Der Hund ist ein ⟦Säugetier⟧."
+},
+{
+"w": "durcharbeiten",
+"m": [
+"ein Buch ganz lesen und lernen",
+"ohne Pause arbeiten"
+],
+"x": "Ich ⟦arbeite⟧ das ganze Buch ⟦durch⟧."
+},
+{
+"w": "wiedererlangen",
+"m": [
+"etwas, das man verloren hatte, wieder bekommen"
+],
+"x": "Nach der Krankheit ⟦erlangte⟧ er seine Kraft ⟦wieder⟧."
+},
+{
+"w": "übereilen",
+"m": [
+"etwas zu schnell tun, ohne genug nachzudenken"
+],
+"x": "Du solltest die Entscheidung nicht ⟦übereilen⟧."
+},
+{
+"w": "Wahnsinniger",
+"m": [
+"ein Mensch, der nicht mehr klar denkt und verrückt handelt"
+],
+"x": "Ein ⟦Wahnsinniger⟧ fuhr viel zu schnell durch die Stadt."
+},
+{
+"w": "Kabinett",
+"m": [
+"ein kleiner Raum zwischen zwei Zimmern",
+"die Gruppe der Minister eines Landes"
+],
+"x": "Das ⟦Kabinett⟧ trifft sich heute in Berlin."
+},
+{
+"w": "übersäen",
+"m": [
+"etwas ist überall voll mit vielen kleinen Dingen"
+],
+"x": "Der Boden war mit Blättern ⟦übersät⟧."
+},
+{
+"w": "Sprechstunde",
+"m": [
+"die Zeit, in der man zum Arzt oder Lehrer kommen kann"
+],
+"x": "Die ⟦Sprechstunde⟧ beginnt um neun Uhr."
+},
+{
+"w": "Aperitif",
+"m": [
+"etwas zu trinken vor dem Essen"
+],
+"x": "Zum ⟦Aperitif⟧ gab es Sekt."
+},
+{
+"w": "Selbstmörder",
+"m": [
+"ein Mensch, der sich selbst das Leben nimmt"
+],
+"x": "Die Zeitung berichtet über einen ⟦Selbstmörder⟧."
+},
+{
+"w": "hexadezimal",
+"m": [
+"mit 16 Zeichen statt mit zehn gezählt"
+],
+"x": "Computer können Zahlen auch ⟦hexadezimal⟧ zeigen."
+},
+{
+"w": "robust",
+"m": [
+"stark und nicht leicht kaputt"
+],
+"x": "Das Handy ist sehr ⟦robust⟧ und fällt nicht schnell kaputt."
+},
+{
+"w": "Karnickel",
+"m": [
+"Kaninchen"
+],
+"x": "Im Garten sitzt ein kleines ⟦Karnickel⟧."
+},
+{
+"w": "Verbandszeug",
+"m": [
+"Dinge, mit denen man eine Wunde verbindet"
+],
+"x": "Im Auto liegt immer ⟦Verbandszeug⟧."
+},
+{
+"w": "Rosenkranz",
+"m": [
+"eine Kette zum Beten"
+],
+"x": "Die Oma betet mit dem ⟦Rosenkranz⟧."
+},
+{
+"w": "Verkehrsunfall",
+"m": [
+"ein Unfall auf der Straße"
+],
+"x": "Bei dem ⟦Verkehrsunfall⟧ wurde zum Glück niemand verletzt."
+},
+{
+"w": "Vielfalt",
+"m": [
+"viele verschiedene Dinge an einem Ort"
+],
+"x": "In der Stadt gibt es eine große ⟦Vielfalt⟧ an Essen."
+},
+{
+"w": "Derby",
+"m": [
+"ein wichtiges Spiel zwischen zwei Mannschaften aus einer Stadt"
+],
+"x": "Das ⟦Derby⟧ am Samstag sehen viele Fans."
+},
+{
+"w": "Landei",
+"m": [
+"ein Mensch, der nicht in der Stadt wohnt, sondern auf dem Dorf"
+],
+"x": "Meine Cousine ist ein ⟦Landei⟧ und mag Kühe."
+},
+{
+"w": "Modenschau",
+"m": [
+"eine Show, in der Menschen neue Kleider zeigen"
+],
+"x": "Wir sahen eine ⟦Modenschau⟧ in Paris."
+},
+{
+"w": "Inkognito",
+"m": [
+"wenn man nicht sagt, wer man ist"
+],
+"x": "Der Sänger reiste im ⟦Inkognito⟧ durch die Stadt."
+},
+{
+"w": "Zusammenstoß",
+"m": [
+"wenn zwei Autos oder Menschen zusammenkrachen"
+],
+"x": "Beim ⟦Zusammenstoß⟧ wurde ein Fahrer verletzt."
+},
+{
+"w": "Todesopfer",
+"m": [
+"ein Mensch, der bei einem Unglück gestorben ist"
+],
+"x": "Es gab bei dem Brand ein ⟦Todesopfer⟧."
+},
+{
+"w": "bereitwillig",
+"m": [
+"gern und ohne Zögern"
+],
+"x": "Er half uns ⟦bereitwillig⟧ beim Umzug."
+},
+{
+"w": "Interface",
+"skip": true
+},
+{
+"w": "auffrischen",
+"m": [
+"etwas wieder besser machen",
+"Wissen wieder ins Gedächtnis holen"
+],
+"x": "Ich will mein Spanisch vor der Reise ⟦auffrischen⟧."
+},
+{
+"w": "Wiederaufbau",
+"m": [
+"wenn man etwas Kaputtes wieder neu baut"
+],
+"x": "Nach dem Krieg begann der ⟦Wiederaufbau⟧ der Stadt."
+},
+{
+"w": "mobil",
+"m": [
+"so, dass man es leicht mitnehmen kann",
+"fit und gut zu Fuß"
+],
+"x": "Meine Oma ist noch sehr ⟦mobil⟧."
+},
+{
+"w": "Mordanklage",
+"m": [
+"wenn jemand vor Gericht beschuldigt wird, einen Menschen getötet zu haben"
+],
+"x": "Gegen den Mann gibt es eine ⟦Mordanklage⟧."
+},
+{
+"w": "Schwertkämpfer",
+"m": [
+"ein Mann, der mit dem Schwert kämpft"
+],
+"x": "Der ⟦Schwertkämpfer⟧ zog sein Schwert."
+},
+{
+"w": "verwundern",
+"m": [
+"jemanden überraschen"
+],
+"x": "Seine Antwort hat mich sehr ⟦verwundert⟧."
+},
+{
+"w": "Verb",
+"m": [
+"ein Wort, das sagt, was jemand tut, zum Beispiel laufen oder essen"
+],
+"x": "„Laufen“ ist ein ⟦Verb⟧."
+},
+{
+"w": "afrikanisch",
+"m": [
+"aus Afrika oder von Afrika"
+],
+"x": "Sie kocht gern ⟦afrikanisches⟧ Essen."
+},
+{
+"w": "eindämmen",
+"m": [
+"etwas kleiner halten, damit es nicht größer wird"
+],
+"x": "Man will die Krankheit ⟦eindämmen⟧."
+},
+{
+"w": "montieren",
+"m": [
+"etwas aus Teilen bauen"
+],
+"x": "Er ⟦montiert⟧ das Regal an der Wand."
+},
+{
+"w": "Analyst",
+"m": [
+"ein Mensch, der Zahlen und Daten genau untersucht"
+],
+"x": "Ein ⟦Analyst⟧ prüft die Zahlen der Firma."
+},
+{
+"w": "abgleichen",
+"m": [
+"zwei Dinge vergleichen, damit sie gleich sind"
+],
+"x": "Bitte ⟦gleiche⟧ die beiden Listen ⟦ab⟧."
+},
+{
+"w": "auswerten",
+"m": [
+"Daten ansehen und daraus Ergebnisse ziehen"
+],
+"x": "Wir ⟦werten⟧ die Umfrage am Montag ⟦aus⟧."
+},
+{
+"w": "Landmine",
+"m": [
+"eine Bombe im Boden, die explodiert, wenn man darauf tritt"
+],
+"x": "Auf dem Feld liegt noch eine ⟦Landmine⟧."
+},
+{
+"w": "restaurieren",
+"m": [
+"etwas Altes so reparieren, dass es wieder wie neu aussieht"
+],
+"x": "Sie ⟦restauriert⟧ alte Möbel."
+},
+{
+"w": "Indio",
+"skip": true
+},
+{
+"w": "Lama",
+"m": [
+"ein Tier mit langem Hals und weichem Fell"
+],
+"x": "Das ⟦Lama⟧ steht auf der Wiese."
+},
+{
+"w": "Ankläger",
+"m": [
+"der Mensch vor Gericht, der sagt, dass jemand etwas Schlimmes getan hat"
+],
+"x": "Der ⟦Ankläger⟧ sprach lange vor dem Richter."
+},
+{
+"w": "Pulsader",
+"m": [
+"ein Teil im Körper, an dem man das Herz fühlt"
+],
+"x": "Am Handgelenk spürt man die ⟦Pulsader⟧."
+},
+{
+"w": "Verdauung",
+"m": [
+"was im Bauch mit dem Essen passiert"
+],
+"x": "Ein Spaziergang hilft der ⟦Verdauung⟧."
+},
+{
+"w": "verstimmen",
+"m": [
+"jemanden traurig oder böse machen"
+],
+"x": "Seine Worte haben sie sehr ⟦verstimmt⟧."
+},
+{
+"w": "sogleich",
+"m": [
+"sofort, gleich danach"
+],
+"x": "Er kam ⟦sogleich⟧ nach dem Anruf."
+},
+{
+"w": "Säuberung",
+"m": [
+"wenn man etwas sauber macht"
+],
+"x": "Die ⟦Säuberung⟧ der Küche dauert eine Stunde."
+},
+{
+"w": "Steuererklärung",
+"m": [
+"ein Papier, in dem man dem Staat sagt, wie viel Geld man verdient hat"
+],
+"x": "Ich mache heute meine ⟦Steuererklärung⟧."
+},
+{
+"w": "Barbier",
+"m": [
+"ein Mann, der Haare schneidet und den Bart rasiert"
+],
+"x": "Der ⟦Barbier⟧ rasiert ihn mit einem Messer."
+},
+{
+"w": "Lügendetektortest",
+"m": [
+"eine Prüfung mit einem Gerät, ob jemand die Wahrheit sagt"
+],
+"x": "Der Mann machte einen ⟦Lügendetektortest⟧."
+},
+{
+"w": "suren",
+"skip": true
+},
+{
+"w": "auferlegen",
+"m": [
+"jemandem eine Pflicht oder Strafe geben"
+],
+"x": "Der Richter ⟦erlegte⟧ ihm eine hohe Strafe ⟦auf⟧."
+},
+{
+"w": "Homosexualität",
+"m": [
+"wenn man Menschen vom gleichen Geschlecht liebt"
+],
+"x": "Über ⟦Homosexualität⟧ spricht man heute offener."
+},
+{
+"w": "Treffen",
+"m": [
+"wenn Menschen zusammen an einen Ort kommen"
+],
+"x": "Das ⟦Treffen⟧ ist um drei Uhr im Café."
+},
+{
+"w": "Exfreundin",
+"m": [
+"die Frau, mit der man früher zusammen war"
+],
+"x": "Er spricht nicht mehr mit seiner ⟦Exfreundin⟧."
+},
+{
+"w": "Gerichtsverhandlung",
+"m": [
+"ein Termin vor Gericht, bei dem der Richter einen Fall prüft"
+],
+"x": "Die ⟦Gerichtsverhandlung⟧ beginnt morgen früh."
+},
+{
+"w": "Huber",
+"skip": true
+},
+{
+"w": "Großmama",
+"m": [
+"die Mutter von Mutter oder Vater (liebes Wort)"
+],
+"x": "Meine ⟦Großmama⟧ backt den besten Kuchen."
+},
+{
+"w": "Geländewagen",
+"m": [
+"ein großes Auto, das auch auf Wegen ohne Straße fahren kann"
+],
+"x": "Mit dem ⟦Geländewagen⟧ fahren wir durch den Wald."
+},
+{
+"w": "Rechtsabteilung",
+"m": [
+"die Leute in einer Firma, die sich mit Gesetzen beschäftigen"
+],
+"x": "Die ⟦Rechtsabteilung⟧ prüft den Vertrag."
+},
+{
+"w": "Oberstleutnant",
+"m": [
+"ein hoher Rang beim Militär"
+],
+"x": "Der ⟦Oberstleutnant⟧ gab den Soldaten einen Befehl."
+},
+{
+"w": "Kriegsgefangener",
+"m": [
+"ein Mann, der im Krieg vom Feind festgehalten wird"
+],
+"x": "Der ⟦Kriegsgefangene⟧ schrieb einen Brief nach Hause."
+},
+{
+"w": "Schwalbe",
+"m": [
+"ein kleiner Vogel, der im Winter nach Süden fliegt"
+],
+"x": "Im Sommer bauen ⟦Schwalben⟧ Nester unter dem Dach."
+},
+{
+"w": "Doge",
+"skip": true
+},
+{
+"w": "hereinlassen",
+"m": [
+"jemanden ins Haus oder Zimmer kommen lassen"
+],
+"x": "Bitte ⟦lass⟧ die Katze ⟦herein⟧."
+},
+{
+"w": "herbeiführen",
+"m": [
+"etwas auslösen, sodass es passiert"
+],
+"x": "Das Gespräch ⟦führte⟧ eine Lösung ⟦herbei⟧."
+},
+{
+"w": "Mast",
+"m": [
+"ein langer Pfosten, zum Beispiel am Schiff"
+],
+"x": "Die Flagge hängt oben am ⟦Mast⟧."
+},
+{
+"w": "Meeresgrund",
+"m": [
+"der Boden unter dem Wasser im Meer"
+],
+"x": "Taucher suchen am ⟦Meeresgrund⟧ nach dem Schiff."
+},
+{
+"w": "bestücken",
+"m": [
+"etwas mit den nötigen Sachen füllen"
+],
+"x": "Wir ⟦bestücken⟧ das Regal mit neuen Büchern."
+},
+{
+"w": "Widmung",
+"m": [
+"ein persönlicher Text für jemanden, oft vorne im Buch"
+],
+"x": "In dem Buch steht eine ⟦Widmung⟧ für mich."
+},
+{
+"w": "Spiritus",
+"m": [
+"eine Flüssigkeit aus Alkohol, die gut brennt"
+],
+"x": "Man brennt ⟦Spiritus⟧ in kleinen Kochern."
+},
+{
+"w": "Priesterin",
+"m": [
+"eine Frau, die in der Religion die Gebete leitet"
+],
+"x": "Die ⟦Priesterin⟧ spricht ein Gebet."
+},
+{
+"w": "Zwangsjacke",
+"m": [
+"eine Jacke, in der man die Arme nicht bewegen kann"
+],
+"x": "Im Film trägt der Mann eine ⟦Zwangsjacke⟧."
+},
+{
+"w": "Staatspolizei",
+"m": [
+"die Polizei eines Staates oder Landes"
+],
+"x": "Die ⟦Staatspolizei⟧ kam sofort zum Haus."
+},
+{
+"w": "Epoche",
+"m": [
+"eine lange Zeit in der Geschichte"
+],
+"x": "Das Mittelalter ist eine lange ⟦Epoche⟧."
+},
+{
+"w": "Glücksfall",
+"m": [
+"etwas Gutes, das man nicht erwartet hat"
+],
+"x": "Der neue Job war ein ⟦Glücksfall⟧ für ihn."
+},
+{
+"w": "Spirale",
+"m": [
+"eine Linie, die sich immer weiter um einen Punkt dreht"
+],
+"x": "Der Block hat eine ⟦Spirale⟧ aus Draht."
+},
+{
+"w": "Wiederbelebung",
+"m": [
+"wenn man einem Menschen hilft, wieder zu atmen und sein Herz wieder schlägt"
+],
+"x": "Der Arzt begann sofort mit der ⟦Wiederbelebung⟧."
+},
+{
+"w": "Kauderwelsch",
+"m": [
+"Sprache, die man nicht versteht oder die ganz falsch klingt"
+],
+"x": "Sein Englisch war ein ⟦Kauderwelsch⟧."
+},
+{
+"w": "rückfällig",
+"m": [
+"wieder in ein schlechtes altes Verhalten gefallen"
+],
+"x": "Er wurde nach einem Jahr wieder ⟦rückfällig⟧."
+},
+{
+"w": "Männerstimme",
+"m": [
+"die Stimme eines Mannes"
+],
+"x": "Am Telefon war eine tiefe ⟦Männerstimme⟧."
+},
+{
+"w": "Wichtigtuer",
+"m": [
+"ein Mensch, der sich wichtiger macht, als er ist"
+],
+"x": "Er ist ein ⟦Wichtigtuer⟧ und gibt gern an."
+},
+{
+"w": "Waterloo",
+"skip": true
+},
+{
+"w": "Ansammlung",
+"m": [
+"viele Menschen oder Dinge an einem Ort"
+],
+"x": "Vor dem Laden stand eine ⟦Ansammlung⟧ von Leuten."
+},
+{
+"w": "Hinblick",
+"m": [
+"steht in „im Hinblick auf“ und heißt „wegen“"
+],
+"x": "Im ⟦Hinblick⟧ auf das Wetter bleiben wir zu Hause."
+},
+{
+"w": "Keim",
+"m": [
+"der Anfang von etwas",
+"ein ganz kleiner Teil, der Krankheiten machen kann"
+],
+"x": "Aus dem ⟦Keim⟧ wächst bald eine Pflanze."
+},
+{
+"w": "Warteschleife",
+"m": [
+"die Zeit am Telefon, in der man warten muss und Musik hört"
+],
+"x": "Ich hing zehn Minuten in der ⟦Warteschleife⟧."
+},
+{
+"w": "Zeiger",
+"m": [
+"der dünne Stab an einer Uhr, der die Zeit angibt"
+],
+"x": "Der kleine ⟦Zeiger⟧ steht auf der Drei."
+},
+{
+"w": "Zeitlupe",
+"m": [
+"ein Film, der alles ganz langsam zeigt"
+],
+"x": "Im Fernsehen sahen wir das Tor in ⟦Zeitlupe⟧."
+},
+{
+"w": "Generaldirektor",
+"m": [
+"der Chef einer großen Firma"
+],
+"x": "Der ⟦Generaldirektor⟧ sprach zu allen Mitarbeitern."
+},
+{
+"w": "reizvoll",
+"m": [
+"interessant und schön, man möchte es sehen"
+],
+"x": "Das Angebot klingt sehr ⟦reizvoll⟧."
+},
+{
+"w": "Hufeisen",
+"m": [
+"ein Eisen unter dem Fuß vom Pferd, das Glück bringen soll"
+],
+"x": "Über der Tür hängt ein ⟦Hufeisen⟧."
+},
+{
+"w": "unvermeidbar",
+"m": [
+"so, dass man es nicht verhindern kann"
+],
+"x": "Der Streit war ⟦unvermeidbar⟧."
+},
+{
+"w": "wedeln",
+"m": [
+"etwas schnell hin und her bewegen"
+],
+"x": "Der Hund ⟦wedelt⟧ mit dem Schwanz."
+},
+{
+"w": "einkreisen",
+"m": [
+"einen Kreis um etwas zeichnen",
+"von allen Seiten umgeben"
+],
+"x": "Bitte ⟦kreise⟧ die richtige Antwort ⟦ein⟧."
+},
+{
+"w": "dürr",
+"m": [
+"sehr trocken",
+"sehr dünn"
+],
+"x": "Im Sommer war das Gras ganz ⟦dürr⟧."
+},
+{
+"w": "zersetzen",
+"m": [
+"in kleine Teile kaputtgehen"
+],
+"x": "Blätter ⟦zersetzen⟧ sich im Boden."
+},
+{
+"w": "Weihnachtskarte",
+"m": [
+"eine Karte mit guten Wünschen zu Weihnachten"
+],
+"x": "Ich schicke Oma eine ⟦Weihnachtskarte⟧."
+},
+{
+"w": "sponsern",
+"m": [
+"jemandem Geld geben, damit er etwas tun kann"
+],
+"x": "Eine Firma ⟦sponsert⟧ unseren Sportverein."
+},
+{
+"w": "ranlassen",
+"m": [
+"jemanden nah an etwas kommen lassen"
+],
+"x": "Er ⟦lässt⟧ niemanden an sein Auto ⟦ran⟧."
+},
+{
+"w": "Laborratte",
+"m": [
+"eine Ratte, die man für Versuche in der Forschung hält"
+],
+"x": "Die ⟦Laborratte⟧ lebt in einem Käfig."
+},
+{
+"w": "bezirzen",
+"m": [
+"jemanden mit Charme zu etwas bringen"
+],
+"x": "Sie ⟦bezirzte⟧ ihn mit ihrem Lächeln."
+},
+{
+"w": "Talk",
+"m": [
+"ein weißer, weicher Stoff aus Stein"
+],
+"x": "Das Pulver aus ⟦Talk⟧ ist ganz weich."
+},
+{
+"w": "Speisekammer",
+"m": [
+"ein kleiner Raum für Essen und Vorräte"
+],
+"x": "Die Nudeln stehen in der ⟦Speisekammer⟧."
+},
+{
+"w": "Bypass",
+"m": [
+"ein neuer Weg für das Blut am Herzen, wenn ein Weg zu ist"
+],
+"x": "Der Arzt legte einen ⟦Bypass⟧ am Herzen."
+},
+{
+"w": "Schwiegereltern",
+"m": [
+"die Eltern von dem Mann oder der Frau"
+],
+"x": "Wir besuchen am Sonntag die ⟦Schwiegereltern⟧."
+},
+{
+"w": "Schließung",
+"m": [
+"wenn ein Geschäft für immer zu ist"
+],
+"x": "Die ⟦Schließung⟧ des Ladens kam plötzlich."
+},
+{
+"w": "Kolben",
+"m": [
+"ein Teil im Motor, der sich auf und ab bewegt",
+"ein dicker Stab, zum Beispiel beim Mais"
+],
+"x": "Der ⟦Kolben⟧ im Motor ist kaputt."
+},
+{
+"w": "Senior",
+"m": [
+"ein alter Mensch",
+"der ältere Chef einer Firma"
+],
+"x": "Der ⟦Senior⟧ bekommt Rabatt im Kino."
+},
+{
+"w": "Luftröhre",
+"m": [
+"das Rohr im Hals, durch das die Luft in die Lunge geht"
+],
+"x": "Die Luft geht durch die ⟦Luftröhre⟧ in die Lunge."
+},
+{
+"w": "unglaubwürdig",
+"m": [
+"so, dass man es nicht glauben kann"
+],
+"x": "Seine Geschichte klingt ⟦unglaubwürdig⟧."
+},
+{
+"w": "Puppenspieler",
+"m": [
+"ein Mensch, der Puppen bewegt und für sie spricht"
+],
+"x": "Der ⟦Puppenspieler⟧ begeistert die Kinder."
+},
+{
+"w": "entbehrlich",
+"m": [
+"nicht nötig, man kann darauf verzichten"
+],
+"x": "Dieser Termin ist ⟦entbehrlich⟧."
+},
+{
+"w": "Gegenüberstellung",
+"m": [
+"ein Vergleich von zwei Dingen",
+"wenn bei der Polizei jemand eine Person erkennen soll"
+],
+"x": "Es gab eine ⟦Gegenüberstellung⟧ bei der Polizei."
+},
+{
+"w": "benebeln",
+"m": [
+"jemanden so beeinflussen, dass er nicht mehr klar denkt"
+],
+"x": "Der Alkohol hat ihn ⟦benebelt⟧."
+},
+{
+"w": "degradieren",
+"m": [
+"jemandem eine schlechtere Stelle geben"
+],
+"x": "Der Chef ⟦degradierte⟧ ihn zum Helfer."
+},
+{
+"w": "anmutig",
+"m": [
+"schön und leicht in der Bewegung"
+],
+"x": "Die Tänzerin bewegt sich ⟦anmutig⟧."
+},
+{
+"w": "anbelangen",
+"m": [
+"etwas angehen"
+],
+"x": "Was das Geld ⟦anbelangt⟧, haben wir genug."
+},
+{
+"w": "nor",
+"skip": true
+},
+{
+"w": "Analytiker",
+"m": [
+"ein Mensch, der etwas genau untersucht"
+],
+"x": "Ein ⟦Analytiker⟧ prüft die Daten der Firma."
+},
+{
+"w": "Hecht",
+"m": [
+"ein langer Fisch mit scharfen Zähnen"
+],
+"x": "Er hat einen großen ⟦Hecht⟧ gefangen."
+},
+{
+"w": "Traumfrau",
+"m": [
+"die Frau, die man sich als perfekt vorstellt"
+],
+"x": "Er hat seine ⟦Traumfrau⟧ endlich getroffen."
+},
+{
+"w": "Wenigkeit",
+"skip": true
+},
+{
+"w": "Rentier",
+"m": [
+"ein Tier mit großem Geweih aus dem kalten Norden"
+],
+"x": "Das ⟦Rentier⟧ zieht den Schlitten."
+},
+{
+"w": "Gestein",
+"m": [
+"Stein im Boden oder in den Bergen"
+],
+"x": "Das ⟦Gestein⟧ in den Bergen ist sehr hart."
+},
+{
+"w": "Graffiti",
+"m": [
+"ein Bild oder Wort, das man mit Farbe an eine Wand malt"
+],
+"x": "Die Wand ist voller bunter ⟦Graffiti⟧."
+},
+{
+"w": "Körpersprache",
+"m": [
+"wie man mit Haltung und Bewegung zeigt, was man denkt"
+],
+"x": "Seine ⟦Körpersprache⟧ zeigt, dass er nervös ist."
+},
+{
+"w": "Kürzung",
+"m": [
+"wenn etwas kürzer oder weniger gemacht wird"
+],
+"x": "Es gibt eine ⟦Kürzung⟧ beim Geld für die Schule."
+},
+{
+"w": "Halsschlagader",
+"m": [
+"der Teil am Hals, durch den viel Blut zum Kopf geht"
+],
+"x": "Am Hals spürt man die ⟦Halsschlagader⟧."
+},
+{
+"w": "Bootshaus",
+"m": [
+"ein Haus am Wasser, in dem man Boote aufbewahrt"
+],
+"x": "Das Ruderboot liegt im ⟦Bootshaus⟧."
+},
+{
+"w": "Zaster",
+"skip": true
+},
+{
+"w": "betrauern",
+"m": [
+"traurig sein, weil jemand gestorben ist"
+],
+"x": "Die Familie ⟦betrauert⟧ den Opa."
+},
+{
+"w": "vernebeln",
+"m": [
+"etwas mit Nebel oder Rauch füllen, sodass man nichts sieht"
+],
+"x": "Der Rauch ⟦vernebelte⟧ den ganzen Raum."
+},
+{
+"w": "Mikrochip",
+"m": [
+"ein ganz kleines Teil in Computern und Handys"
+],
+"x": "In der Karte steckt ein ⟦Mikrochip⟧."
+},
+{
+"w": "wegschnappen",
+"m": [
+"schnell etwas nehmen, bevor es ein anderer bekommt"
+],
+"x": "Er hat mir den letzten Platz ⟦weggeschnappt⟧."
+},
+{
+"w": "Inning",
+"skip": true
+},
+{
+"w": "bevölkern",
+"m": [
+"an einem Ort leben",
+"einen Ort mit Menschen füllen"
+],
+"x": "Viele Touristen ⟦bevölkern⟧ im Sommer die Insel."
+},
+{
+"w": "ausheben",
+"m": [
+"ein Loch graben",
+"eine Gruppe von Dieben finden und festnehmen"
+],
+"x": "Die Arbeiter ⟦heben⟧ ein großes Loch ⟦aus⟧."
+},
+{
+"w": "Osterhase",
+"m": [
+"der Hase, der Kindern Eier bringt"
+],
+"x": "Der ⟦Osterhase⟧ hat Eier im Garten versteckt."
+},
+{
+"w": "rostig",
+"m": [
+"braun und alt, weil Wasser das Eisen kaputt gemacht hat"
+],
+"x": "Das Fahrrad ist alt und ⟦rostig⟧."
+},
+{
+"w": "anschwellen",
+"m": [
+"dicker werden",
+"lauter oder stärker werden"
+],
+"x": "Nach dem Sturz ⟦schwoll⟧ sein Fuß ⟦an⟧."
+},
+{
+"w": "Blonder",
+"skip": true
+},
+{
+"w": "Blackjack",
+"skip": true
+},
+{
+"w": "durchsichtig",
+"m": [
+"so, dass man durchschauen kann"
+],
+"x": "Das Glas ist ganz klar und ⟦durchsichtig⟧."
+},
+{
+"w": "Sozialismus",
+"m": [
+"eine Idee für die Gesellschaft, bei der Besitz allen gehören soll"
+],
+"x": "In der DDR gab es den ⟦Sozialismus⟧."
+},
+{
+"w": "Uterus",
+"m": [
+"das Teil im Bauch der Frau, in dem ein Baby wächst"
+],
+"x": "Das Baby wächst im ⟦Uterus⟧ der Mutter."
+},
+{
+"w": "Nahrungskette",
+"m": [
+"die Reihe, in der ein Tier das andere frisst"
+],
+"x": "Der Fuchs steht in der ⟦Nahrungskette⟧ weit oben."
+},
+{
+"w": "vollzählig",
+"m": [
+"so, dass niemand und nichts fehlt"
+],
+"x": "Die Klasse war ⟦vollzählig⟧ da."
+},
+{
+"w": "bah",
+"m": [
+"sagt man, wenn man etwas eklig oder schlecht findet"
+],
+"x": "⟦Bah⟧, das schmeckt ja schrecklich!"
+},
+{
+"w": "Schulglocke",
+"m": [
+"die Glocke in der Schule, die den Beginn der Stunde zeigt"
+],
+"x": "Die ⟦Schulglocke⟧ klingelt um acht Uhr."
+},
+{
+"w": "Begleiterin",
+"m": [
+"eine Frau, die mit jemandem mitgeht"
+],
+"x": "Seine ⟦Begleiterin⟧ trug ein rotes Kleid."
+},
+{
+"w": "Ausflucht",
+"skip": true
+},
+{
+"w": "bergauf",
+"m": [
+"den Berg hinauf, nach oben"
+],
+"x": "Wir gingen langsam ⟦bergauf⟧."
+},
+{
+"w": "inständig",
+"m": [
+"sehr stark und von Herzen"
+],
+"x": "Er bat sie ⟦inständig⟧ um Hilfe."
+},
+{
+"w": "Mündel",
+"skip": true
+},
+{
+"w": "Kiffer",
+"m": [
+"ein Mensch, der oft Drogen raucht"
+],
+"x": "Der ⟦Kiffer⟧ saß im Park."
+},
+{
+"w": "Chinesin",
+"m": [
+"eine Frau aus China"
+],
+"x": "Meine Nachbarin ist eine ⟦Chinesin⟧."
+},
+{
+"w": "untertan",
+"m": [
+"so, dass man gehorchen muss"
+],
+"x": "Früher war das Volk dem König ⟦untertan⟧."
+},
+{
+"w": "sensen",
+"m": [
+"Gras mit einer langen Klinge schneiden"
+],
+"x": "Der Bauer ⟦senst⟧ das Gras mit der Hand."
+},
+{
+"w": "Schönheitssalon",
+"m": [
+"ein Geschäft, in dem man sich schön machen lässt"
+],
+"x": "Sie geht jeden Monat in den ⟦Schönheitssalon⟧."
+},
+{
+"w": "Kollision",
+"m": [
+"wenn zwei Dinge zusammenkrachen"
+],
+"x": "Bei der ⟦Kollision⟧ ging das Auto kaputt."
+},
+{
+"w": "unehrenhaft",
+"m": [
+"nicht ehrlich und nicht anständig"
+],
+"x": "Sein Verhalten war ⟦unehrenhaft⟧."
+},
+{
+"w": "Blümchen",
+"m": [
+"eine kleine Blume"
+],
+"x": "Auf der Wiese blüht ein gelbes ⟦Blümchen⟧."
+},
+{
+"w": "Sicherheitsstufe",
+"m": [
+"wie streng die Regeln für den Schutz sind"
+],
+"x": "Im Labor gilt die höchste ⟦Sicherheitsstufe⟧."
+},
+{
+"w": "urinieren",
+"m": [
+"Wasser lassen, zur Toilette gehen"
+],
+"x": "Der Hund ⟦uriniert⟧ an den Baum."
+},
+{
+"w": "Einschussloch",
+"m": [
+"ein Loch, das eine Kugel gemacht hat"
+],
+"x": "In der Wand ist ein ⟦Einschussloch⟧."
+},
+{
+"w": "Schneeflocke",
+"m": [
+"ein kleines weißes Stück Schnee, das vom Himmel fällt"
+],
+"x": "Eine ⟦Schneeflocke⟧ fällt auf meine Hand."
+},
+{
+"w": "Hobbit",
+"m": [
+"ein kleines Wesen aus einer Geschichte mit großen Füßen"
+],
+"x": "Der ⟦Hobbit⟧ wohnt in einer Höhle."
+},
+{
+"w": "Einlage",
+"m": [
+"etwas, das man in etwas legt, zum Beispiel in einen Schuh"
+],
+"x": "In meinen Schuhen sind weiche ⟦Einlagen⟧."
+},
+{
+"w": "Trikot",
+"m": [
+"das Hemd, das man beim Sport trägt"
+],
+"x": "Der Spieler trägt ein rotes ⟦Trikot⟧."
+},
+{
+"w": "Korsett",
+"m": [
+"ein enges Teil, das den Bauch fest hält"
+],
+"x": "Früher trugen Frauen ein enges ⟦Korsett⟧."
+},
+{
+"w": "Dialyse",
+"m": [
+"wenn eine Maschine das Blut reinigt, weil die Niere krank ist"
+],
+"x": "Er muss dreimal pro Woche zur ⟦Dialyse⟧."
+},
+{
+"w": "unergründlich",
+"m": [
+"so, dass man es nicht verstehen kann"
+],
+"x": "Sein Blick war ⟦unergründlich⟧."
+},
+{
+"w": "Zwickmühle",
+"m": [
+"eine schwierige Lage, in der jede Wahl schlecht ist"
+],
+"x": "Ich sitze in der ⟦Zwickmühle⟧ und weiß nicht, was ich tun soll."
+},
+{
+"w": "weiterkämpfen",
+"m": [
+"nicht aufgeben und weiter kämpfen"
+],
+"x": "Er wollte trotz der Wunde ⟦weiterkämpfen⟧."
+},
+{
+"w": "herumfahren",
+"m": [
+"von einem Ort zum anderen fahren"
+],
+"x": "Wir ⟦fahren⟧ den ganzen Tag in der Stadt ⟦herum⟧."
+},
+{
+"w": "Hymne",
+"m": [
+"ein festliches Lied für ein Land"
+],
+"x": "Alle stehen auf und singen die ⟦Hymne⟧."
+},
+{
+"w": "bücken",
+"m": [
+"den Rücken nach unten biegen"
+],
+"x": "Ich muss mich ⟦bücken⟧, um den Stift zu nehmen."
+},
+{
+"w": "Mette",
+"skip": true
+},
+{
+"w": "Einzelzimmer",
+"m": [
+"ein Hotelzimmer für eine Person"
+],
+"x": "Ich buche ein ⟦Einzelzimmer⟧ für zwei Nächte."
+},
+{
+"w": "Erwähnung",
+"m": [
+"wenn man etwas kurz sagt oder nennt"
+],
+"x": "Er dankte ihr mit einer kurzen ⟦Erwähnung⟧."
+},
+{
+"w": "Montage",
+"m": [
+"wenn man etwas aus Teilen baut"
+],
+"x": "Die ⟦Montage⟧ des Schranks dauert zwei Stunden."
+},
+{
+"w": "spöttisch",
+"m": [
+"so, dass man sich über jemanden lustig macht"
+],
+"x": "Er sah mich ⟦spöttisch⟧ an."
+},
+{
+"w": "todkrank",
+"m": [
+"so schwer krank, dass man sterben kann"
+],
+"x": "Der alte Mann ist ⟦todkrank⟧."
+},
+{
+"w": "entzwei",
+"m": [
+"in zwei Teile gebrochen, kaputt"
+],
+"x": "Die Tasse ist ⟦entzwei⟧."
+},
+{
+"w": "Paparazzo",
+"m": [
+"ein Mann, der heimlich Fotos von berühmten Leuten macht"
+],
+"x": "Ein ⟦Paparazzo⟧ wartete vor dem Hotel."
+},
+{
+"w": "kraftvoll",
+"m": [
+"stark und voller Kraft"
+],
+"x": "Der Sänger hat eine ⟦kraftvolle⟧ Stimme."
+},
+{
+"w": "erdulden",
+"m": [
+"etwas Schlechtes ruhig aushalten"
+],
+"x": "Er musste viel Schmerz ⟦erdulden⟧."
+},
+{
+"w": "unscharf",
+"m": [
+"nicht klar zu sehen"
+],
+"x": "Das Foto ist leider ⟦unscharf⟧."
+},
+{
+"w": "Schulfreund",
+"m": [
+"ein Freund aus der Zeit in der Schule"
+],
+"x": "Gestern traf ich meinen alten ⟦Schulfreund⟧."
+},
+{
+"w": "herausnehmen",
+"m": [
+"etwas aus einem Ding nehmen",
+"sich etwas erlauben, was man nicht darf"
+],
+"x": "Sie ⟦nimmt⟧ das Brot aus dem Ofen ⟦heraus⟧."
+},
+{
+"w": "kurzschließen",
+"m": [
+"zwei Stromkabel direkt verbinden"
+],
+"x": "Er wollte das Auto ⟦kurzschließen⟧ und starten."
+},
+{
+"w": "einlaufen",
+"m": [
+"beim Waschen kleiner werden",
+"in den Hafen fahren"
+],
+"x": "Der Pullover ist beim Waschen ⟦eingelaufen⟧."
+},
+{
+"w": "aufhetzen",
+"m": [
+"Menschen mit Worten wütend auf andere machen"
+],
+"x": "Er ⟦hetzte⟧ die Leute gegen den Nachbarn ⟦auf⟧."
+},
+{
+"w": "Gage",
+"m": [
+"das Geld, das ein Künstler für einen Auftritt bekommt"
+],
+"x": "Der Sänger bekam eine hohe ⟦Gage⟧."
+}
+]

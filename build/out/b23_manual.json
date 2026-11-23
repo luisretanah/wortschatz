@@ -328,5 +328,34 @@
 "eine Seite im Internet, auf der man vieles findet"
 ],
 "x": "Wir gehen durch das alte ⟦Portal⟧ in die Kirche."
+},
+{
+"w": "Diele",
+"m": [
+"der Raum direkt hinter der Wohnungstür",
+"ein langes Brett im Fußboden"
+],
+"x": "Stell deine Schuhe bitte in die ⟦Diele⟧."
+},
+{
+"w": "Gaumen",
+"m": [
+"der obere Teil im Mund, über der Zunge"
+],
+"x": "Die Suppe war so heiß, ich habe mir den ⟦Gaumen⟧ verbrannt."
+},
+{
+"w": "Zecke",
+"m": [
+"ein sehr kleines Tier, das sich in die Haut beißt und Blut trinkt"
+],
+"x": "Nach dem Wald haben wir eine ⟦Zecke⟧ am Bein gefunden."
+},
+{
+"w": "Galle",
+"m": [
+"ein kleines Organ im Bauch, das bei der Verdauung hilft"
+],
+"x": "Der Arzt hat ihre ⟦Galle⟧ untersucht."
 }
 ]
