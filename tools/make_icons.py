@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import sys
 def icon(size, out, pad=0.0):
     S = 1024
-    im = Image.new('RGB', (S, S), '#23395B')
+    im = Image.new('RGB', (S, S), '#2E4A6F')
     d = ImageDraw.Draw(im)
     try:
         f = ImageFont.truetype('/System/Library/Fonts/NewYork.ttf', 600)
@@ -14,13 +14,13 @@ def icon(size, out, pad=0.0):
     txt = 'W'
     bb = d.textbbox((0, 0), txt, font=f)
     w, h = bb[2] - bb[0], bb[3] - bb[1]
-    d.text(((S - w) / 2 - bb[0], (S - h) / 2 - bb[1] - 70), txt, font=f, fill='#F5F2EB')
+    d.text(((S - w) / 2 - bb[0], (S - h) / 2 - bb[1] - 70), txt, font=f, fill='#FFFDF8')
     r, gap, y = 46, 150, 790
     for i, c in enumerate(['#4F86DB', '#E0596E', '#3BAA78']):
         x = S / 2 + (i - 1) * gap
         d.ellipse([x - r, y - r, x + r, y + r], fill=c)
     if pad:
-        bg = Image.new('RGB', (S, S), '#23395B')
+        bg = Image.new('RGB', (S, S), '#2E4A6F')
         small = im.resize((int(S * scale), int(S * scale)), Image.LANCZOS)
         bg.paste(small, ((S - small.width) // 2, (S - small.height) // 2)); im = bg
     im.resize((size, size), Image.LANCZOS).save(out)

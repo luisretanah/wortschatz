@@ -15,7 +15,7 @@ async def main():
         await pg.fill('#q', 'entsch'); await pg.wait_for_timeout(1500); await shot('02-suggest')
         await pg.goto(BASE + '#/suchen/Entscheidung'); await pg.wait_for_selector('.entry', timeout=15000); await pg.wait_for_timeout(1500)
         await shot('03-entry', True)
-        await pg.click('[data-save="0"]'); await pg.click('[data-en="0"]'); await pg.wait_for_selector('.en-panel h3', timeout=15000); await shot('04-en', True)
+        await pg.click('[data-save="0"]'); await pg.click('[data-en="0"]'); await pg.wait_for_selector('.en-panel ol, .en-panel p', timeout=15000); await shot('04-en', True)
         for w in ['ging', 'nachhaltig', 'Bank', 'Häuser']:
             await pg.goto(BASE + '#/suchen/' + w); await pg.wait_for_selector('.entry', timeout=20000); await pg.wait_for_timeout(600)
             await pg.click('[data-save="0"]')

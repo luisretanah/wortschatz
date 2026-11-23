@@ -1,6 +1,6 @@
 // Offline shell: app files come from the cache first (refreshed in the
 // background); dictionary requests go to the network and fall back to cache.
-const VERSION = 'wortschatz-v1';
+const VERSION = 'wortschatz-v2';
 const SHELL = ['./', 'index.html', 'app.css', 'app.js', 'wiki.js', 'words.js', 'manifest.webmanifest',
   'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
