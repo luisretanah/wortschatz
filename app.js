@@ -55,6 +55,24 @@ function cacheGet(q) {
   return c && Date.now() - c.t < 30 * DAY ? c.r : null;
 }
 
+// ---------- simple explanations (build/: subtitle frequency top words, written at B1) ----------
+let SIMPLE = {};
+const simpleReady = fetch('simple.json').then(r => r.ok ? r.json() : {}).then(d => { SIMPLE = d || {}; SIMPLE_LC = null; }).catch(() => {});
+let SIMPLE_LC = null;
+function simpleFor(title) {
+  if (!title) return null;
+  if (SIMPLE[title]) return SIMPLE[title];
+  // "Abendessen" falls back to "abendessen" (and the other way round): nearly the same meaning
+  if (!SIMPLE_LC) { SIMPLE_LC = {}; for (const k in SIMPLE) SIMPLE_LC[k.toLowerCase()] = SIMPLE[k]; }
+  return SIMPLE_LC[title.toLowerCase()] || null;
+}
+// The plain meaning a learner should see first: the simple one if we have it, else Wiktionary's.
+function plainMeaning(e, sense) {
+  const s = simpleFor(e.title);
+  if (s && (!sense || sense === e.senses[0])) return s[0][0];
+  return splitLabel((sense || e.senses[0] || { text: '' }).text).text;
+}
+
 // ---------- themes ----------
 const THEMES = (window.THEMES || []).map(t => ({
   ...t,
@@ -302,9 +320,11 @@ async function fillWotd(w) {
   let e = r.entries[0];
   if (w.g) e = r.entries.find(x => isNoun(x) && x.genus.includes(w.g)) || e;
   $('#wotd-gram').innerHTML = gramHTML(e, true);
+  await simpleReady;
+  const sim = simpleFor(r.title);
   const s = e.senses[0];
-  const ex = s && examplesFor(e, s.n)[0];
-  body.innerHTML = (s ? `<p class="def">${esc(splitLabel(s.text).text)}</p>` : '') + (ex && !ex.quote ? `<p class="ex">${markEx(ex.text)}</p>` : '');
+  const ex = sim && sim[1] ? { text: sim[1] } : (s && examplesFor(e, s.n)[0]);
+  body.innerHTML = (s || sim ? `<p class="def">${esc(sim ? sim[0][0] : splitLabel(s.text).text)}</p>` : '') + (ex && !ex.quote ? `<p class="ex">${markEx(ex.text)}</p>` : '');
 }
 
 let lookupToken = 0;
@@ -312,6 +332,7 @@ async function doLookup(q) {
   const token = ++lookupToken;
   const out = $('#result');
   out.innerHTML = `<div class="loading"><div class="spinner"></div>Suche „${esc(q)}“ …</div>`;
+  await simpleReady;
   let r = cacheGet(q);
   if (!r) {
     try {
@@ -366,6 +387,9 @@ function entryHTML(r, e, i) {
   const syn = e.syn.filter(s => s.close).concat(e.syn.filter(s => !s.close)).slice(0, 12);
   const idioms = e.idioms.slice(0, 5);
   const notes = e.notes.filter(n => !/Person|Indikativ|Konjunktiv/.test(n)).slice(0, 1);
+  const simple = i === 0 ? simpleFor(title) : null;
+  // easy-first for words without a simple explanation: only synonyms that are common words themselves
+  const near = simple ? [] : e.syn.filter(s => !/\s/.test(s.w) && simpleFor(s.w)).slice(0, 2);
   const kind = isNoun(e) ? (e.pluralOnly ? 'Substantiv · nur Plural' : 'Substantiv' + (e.genus.length ? ' · ' + e.genus.map(g => GENUS_WORD[g]).join(' oder ') : '')) : (e.pos || '');
   return `<article class="entry" data-i="${i}">
     <div class="entry-top">
@@ -373,6 +397,7 @@ function entryHTML(r, e, i) {
       <h1 class="headword" lang="de">${artSpan(e)}${syllables(e, title)}</h1>
       <p class="gram">${gramHTML(e, false, true)}</p>
       ${e.ipa ? `<p class="ipa">[${esc(e.ipa)}]</p>` : ''}
+      ${!simple && near.length ? `<p class="near">≈ ${near.map(s => `<a href="#/suchen/${encodeURIComponent(s.w)}">${esc(s.w)}</a>`).join(', ')}</p>` : ''}
       <div class="actions">
         <button class="act" data-speak="${esc((art ? art.split('/')[0] + ' ' : '') + title)}">${ICON.speak}Anhören</button>
         <button class="act ${saved ? 'on' : ''}" data-save="${i}" aria-pressed="${saved}">${ICON.heart}<span>${saved ? 'Gemerkt' : 'Merken'}</span></button>
@@ -381,7 +406,9 @@ function entryHTML(r, e, i) {
       <div class="en-slot"></div>
     </div>
     <div class="entry-body">
+    ${simple ? `<div class="simple"><small>Einfach erklärt</small>${simple[0].length > 1 ? `<ol>${simple[0].map(m => `<li>${esc(m)}</li>`).join('')}</ol>` : `<p class="m">${esc(simple[0][0])}</p>`}${simple[1] ? exHTML({ text: simple[1] }) : ''}</div>` : ''}
     ${hint && i === 0 ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
+    ${simple ? '<div class="lbl" style="margin-top:26px">Im Wörterbuch</div>' : ''}
     ${(sentences[key] || []).length ? `<div class="mine"><small>Deine Sätze</small>${sentences[key].map(s => `<p>${esc(s.text)}</p>`).join('')}</div>` : ''}
     ${notes.map(n => `<p class="note">${esc(n)}</p>`).join('')}
     <ol class="senses">${e.senses.map((s, j) => senseHTML(e, s, j, e.senses.length)).join('')}</ol>
@@ -478,7 +505,7 @@ function renderWords(filter) {
   list.forEach(w => {
     const L = (w.display || w.title)[0].toUpperCase().replace(/[ÄÖÜ]/, c => ({ Ä: 'A', Ö: 'O', Ü: 'U' }[c]));
     if (L !== lastL) { flush(); rows.push(`<div class="letter">${esc(L)}</div>`); lastL = L; }
-    const sub = w.hint || (w.snap ? splitLabel((w.snap.senses[0] || { text: '' }).text).text : 'wird geladen …');
+    const sub = w.hint || (simpleFor(w.title) ? simpleFor(w.title)[0][0] : w.snap ? splitLabel((w.snap.senses[0] || { text: '' }).text).text : 'wird geladen …');
     block.push(`<a class="row" href="#/suchen/${encodeURIComponent(w.title)}"><div class="main"><div class="w">${displayWord(w)}</div><div class="sub">${esc(sub)}</div></div>${lvlDots(level(w))}</a>`);
   });
   flush();
@@ -705,8 +732,9 @@ function flashSession(extra) {
     const e = w.snap;
     const dir = prefs.dir === 'mix' ? (Math.random() < 0.5 ? 'wb' : 'bw') : prefs.dir;
     const s0 = e.senses[0] || { text: '', n: '1' };
-    const def0 = splitLabel(s0.text).text;
-    const ex = e.examples.find(x => x.n === s0.n && !x.quote) || e.examples.find(x => !x.quote) || e.examples[0];
+    const sim = simpleFor(e.title);
+    const def0 = sim ? sim[0][0] : splitLabel(s0.text).text;
+    const ex = (sim && sim[1] ? { text: sim[1] } : null) || e.examples.find(x => x.n === s0.n && !x.quote) || e.examples.find(x => !x.quote) || e.examples[0];
     const noun = isNoun(e);
     const front = dir === 'wb'
       ? `<div class="prompt">${noun ? 'Welcher Artikel? Was bedeutet es?' : 'Was bedeutet das?'}</div><div class="big">${esc(e.title)}</div>`
@@ -715,7 +743,8 @@ function flashSession(extra) {
       <div class="indexcard"><div class="face">${front}</div><div class="answer" hidden>
         <div class="big">${artSpan(e)}<span>${esc(e.title)}</span><button class="say-btn" data-speak="${esc((noun ? artOf(e).split('/')[0] + ' ' : '') + e.title)}" aria-label="Vorlesen">${ICON.speak}</button></div>
         <p class="gram">${gramHTML(e, true)}</p>
-        <ol class="senses">${e.senses.slice(0, 2).map((s, j, a) => `<li class="sense"><span class="num">Bedeutung ${esc(s.n)}</span><div class="def">${esc(splitLabel(s.text).text)}</div></li>`).join('')}</ol>
+        ${sim ? `<ol class="senses">${sim[0].map((m, j) => `<li class="sense"><span class="num">${sim[0].length > 1 ? 'Bedeutung ' + (j + 1) : 'Einfach erklärt'}</span><div class="def">${esc(m)}</div></li>`).join('')}</ol>`
+          : `<ol class="senses">${e.senses.slice(0, 2).map((s, j, a) => `<li class="sense"><span class="num">Bedeutung ${esc(s.n)}</span><div class="def">${esc(splitLabel(s.text).text)}</div></li>`).join('')}</ol>`}
         ${ex ? `<p class="ex" style="margin-top:12px">${markEx(ex.text)}</p>` : ''}
       </div></div>
       <div class="dock"><button class="btn primary wide" id="flip">Antwort zeigen</button>
@@ -823,7 +852,9 @@ function clozePool() {
   const out = [];
   Object.values(words).forEach(w => {
     const e = w.snap; if (!e) return;
-    e.examples.forEach(x => {
+    const sim = simpleFor(e.title);
+    const exs = sim && sim[1] ? [{ text: sim[1], n: (e.senses[0] || {}).n, quote: false, simple: true }, ...e.examples] : e.examples;
+    exs.forEach(x => {
       if (!/⟦/.test(x.text) || x.text.length > 170) return;
       const marks = [...x.text.matchAll(/⟦(.*?)⟧/g)].map(m => m[1]);
       const stem = e.title.toLowerCase().slice(0, 3);
@@ -838,7 +869,7 @@ function clozePool() {
 function clozeSession() {
   const pool = clozePool();
   const byWord = new Map();
-  shuffle(pool.slice()).sort((a, b) => a.quote - b.quote).forEach(c => { if (!byWord.has(c.e.title)) byWord.set(c.e.title, c); });
+  shuffle(pool.slice()).sort((a, b) => (b.x.simple ? 1 : 0) - (a.x.simple ? 1 : 0) || a.quote - b.quote).forEach(c => { if (!byWord.has(c.e.title)) byWord.set(c.e.title, c); });
   const picked = shuffle([...byWord.values()]).slice(0, 10);
   let idx = 0, right = 0;
   const norm = s => s.toLowerCase().replace(/[.,;:!?„“"']/g, '').replace(/\s+/g, ' ').trim();
@@ -854,7 +885,7 @@ function clozeSession() {
     });
     view.innerHTML = sessionTop(idx, picked.length) + `
       <div class="cloze card">
-        <div class="clue">Gesucht: <b>${esc(splitLabel(sense.text).text)}</b><span class="hintline">${esc(c.e.pos)} · ${c.target.length} Buchstaben · beginnt mit „${esc(c.target[0])}“</span></div>
+        <div class="clue">Gesucht: <b>${esc(c.x.simple ? plainMeaning(c.e) : splitLabel(sense.text).text)}</b><span class="hintline">${esc(c.e.pos)} · ${c.target.length} Buchstaben · beginnt mit „${esc(c.target[0])}“</span></div>
         <p class="sentence">${sentence}</p>
         <form id="cf"><input id="ans" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" enterkeyhint="done" placeholder="Wort eintippen" aria-label="Antwort"></form>
         <div class="verdict" aria-live="polite"></div>
@@ -978,11 +1009,12 @@ function meaningSession() {
     }
     opts.push({ html: label(e), ok: true });
     shuffle(opts);
-    const ex = examplesFor(e, sense.n).find(x => !x.quote);
+    const simQ = simpleFor(e.title);
+    const ex = simQ && simQ[1] ? { text: simQ[1] } : examplesFor(e, sense.n).find(x => !x.quote);
     view.innerHTML = sessionTop(idx, picked.length) + `
       <div class="card ex-card">
         <div class="eyebrow">Welches Wort passt?</div>
-        <p class="ex-def">${esc(splitLabel(sense.text).text)}</p>
+        <p class="ex-def">${esc(plainMeaning(e))}</p>
         <div class="options">${opts.map((o, i) => `<button class="option" data-i="${i}">${o.html}</button>`).join('')}</div>
         <div id="after" aria-live="polite"></div>
       </div>`;
@@ -1024,7 +1056,7 @@ function sentenceSession() {
       <div class="card ex-card">
         <div class="eyebrow">Dein eigener Satz</div>
         <h2 class="ex-word">${label3(e)}</h2>
-        <p class="ex-mean">${esc(splitLabel(sense.text).text)}</p>
+        <p class="ex-mean">${esc(plainMeaning(e))}</p>
         ${hint ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
         <p class="ex-task">Schreib einen Satz mit diesem Wort. Am besten über dein Leben.</p>
         <textarea id="draft" rows="3" placeholder="Mein Satz …" autocapitalize="sentences" spellcheck="false" aria-label="Dein Satz">${esc(prev ? prev.text : '')}</textarea>
@@ -1046,7 +1078,8 @@ function sentenceSession() {
       if (!/^[A-ZÄÖÜ„"]/.test(t)) tips.push('Ein Satz beginnt mit einem Großbuchstaben.');
       if (!/[.!?…“"]$/.test(t)) tips.push('Am Ende fehlt ein Satzzeichen.');
       if (t.split(/\s+/).length < 5) tips.push('Schreib etwas mehr: wer, wo, warum?');
-      const ex = e.examples.find(x => !x.quote);
+      const simS = simpleFor(e.title);
+      const ex = simS && simS[1] ? { text: simS[1] } : e.examples.find(x => !x.quote);
       $('#check').innerHTML = `<div class="checklist">
         ${tips.length ? `<div class="tips">${tips.map(x => `<p>${x}</p>`).join('')}</div>` : '<p class="ok" style="font-weight:600">Sieht gut aus. Prüfe noch selbst:</p>'}
         <label><input type="checkbox"> Das Wort passt in meinen Satz.</label>

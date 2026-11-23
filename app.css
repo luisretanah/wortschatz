@@ -388,6 +388,16 @@ a.card { display: block; text-decoration: none; color: inherit; }
 .stat-row b { display: block; font: 700 34px var(--serif); color: var(--accent); }
 .stat-row span { color: var(--ink-2); font-size: 13px; }
 
+/* ---------- simple explanations ---------- */
+.simple { margin-top: 18px; padding: 16px 16px 14px; border-radius: 18px; background: linear-gradient(145deg, var(--accent-soft), color-mix(in srgb, var(--accent-soft) 40%, var(--page-solid))); border: 1px solid color-mix(in srgb, var(--accent-2) 22%, transparent); }
+.simple small { display: block; font-weight: 700; font-size: 13px; color: var(--accent); margin-bottom: 6px; }
+.simple .m { font-size: 19px; line-height: 1.4; font-weight: 500; }
+.simple ol { margin: 0; padding-left: 22px; font-size: 18px; line-height: 1.4; font-weight: 500; }
+.simple ol li + li { margin-top: 6px; }
+.simple .ex { background: var(--page-solid); margin-top: 12px; }
+.near { margin-top: 8px; font-size: 15.5px; color: var(--ink-2); }
+.near a { font-weight: 600; text-decoration: none; }
+
 /* ---------- new exercises ---------- */
 .mode .ico.opts { background: var(--page-solid); border: 1px solid var(--rule); grid-template-columns: 1fr 1fr; gap: 4px; padding: 13px; }
 .mode .ico.opts i { width: 11px; height: 8px; border-radius: 3px; background: var(--rule-2); }

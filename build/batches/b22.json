@@ -1,0 +1,1180 @@
+[
+{
+"word": "Bewerbung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Handlung, mit der man sich um etwas bemüht, das man erreichen/haben möchte",
+"Handlung, mit der man sich um etwas bemüht, das man erreichen/haben möchte / Bemühung um einen Arbeitsplatz"
+]
+},
+{
+"word": "Vorstellungsgespräch",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Gespräch des Arbeitgebers mit jemandem, der Arbeit bei ihm sucht, das dazu dient, den Anwärter einschätzen zu können"
+]
+},
+{
+"word": "Voraussetzung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eine Bedingung, die im Vorfeld erfüllt sein muss; etwas was benötigt wird, bevor etwas anderes eintreten kann",
+"eine Annahme, die einer Überlegung vorangestellt wurde"
+]
+},
+{
+"word": "Arbeitgeber",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person oder Firma, die Leute als Arbeiter oder Angestellte einstellt, beschäftigt und ihnen dafür Geld bezahlt"
+]
+},
+{
+"word": "Arbeitnehmer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"jemand, der bei einer Firma eingestellt ist und für seine Arbeit bezahlt wird"
+]
+},
+{
+"word": "Kündigung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"einseitige, in die Zukunft wirkende Beendigung eines Vertragsverhältnisses",
+"Entlassung aus einem Arbeitsverhältnis"
+]
+},
+{
+"word": "Weiterbildung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"weiterführende, persönliche Ausbildung und Qualifizierung"
+]
+},
+{
+"word": "Teilzeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Beschäftigung in einem Arbeitsverhältnis, bei der nicht die volle Arbeitszeit gearbeitet wird",
+"gemessene Zeitspanne, innerhalb der ein Abschnitt (zum Beispiel Teil einer gelaufenen Strecke) bewältigt wurde"
+]
+},
+{
+"word": "Belastung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eine Beanspruchung, die Schaden verursachen kann",
+"finanzielle Anforderung, Auflage"
+]
+},
+{
+"word": "Zeitdruck",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"durch wenig verfügbare Zeit für das Erledigen einer Aufgabe entstehender Druck"
+]
+},
+{
+"word": "Selbstständigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zustand, auf eigenen Füßen zu stehen",
+"Zustand, sein Berufsleben unabhängig von Arbeitgebern zu gestalten"
+]
+},
+{
+"word": "flexibel",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"die Eigenschaft besitzend, sich leicht mechanisch verändern zu lassen",
+"die Fähigkeit besitzend, sich auf geänderte Anforderungen und Gegebenheiten der Umwelt einstellen zu können"
+]
+},
+{
+"word": "belastbar",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"stabil und widerstandsfähig genug, um ein (angemessenes) Gewicht zu tragen, eine Belastung auszuhalten",
+"von neutraler Seite bestätigt, geprüft, gesichert, nachgeprüft, nachprüfbar"
+]
+},
+{
+"word": "zuverlässig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"so, dass man darauf oder ihm vertrauen kann"
+]
+},
+{
+"word": "Zeugnis",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Zeugenaussage",
+"schriftliches Dokument, das eine Leistungsbewertung beurkundet, Nachweis"
+]
+},
+{
+"word": "Motivation",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"der Wille, ein Ziel zu erreichen",
+"Prozess und Ergebnis eines Vorgangs, der dazu führt, dass die Bedeutung sprachlicher Ausdrücke sich aus der Bedeutung ihrer Bestandteile herleiten lässt"
+]
+},
+{
+"word": "Hochschule",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eine wissenschaftliche Einrichtung des Tertiären Bildungsbereichs, die der Pflege der Wissenschaften und Künste durch Forschung und Lehre sowie der beruflichen Ausbildung und Weiterbildung dient."
+]
+},
+{
+"word": "Fach",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"der durch das Balkengerüst beziehungsweise die tragenden Balken gebildete und mit Lehm oder Ziegeln ausgefüllte Zwischenraum einer Fachwerkwand (auch Gefach)",
+"Ordnungselement in einem Schrank, Regal oder Kasten zur Aufbewahrung und zum schnelleren Wiederfinden von Gegenständen"
+]
+},
+{
+"word": "Fremdsprache",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Sprache, die man nicht als Muttersprache erlernt hat bzw. am Lernen ist"
+]
+},
+{
+"word": "Muttersprache",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Sprache, die ein Mensch in der Kindheit erlernt (hat) und in der er primär denkt",
+"Sprache, von der andere Sprachen abstammen"
+]
+},
+{
+"word": "Wortschatz",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Menge der Wörter einer Sprache",
+"Gesamtheit der Wörter, die eine Person kennt"
+]
+},
+{
+"word": "Aussprache",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das akustische Formulieren von Lauten, Worten und Sätzen",
+"das Besprechen, die Diskussion eines Problems, das Gespräch zu einem bestimmten Sachverhalt"
+]
+},
+{
+"word": "Misserfolg",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Verfehlen eines gesteckten Ziels"
+]
+},
+{
+"word": "begabt",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"Talent besitzend"
+]
+},
+{
+"word": "anspruchsvoll",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht leicht zufriedenzustellen, mit hohen Ansprüchen",
+"viel Wissen/Können wird benötigt, um es zu verstehen oder zu leisten"
+]
+},
+{
+"word": "Ernährung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Zufuhr von Nahrung",
+"die Nahrung selbst"
+]
+},
+{
+"word": "Erholung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"derjenige Vorgang, bei dem sich ein biologischer Organismus nach einer anstrengenden Tätigkeit, aber auch nach Verletzungen oder Krankheiten durch eine Ruhephase wieder regeneriert und Kräfte sammelt",
+"Zurückbewegung auf einen positiven Zustand hin"
+]
+},
+{
+"word": "Nebenwirkung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"unerwünschter oder nicht beabsichtigter, aber schwächerer Effekt, der bei einer medizinischen Behandlung oder durch Medikamente auftreten kann",
+"unerwünschte oder nicht beabsichtigte Auswirkung als Folge einer Handlung"
+]
+},
+{
+"word": "Vorsorge",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Vorbeugung, Vorbereitung für spätere Entwicklungen"
+]
+},
+{
+"word": "Immunsystem",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"biologisches Abwehrsystem höherer Lebewesen"
+]
+},
+{
+"word": "Wohlbefinden",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Gefühl des Wohlseins"
+]
+},
+{
+"word": "Krankenversicherung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"gesetzliche oder private Versicherung, welche die Kosten, die im Krankheitsfall entstehen, übernimmt",
+"Träger der Krankenversicherung: Einrichtung der gesetzlichen Sozialversicherung oder privates Versicherungsunternehmen"
+]
+},
+{
+"word": "zunehmen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"größer werden",
+"eine Eigenschaft oder einen Besitz vergrößern"
+]
+},
+{
+"word": "vorbeugen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"den Eintritt eines meist negativen möglichen Ereignisses der Zukunft durch Maßnahmen in der Gegenwart verhindern",
+"sich oder einen Körperteil nach vorne beugen"
+]
+},
+{
+"word": "erschöpft",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"sehr müde und ausgelaugt sein",
+"verfügbares Pensum aufgebraucht"
+]
+},
+{
+"word": "ausgewogen",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"gut gewichtet, abgestimmt; genau gewogen, gewägt; im Gleichgewicht befindlich; harmonisch"
+]
+},
+{
+"word": "Klimawandel",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die Veränderung des Klimas der Erde innerhalb eines großen Zeitabschnitts",
+"die Klimaänderung in den letzten Jahrzehnten"
+]
+},
+{
+"word": "Umwelt",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die nähere oder weiter entfernte Umgebung eines Lebewesens, die einen direkten oder indirekten Einfluss auf dieses Lebewesen und seine Lebensbedingungen ausübt",
+"Menschen in der Umgebung, mit denen jemand in sozialem Kontakt steht"
+]
+},
+{
+"word": "Umweltschutz",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"alle Maßnahmen, die dem Schutz und Erhalt des Ökosystems und Klimas der Erde dienen"
+]
+},
+{
+"word": "Nachhaltigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Wirkung über einen kurzen Zeitraum hinaus"
+]
+},
+{
+"word": "Verbrauch",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die Verwendung eines Gutes in Menge und Stückzahlen; das Verbrauchte",
+"das Verbrauchen, Aufbrauchen eines Gutes; das was verbraucht wird"
+]
+},
+{
+"word": "Verschmutzung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Verunreinigung durch Schmutz"
+]
+},
+{
+"word": "Mülltrennung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Sortierung des Mülls nach dessen Sorte"
+]
+},
+{
+"word": "Recycling",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Wiederverwertung von Abfallstoffen zur Herstellung von neuen Produkten"
+]
+},
+{
+"word": "Rohstoff",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"zur Verarbeitung bestimmter Ausgangsstoff"
+]
+},
+{
+"word": "Folge",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Ergebnis oder Wirkung einer Handlung oder eines Geschehens",
+"Reihe von aufeinanderfolgenden Dingen oder Ereignissen"
+]
+},
+{
+"word": "Tierart",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"nach bestimmten Kriterien von anderen Tieren abgegrenzte Tiergruppe"
+]
+},
+{
+"word": "Aussterben",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Verschwinden einer Art in ihrem Ansiedlungsgebiet durch das Sterben aller Individuen dieser Art"
+]
+},
+{
+"word": "Erwärmung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"kleine Erhöhung der Temperatur"
+]
+},
+{
+"word": "Abfall",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"der bei der Verwendung oder Verarbeitung übrig gebliebene Rest (auch im übertragenen Sinn)",
+"das (unauffällige) Schwinden der Verbindung zu – oder die (ausdrückliche) Lossagung von – einer Lehre, Religion, politischen Partei oder Richtung"
+]
+},
+{
+"word": "verringern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas kleiner, weniger machen",
+"kleiner, weniger werden"
+]
+},
+{
+"word": "nachhaltig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"auf deutliche Art und Weise anhaltend, lange nachwirkend, dauernd",
+"nach den Prinzipien der Nachhaltigkeit handelnd oder organisiert"
+]
+},
+{
+"word": "umweltfreundlich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"die natürliche Umwelt schonend"
+]
+},
+{
+"word": "erneuerbar",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"für etwas Neues geeignet, zum Renovieren geeignet"
+]
+},
+{
+"word": "Quelle",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Ursprung eines Flusses, fließenden Gewässers; Ort des augenscheinlichen oberirdischen Austritts von Gewässern",
+"Ursprung von etwas Bestimmten"
+]
+},
+{
+"word": "Plattform",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"begrenzte, ebene, erhöhte Fläche",
+"Ausgangsbasis"
+]
+},
+{
+"word": "Datenschutz",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"im engeren Sinne: der Schutz personenbezogener Daten vor Missbrauch",
+"im weiteren Sinne: der Schutz wirtschaftlicher, wissenschaftlicher oder technischer Daten gegen Verlust, Veränderung oder Diebstahl"
+]
+},
+{
+"word": "Glaubwürdigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Glaubwürdigsein; glaubwürdige Eigenschaft"
+]
+},
+{
+"word": "Schlagzeile",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"besonders auffällig aufgemachte Überschrift, vor allem auf Plakaten, in der Presse und Werbung"
+]
+},
+{
+"word": "glaubwürdig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"so, dass man ihm glauben kann"
+]
+},
+{
+"word": "sachlich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"auf eine bestimmte Sache bezogen, sich nicht von Gefühlen oder Vorurteilen leiten lassend",
+"eine Tatsache oder Angelegenheit betreffend"
+]
+},
+{
+"word": "aktuell",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"jetzt, in dieser Zeit, in diesem Moment",
+"auf dem neuesten Stand"
+]
+},
+{
+"word": "Gleichberechtigung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Gleichheit verschiedener Träger von Rechten und Pflichten (zum Beispiel Männer und Frauen) in einem bestimmten Rechtssystem"
+]
+},
+{
+"word": "Integration",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Einbeziehung, Eingliederung in ein größeres Ganzes",
+"Berechnung der Stammfunktion; Umkehrung der Ableitung"
+]
+},
+{
+"word": "Staatsangehörigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Eigenschaft, Bürger eines bestimmten Staates zu sein"
+]
+},
+{
+"word": "Recht",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"staatlich festgelegte und anerkannte Ordnung des menschlichen Zusammenlebens, deren Einhaltung durch staatlich organisierten Zwang garantiert wird",
+"Befugnis einer Person, etwas zu tun, zu unterlassen oder zu verlangen, die sich aus dem Recht im objektiven Sinn ableiten lässt"
+]
+},
+{
+"word": "Bürgerin",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Einwohnerin einer Stadt oder eines Staates",
+"im Mittelalter weibliches Mitglied des Bürgerstandes"
+]
+},
+{
+"word": "Armut",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"ein Fehlen von materiellen Mitteln, ein Mangel an Chancen, ein Leben zu führen, das einem gewissen Minimalstandard entspricht",
+"das Fehlen von Fähigkeiten, Fertigkeiten, geistige Armut"
+]
+},
+{
+"word": "Wohlstand",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"gute wirtschaftliche Lage"
+]
+},
+{
+"word": "Vorurteil",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"voreilig gebildete, oft falsche Meinung über jemanden oder etwas, das nicht auf Erfahrungen oder Wissen beruht und meist mit Abneigung oder Hass verbunden ist; Urteil vor oder ohne Kenntnis des einzelnen Beurteilten"
+]
+},
+{
+"word": "Toleranz",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"nur Singular gebräuchlich: Eigenschaft, etwas dulden, ertragen oder zulassen zu können",
+"zulässige Abweichung von einem vorgeschriebenen, verbindlichen Maß oder Wert"
+]
+},
+{
+"word": "benachteiligen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandes Chancen oder Möglichkeiten mindern"
+]
+},
+{
+"word": "gerecht",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"übereinstimmend mit objektiven Rechtsnormen oder subjektivem Rechtsempfinden",
+"allgemeinen, sachlichen Normen entsprechend"
+]
+},
+{
+"word": "ehrenamtlich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"ein Ehrenamt ausübend; unentgeltlich (auch ohne Amt)"
+]
+},
+{
+"word": "Miete",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das zu zahlende Entgelt für die (zeitweilige) Nutzung beziehungsweise Überlassung bestimmter Einrichtungen (vor allem Wohnungen oder Ähnlichem), Gegenständen oder (veraltet) Dienstleistungen",
+"entgeltliche (zeitweilige) Nutzung beziehungsweise Überlassung des Gebrauchs einer Einrichtung, eines Gegenstandes oder (veraltet) einer Dienstleistung"
+]
+},
+{
+"word": "Vermieter",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die eine Sache vermietet"
+]
+},
+{
+"word": "Mieter",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die eine Sache mietet"
+]
+},
+{
+"word": "Nebenkosten",
+"pos": "noun",
+"art": "",
+"wiktionary": [
+"Kosten, die zusätzlich anfallen"
+]
+},
+{
+"word": "Wohngemeinschaft",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Wohnung, die sich mehrere Personen teilen",
+"Gemeinschaft von Personen (Mitbewohner), die sich eine Wohnung teilen"
+]
+},
+{
+"word": "Hausordnung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Vorschriften über das Verhalten und die Pflichten innerhalb eines (Privat-)Gebäudes"
+]
+},
+{
+"word": "Umzug",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Wechsel des Wohnsitzes (in einem oder zu einem anderen Ort)",
+"geordneter Marsch von Menschen, die eventuell auch von Fahrzeugen begleitet werden"
+]
+},
+{
+"word": "Rücksicht",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"wohlwollendes Verhalten gegenüber jemandem oder etwas unter Beachtung der Umstände",
+"Rückblick auf etwas, das schon vergangen ist"
+]
+},
+{
+"word": "Haushalt",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Gesamtheit von Einnahmen und Ausgaben einer Gruppe Zusammenlebender, eines Unternehmens, einer Institution oder Körperschaft",
+"Personengruppe, die gemeinsam wirtschaftet"
+]
+},
+{
+"word": "renovieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Gebäude, Räumlichkeiten, Innenausstattungen oder Ähnliches wieder herrichten, erneuern, instand setzen"
+]
+},
+{
+"word": "geräumig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"viel freien Platz bietend"
+]
+},
+{
+"word": "rücksichtsvoll",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"auf andere Rücksicht nehmend"
+]
+},
+{
+"word": "Verbraucher",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die Waren ersteht und verbraucht",
+"jede natürliche Person, die ein Rechtsgeschäft zu einem Zweck abschließt, der weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zuzurechnen ist"
+]
+},
+{
+"word": "Nachfrage",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Bereitschaft, etwas zu kaufen",
+"Erkundigung, Fragen nach etwas"
+]
+},
+{
+"word": "Reklamation",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Beanstandung eines bestimmten Mangels oder Inkorrektheit (zumeist einer Kaufsache oder Dienstleistung); eine Aufforderung zur Gewährleistung"
+]
+},
+{
+"word": "Umtausch",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Tausch eines Produktes nach dessen Kauf (meist in einem Geschäft), um diesen Kauf rückgängig zu machen und für die zurückgegebene Ware einen Ersatz, Geld oder einen Gutschein zu erhalten",
+"Tausch einer Währung in eine andere"
+]
+},
+{
+"word": "Ratenzahlung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zahlungsart, bei der man in zeitlich gleichmäßigen Abständen Teilbeträge zahlt (bis der Gesamtbetrag abgedeckt ist)",
+"die Zahlung eines Gesamtbetrages in zeitlich gleichmäßig erstatteten Teilbeträgen"
+]
+},
+{
+"word": "Überweisung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Übertragung von Geld von einem Bankkonto zum anderen",
+"eine Übersendung eines Patienten zu einem anderen Arzt"
+]
+},
+{
+"word": "Ersparnis",
+"pos": "noun",
+"art": "",
+"wiktionary": [
+"Verringerung des Aufwands bei unverändertem Ertrag",
+"angesammeltes, aber nicht ausgegebenes Geld"
+]
+},
+{
+"word": "Schulden",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die gesamten Verpflichtungen (Passiva) einer Person oder einer Firma, die dem vorhandenen Vermögen (Aktiva) gegenüber stehen"
+]
+},
+{
+"word": "Steuer",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Vorrichtung zum Lenken eines Fahrzeuges"
+]
+},
+{
+"word": "Rabatt",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"(prozentualer) Preisnachlass"
+]
+},
+{
+"word": "Versand",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"der Transport von Gegenständen und Artikeln",
+"Abteilung in einem Betrieb, die sich um ^([1]) kümmert"
+]
+},
+{
+"word": "preiswert",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"mit gutem Preis-Leistungs-Verhältnis behaftet"
+]
+},
+{
+"word": "kostenlos",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht mit Kosten verbunden"
+]
+},
+{
+"word": "Vertrauen",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Überzeugung von der Richtigkeit beziehungsweise Wahrheit einer Handlung oder eines anderen Menschen, die in der Regel ein gegenseitiges Verhältnis der Zuverlässigkeit bedingt"
+]
+},
+{
+"word": "Angst",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Gefühl der (existentiellen) Furcht oder Sorge, etwa bei einer Bedrohung"
+]
+},
+{
+"word": "Zufriedenheit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Frohsein mit einer Situation oder einem Umstand",
+"Ausmaß oder Grad von ^([1])"
+]
+},
+{
+"word": "Digitalisierung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Umwandlung von analogen Signalen in diskrete Werte",
+"Prozess der Einführung von digitaler Technik in der Produktion, bei Dienstleistungen und in der Verwaltung; die daraus folgenden gesellschaftlichen Chancen und Probleme"
+]
+},
+{
+"word": "künstliche Intelligenz",
+"pos": "phrase",
+"art": "",
+"wiktionary": [
+"Teilgebiet der Informatik, in dem menschliche Denkmuster untersucht und digital nachgebildet werden sowie Systeme und Programme entwickelt werden, die menschlich denken"
+]
+},
+{
+"word": "Anwendung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Verwenden, Benutzen einer Sache zu einem gewissen Zweck",
+"Verabreichung eines Heilmittels bei medizinischen Behandlungen und Kuren"
+]
+},
+{
+"word": "Daten",
+"pos": "noun",
+"art": "",
+"wiktionary": [
+"Sammlung ermittelter/gewonnener Messwerte oder auch statistischer Angaben zu etwas",
+"strukturierte Information"
+]
+},
+{
+"word": "Nachteil",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"negative oder unerwünschte Folge oder negativer Nebeneffekt, zum Beispiel einer Lösung, eines Vorgehens, einer Überlegung"
+]
+},
+{
+"word": "nachweisen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit Versuchen oder wissenschaftlichen Methoden eine Behauptung oder Theorie bestätigen; zeigen, dass etwas wahr/richtig oder falsch ist",
+"zeigen, dass man etwas hat oder kann (oft mit Papieren/Dokumenten/Zeugnissen)"
+]
+},
+{
+"word": "digital",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"in fest vorgegebenen Stufen quantisiert einen Messwert darstellend oder verarbeitend, meist als Dual- oder Dezimalzahl",
+"die Finger betreffend, mit dem Finger durchgeführt"
+]
+},
+{
+"word": "innovativ",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"Innovationen setzend; neuartig, verbessernd",
+"kreativ, originell"
+]
+},
+{
+"word": "Reise",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Fortbewegung von einem Ausgangspunkt zu einem entfernten Ort mit dortigem Aufenthalt und wieder zurück"
+]
+},
+{
+"word": "Buchung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Übertragung eines Betrages von einem Konto auf ein anderes",
+"Reservierung eines Platzes (siehe Beispiel)"
+]
+},
+{
+"word": "Anschluss",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die Verbindung eines Teilnehmers mit einem Versorgungs- oder Leitungsnetz (zum Beispiel einem Telefon-, Gas-, oder Wassernetz)",
+"der Wechsel von einem Verkehrsmittel zum Anderen"
+]
+},
+{
+"word": "Stau",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"durch eine Behinderung oder ein Hindernis verursachte Störung des Durchflusses oder Durchgangs; Nomen acti: Ergebnis des Stauens",
+"schwere Behinderung auf Transportwegen mit der Folge: „stehender/stockender Verkehr“"
+]
+},
+{
+"word": "Verkehrsmittel",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Gerät zur Fortbewegung beziehungsweise zur Beförderung von Personen oder Gütern"
+]
+},
+{
+"word": "Sehenswürdigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"bedeutsames Objekt von touristischem Interesse, wie Gebäude, Denkmale, Naturdenkmale, deren Besuch lohnend ist"
+]
+},
+{
+"word": "Grenze",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Rand eines Raumes und damit ein Trennwert, eine Trennlinie oder Trennfläche"
+]
+},
+{
+"word": "Unterbrechung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zerteilung einer Verbindung; Öffnung einer Leitung, eines Rohres, eines Seils",
+"Störung einer Kommunikation, eines Gesprächs"
+]
+},
+{
+"word": "Rückfahrt",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Fahrt dahin zurück, von wo man aufgebrochen war"
+]
+},
+{
+"word": "stornieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Vertrag, eine Zahlung rückgängig machen"
+]
+},
+{
+"word": "überfüllt",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"mit mehr Dingen/Personen versehen/belegt als (bequem) Platz finden"
+]
+},
+{
+"word": "abwechslungsreich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"durch Abwechslung gekennzeichnet"
+]
+},
+{
+"word": "beitragen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Anteil zur Verwirklichung von etwas leisten",
+"etwas Bestimmtes geben, um ein Ziel zu erreichen"
+]
+},
+{
+"word": "Rolle",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"drehbares, kreisförmiges Rad oder Walze, zum Beispiel",
+"drehbares, kreisförmiges Rad oder Walze, zum Beispiel / mit einer Rille versehene Scheibe zum Umlenken eines Seiles"
+]
+},
+{
+"word": "Frage",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Äußerung, die Antwort oder Klärung verlangt; Aufforderung zur Antwort",
+"Angelegenheit, die eine klärende Diskussion und Entscheidung erfordert"
+]
+},
+{
+"word": "Sorge",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"bedrückendes Gefühl der Unruhe und Angst, durch eine unangenehme und/oder gefahrvolle Situation hervorgerufen",
+"Bemühen um die als positiv empfundene Entwicklung einer Situation, speziell um das Wohlergehen eines anderen"
+]
+},
+{
+"word": "Mühe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"körperliche oder geistige Anstrengung"
+]
+},
+{
+"word": "Bilanz",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"jährlich von Unternehmen zu erstellende Auflistung von Vermögen und Schulden",
+"Verhältnis bzw. die Differenz zwischen einem Wert wie Ausgaben, Export etc. und einem anderen Wert wie Einnahmen, Import"
+]
+},
+{
+"word": "Behauptung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"sprachliche Äußerung, mit der eine Tatsache vorgegeben wird, ohne dass dazu Beweise oder Begründungen geliefert werden"
+]
+},
+{
+"word": "Einwand",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Reaktion auf einen Vorschlag, eine Idee oder dergleichen, in der Bedenken geltend gemacht werden"
+]
+},
+{
+"word": "Ablehnung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"negative Reaktion auf eine Sache oder eine Person; Zurückweisung oder Abneigung gegen etwas"
+]
+},
+{
+"word": "begründen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Grund, eine Ursache für etwas benennen",
+"für etwas die Voraussetzung schaffen"
+]
+},
+{
+"word": "betonen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"beim Sprechen den Akzent auf eine Silbe legen",
+"mit Nachdruck feststellen"
+]
+},
+{
+"word": "einräumen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"in einen Raum oder Behälter geben",
+"Platz auch für andere Meinungen frei geben"
+]
+},
+{
+"word": "abwägen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"vergleichend prüfen",
+"abwiegen"
+]
+},
+{
+"word": "fragwürdig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"zu einer Frage einladend, zu einer Frage herausfordernd",
+"zu Skepsis und Argwohn Anlass gebend"
+]
+},
+{
+"word": "einerseits",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"Adverb, das ein Thema in eine Zweigeteiltheit kategorisiert, von der die erste Seite folgt",
+"(räumlich) die eine Seite betreffend"
+]
+},
+{
+"word": "folglich",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"als logische Konsequenz"
+]
+}
+]

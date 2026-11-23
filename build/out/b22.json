@@ -1,0 +1,987 @@
+[
+{
+"w": "Bewerbung",
+"m": [
+"ein Brief, mit dem man eine Arbeit haben will"
+],
+"x": "Ich schicke heute meine ⟦Bewerbung⟧ an die Firma."
+},
+{
+"w": "Vorstellungsgespräch",
+"m": [
+"ein Gespräch mit einer Firma, bevor man dort Arbeit bekommt"
+],
+"x": "Morgen habe ich ein ⟦Vorstellungsgespräch⟧ bei einer Bank."
+},
+{
+"w": "Voraussetzung",
+"m": [
+"etwas, das man zuerst braucht, damit etwas anderes geht"
+],
+"x": "Gutes Deutsch ist eine ⟦Voraussetzung⟧ für den Job."
+},
+{
+"w": "Arbeitgeber",
+"m": [
+"eine Person oder Firma, die Leuten Arbeit und Geld gibt"
+],
+"x": "Mein ⟦Arbeitgeber⟧ zahlt das Gehalt immer pünktlich."
+},
+{
+"w": "Arbeitnehmer",
+"m": [
+"eine Person, die für eine Firma arbeitet und Geld dafür bekommt"
+],
+"x": "Jeder ⟦Arbeitnehmer⟧ hat Anspruch auf Urlaub."
+},
+{
+"w": "Kündigung",
+"m": [
+"der Brief, mit dem man Arbeit oder Wohnung beendet"
+],
+"x": "Ich habe gestern meine ⟦Kündigung⟧ geschrieben."
+},
+{
+"w": "Weiterbildung",
+"m": [
+"ein Kurs, in dem man für die Arbeit noch mehr lernt"
+],
+"x": "Sie macht eine ⟦Weiterbildung⟧ im Abendkurs."
+},
+{
+"w": "Teilzeit",
+"m": [
+"weniger Stunden arbeiten als normal"
+],
+"x": "Meine Frau arbeitet in ⟦Teilzeit⟧, nur vormittags."
+},
+{
+"w": "Belastung",
+"m": [
+"etwas, das sehr schwer ist und müde macht"
+],
+"x": "Der Lärm ist eine große ⟦Belastung⟧ für uns."
+},
+{
+"w": "Zeitdruck",
+"m": [
+"das Gefühl, dass man zu wenig Zeit für etwas hat"
+],
+"x": "Ich arbeite nicht gern unter ⟦Zeitdruck⟧."
+},
+{
+"w": "Selbstständigkeit",
+"m": [
+"ohne Chef für sich selbst arbeiten",
+"alles allein machen können"
+],
+"x": "Er träumt von der ⟦Selbstständigkeit⟧ mit einem eigenen Laden."
+},
+{
+"w": "flexibel",
+"m": [
+"so, dass man sich leicht ändern kann"
+],
+"x": "Meine Arbeitszeiten sind ⟦flexibel⟧."
+},
+{
+"w": "belastbar",
+"m": [
+"so, dass man auch bei viel Arbeit ruhig bleibt"
+],
+"x": "Wir suchen einen ⟦belastbaren⟧ Mitarbeiter."
+},
+{
+"w": "zuverlässig",
+"m": [
+"so, dass man sich auf jemanden verlassen kann"
+],
+"x": "Mein Bruder ist immer pünktlich und ⟦zuverlässig⟧."
+},
+{
+"w": "Zeugnis",
+"m": [
+"ein Papier aus der Schule, das zeigt, wie gut man war",
+"ein Papier von der Arbeit, das zeigt, wie gut man war"
+],
+"x": "Am Freitag bekommen die Kinder ihr ⟦Zeugnis⟧."
+},
+{
+"w": "Motivation",
+"m": [
+"der Wunsch und die Lust, etwas zu tun"
+],
+"x": "Nach dem Urlaub habe ich wieder viel ⟦Motivation⟧."
+},
+{
+"w": "Hochschule",
+"m": [
+"eine Schule für Menschen, die nach der Schule weiter lernen"
+],
+"x": "Sie studiert Medizin an einer ⟦Hochschule⟧ in Berlin."
+},
+{
+"w": "Fach",
+"m": [
+"ein Thema, das man in der Schule oder an der Uni lernt",
+"ein Teil in einem Schrank"
+],
+"x": "Mathe ist mein Lieblings⟦fach⟧."
+},
+{
+"w": "Fremdsprache",
+"m": [
+"eine Sprache aus einem anderen Land, die man lernt"
+],
+"x": "Englisch ist meine erste ⟦Fremdsprache⟧."
+},
+{
+"w": "Muttersprache",
+"m": [
+"die Sprache, die man als Kind zuerst lernt"
+],
+"x": "Meine ⟦Muttersprache⟧ ist Spanisch."
+},
+{
+"w": "Wortschatz",
+"m": [
+"alle Worte, die jemand kennt"
+],
+"x": "Mein ⟦Wortschatz⟧ wird jeden Tag größer."
+},
+{
+"w": "Aussprache",
+"m": [
+"die Art, wie man Worte sagt"
+],
+"x": "Deine ⟦Aussprache⟧ ist schon sehr gut."
+},
+{
+"w": "Misserfolg",
+"m": [
+"wenn man etwas nicht schafft, was man wollte"
+],
+"x": "Ein ⟦Misserfolg⟧ ist nicht schlimm, man lernt daraus."
+},
+{
+"w": "begabt",
+"m": [
+"so, dass man etwas besonders gut kann, ohne viel zu üben"
+],
+"x": "Die Kleine ist sehr ⟦begabt⟧ und malt wunderschön."
+},
+{
+"w": "anspruchsvoll",
+"m": [
+"schwer und braucht viel Können",
+"so, dass man hohe Wünsche hat"
+],
+"x": "Der Kurs ist ⟦anspruchsvoll⟧, aber interessant."
+},
+{
+"w": "Ernährung",
+"m": [
+"das, was man isst und trinkt, um gesund zu bleiben"
+],
+"x": "Eine gesunde ⟦Ernährung⟧ ist mir wichtig."
+},
+{
+"w": "Erholung",
+"m": [
+"Ruhe, damit man nach der Arbeit wieder Kraft hat"
+],
+"x": "Nach der Woche brauche ich dringend ⟦Erholung⟧."
+},
+{
+"w": "Nebenwirkung",
+"m": [
+"eine zweite Wirkung von einer Medizin, die man nicht will"
+],
+"x": "Die Tabletten haben kaum ⟦Nebenwirkungen⟧."
+},
+{
+"w": "Vorsorge",
+"m": [
+"etwas tun, damit später nichts Schlimmes passiert"
+],
+"x": "Zur ⟦Vorsorge⟧ gehe ich jedes Jahr zum Arzt."
+},
+{
+"w": "Immunsystem",
+"m": [
+"das, was den Körper gegen Krankheit stark macht"
+],
+"x": "Sport macht das ⟦Immunsystem⟧ stärker."
+},
+{
+"w": "Wohlbefinden",
+"m": [
+"das gute Gefühl, dass es einem gut geht"
+],
+"x": "Schlaf ist wichtig für das ⟦Wohlbefinden⟧."
+},
+{
+"w": "Krankenversicherung",
+"m": [
+"eine Firma, die das Geld für Arzt und Medizin zahlt"
+],
+"x": "Ohne ⟦Krankenversicherung⟧ wird ein Arztbesuch teuer."
+},
+{
+"w": "zunehmen",
+"m": [
+"mehr Gewicht bekommen",
+"größer oder mehr werden"
+],
+"x": "Im Winter ⟦nehme⟧ ich immer ein bisschen ⟦zu⟧."
+},
+{
+"w": "vorbeugen",
+"m": [
+"etwas tun, damit etwas Schlechtes nicht passiert"
+],
+"x": "Mit Sport kann man Krankheiten ⟦vorbeugen⟧."
+},
+{
+"w": "erschöpft",
+"m": [
+"sehr, sehr müde und ohne Kraft"
+],
+"x": "Nach der Arbeit bin ich völlig ⟦erschöpft⟧."
+},
+{
+"w": "ausgewogen",
+"m": [
+"so, dass alles gut zusammen passt"
+],
+"x": "Eine ⟦ausgewogene⟧ Ernährung hat von allem etwas."
+},
+{
+"w": "Klimawandel",
+"m": [
+"wenn sich das Wetter auf der Erde über lange Zeit ändert"
+],
+"x": "Der ⟦Klimawandel⟧ macht die Sommer heißer."
+},
+{
+"w": "Umwelt",
+"m": [
+"die Natur um uns herum"
+],
+"x": "Wir müssen besser auf die ⟦Umwelt⟧ achten."
+},
+{
+"w": "Umweltschutz",
+"m": [
+"alles, was man tut, damit die Natur gesund bleibt"
+],
+"x": "Fahrrad fahren ist gut für den ⟦Umweltschutz⟧."
+},
+{
+"w": "Nachhaltigkeit",
+"m": [
+"so leben und arbeiten, dass die Natur lange gut bleibt"
+],
+"x": "In unserer Firma ist ⟦Nachhaltigkeit⟧ sehr wichtig."
+},
+{
+"w": "Verbrauch",
+"m": [
+"die Menge von etwas, die man benutzt"
+],
+"x": "Das Auto hat einen niedrigen ⟦Verbrauch⟧."
+},
+{
+"w": "Verschmutzung",
+"m": [
+"wenn Luft, Wasser oder Boden schmutzig werden"
+],
+"x": "Die ⟦Verschmutzung⟧ des Flusses ist ein großes Problem."
+},
+{
+"w": "Mülltrennung",
+"m": [
+"Papier, Glas und anderen Müll getrennt wegwerfen"
+],
+"x": "In Deutschland ist ⟦Mülltrennung⟧ ganz normal."
+},
+{
+"w": "Recycling",
+"m": [
+"aus Müll wieder etwas Neues machen"
+],
+"x": "Beim ⟦Recycling⟧ wird aus Flaschen neues Glas."
+},
+{
+"w": "Rohstoff",
+"m": [
+"ein Material aus der Natur, aus dem man Dinge macht"
+],
+"x": "Holz ist ein wichtiger ⟦Rohstoff⟧."
+},
+{
+"w": "Folge",
+"m": [
+"das, was nach etwas anderem passiert"
+],
+"x": "Die ⟦Folge⟧ vom Regen war ein nasser Keller."
+},
+{
+"w": "Tierart",
+"m": [
+"eine Gruppe, zu der zum Beispiel alle Katzen gehören"
+],
+"x": "Der Tiger ist eine seltene ⟦Tierart⟧."
+},
+{
+"w": "Aussterben",
+"m": [
+"wenn es von einem Tier keines mehr gibt"
+],
+"x": "Wir wollen das ⟦Aussterben⟧ der Bienen verhindern."
+},
+{
+"w": "Erwärmung",
+"m": [
+"wenn es immer heißer wird"
+],
+"x": "Die ⟦Erwärmung⟧ der Erde macht vielen Menschen Sorgen."
+},
+{
+"w": "Abfall",
+"m": [
+"Dinge, die man nicht mehr braucht, also Müll"
+],
+"x": "Bring bitte den ⟦Abfall⟧ nach unten."
+},
+{
+"w": "verringern",
+"m": [
+"etwas kleiner oder weniger machen"
+],
+"x": "Wir wollen unseren Müll ⟦verringern⟧."
+},
+{
+"w": "nachhaltig",
+"m": [
+"so, dass es lange gut bleibt und die Natur nicht kaputt macht"
+],
+"x": "Wir kaufen nur noch ⟦nachhaltige⟧ Kleidung."
+},
+{
+"w": "umweltfreundlich",
+"m": [
+"so, dass die Natur dabei nicht kaputt geht"
+],
+"x": "Der Bus ist ⟦umweltfreundlicher⟧ als das Auto."
+},
+{
+"w": "erneuerbar",
+"m": [
+"so, dass es nie weniger wird, zum Beispiel Sonne und Wind"
+],
+"x": "Wind und Sonne sind ⟦erneuerbare⟧ Energien."
+},
+{
+"w": "Quelle",
+"m": [
+"die Stelle, wo Wasser aus der Erde kommt",
+"der Ort, woher eine Information kommt"
+],
+"x": "Nenn bitte die ⟦Quelle⟧ für diese Zahl."
+},
+{
+"w": "Plattform",
+"m": [
+"eine Seite im Internet, auf der viele Leute etwas machen",
+"ein hoher Platz zum Stehen"
+],
+"x": "Auf dieser ⟦Plattform⟧ kann man Möbel verkaufen."
+},
+{
+"w": "Datenschutz",
+"m": [
+"Regeln, damit niemand deine Informationen falsch benutzt"
+],
+"x": "Der ⟦Datenschutz⟧ ist im Internet sehr wichtig."
+},
+{
+"w": "Glaubwürdigkeit",
+"m": [
+"wenn man jemandem glauben kann"
+],
+"x": "Eine Lüge zerstört die ⟦Glaubwürdigkeit⟧."
+},
+{
+"w": "Schlagzeile",
+"m": [
+"der große Titel oben in der Zeitung"
+],
+"x": "Die ⟦Schlagzeile⟧ stand gestern auf der ersten Seite."
+},
+{
+"w": "glaubwürdig",
+"m": [
+"so, dass man es glauben kann"
+],
+"x": "Seine Geschichte klingt nicht ⟦glaubwürdig⟧."
+},
+{
+"w": "sachlich",
+"m": [
+"ruhig und ohne Gefühle, nur mit Fakten"
+],
+"x": "Bitte bleib ⟦sachlich⟧ und werde nicht laut."
+},
+{
+"w": "aktuell",
+"m": [
+"jetzt gerade, nicht alt",
+"neu und auf dem letzten Stand"
+],
+"x": "Die ⟦aktuellen⟧ Nachrichten findest du im Internet."
+},
+{
+"w": "Gleichberechtigung",
+"m": [
+"wenn alle Menschen die gleichen Rechte haben"
+],
+"x": "Die ⟦Gleichberechtigung⟧ von Mann und Frau ist wichtig."
+},
+{
+"w": "Integration",
+"m": [
+"wenn neue Menschen ein Teil der Gruppe oder des Landes werden"
+],
+"x": "Sprache ist wichtig für die ⟦Integration⟧."
+},
+{
+"w": "Staatsangehörigkeit",
+"m": [
+"das Land, dessen Pass man hat"
+],
+"x": "Meine ⟦Staatsangehörigkeit⟧ ist mexikanisch."
+},
+{
+"w": "Recht",
+"m": [
+"die Regeln, an die sich alle in einem Land halten müssen",
+"etwas, das man darf oder haben kann"
+],
+"x": "Jedes Kind hat das ⟦Recht⟧ auf Schule."
+},
+{
+"w": "Bürgerin",
+"m": [
+"eine Frau, die in einer Stadt oder einem Land wohnt"
+],
+"x": "Sie ist eine ⟦Bürgerin⟧ von Hamburg."
+},
+{
+"w": "Armut",
+"m": [
+"wenn man sehr wenig Geld hat und kaum leben kann"
+],
+"x": "Viele Kinder leben in ⟦Armut⟧."
+},
+{
+"w": "Wohlstand",
+"m": [
+"wenn man viel Geld hat und gut lebt"
+],
+"x": "Das Land hat in 50 Jahren großen ⟦Wohlstand⟧ erreicht."
+},
+{
+"w": "Vorurteil",
+"m": [
+"eine Meinung über andere, die man schnell und ohne Wissen hat"
+],
+"x": "Er hat viele ⟦Vorurteile⟧ gegen Fremde."
+},
+{
+"w": "Toleranz",
+"m": [
+"wenn man andere Menschen und ihre Meinung akzeptiert"
+],
+"x": "Im Zusammenleben braucht man viel ⟦Toleranz⟧."
+},
+{
+"w": "benachteiligen",
+"m": [
+"jemandem weniger Chancen geben als anderen"
+],
+"x": "Niemand darf wegen seines Alters ⟦benachteiligt⟧ werden."
+},
+{
+"w": "gerecht",
+"m": [
+"so, dass alle gleich und fair behandelt werden"
+],
+"x": "Die Lehrerin ist streng, aber ⟦gerecht⟧."
+},
+{
+"w": "ehrenamtlich",
+"m": [
+"so, dass man hilft und dafür kein Geld bekommt"
+],
+"x": "Sie arbeitet ⟦ehrenamtlich⟧ im Tierheim."
+},
+{
+"w": "Miete",
+"m": [
+"das Geld, das man jeden Monat für die Wohnung zahlt"
+],
+"x": "Die ⟦Miete⟧ ist am Monatsanfang fällig."
+},
+{
+"w": "Vermieter",
+"m": [
+"die Person, der die Wohnung gehört und die sie anderen gibt"
+],
+"x": "Unser ⟦Vermieter⟧ wohnt im Erdgeschoss."
+},
+{
+"w": "Mieter",
+"m": [
+"eine Person, die in einer Wohnung wohnt und dafür zahlt"
+],
+"x": "Alle ⟦Mieter⟧ im Haus bekommen einen Brief."
+},
+{
+"w": "Nebenkosten",
+"m": [
+"Geld für Wasser und Strom, das man zur Miete zahlt"
+],
+"x": "Die ⟦Nebenkosten⟧ sind im Winter höher."
+},
+{
+"w": "Wohngemeinschaft",
+"m": [
+"eine Wohnung, in der mehrere Leute zusammen wohnen"
+],
+"x": "Ich wohne mit drei Freunden in einer ⟦Wohngemeinschaft⟧."
+},
+{
+"w": "Hausordnung",
+"m": [
+"die Regeln, an die sich alle im Haus halten müssen"
+],
+"x": "Laut ⟦Hausordnung⟧ ist ab zehn Uhr Ruhe."
+},
+{
+"w": "Umzug",
+"m": [
+"wenn man mit allen Sachen in eine neue Wohnung geht"
+],
+"x": "Nach dem ⟦Umzug⟧ stehen noch viele Kisten herum."
+},
+{
+"w": "Rücksicht",
+"m": [
+"wenn man an andere denkt und sie nicht stört"
+],
+"x": "Bitte nimm ⟦Rücksicht⟧ auf die Nachbarn."
+},
+{
+"w": "Haushalt",
+"m": [
+"alle Arbeiten in der Wohnung, zum Beispiel kochen und aufräumen",
+"alle Personen, die zusammen in einer Wohnung leben"
+],
+"x": "Mein Mann hilft mir im ⟦Haushalt⟧."
+},
+{
+"w": "renovieren",
+"m": [
+"eine alte Wohnung oder ein Zimmer wieder schön machen"
+],
+"x": "Wir ⟦renovieren⟧ im Sommer das Bad."
+},
+{
+"w": "geräumig",
+"m": [
+"so, dass viel Platz da ist"
+],
+"x": "Die Wohnung ist hell und ⟦geräumig⟧."
+},
+{
+"w": "rücksichtsvoll",
+"m": [
+"so, dass man an andere denkt und freundlich ist"
+],
+"x": "Er ist immer sehr ⟦rücksichtsvoll⟧ zu den Nachbarn."
+},
+{
+"w": "Verbraucher",
+"m": [
+"eine Person, die Dinge kauft und benutzt"
+],
+"x": "Als ⟦Verbraucher⟧ hat man viele Rechte."
+},
+{
+"w": "Nachfrage",
+"m": [
+"wenn viele Leute etwas kaufen wollen",
+"eine Frage, um mehr zu wissen"
+],
+"x": "Die ⟦Nachfrage⟧ nach Fahrrädern ist im Sommer hoch."
+},
+{
+"w": "Reklamation",
+"m": [
+"wenn man sagt, dass eine Sache, die man kaufte, kaputt ist"
+],
+"x": "Ich schreibe eine ⟦Reklamation⟧, denn die Hose hat ein Loch."
+},
+{
+"w": "Umtausch",
+"m": [
+"wenn man etwas zurück bringt und dafür etwas anderes bekommt"
+],
+"x": "Beim ⟦Umtausch⟧ brauche ich den Kassenzettel."
+},
+{
+"w": "Ratenzahlung",
+"m": [
+"wenn man etwas in kleinen Teilen bezahlt, jeden Monat ein bisschen"
+],
+"x": "Das Sofa kaufen wir mit ⟦Ratenzahlung⟧."
+},
+{
+"w": "Überweisung",
+"m": [
+"wenn man Geld von seinem Konto auf ein anderes Konto schickt",
+"ein Papier vom Arzt für einen anderen Arzt"
+],
+"x": "Ich mache heute die ⟦Überweisung⟧ für die Miete."
+},
+{
+"w": "Ersparnis",
+"m": [
+"Geld, das man nicht benutzt, sondern behält"
+],
+"x": "Meine ⟦Ersparnisse⟧ reichen für einen Urlaub."
+},
+{
+"w": "Schulden",
+"m": [
+"Geld, das man jemandem noch geben muss"
+],
+"x": "Er hat viele ⟦Schulden⟧ bei der Bank."
+},
+{
+"w": "Steuer",
+"m": [
+"Geld, das man an den Staat zahlen muss",
+"das Rad im Auto, mit dem man fährt"
+],
+"x": "Von meinem Lohn gehen viele ⟦Steuern⟧ ab."
+},
+{
+"w": "Rabatt",
+"m": [
+"weniger Geld zahlen als sonst"
+],
+"x": "Im Laden gibt es zehn Prozent ⟦Rabatt⟧."
+},
+{
+"w": "Versand",
+"m": [
+"wenn man Dinge mit der Post schickt"
+],
+"x": "Der ⟦Versand⟧ dauert zwei bis drei Tage."
+},
+{
+"w": "preiswert",
+"m": [
+"nicht teuer und trotzdem gut"
+],
+"x": "Das Restaurant ist gut und ⟦preiswert⟧."
+},
+{
+"w": "kostenlos",
+"m": [
+"so, dass man dafür nichts zahlen muss"
+],
+"x": "Der Eintritt für Kinder ist ⟦kostenlos⟧."
+},
+{
+"w": "Vertrauen",
+"m": [
+"das gute Gefühl, dass man jemandem glauben kann"
+],
+"x": "Ich habe ⟦Vertrauen⟧ zu meinem Arzt."
+},
+{
+"w": "Angst",
+"m": [
+"ein schlechtes Gefühl, wenn man etwas Schlimmes erwartet"
+],
+"x": "Ich habe ⟦Angst⟧ vor großen Hunden."
+},
+{
+"w": "Zufriedenheit",
+"m": [
+"das gute Gefühl, dass alles so in Ordnung ist"
+],
+"x": "Die ⟦Zufriedenheit⟧ der Kunden ist uns wichtig."
+},
+{
+"w": "Digitalisierung",
+"m": [
+"wenn Arbeit und Leben mehr mit dem Computer und Internet gehen"
+],
+"x": "Die ⟦Digitalisierung⟧ verändert viele Berufe."
+},
+{
+"w": "künstliche Intelligenz",
+"m": [
+"ein Programm im Computer, das fast wie ein Mensch denken kann"
+],
+"x": "Die ⟦künstliche Intelligenz⟧ schreibt jetzt sogar Texte."
+},
+{
+"w": "Anwendung",
+"m": [
+"wenn man etwas benutzt, damit es hilft",
+"ein Programm auf dem Handy"
+],
+"x": "Die ⟦Anwendung⟧ der Salbe ist ganz einfach."
+},
+{
+"w": "Daten",
+"m": [
+"Informationen, zum Beispiel Zahlen und Namen im Computer"
+],
+"x": "Meine ⟦Daten⟧ sind auf dem Handy gespeichert."
+},
+{
+"w": "Nachteil",
+"m": [
+"etwas Schlechtes an einer Sache"
+],
+"x": "Der ⟦Nachteil⟧ der Wohnung ist der Lärm."
+},
+{
+"w": "nachweisen",
+"m": [
+"zeigen und beweisen, dass etwas wahr ist"
+],
+"x": "Man muss das Einkommen mit Papieren ⟦nachweisen⟧."
+},
+{
+"w": "digital",
+"m": [
+"mit dem Computer, im Internet oder auf dem Handy"
+],
+"x": "Ich habe meine Fotos ⟦digital⟧ gespeichert."
+},
+{
+"w": "innovativ",
+"m": [
+"neu und anders als alles davor"
+],
+"x": "Die Firma hat eine ⟦innovative⟧ Idee."
+},
+{
+"w": "Reise",
+"m": [
+"wenn man an einen anderen Ort fährt und dort bleibt"
+],
+"x": "Wir machen im Sommer eine ⟦Reise⟧ nach Spanien."
+},
+{
+"w": "Buchung",
+"m": [
+"wenn man ein Zimmer oder einen Platz für später bestellt"
+],
+"x": "Die ⟦Buchung⟧ für das Hotel ist schon fertig."
+},
+{
+"w": "Anschluss",
+"m": [
+"der Zug oder Bus, den man danach nimmt",
+"die Verbindung zu Strom, Wasser oder Internet"
+],
+"x": "Wir haben unseren ⟦Anschluss⟧ nach Köln verpasst."
+},
+{
+"w": "Stau",
+"m": [
+"wenn viele Autos stehen und nicht weiter fahren"
+],
+"x": "Auf der Autobahn war heute viel ⟦Stau⟧."
+},
+{
+"w": "Verkehrsmittel",
+"m": [
+"etwas, womit man von einem Ort zum anderen kommt, zum Beispiel Bus oder Zug"
+],
+"x": "Ich nehme gern öffentliche ⟦Verkehrsmittel⟧."
+},
+{
+"w": "Sehenswürdigkeit",
+"m": [
+"ein Ort, den viele Leute gern sehen, wenn sie reisen"
+],
+"x": "Der Dom ist eine berühmte ⟦Sehenswürdigkeit⟧."
+},
+{
+"w": "Grenze",
+"m": [
+"die Linie, wo ein Land zu Ende ist"
+],
+"x": "An der ⟦Grenze⟧ muss man den Pass zeigen."
+},
+{
+"w": "Unterbrechung",
+"m": [
+"wenn etwas kurz nicht weiter geht"
+],
+"x": "Es gab eine kurze ⟦Unterbrechung⟧ bei der Fahrt."
+},
+{
+"w": "Rückfahrt",
+"m": [
+"die Fahrt zurück nach Hause"
+],
+"x": "Auf der ⟦Rückfahrt⟧ sind wir eingeschlafen."
+},
+{
+"w": "stornieren",
+"m": [
+"sagen, dass man etwas doch nicht will, das man bestellt hat"
+],
+"x": "Ich muss mein Zugticket leider ⟦stornieren⟧."
+},
+{
+"w": "überfüllt",
+"m": [
+"so voll, dass kein Platz mehr da ist"
+],
+"x": "Der Bus war heute total ⟦überfüllt⟧."
+},
+{
+"w": "abwechslungsreich",
+"m": [
+"so, dass es nie langweilig ist, weil immer etwas anderes kommt"
+],
+"x": "Mein Job ist sehr ⟦abwechslungsreich⟧."
+},
+{
+"w": "beitragen",
+"m": [
+"mit helfen, dass etwas klappt"
+],
+"x": "Jeder kann etwas zum Umweltschutz ⟦beitragen⟧."
+},
+{
+"w": "Rolle",
+"m": [
+"die Aufgabe einer Person in einer Gruppe oder einem Film",
+"ein Rad, auf dem etwas fährt"
+],
+"x": "Er spielt im Theater die wichtigste ⟦Rolle⟧."
+},
+{
+"w": "Frage",
+"m": [
+"etwas, das man sagt, um eine Antwort zu bekommen",
+"ein Thema, über das man sprechen muss"
+],
+"x": "Ich habe noch eine ⟦Frage⟧ zur Aufgabe."
+},
+{
+"w": "Sorge",
+"m": [
+"das schlechte Gefühl, dass etwas Schlimmes passieren kann"
+],
+"x": "Ich mache mir ⟦Sorgen⟧ um meine Mutter."
+},
+{
+"w": "Mühe",
+"m": [
+"viel Arbeit, wenn etwas schwer ist"
+],
+"x": "Sie gibt sich viel ⟦Mühe⟧ mit dem Essen."
+},
+{
+"w": "Bilanz",
+"m": [
+"das Ergebnis, wenn man am Ende alles zählt"
+],
+"x": "Am Jahresende ziehen wir eine ⟦Bilanz⟧."
+},
+{
+"w": "Behauptung",
+"m": [
+"etwas, das jemand sagt, aber nicht beweist"
+],
+"x": "Das ist nur eine ⟦Behauptung⟧, ohne Beweis."
+},
+{
+"w": "Einwand",
+"m": [
+"etwas, das man gegen einen Vorschlag sagt"
+],
+"x": "Hast du einen ⟦Einwand⟧ gegen den Plan?"
+},
+{
+"w": "Ablehnung",
+"m": [
+"wenn man etwas oder jemanden nicht will"
+],
+"x": "Seine ⟦Ablehnung⟧ hat mich überrascht."
+},
+{
+"w": "begründen",
+"m": [
+"sagen, warum man etwas macht oder denkt"
+],
+"x": "Kannst du deine Meinung ⟦begründen⟧?"
+},
+{
+"w": "betonen",
+"m": [
+"ein Wort beim Sprechen stärker sagen",
+"besonders wichtig nennen"
+],
+"x": "Der Chef ⟦betont⟧, dass Pünktlichkeit wichtig ist."
+},
+{
+"w": "einräumen",
+"m": [
+"sagen, dass etwas stimmt, auch wenn man es nicht gern sagt",
+"Sachen in einen Schrank legen"
+],
+"x": "Er ⟦räumt⟧ seinen Fehler offen ⟦ein⟧."
+},
+{
+"w": "abwägen",
+"m": [
+"überlegen, was besser ist"
+],
+"x": "Ich muss die Vor- und Nachteile ⟦abwägen⟧."
+},
+{
+"w": "fragwürdig",
+"m": [
+"so, dass man nicht sicher ist, ob es gut oder richtig ist"
+],
+"x": "Das Angebot klingt ziemlich ⟦fragwürdig⟧."
+},
+{
+"w": "einerseits",
+"m": [
+"zeigt die erste Seite von zwei Seiten"
+],
+"x": "⟦Einerseits⟧ will ich reisen, andererseits ist es teuer."
+},
+{
+"w": "folglich",
+"m": [
+"zeigt, was daraus kommt; deshalb"
+],
+"x": "Er war krank, ⟦folglich⟧ blieb er zu Hause."
+}
+]

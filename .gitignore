@@ -1,2 +1,4 @@
 tools/verify_*.txt
 .DS_Store
+build/gpt_wiktionary.json
+build/de_50k.txt

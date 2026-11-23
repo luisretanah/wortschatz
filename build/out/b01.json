@@ -1,0 +1,1870 @@
+[
+{
+"w": "haben",
+"m": [
+"etwas besitzen, etwas gehört einem"
+],
+"x": "Ich ⟦habe⟧ zwei Brüder und eine Schwester."
+},
+{
+"w": "nicht",
+"m": [
+"macht einen Satz negativ, sagt \"nein\" zu etwas"
+],
+"x": "Ich komme heute ⟦nicht⟧ zur Arbeit."
+},
+{
+"w": "und",
+"m": [
+"zeigt, dass zwei Dinge zusammen sind"
+],
+"x": "Ich trinke Kaffee ⟦und⟧ esse ein Brot."
+},
+{
+"w": "werden",
+"m": [
+"anders als vorher sein"
+],
+"x": "Es ⟦wird⟧ abends kalt."
+},
+{
+"w": "dass",
+"m": [
+"steht nach sagen, denken oder wissen, vor dem zweiten Satz"
+],
+"x": "Ich weiß, ⟦dass⟧ du müde bist."
+},
+{
+"w": "hier",
+"m": [
+"an diesem Ort, wo ich bin"
+],
+"x": "Ich wohne seit zwei Jahren ⟦hier⟧."
+},
+{
+"w": "für",
+"m": [
+"zeigt, wer etwas bekommt",
+"zeigt den Grund oder das Ziel"
+],
+"x": "Das Geschenk ist ⟦für⟧ meine Mutter."
+},
+{
+"w": "von",
+"m": [
+"zeigt, woher etwas kommt",
+"zeigt, wem etwas gehört oder wer etwas macht"
+],
+"x": "Der Brief ist ⟦von⟧ meiner Schwester."
+},
+{
+"w": "wenn",
+"m": [
+"zeigt, was zuerst sein muss: nur dann",
+"zeigt, dass etwas jedes Mal so ist"
+],
+"x": "⟦Wenn⟧ es regnet, bleibe ich zu Hause."
+},
+{
+"w": "wollen",
+"m": [
+"den Wunsch haben, etwas zu tun oder zu bekommen"
+],
+"x": "Ich ⟦will⟧ heute früh ins Bett gehen."
+},
+{
+"w": "gehen",
+"m": [
+"zu Fuß von einem Ort zum anderen kommen",
+"weggehen"
+],
+"x": "Wir ⟦gehen⟧ zusammen zum Bahnhof."
+},
+{
+"w": "sagen",
+"m": [
+"etwas zu jemandem sprechen"
+],
+"x": "Er ⟦sagt⟧ immer die Wahrheit."
+},
+{
+"w": "müssen",
+"m": [
+"etwas tun, weil es nötig ist"
+],
+"x": "Ich ⟦muss⟧ morgen früh aufstehen."
+},
+{
+"w": "meinen",
+"m": [
+"denken und sagen, was man glaubt",
+"sagen wollen, an jemanden denken"
+],
+"x": "Was ⟦meinst⟧ du dazu?"
+},
+{
+"w": "in",
+"m": [
+"zeigt einen Ort, an dem etwas ist",
+"zeigt einen Zeitpunkt"
+],
+"x": "Wir wohnen ⟦in⟧ einer kleinen Stadt."
+},
+{
+"w": "nur",
+"m": [
+"nicht mehr als, nicht mehr",
+"zeigt, dass etwas wenig ist"
+],
+"x": "Ich habe ⟦nur⟧ zehn Euro dabei."
+},
+{
+"w": "sehen",
+"m": [
+"mit den Augen schauen und etwas erkennen"
+],
+"x": "Ich ⟦sehe⟧ ein Auto vor dem Haus."
+},
+{
+"w": "mit",
+"m": [
+"zusammen mit jemandem",
+"zeigt, wie oder womit man etwas macht"
+],
+"x": "Ich fahre ⟦mit⟧ dem Bus zur Arbeit."
+},
+{
+"w": "können",
+"m": [
+"etwas tun, weil man es gelernt hat",
+"die Möglichkeit haben, etwas zu tun"
+],
+"x": "Meine Tochter ⟦kann⟧ schon gut schwimmen."
+},
+{
+"w": "machen",
+"m": [
+"etwas tun",
+"etwas bauen oder kochen"
+],
+"x": "Was ⟦machst⟧ du am Wochenende?"
+},
+{
+"w": "kommen",
+"m": [
+"an einen Ort gehen oder fahren, wo jemand ist",
+"von einem Ort sein"
+],
+"x": "Der Bus ⟦kommt⟧ in fünf Minuten."
+},
+{
+"w": "gut",
+"m": [
+"so, wie es sein soll; nicht schlecht",
+"nett, freundlich"
+],
+"x": "Das Essen schmeckt sehr ⟦gut⟧."
+},
+{
+"w": "auf",
+"m": [
+"oben an einem Ding, mit Kontakt",
+"zeigt ein Ziel, eine Richtung"
+],
+"x": "Das Buch liegt ⟦auf⟧ dem Tisch."
+},
+{
+"w": "jetzt",
+"m": [
+"in diesem Moment, nicht früher und nicht später"
+],
+"x": "Ich habe ⟦jetzt⟧ leider keine Zeit."
+},
+{
+"w": "dann",
+"m": [
+"danach, später",
+"in diesem Fall"
+],
+"x": "Erst esse ich, ⟦dann⟧ gehe ich spazieren."
+},
+{
+"w": "geben",
+"m": [
+"jemandem etwas in die Hand legen oder schenken",
+"es ist da, es existiert"
+],
+"x": "Kannst du mir bitte das Salz ⟦geben⟧?"
+},
+{
+"w": "sollen",
+"m": [
+"etwas tun, weil jemand es will oder sagt",
+"zeigt einen Rat"
+],
+"x": "Du ⟦sollst⟧ bitte sofort nach Hause kommen."
+},
+{
+"w": "weiß",
+"m": [
+"hell wie Schnee oder Milch",
+"hat die Farbe von Papier"
+],
+"x": "Sie trägt heute ein ⟦weißes⟧ Hemd."
+},
+{
+"w": "oder",
+"m": [
+"zeigt, dass man zwischen zwei Dingen wählen kann"
+],
+"x": "Möchtest du Tee ⟦oder⟧ Kaffee?"
+},
+{
+"w": "nach",
+"m": [
+"zeigt die Richtung zu einem Ort",
+"zeigt, was später kommt"
+],
+"x": "Wir fahren morgen ⟦nach⟧ Berlin."
+},
+{
+"w": "wissen",
+"m": [
+"eine Information im Kopf haben"
+],
+"x": "Ich ⟦weiß⟧ nicht, wo mein Schlüssel ist."
+},
+{
+"w": "an",
+"m": [
+"zeigt, dass etwas direkt neben oder bei etwas ist",
+"zeigt eine Richtung oder ein Ziel"
+],
+"x": "Das Bild hängt ⟦an⟧ der Wand."
+},
+{
+"w": "aber",
+"m": [
+"zeigt, dass etwas nicht dazu passt"
+],
+"x": "Ich bin müde, ⟦aber⟧ ich arbeite weiter."
+},
+{
+"w": "da",
+"m": [
+"an diesem Ort, dort",
+"in diesem Moment"
+],
+"x": "Mein Auto steht ⟦da⟧ drüben."
+},
+{
+"w": "denken",
+"m": [
+"im Kopf an etwas arbeiten",
+"eine Meinung haben, glauben"
+],
+"x": "Ich ⟦denke⟧ oft an meine Familie."
+},
+{
+"w": "bei",
+"m": [
+"nah an einem Ort oder einer Person",
+"zusammen mit jemandem, im Haus von jemandem"
+],
+"x": "Ich wohne ⟦bei⟧ meinen Eltern."
+},
+{
+"w": "tun",
+"m": [
+"etwas machen"
+],
+"x": "Was soll ich nur ⟦tun⟧?"
+},
+{
+"w": "Mann",
+"m": [
+"ein Mensch, der kein Junge mehr ist",
+"Mensch, mit dem eine Frau verheiratet ist"
+],
+"x": "Der ⟦Mann⟧ an der Tür wartet auf den Bus."
+},
+{
+"w": "bitte",
+"m": [
+"Wort, wenn man nett um etwas fragt",
+"Antwort, wenn jemand danke sagt"
+],
+"x": "Kannst du mir ⟦bitte⟧ helfen?"
+},
+{
+"w": "immer",
+"m": [
+"zu jeder Zeit, jedes Mal",
+"ohne Ende"
+],
+"x": "Er kommt ⟦immer⟧ zu spät."
+},
+{
+"w": "Hab",
+"skip": true
+},
+{
+"w": "warum",
+"m": [
+"Wort, wenn man nach dem Grund fragt"
+],
+"x": "⟦Warum⟧ bist du heute so müde?"
+},
+{
+"w": "vor",
+"m": [
+"an der vorderen Seite von etwas",
+"früher als etwas anderes"
+],
+"x": "Das Auto steht ⟦vor⟧ dem Haus."
+},
+{
+"w": "wieder",
+"m": [
+"noch einmal",
+"so wie vorher"
+],
+"x": "Ich muss morgen ⟦wieder⟧ arbeiten."
+},
+{
+"w": "zu",
+"m": [
+"zeigt die Richtung zu einer Person oder einem Ort",
+"zeigt, dass etwas mehr ist, als gut ist"
+],
+"x": "Ich gehe jetzt ⟦zu⟧ meiner Freundin."
+},
+{
+"w": "wie",
+"m": [
+"Wort, wenn man fragt, auf welche Art etwas geht",
+"zeigt einen Vergleich: gleich"
+],
+"x": "⟦Wie⟧ geht es dir heute?"
+},
+{
+"w": "danke",
+"m": [
+"Wort, wenn man sich freut und etwas Nettes sagen will"
+],
+"x": "⟦Danke⟧ für deine Hilfe!"
+},
+{
+"w": "auch",
+"m": [
+"zeigt, dass noch etwas kommt"
+],
+"x": "Ich komme ⟦auch⟧ mit ins Kino."
+},
+{
+"w": "sehr",
+"m": [
+"ganz besonders viel"
+],
+"x": "Die Suppe ist ⟦sehr⟧ heiß."
+},
+{
+"w": "glauben",
+"m": [
+"denken, dass etwas wahr ist",
+"sicher sein, dass jemand die Wahrheit sagt"
+],
+"x": "Ich ⟦glaube⟧, es wird heute regnen."
+},
+{
+"w": "alle",
+"m": [
+"jeder Mensch, jede Sache",
+"nichts mehr da"
+],
+"x": "⟦Alle⟧ Kinder spielen im Garten."
+},
+{
+"w": "finden",
+"m": [
+"etwas sehen, das man gesucht hat",
+"eine Meinung haben"
+],
+"x": "Ich kann meinen Schlüssel nicht ⟦finden⟧."
+},
+{
+"w": "als",
+"m": [
+"zeigt einen Vergleich: mehr oder weniger",
+"zeigt, wann etwas in der Vergangenheit war"
+],
+"x": "Mein Bruder ist größer ⟦als⟧ ich."
+},
+{
+"w": "aus",
+"m": [
+"von innen nach draußen",
+"zeigt, woher jemand kommt"
+],
+"x": "Ich komme ⟦aus⟧ Spanien."
+},
+{
+"w": "vielleicht",
+"m": [
+"es kann sein, dass",
+"ungefähr"
+],
+"x": "Ich komme ⟦vielleicht⟧ morgen mit."
+},
+{
+"w": "um",
+"m": [
+"zeigt, dass etwas rund herum ist",
+"zeigt eine Zeit auf der Uhr"
+],
+"x": "Der Film beginnt ⟦um⟧ acht Uhr."
+},
+{
+"w": "leben",
+"m": [
+"nicht tot sein",
+"an einem Ort wohnen"
+],
+"x": "Meine Großeltern ⟦leben⟧ auf dem Land."
+},
+{
+"w": "hören",
+"m": [
+"mit den Ohren etwas merken"
+],
+"x": "Ich ⟦höre⟧ jeden Morgen Radio."
+},
+{
+"w": "lassen",
+"m": [
+"nicht ändern, so bleiben",
+"erlauben, dass jemand etwas tut"
+],
+"x": "Bitte ⟦lass⟧ mich in Ruhe!"
+},
+{
+"w": "viel",
+"m": [
+"eine große Menge"
+],
+"x": "Ich trinke jeden Tag ⟦viel⟧ Wasser."
+},
+{
+"w": "nie",
+"m": [
+"zu keiner Zeit"
+],
+"x": "Ich war noch ⟦nie⟧ in Italien."
+},
+{
+"w": "brauchen",
+"m": [
+"etwas haben müssen, weil es nötig ist"
+],
+"x": "Ich ⟦brauche⟧ dringend neue Schuhe."
+},
+{
+"w": "weg",
+"m": [
+"nicht mehr hier, an einem anderen Ort",
+"zeigt, dass jemand oder etwas fort ist"
+],
+"x": "Mein Schlüssel ist ⟦weg⟧!"
+},
+{
+"w": "einfach",
+"m": [
+"nicht schwer",
+"nur ein Mal, nicht doppelt"
+],
+"x": "Die Aufgabe ist ganz ⟦einfach⟧."
+},
+{
+"w": "Des",
+"skip": true
+},
+{
+"w": "reden",
+"m": [
+"mit Worten sprechen"
+],
+"x": "Wir ⟦reden⟧ jeden Abend lange am Telefon."
+},
+{
+"w": "so",
+"m": [
+"auf diese Art",
+"zeigt einen Vergleich: gleich"
+],
+"x": "Mach es bitte ⟦so⟧, wie ich es dir gezeigt habe."
+},
+{
+"w": "warten",
+"m": [
+"bleiben, bis jemand kommt oder etwas passiert"
+],
+"x": "Ich ⟦warte⟧ schon eine Stunde auf den Bus."
+},
+{
+"w": "zeit",
+"skip": true
+},
+{
+"w": "heute",
+"m": [
+"an diesem Tag"
+],
+"x": "⟦Heute⟧ scheint die Sonne den ganzen Tag."
+},
+{
+"w": "lieben",
+"m": [
+"jemanden sehr gern haben",
+"etwas sehr schön finden"
+],
+"x": "Ich ⟦liebe⟧ meine Familie sehr."
+},
+{
+"w": "sicher",
+"m": [
+"ohne Gefahr",
+"ganz bestimmt"
+],
+"x": "Hier ist es ⟦sicher⟧, du brauchst keine Angst zu haben."
+},
+{
+"w": "bringen",
+"m": [
+"etwas zu jemandem tragen oder fahren",
+"jemanden an einen Ort begleiten"
+],
+"x": "Ich ⟦bringe⟧ dir morgen das Buch mit."
+},
+{
+"w": "schon",
+"m": [
+"früher, als man denkt",
+"zeigt, dass etwas vorher passiert ist"
+],
+"x": "Es ist ⟦schon⟧ zehn Uhr!"
+},
+{
+"w": "nehmen",
+"m": [
+"etwas mit der Hand greifen",
+"etwas für sich haben wollen"
+],
+"x": "Ich ⟦nehme⟧ einen Kaffee, bitte."
+},
+{
+"w": "mal",
+"m": [
+"ein Mal, irgendwann",
+"macht eine Bitte netter"
+],
+"x": "Komm doch ⟦mal⟧ zu uns zum Essen."
+},
+{
+"w": "nun",
+"m": [
+"jetzt, in diesem Moment",
+"zeigt, dass etwas Neues beginnt"
+],
+"x": "⟦Nun⟧ ist alles gut."
+},
+{
+"w": "Gott",
+"m": [
+"das Wesen, an das viele Menschen glauben"
+],
+"x": "Viele Menschen glauben an ⟦Gott⟧."
+},
+{
+"w": "leid",
+"m": [
+"traurig über etwas, das man getan hat"
+],
+"x": "Es tut mir ⟦leid⟧, dass ich zu spät bin."
+},
+{
+"w": "na",
+"m": [
+"Wort am Anfang, wenn man jemanden fragt oder trifft"
+],
+"x": "⟦Na⟧, wie geht es dir heute?"
+},
+{
+"w": "kennen",
+"m": [
+"jemanden schon getroffen haben",
+"über etwas Bescheid wissen"
+],
+"x": "Ich ⟦kenne⟧ diese Frau seit vielen Jahren."
+},
+{
+"w": "also",
+"m": [
+"zeigt ein Ergebnis: deshalb",
+"zeigt, dass man etwas noch einmal sagt"
+],
+"x": "Es regnet, ⟦also⟧ bleibe ich zu Hause."
+},
+{
+"w": "zurück",
+"m": [
+"wieder dahin, wo man vorher war",
+"in die andere Richtung"
+],
+"x": "Ich gehe jetzt nach Hause und komme später ⟦zurück⟧."
+},
+{
+"w": "stehen",
+"m": [
+"auf den Füßen sein und nicht gehen",
+"an einem Ort sein"
+],
+"x": "Die Kinder ⟦stehen⟧ vor der Tür."
+},
+{
+"w": "hallo",
+"m": [
+"Wort, wenn man jemanden trifft"
+],
+"x": "⟦Hallo⟧, ich bin Anna!"
+},
+{
+"w": "bleiben",
+"m": [
+"nicht weggehen",
+"sich nicht ändern"
+],
+"x": "Ich ⟦bleibe⟧ heute den ganzen Tag zu Hause."
+},
+{
+"w": "fragen",
+"m": [
+"eine Antwort von jemandem wollen"
+],
+"x": "Ich ⟦frage⟧ meinen Lehrer nach der Hausaufgabe."
+},
+{
+"w": "helfen",
+"m": [
+"jemandem etwas leichter machen, bei der Arbeit mitmachen"
+],
+"x": "Kannst du mir bitte beim Kochen ⟦helfen⟧?"
+},
+{
+"w": "los",
+"m": [
+"frei von etwas, nicht mehr haben",
+"in \"Was ist los?\": was passiert hier?"
+],
+"x": "Was ist denn hier ⟦los⟧?"
+},
+{
+"w": "Ware",
+"m": [
+"Dinge, die man im Geschäft kaufen kann"
+],
+"x": "Die ⟦Ware⟧ im Laden ist sehr billig."
+},
+{
+"w": "Vater",
+"m": [
+"Mann, der ein Kind hat",
+"Papa"
+],
+"x": "Mein ⟦Vater⟧ arbeitet in einer Bank."
+},
+{
+"w": "lass",
+"m": [
+"müde und ohne Kraft",
+"ohne Mühe, nicht genau"
+],
+"x": "Nach der langen Arbeit war er ganz ⟦lass⟧."
+},
+{
+"w": "Kind",
+"m": [
+"junger Mensch, noch nicht erwachsen",
+"Sohn oder Tochter von jemandem"
+],
+"x": "Das ⟦Kind⟧ spielt im Garten."
+},
+{
+"w": "schön",
+"m": [
+"so, dass es gut aussieht oder klingt",
+"nett, angenehm"
+],
+"x": "Das Wetter ist heute wirklich ⟦schön⟧."
+},
+{
+"w": "noch",
+"m": [
+"bis jetzt, wie vorher",
+"zeigt, dass mehr dazu kommt"
+],
+"x": "Möchtest du ⟦noch⟧ einen Kaffee?"
+},
+{
+"w": "morgen",
+"m": [
+"der Tag nach heute",
+"in der Zukunft"
+],
+"x": "⟦Morgen⟧ gehe ich zum Arzt."
+},
+{
+"w": "sprechen",
+"m": [
+"mit Worten etwas sagen",
+"mit jemandem reden"
+],
+"x": "Ich ⟦spreche⟧ Deutsch und ein bisschen Englisch."
+},
+{
+"w": "Leute",
+"m": [
+"mehrere Menschen"
+],
+"x": "Auf der Straße waren viele ⟦Leute⟧."
+},
+{
+"w": "dürfen",
+"m": [
+"die Erlaubnis haben, etwas zu tun"
+],
+"x": "Hier ⟦darf⟧ man nicht rauchen."
+},
+{
+"w": "halten",
+"m": [
+"etwas in der Hand haben und nicht loslassen",
+"stehen bleiben, nicht weiter fahren"
+],
+"x": "Der Bus ⟦hält⟧ vor dem Bahnhof."
+},
+{
+"w": "Guter",
+"m": [
+"ein Mann, der nett ist und anderen hilft"
+],
+"x": "Er ist ein ⟦Guter⟧, er hilft allen."
+},
+{
+"w": "Junge",
+"m": [
+"Kind, das später ein Mann wird"
+],
+"x": "Der ⟦Junge⟧ spielt mit dem Ball."
+},
+{
+"w": "Geld",
+"m": [
+"Dinge, mit denen man im Laden bezahlt"
+],
+"x": "Ich habe heute kein ⟦Geld⟧ dabei."
+},
+{
+"w": "über",
+"m": [
+"oben, höher als etwas",
+"zeigt das Thema"
+],
+"x": "Die Lampe hängt ⟦über⟧ dem Tisch."
+},
+{
+"w": "versuchen",
+"m": [
+"etwas probieren, auch wenn es vielleicht nicht klappt"
+],
+"x": "Ich ⟦versuche⟧, jeden Tag Deutsch zu lernen."
+},
+{
+"w": "wo",
+"m": [
+"Wort, wenn man nach dem Ort fragt"
+],
+"x": "⟦Wo⟧ wohnst du eigentlich?"
+},
+{
+"w": "doch",
+"m": [
+"zeigt, dass etwas anders ist, als man denkt",
+"Antwort \"ja\" auf eine Frage mit \"nicht\""
+],
+"x": "Ich bin müde, aber ich gehe ⟦doch⟧ zur Party."
+},
+{
+"w": "raus",
+"m": [
+"von innen nach draußen",
+"nicht mehr drin"
+],
+"x": "Komm, wir gehen ⟦raus⟧ in den Garten."
+},
+{
+"w": "Gutes",
+"m": [
+"etwas, das gut ist"
+],
+"x": "Ich wünsche dir nur ⟦Gutes⟧."
+},
+{
+"w": "gemacht",
+"m": [
+"so, wie es jemand getan hat",
+"nicht echt, nicht natürlich"
+],
+"x": "Ihr Lachen wirkte ⟦gemacht⟧."
+},
+{
+"w": "Mach",
+"skip": true
+},
+{
+"w": "Jahr",
+"m": [
+"zwölf Monate, 365 Tage"
+],
+"x": "Ich lerne seit einem ⟦Jahr⟧ Deutsch."
+},
+{
+"w": "passiert",
+"m": [
+"ganz weich gemacht, ohne Stücke"
+],
+"x": "Die Suppe ist ⟦passiert⟧, sie hat keine Stücke mehr."
+},
+{
+"w": "wirklich",
+"m": [
+"so, wie es in der Welt ist, nicht nur im Kopf",
+"sehr, ganz bestimmt"
+],
+"x": "Das ist ⟦wirklich⟧ passiert, es ist keine Geschichte."
+},
+{
+"w": "wieso",
+"m": [
+"Wort, wenn man nach dem Grund fragt"
+],
+"x": "⟦Wieso⟧ kommst du heute so spät?"
+},
+{
+"w": "Sir",
+"skip": true
+},
+{
+"w": "lange",
+"m": [
+"über viel Zeit"
+],
+"x": "Ich habe ⟦lange⟧ auf dich gewartet."
+},
+{
+"w": "stimmen",
+"m": [
+"wahr oder richtig sein",
+"bei einer Wahl sein Kreuz machen"
+],
+"x": "Die Rechnung ⟦stimmt⟧ nicht, da fehlt Geld."
+},
+{
+"w": "arbeiten",
+"m": [
+"etwas tun, um Geld zu verdienen",
+"etwas tun, das Mühe macht"
+],
+"x": "Ich ⟦arbeite⟧ jeden Tag von neun bis fünf."
+},
+{
+"w": "essen",
+"m": [
+"Brot oder Fleisch in den Mund nehmen"
+],
+"x": "Wir ⟦essen⟧ abends zusammen."
+},
+{
+"w": "her",
+"m": [
+"in Richtung zu mir",
+"zeigt, dass etwas schon lange vorbei ist"
+],
+"x": "Komm bitte ⟦her⟧, ich zeige dir etwas."
+},
+{
+"w": "Nacht",
+"m": [
+"die Zeit, wenn es dunkel ist und man schläft"
+],
+"x": "In der ⟦Nacht⟧ schlafe ich gut."
+},
+{
+"w": "weißen",
+"m": [
+"mit Farbe hell machen"
+],
+"x": "Wir ⟦weißen⟧ die Wände im Wohnzimmer."
+},
+{
+"w": "fahren",
+"m": [
+"mit Auto, Bus oder Zug an einen Ort kommen",
+"mit dem Auto unterwegs sein"
+],
+"x": "Wir ⟦fahren⟧ morgen mit dem Zug nach München."
+},
+{
+"w": "bekommen",
+"m": [
+"etwas haben, das jemand gibt oder schickt"
+],
+"x": "Ich ⟦bekomme⟧ morgen Besuch von meiner Schwester."
+},
+{
+"w": "Herr",
+"m": [
+"Wort für einen Mann, wenn man nett sein will"
+],
+"x": "Guten Tag, ⟦Herr⟧ Müller!"
+},
+{
+"w": "mögen",
+"m": [
+"gern haben, schön finden",
+"Lust auf etwas haben"
+],
+"x": "Ich ⟦mag⟧ Schokolade sehr gern."
+},
+{
+"w": "ach",
+"m": [
+"zeigt, dass man überrascht ist",
+"zeigt, dass man traurig ist"
+],
+"x": "⟦Ach⟧, das habe ich nicht gewusst!"
+},
+{
+"w": "Sache",
+"m": [
+"Ding, das man nicht genau nennt",
+"Thema, Problem"
+],
+"x": "Das ist eine wichtige ⟦Sache⟧."
+},
+{
+"w": "schnell",
+"m": [
+"nicht langsam",
+"in wenig Zeit"
+],
+"x": "Der Zug fährt sehr ⟦schnell⟧."
+},
+{
+"w": "owegehn",
+"skip": true
+},
+{
+"w": "dort",
+"m": [
+"an diesem Ort, nicht hier"
+],
+"x": "Mein Bruder wohnt ⟦dort⟧ drüben."
+},
+{
+"w": "weil",
+"m": [
+"zeigt den Grund für etwas"
+],
+"x": "Ich bleibe zu Hause, ⟦weil⟧ ich krank bin."
+},
+{
+"w": "verstehen",
+"m": [
+"hören, was jemand sagt",
+"wissen, was etwas heißt"
+],
+"x": "Ich ⟦verstehe⟧ die Frage nicht."
+},
+{
+"w": "erzählen",
+"m": [
+"jemandem eine Geschichte sagen"
+],
+"x": "Er ⟦erzählt⟧ uns von seinem Urlaub."
+},
+{
+"w": "spielen",
+"m": [
+"etwas tun, nur weil es Spaß macht",
+"Musik machen"
+],
+"x": "Die Kinder ⟦spielen⟧ im Garten."
+},
+{
+"w": "Ordnung",
+"m": [
+"alles liegt an seinem Platz",
+"Regeln, wie etwas sein soll"
+],
+"x": "In meinem Zimmer ist immer ⟦Ordnung⟧."
+},
+{
+"w": "davon",
+"m": [
+"von dieser Sache",
+"zeigt, dass etwas ein Teil ist"
+],
+"x": "Ich habe ⟦davon⟧ nichts gewusst."
+},
+{
+"w": "Problem",
+"m": [
+"Sache, die schwer ist und die man lösen will",
+"etwas, das nicht gut geht"
+],
+"x": "Wir haben ein ⟦Problem⟧ mit dem Auto."
+},
+{
+"w": "damit",
+"m": [
+"zeigt das Ziel: dass etwas so wird"
+],
+"x": "Ich lerne viel, ⟦damit⟧ ich die Prüfung schaffe."
+},
+{
+"w": "dafür",
+"m": [
+"für diese Sache"
+],
+"x": "Ich habe kein Geld ⟦dafür⟧."
+},
+{
+"w": "ganz",
+"m": [
+"nicht kaputt",
+"alles, nicht nur ein Teil",
+"sehr, völlig"
+],
+"x": "Ich habe den ⟦ganzen⟧ Tag gearbeitet."
+},
+{
+"w": "laufen",
+"m": [
+"schnell gehen",
+"wenn eine Maschine an ist"
+],
+"x": "Der Hund ⟦läuft⟧ durch den Park."
+},
+{
+"w": "Mädchen",
+"m": [
+"Kind, das später eine Frau wird",
+"junge Frau"
+],
+"x": "Das ⟦Mädchen⟧ liest ein Buch."
+},
+{
+"w": "suchen",
+"m": [
+"etwas oder jemanden finden wollen"
+],
+"x": "Ich ⟦suche⟧ meinen Schlüssel."
+},
+{
+"w": "hin",
+"m": [
+"in Richtung weg von mir",
+"zeigt ein Ziel"
+],
+"x": "Wo gehst du ⟦hin⟧?"
+},
+{
+"w": "Abend",
+"m": [
+"die Zeit am Ende des Tages, bevor es dunkel wird"
+],
+"x": "Am ⟦Abend⟧ sehen wir oft einen Film."
+},
+{
+"w": "sterben",
+"m": [
+"aufhören zu leben"
+],
+"x": "Seine Großmutter ist letztes Jahr ⟦gestorben⟧."
+},
+{
+"w": "Ganzes",
+"m": [
+"alles zusammen",
+"eine Sache, die nicht kaputt ist"
+],
+"x": "Das Puzzle ist erst ein ⟦Ganzes⟧, wenn alle Teile da sind."
+},
+{
+"w": "sorgen",
+"m": [
+"sich um jemanden kümmern",
+"dafür arbeiten, dass etwas passiert"
+],
+"x": "Eltern ⟦sorgen⟧ für ihre Kinder."
+},
+{
+"w": "bis",
+"m": [
+"zeigt, wann etwas endet",
+"in \"bis bald\": bis wir uns wiedersehen"
+],
+"x": "Ich arbeite heute ⟦bis⟧ fünf Uhr."
+},
+{
+"w": "hauß",
+"skip": true
+},
+{
+"w": "stellen",
+"m": [
+"etwas an einen Platz bringen, so dass es steht",
+"eine Frage sagen"
+],
+"x": "Ich ⟦stelle⟧ die Flasche auf den Tisch."
+},
+{
+"w": "freund",
+"m": [
+"nett zu jemandem, mit guten Gedanken"
+],
+"x": "Wir sind ihm ⟦freund⟧ und helfen ihm gern."
+},
+{
+"w": "treffen",
+"m": [
+"jemanden sehen und mit ihm sprechen",
+"mit einem Ball das Ziel erreichen"
+],
+"x": "Ich ⟦treffe⟧ morgen eine Freundin im Café."
+},
+{
+"w": "Welt",
+"m": [
+"die Erde, auf der wir leben",
+"alle Menschen und Dinge"
+],
+"x": "Er reist gern durch die ganze ⟦Welt⟧."
+},
+{
+"w": "tot",
+"m": [
+"nicht mehr am Leben"
+],
+"x": "Der Vogel im Garten ist ⟦tot⟧."
+},
+{
+"w": "angsteinflößend",
+"m": [
+"so, dass man Angst bekommt"
+],
+"x": "Der dunkle Wald war richtig ⟦angsteinflößend⟧."
+},
+{
+"w": "holen",
+"m": [
+"an einen Ort gehen und etwas mitbringen",
+"jemanden rufen"
+],
+"x": "Ich ⟦hole⟧ schnell das Brot aus dem Laden."
+},
+{
+"w": "zusammen",
+"m": [
+"mit anderen, nicht allein",
+"alles in einer Menge"
+],
+"x": "Wir kochen heute Abend ⟦zusammen⟧."
+},
+{
+"w": "fühlen",
+"m": [
+"merken, wie es einem geht",
+"etwas mit der Hand spüren"
+],
+"x": "Ich ⟦fühle⟧ mich heute sehr müde."
+},
+{
+"w": "gehören",
+"m": [
+"von jemandem sein",
+"ein Teil von etwas sein"
+],
+"x": "Das Auto ⟦gehört⟧ meinem Vater."
+},
+{
+"w": "liegen",
+"m": [
+"nicht stehen, sondern auf etwas sein",
+"an einem Ort sein"
+],
+"x": "Das Buch ⟦liegt⟧ auf dem Tisch."
+},
+{
+"w": "wohl",
+"m": [
+"gut, gesund und ruhig",
+"wahrscheinlich"
+],
+"x": "Ich fühle mich hier sehr ⟦wohl⟧."
+},
+{
+"w": "scheiße",
+"m": [
+"sehr schlecht, kein nettes Wort"
+],
+"x": "Das Wetter ist heute echt ⟦scheiße⟧."
+},
+{
+"w": "kriegen",
+"m": [
+"etwas bekommen",
+"jemanden fangen"
+],
+"x": "Ich ⟦kriege⟧ morgen Besuch von meinem Bruder."
+},
+{
+"w": "töten",
+"m": [
+"dafür sorgen, dass ein Mensch oder Tier nicht mehr lebt"
+],
+"x": "Man darf keine Menschen ⟦töten⟧."
+},
+{
+"w": "Familie",
+"m": [
+"Eltern und Kinder, die zusammen leben"
+],
+"x": "Meine ⟦Familie⟧ wohnt in Hamburg."
+},
+{
+"w": "gegen",
+"m": [
+"zeigt, dass man etwas nicht will"
+],
+"x": "Ich bin ⟦gegen⟧ diesen Plan."
+},
+{
+"w": "genau",
+"m": [
+"ohne Fehler, richtig",
+"ohne Unterschied"
+],
+"x": "Ich weiß nicht ⟦genau⟧, wie spät es ist."
+},
+{
+"w": "sonst",
+"m": [
+"wenn nicht, auf andere Art",
+"zu anderen Zeiten"
+],
+"x": "Beeil dich, ⟦sonst⟧ verpassen wir den Zug."
+},
+{
+"w": "Musik",
+"m": [
+"Lied oder anderes, das man gern hört"
+],
+"x": "Ich höre jeden Tag ⟦Musik⟧."
+},
+{
+"w": "Bruder",
+"m": [
+"Junge oder Mann mit gleichen Eltern"
+],
+"x": "Mein ⟦Bruder⟧ wohnt in Berlin."
+},
+{
+"w": "Arbeit",
+"m": [
+"das, was man tut, um Geld zu verdienen",
+"Ort, an dem man Geld verdient"
+],
+"x": "Meine ⟦Arbeit⟧ beginnt um acht Uhr."
+},
+{
+"w": "Kleine",
+"m": [
+"Mädchen, das noch jung ist",
+"Frau, die man gern hat"
+],
+"x": "Die ⟦Kleine⟧ schläft schon."
+},
+{
+"w": "Moment",
+"m": [
+"Wort, um jemanden um kurze Zeit zum Warten zu bitten"
+],
+"x": "⟦Moment⟧, ich bin gleich wieder da!"
+},
+{
+"w": "verdammt",
+"m": [
+"sehr; das Wort zeigt Ärger"
+],
+"x": "Es ist ⟦verdammt⟧ kalt heute!"
+},
+{
+"w": "rufen",
+"m": [
+"laut sagen, damit jemand es hört",
+"jemanden zu sich kommen lassen"
+],
+"x": "Ich ⟦rufe⟧ meine Kinder zum Essen."
+},
+{
+"w": "zeigen",
+"m": [
+"jemanden etwas sehen lassen",
+"erklären, wie etwas geht"
+],
+"x": "Ich ⟦zeige⟧ dir mein neues Zimmer."
+},
+{
+"w": "dabei",
+"m": [
+"bei dieser Sache, mit uns",
+"zur gleichen Zeit"
+],
+"x": "Ich habe immer mein Handy ⟦dabei⟧."
+},
+{
+"w": "Hand",
+"m": [
+"Teil am Ende vom Arm, mit dem man etwas nimmt"
+],
+"x": "Er hat ein Buch in der ⟦Hand⟧."
+},
+{
+"w": "klar",
+"m": [
+"sauber, man sieht durch",
+"leicht zu verstehen"
+],
+"x": "Das Wasser im See ist ganz ⟦klar⟧."
+},
+{
+"w": "Sohn",
+"m": [
+"Kind, das ein Junge ist"
+],
+"x": "Mein ⟦Sohn⟧ geht schon zur Schule."
+},
+{
+"w": "erinnern",
+"m": [
+"etwas nicht vergessen haben",
+"jemandem etwas wieder ins Gedächtnis rufen"
+],
+"x": "Ich ⟦erinnere⟧ mich gut an meine Schulzeit."
+},
+{
+"w": "stunden",
+"m": [
+"jemandem mehr Zeit zum Bezahlen geben"
+],
+"x": "Die Bank ⟦stundet⟧ mir die Rate für einen Monat."
+},
+{
+"w": "sofort",
+"m": [
+"ohne zu warten, in diesem Moment"
+],
+"x": "Komm bitte ⟦sofort⟧ nach Hause!"
+},
+{
+"w": "bevor",
+"m": [
+"zeigt, was zuerst passiert"
+],
+"x": "Wasch dir die Hände, ⟦bevor⟧ du isst."
+},
+{
+"w": "entschuldigen",
+"m": [
+"sagen, dass es einem leid tut",
+"einen Fehler nicht schlimm finden"
+],
+"x": "Bitte ⟦entschuldige⟧, dass ich zu spät bin."
+},
+{
+"w": "denn",
+"m": [
+"zeigt den Grund für etwas"
+],
+"x": "Ich bleibe zu Hause, ⟦denn⟧ ich bin krank."
+},
+{
+"w": "einmal",
+"m": [
+"ein Mal",
+"irgendwann in der Zeit"
+],
+"x": "Ich war schon ⟦einmal⟧ in Italien."
+},
+{
+"w": "schlafen",
+"m": [
+"die Augen zu haben und sich in der Nacht ausruhen"
+],
+"x": "Ich ⟦schlafe⟧ jede Nacht acht Stunden."
+},
+{
+"w": "enden",
+"m": [
+"nicht weitergehen, fertig sein"
+],
+"x": "Der Film ⟦endet⟧ um zehn Uhr."
+},
+{
+"w": "Woche",
+"m": [
+"sieben Tage"
+],
+"x": "Ich arbeite fünf Tage in der ⟦Woche⟧."
+},
+{
+"w": "wann",
+"m": [
+"Wort, wenn man nach der Zeit fragt"
+],
+"x": "⟦Wann⟧ kommst du nach Hause?"
+},
+{
+"w": "Auge",
+"m": [
+"Teil vom Kopf, mit dem man sieht"
+],
+"x": "Ich habe etwas im ⟦Auge⟧."
+},
+{
+"w": "Minute",
+"m": [
+"der 60. Teil einer Stunde"
+],
+"x": "Der Bus kommt in fünf ⟦Minuten⟧."
+},
+{
+"w": "fertig",
+"m": [
+"mit etwas am Ende, nichts mehr zu tun",
+"bereit"
+],
+"x": "Ich bin mit der Arbeit ⟦fertig⟧."
+},
+{
+"w": "Hilfe",
+"m": [
+"wenn man jemandem etwas leichter macht",
+"Ruf, wenn man in Gefahr ist"
+],
+"x": "Danke für deine ⟦Hilfe⟧!"
+},
+{
+"w": "wahr",
+"m": [
+"so, wie es wirklich ist, nicht falsch"
+],
+"x": "Das ist nicht ⟦wahr⟧, das stimmt nicht!"
+},
+{
+"w": "ab",
+"m": [
+"von einem Zeitpunkt an",
+"weg von einem Ort"
+],
+"x": "Das Geschäft ist ⟦ab⟧ acht Uhr offen."
+},
+{
+"w": "gern",
+"m": [
+"mit Freude, weil man es mag"
+],
+"x": "Ich helfe dir ⟦gern⟧."
+},
+{
+"w": "echt",
+"m": [
+"so, wie es sein soll, nicht falsch"
+],
+"x": "Die Uhr ist ⟦echt⟧, sie ist aus Gold."
+},
+{
+"w": "darüber",
+"m": [
+"oben auf etwas",
+"über dieses Thema"
+],
+"x": "Wir sprechen morgen ⟦darüber⟧."
+},
+{
+"w": "nennen",
+"m": [
+"jemandem oder etwas einen Namen geben",
+"etwas sagen"
+],
+"x": "Wie willst du deinen Hund ⟦nennen⟧?"
+},
+{
+"w": "dazu",
+"m": [
+"zu etwas, noch mehr",
+"zu diesem Thema"
+],
+"x": "Was sagst du ⟦dazu⟧?"
+},
+{
+"w": "daran",
+"m": [
+"direkt an dieser Sache",
+"an dieses Thema"
+],
+"x": "Ich denke oft ⟦daran⟧."
+},
+{
+"w": "Baby",
+"m": [
+"ganz kleines Kind, das noch nicht laufen kann"
+],
+"x": "Das ⟦Baby⟧ schläft im Bett."
+},
+{
+"w": "Mutter",
+"m": [
+"Frau, die ein Kind hat"
+],
+"x": "Meine ⟦Mutter⟧ kocht jeden Tag."
+},
+{
+"w": "heißen",
+"m": [
+"einen bestimmten Namen haben",
+"etwas bedeuten"
+],
+"x": "Wie ⟦heißt⟧ du denn eigentlich?"
+},
+{
+"w": "dank",
+"m": [
+"zeigt, dass etwas gut passiert, weil jemand oder etwas geholfen hat"
+],
+"x": "⟦Dank⟧ deiner Hilfe bin ich pünktlich fertig."
+},
+{
+"w": "Würde",
+"m": [
+"der Wert eines Menschen, der Respekt braucht",
+"hohe Stellung"
+],
+"x": "Jeder Mensch hat seine ⟦Würde⟧."
+},
+{
+"w": "lieber",
+"m": [
+"Mir gefällt es mehr"
+],
+"x": "Ich trinke ⟦lieber⟧ Tee als Kaffee."
+},
+{
+"w": "Tag",
+"m": [
+"24 Stunden",
+"die Zeit, wenn die Sonne scheint"
+],
+"x": "Ich arbeite jeden ⟦Tag⟧ acht Stunden."
+},
+{
+"w": "hoffen",
+"m": [
+"sich wünschen, dass etwas Gutes passiert"
+],
+"x": "Ich ⟦hoffe⟧, dass du bald gesund wirst."
+},
+{
+"w": "durch",
+"m": [
+"von einer Seite zur anderen",
+"mit Hilfe von etwas"
+],
+"x": "Wir gehen ⟦durch⟧ den Park."
+},
+{
+"w": "zuhause",
+"m": [
+"in der Wohnung, wo man wohnt"
+],
+"x": "Ich bin heute den ganzen Tag ⟦zuhause⟧."
+},
+{
+"w": "ob",
+"m": [
+"zeigt eine Frage in einem Satz, man weiß es nicht"
+],
+"x": "Ich weiß nicht, ⟦ob⟧ er heute kommt."
+},
+{
+"w": "Stadt",
+"m": [
+"ein großer Ort, wo viele Menschen wohnen"
+],
+"x": "Berlin ist eine große ⟦Stadt⟧."
+},
+{
+"w": "dingen",
+"m": [
+"jemanden gegen Geld für eine Arbeit nehmen"
+],
+"x": "Der Bauer ⟦dingt⟧ im Sommer Helfer für die Ernte."
+},
+{
+"w": "Uhr",
+"m": [
+"Ding, das zeigt, wie spät es ist",
+"Wort bei der Zeit"
+],
+"x": "Es ist jetzt acht ⟦Uhr⟧."
+},
+{
+"w": "Große",
+"m": [
+"Mädchen, das älter ist als andere"
+],
+"x": "Die ⟦Große⟧ geht schon zur Schule."
+},
+{
+"w": "besser",
+"m": [
+"mehr gut als vorher"
+],
+"x": "Heute geht es mir ⟦besser⟧."
+},
+{
+"w": "ziehen",
+"m": [
+"etwas mit Kraft zu sich bringen",
+"an einen anderen Ort umziehen"
+],
+"x": "Bitte ⟦zieh⟧ die Tür zu dir!"
+},
+{
+"w": "Freund",
+"m": [
+"Mensch, den man sehr gern hat",
+"Mann, mit dem man zusammen ist"
+],
+"x": "Er ist mein bester ⟦Freund⟧."
+},
+{
+"w": "trinken",
+"m": [
+"Wasser oder Milch in den Mund nehmen",
+"Alkohol nehmen"
+],
+"x": "Ich ⟦trinke⟧ jeden Morgen Kaffee."
+},
+{
+"w": "Kopf",
+"m": [
+"Teil oben am Menschen, mit Augen und Mund",
+"der Chef"
+],
+"x": "Ich habe Schmerzen im ⟦Kopf⟧."
+},
+{
+"w": "Namen",
+"m": [
+"wie jemand oder etwas heißt"
+],
+"x": "Ich kenne seinen ⟦Namen⟧ nicht."
+},
+{
+"w": "Glück",
+"m": [
+"wenn etwas Gutes passiert, ohne dass man etwas tut",
+"ein schönes Gefühl"
+],
+"x": "Ich habe ⟦Glück⟧ gehabt und den Zug noch bekommen."
+},
+{
+"w": "ohne",
+"m": [
+"wenn etwas nicht dabei ist"
+],
+"x": "Ich trinke meinen Kaffee ⟦ohne⟧ Zucker."
+},
+{
+"w": "letzte",
+"m": [
+"am Ende, nach dem keiner mehr kommt",
+"vor kurzem"
+],
+"x": "Das ist das ⟦letzte⟧ Stück Kuchen."
+},
+{
+"w": "neu",
+"m": [
+"vor kurzem gemacht oder gekauft",
+"noch nicht bekannt"
+],
+"x": "Ich habe ein ⟦neues⟧ Handy gekauft."
+},
+{
+"w": "lang",
+"m": [
+"von einem Ende zum anderen weit",
+"viel Zeit"
+],
+"x": "Der Film ist sehr ⟦lang⟧."
+},
+{
+"w": "setzen",
+"m": [
+"jemanden auf einen Stuhl bringen",
+"sich hinsetzen"
+],
+"x": "Bitte ⟦setzen⟧ Sie sich!"
+},
+{
+"w": "retten",
+"m": [
+"jemandem aus einer Gefahr helfen"
+],
+"x": "Der Mann ⟦rettet⟧ das Kind aus dem Wasser."
+},
+{
+"w": "Tür",
+"m": [
+"Teil vom Haus, durch den man hinein und hinaus geht"
+],
+"x": "Bitte mach die ⟦Tür⟧ zu."
+},
+{
+"w": "darauf",
+"m": [
+"oben auf dieser Sache",
+"danach"
+],
+"x": "Ich freue mich schon ⟦darauf⟧."
+},
+{
+"w": "bald",
+"m": [
+"in wenig Zeit",
+"fast"
+],
+"x": "Wir sehen uns ⟦bald⟧ wieder."
+},
+{
+"w": "bedeuten",
+"m": [
+"etwas heißen",
+"wichtig für jemanden sein"
+],
+"x": "Was ⟦bedeutet⟧ dieses Wort?"
+},
+{
+"w": "richtig",
+"m": [
+"ohne Fehler",
+"so, wie es sein soll"
+],
+"x": "Das ist die ⟦richtige⟧ Antwort."
+},
+{
+"w": "Idee",
+"m": [
+"ein Gedanke, wie man etwas machen kann"
+],
+"x": "Ich habe eine gute ⟦Idee⟧!"
+},
+{
+"w": "sitzen",
+"m": [
+"auf einem Stuhl sein",
+"an einem Ort bleiben"
+],
+"x": "Wir ⟦sitzen⟧ am Tisch und essen."
+},
+{
+"w": "bereit",
+"m": [
+"fertig für etwas"
+],
+"x": "Ich bin ⟦bereit⟧, wir können gehen."
+},
+{
+"w": "Waffe",
+"m": [
+"Ding, mit dem man kämpft"
+],
+"x": "Die Polizei hat eine ⟦Waffe⟧ gefunden."
+},
+{
+"w": "Tod",
+"m": [
+"wenn ein Mensch oder Tier nicht mehr lebt"
+],
+"x": "Der ⟦Tod⟧ seiner Mutter machte ihn sehr traurig."
+},
+{
+"w": "Schwester",
+"m": [
+"Mädchen oder Frau mit gleichen Eltern",
+"Frau, die im Krankenhaus arbeitet"
+],
+"x": "Meine ⟦Schwester⟧ wohnt in Hamburg."
+},
+{
+"w": "natürlich",
+"m": [
+"aus der Natur",
+"selbstverständlich, ja"
+],
+"x": "Kommst du mit? ⟦Natürlich⟧!"
+},
+{
+"w": "weit",
+"m": [
+"nicht nah, mit viel Weg bis dahin"
+],
+"x": "Der Weg zur Schule ist nicht ⟦weit⟧."
+},
+{
+"w": "Ahnung",
+"m": [
+"ein Gefühl, dass etwas passiert",
+"Wissen von einer Sache"
+],
+"x": "Ich habe keine ⟦Ahnung⟧, wo er ist."
+},
+{
+"w": "draußen",
+"m": [
+"nicht im Haus, im Freien"
+],
+"x": "Es ist schön ⟦draußen⟧, wir gehen spazieren."
+},
+{
+"w": "verrückt",
+"m": [
+"nicht normal, sehr komisch",
+"sehr begeistert"
+],
+"x": "Das ist eine ⟦verrückte⟧ Idee!"
+}
+]

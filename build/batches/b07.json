@@ -1,0 +1,2169 @@
+[
+{
+"word": "trainieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mithilfe gezielten Übens seine (zum Beispiel körperliche oder geistige) Leistungsfähigkeit erhöhen, häufig vor Antreten eines Wettbewerbs"
+]
+},
+{
+"word": "streichen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Farbe mit einem Pinsel auf einen Untergrund auftragen",
+"mit der Hand oder einem Gegenstand über die Oberfläche eines anderen Gegenstandes gleiten"
+]
+},
+{
+"word": "festhalten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"so in der Hand halten, dass es ihr nicht entgleitet",
+"deutlich erwähnen, damit es nicht vergessen wird"
+]
+},
+{
+"word": "Schlange",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Unterordnung von fußlosen Tieren (Serpentes)",
+"Abfolge, Reihe von Individuen oder Gegenständen"
+]
+},
+{
+"word": "Grab",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Bestattungsort; letzte Ruhestätte; Stelle, an der ein oder mehrere Verstorbene beigesetzt wurden",
+"Ort oder Zeitpunkt, an dem etwas endet"
+]
+},
+{
+"word": "bilden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas zustande kommen, entstehen lassen",
+"etwas Bestimmtes sein, etwas Bestimmtes darstellen, mit etwas gleichzusetzen sein"
+]
+},
+{
+"word": "merkwürdig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"durch Abweichung vom Üblichen auffallend; Staunen, Verwunderung oder aber leises Misstrauen bewirkend",
+"auffallend, des Merkens würdig, bedeutsam"
+]
+},
+{
+"word": "eifersüchtig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"Eifersucht verspürend, von Eifersucht bestimmt"
+]
+},
+{
+"word": "durchsuchen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"innerhalb eines bestimmten Bereiches gründlich suchen"
+]
+},
+{
+"word": "high",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"von Drogen/Rauschgift berauscht"
+]
+},
+{
+"word": "Geist",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Plural 1:",
+"das Denken als Bestandteil der Individualität"
+]
+},
+{
+"word": "Truppe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Gesamtheit der Streitkräfte eines Staates oder einer der Teilstreitkräfte, besonders des Heeres",
+"kleinere Einheit der Streitkräfte"
+]
+},
+{
+"word": "Freitag",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"fünfter Wochentag gemäß ISO 8601; sechster Wochentag nach jüdischer, christlicher und islamischer Zählung; Tag zwischen Donnerstag und Samstag"
+]
+},
+{
+"word": "bewusst",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"mit klarem Verstand",
+"mit Absicht"
+]
+},
+{
+"word": "englisch",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"England oder dessen Bevölkerung betreffend, aus England kommend",
+"aus der in England gebräuchlichen Sprache kommend, das Englische betreffend, in Englisch verfasst"
+]
+},
+{
+"word": "spuren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"eine Spur ziehen",
+"folgsam sein"
+]
+},
+{
+"word": "Theater",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"eine Schauspielstätte",
+"ein aufgeführtes Stück, Schauspiel, Spektakel"
+]
+},
+{
+"word": "Dreck",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Schmutz, unerwünschte Substanz",
+"etwas, was als minderwertig, wertlos angesehen wird"
+]
+},
+{
+"word": "weitermachen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"fortfahren etwas zu tun"
+]
+},
+{
+"word": "locker",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"durchlässig, nicht dicht",
+"mangelhaft befestigt, wackelig"
+]
+},
+{
+"word": "Knochen",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Teil des Skeletts der Wirbeltiere",
+"das Material, aus dem [1] ist"
+]
+},
+{
+"word": "ebenso",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"im gleichen Maße, auf die gleiche Weise"
+]
+},
+{
+"word": "Bestes",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Sache/Ding, das im Vergleich (durch Qualität) gewinnt; das Beste"
+]
+},
+{
+"word": "Wunderbares",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"etwas, das auf jemanden einen wunderbaren Eindruck macht (zum Beispiel Wunder, aber auch generell wunderbare Dinge, Erlebnisse oder Offenbarungen)"
+]
+},
+{
+"word": "dennoch",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"trotzdem"
+]
+},
+{
+"word": "leeren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"den Inhalt verbrauchen oder entfernen",
+"leer werden"
+]
+},
+{
+"word": "Bester",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die im Vergleich gewinnt"
+]
+},
+{
+"word": "trotz",
+"pos": "prep",
+"art": "",
+"wiktionary": [
+"ungeachtet eines bestimmten Umstandes; ohne Rücksicht auf etwas; einer Sache zum Trotz"
+]
+},
+{
+"word": "stärken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"stark, belastbar machen; kräftiger, leistungsfähiger machen",
+"sich durch Speisen oder Trinken erfrischen"
+]
+},
+{
+"word": "begraben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Verstorbenen beisetzen, beerdigen",
+"einen Gedanken aufgeben, verwerfen"
+]
+},
+{
+"word": "Fahrer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die ein Fahrzeug steuert, lenkt, bedient oder fährt",
+"Person, die als berufliche Tätigkeit ein Fahrzeug steuert, lenkt, bedient oder fährt"
+]
+},
+{
+"word": "Selbstmord",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die Beendigung des eigenen Lebens, welche unter vollstem Bewusstsein und durch den eigenen, freien Willen vollzogen wird",
+"eine Handlung, die den Tod eines Menschen zur Folge haben könnte. Diese Aktion wird zwar von der Person selbst vollzogen, aber nicht mit dem Ziel, sich umzubringen."
+]
+},
+{
+"word": "Aufnahme",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das Beginnen von etwas",
+"Empfang, Unterbringung, Beherbergung von Menschen in einem Gebäude"
+]
+},
+{
+"word": "scheiden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"räumlich voneinander trennen",
+"die Ehe auflösen"
+]
+},
+{
+"word": "Jude",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Mensch, welcher der Religion des Judentums angehört",
+"Mensch, welcher der jüdischen Ethnie oder Kulturgemeinschaft angehört"
+]
+},
+{
+"word": "Stich",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"das Eindringen eines spitzen Gegenstandes in einen Körper",
+"eine Verletzung durch einen Insektenstich"
+]
+},
+{
+"word": "stinken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"(sehr) übel schlecht riechen, üblen Geruch verbreiten",
+"sehr missfallen"
+]
+},
+{
+"word": "bestimmen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"festlegen, zum Beispiel einen Preis, eine Zeitdauer, einen Umfang",
+"entscheiden, anordnen, über jemanden oder über etwas Verfügungsgewalt ausüben"
+]
+},
+{
+"word": "beeindrucken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"bei jemandem ein sehr deutliches, oftmals bewunderndes Gefühl hinterlassen"
+]
+},
+{
+"word": "Toter",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"ein verstorbener Mann/Mensch"
+]
+},
+{
+"word": "Größe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"räumliche Ausdehnung",
+"Person mit (gesellschaftlicher) Bedeutung"
+]
+},
+{
+"word": "beinahe",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"fast, sehr nahe an etwas heran"
+]
+},
+{
+"word": "Offizier",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Vertreter, Träger eines militärischen Rangs",
+"Vertreter, Träger eines militärischen Rangs / allgemein: vom Leutnant aufwärts"
+]
+},
+{
+"word": "Aussage",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Erklärung, Bekundung, Feststellung; etwas Gesagtes, das die eigene Meinung beziehungsweise das eigene Wissen widerspiegelt",
+"Erklärung vor Gericht"
+]
+},
+{
+"word": "verabschieden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"durch spezielle Handlungen gegenüber einer Person dieser deutlich machen, dass man sich von ihr entfernen wird",
+"durch spezielle Handlungen gegenüber einer abreisenden Person dieser Grüße und Wünsche mit auf den Weg geben"
+]
+},
+{
+"word": "Prozess",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"eine durch ein Ereignis ausgelöste Folge von Aktivitäten oder Zuständen, die in einen Endzustand mündet",
+"Gerichtsverhandlung, Gerichtsverfahren, Rechtsstreit"
+]
+},
+{
+"word": "Jahrhundert",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"der Zeitraum von hundert Jahren, zwischen dem 1. Januar eines Jahres mit der Endung 01 und dem 31. Dezember des Jahres, das dann (eben 100 Jahre später) wieder auf 00 endet",
+"Beginn der Zählung in die positive Richtung am 1.1. des Jahres 1 (nach Christus); zum Beispiel das siebzehnte Jahrhundert: 1. Januar 1601 – 31. Dezember 1700"
+]
+},
+{
+"word": "Theorie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Gedankenmodell zum Erklären von Erscheinungen oder zur Konstruktion neuer Welten",
+"Gesamtheit eines gedanklich konstruierten Bildes, im Gegensatz zur Praxis"
+]
+},
+{
+"word": "ignorieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"absichtlich nicht beachten, etwas keine Aufmerksamkeit schenken"
+]
+},
+{
+"word": "testen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"durch einen oder mehrere Versuche überprüfen, ob etwas (beispielsweise eine Methode, ein Prozess, ein technisches Gerät) funktioniert/den Anforderungen entspricht oder nicht"
+]
+},
+{
+"word": "Sünde",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Übertretung eines religiösen Gebotes oder Verbotes",
+"negativer Zustand, der durch eine Sünde im religiösen Sinn eintritt"
+]
+},
+{
+"word": "Medikament",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"ein Arzneimittel, das in bestimmter Dosierung zur Heilung, Vorbeugung oder Linderung einer Krankheit dient"
+]
+},
+{
+"word": "komplett",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"vollständig; das Ganze umfassend",
+"vollzählig"
+]
+},
+{
+"word": "dicht",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"eng, nahe beieinanderliegend, undurchdringlich",
+"nahe bei"
+]
+},
+{
+"word": "Panik",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"plötzlich auftretender Schrecken, plötzlich aufkommende Angst, schwer beherrschbarer, kontrollierbarer, von Angst und Schrecken geprägter Zustand in der Gruppendynamik und Interaktion, unter Umständen krankhafter Zustand der Psyche",
+"Aufsehen, Hektik, Kritik, Stress"
+]
+},
+{
+"word": "lebendig",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"lebend, am Leben, nicht tot",
+"(noch) existent, fortwährend"
+]
+},
+{
+"word": "voraus",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"in Bezug auf jemand oder etwas räumlich vor diesem",
+"in der Entwicklung weiter fortgeschritten, besser"
+]
+},
+{
+"word": "selten",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nur in geringen Mengen vorhanden",
+"nicht häufig passierend; die Wiederholungen haben eine große Zeitspanne"
+]
+},
+{
+"word": "gestehen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas offen zugeben; ein Geständnis ablegen"
+]
+},
+{
+"word": "Kino",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Gebäude oder Raum, in dem Filme auf einer Leinwand vorgeführt werden",
+"Filmvorführung auf einer Leinwand"
+]
+},
+{
+"word": "Tanz",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"(rhythmischer) Bewegungsablauf, der zu Musik oder rhythmischen Geräuschen ausgeführt wird",
+"Musikstück, das sich zum Tanzen eignet"
+]
+},
+{
+"word": "fordern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas (von jemandem) verlangen",
+"zu einem Kampf herausfordern"
+]
+},
+{
+"word": "strafen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"eine unangenehme Erfahrung machen lassen, als Folge einer nicht erwünschten Handlung; eine Strafe auferlegen; jemanden strafen mit etwas"
+]
+},
+{
+"word": "weiterhin",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"auch in Zukunft, immer noch",
+"außerdem"
+]
+},
+{
+"word": "Alkohol",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"gängige Bezeichnung für Ethanol",
+"gängige Bezeichnung für Ethanol / speziell und kurz für Getränk, welches Ethanol enthält; Trinkalkohol"
+]
+},
+{
+"word": "brav",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"Gehorsam zeigend",
+"Biederkeit äußernd"
+]
+},
+{
+"word": "beschreiben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ein Schriftstück oder Objekt mit Text versehen",
+"einen Sachverhalt in Worten wiedergeben"
+]
+},
+{
+"word": "Killer",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die – oft auch gegen Bezahlung – jemanden umbringt",
+"Stift zum Entfernen von Tinte"
+]
+},
+{
+"word": "Story",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Handlung ausmachende (zumeist knapp umrissene) Geschichte einer literarischen, filmischen, theatralischen oder ähnlichen Erzählung",
+"ungewöhnliche, zuweilen abenteuerliche beziehungsweise wenig glaubhafte Geschichte, die sich ereignet haben soll"
+]
+},
+{
+"word": "fein",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"dünn, feinkörnig, zart",
+"psychisch / einfühlsam, feinfühlig, feinsinnig"
+]
+},
+{
+"word": "morden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden vorsätzlich töten, einen Mord verüben"
+]
+},
+{
+"word": "heulen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Tränen vergießen",
+"ein bestimmtes Geräusch (ein Heulen) erzeugen"
+]
+},
+{
+"word": "Hemd",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Teil der Oberbekleidung für den Oberkörper, vor allem für Männer",
+"Wäschestück für den Oberkörper, Unterhemd"
+]
+},
+{
+"word": "zugeben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas als richtig, zutreffend bestätigen; einer fremden Behauptung Richtigkeit zubilligen eine eigene Tat einräumen, eingestehen",
+"etwas zu etwas anderem dazu tun"
+]
+},
+{
+"word": "Magie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"vermeintliche Einflussnahme auf Personen, Dinge oder Ereignisse auf übernatürliche Art und Weise",
+"die Faszination, die von etwas Bestimmtem ausgeht"
+]
+},
+{
+"word": "langen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich einem Gegenstand entgegen strecken, um ihn zu ergreifen",
+"ausreichend vorhanden sein, genügend verfügbar sein"
+]
+},
+{
+"word": "achten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"auf etwas Acht geben, etwas Beachtung schenken",
+"etwas/jemandem Respekt entgegenbringen; etwas/jemanden zu schätzen wissen, anerkennen"
+]
+},
+{
+"word": "rechnen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Zahlen logisch verknüpfen, Mathematik anwenden",
+"stark vermuten, dass etwas geschehen wird; voraussehen"
+]
+},
+{
+"word": "Gegenteil",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Wort, welches in entgegengesetzter Bedeutung zu einem andren Wort steht",
+"etwas/jemand, was/welcher in seiner Handlung oder Beschaffenheit etwas oder jemand anderem vollkommen entgegengesetzt ist"
+]
+},
+{
+"word": "fischen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Tiere fangen, die im Wasser leben",
+"etwas aus einer Flüssigkeit entfernen"
+]
+},
+{
+"word": "Schüler",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die eine Schule besucht",
+"jemand, der die Lehren eines bestimmten Lehrers vertritt"
+]
+},
+{
+"word": "gratulieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandem für etwas einen Glückwunsch aussprechen"
+]
+},
+{
+"word": "drohen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden durch die Ankündigung von Gewalt oder Sanktionen einschüchtern oder zwingen, etwas zu tun",
+"jemandem als Übel bevorstehen"
+]
+},
+{
+"word": "Angelegenheit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Sache, der Fall",
+"die Affäre, die Geschichte"
+]
+},
+{
+"word": "deutlich",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"eindeutig erkennbar, wahrnehmbar durch die Sinne",
+"inhaltlich verständlich"
+]
+},
+{
+"word": "respektieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"meist jemanden oder etwas achten, Respekt zeigen"
+]
+},
+{
+"word": "Sonntag",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Wochentag zwischen Samstag und Montag"
+]
+},
+{
+"word": "blau",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"eine bunte Farbe, im Spektrum eine relativ kurzwellige Farbe zwischen grün und violett; Grundfarbe vieler Farbmodelle, insbesondere eine der drei Grundfarben des digitalen RGB-Farbraums",
+"betrunken"
+]
+},
+{
+"word": "immerhin",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"dessen ungeachtet, trotzdem",
+"zumindest, jedenfalls"
+]
+},
+{
+"word": "nähern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich an etwas heranbewegen, näher herankommen an etwas",
+"eine Sache in naher Zeit erreicht haben"
+]
+},
+{
+"word": "täuschen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"falsche Tatsachen vorspiegeln",
+"etwas irrtümlich für wahr halten"
+]
+},
+{
+"word": "erfreuen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"eine Sache genießen, für eine Sache Freude, fröhliches Gefühl empfinden",
+"bei jemandem Freude oder innere Heiterkeit hervorrufen"
+]
+},
+{
+"word": "innerhalb",
+"pos": "prep",
+"art": "",
+"wiktionary": [
+"in einem bestimmten Zeitraum",
+"im Inneren von etwas"
+]
+},
+{
+"word": "frischen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Roheisen durch Oxidation der begleitenden Bestandteile in Stahl umwandeln",
+"(bei Wildschweinen) Junge werfen"
+]
+},
+{
+"word": "Oberst",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Dienstgrad über dem Oberstleutnant, höchster Dienstgrad der Stabsoffiziere",
+"Person, die den Dienstgrad eines Obersts innehat"
+]
+},
+{
+"word": "coden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Anweisungen in einer bestimmten Programmiersprache formulieren"
+]
+},
+{
+"word": "Artikel",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"bestimmte Art von Ware",
+"kurzer, in sich abgeschlossener Text im Rahmen einer Zeitung, Zeitschrift oder eines Buches"
+]
+},
+{
+"word": "Affe",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Säugetier aus der Unterordnung Anthropoidea in der Ordnung der Primaten",
+"eitler, affektierter Mensch"
+]
+},
+{
+"word": "Wilder",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"jemand, der in der Wildnis/in einer wenig oder gar nicht zivilisierten Umgebung aufgewachsen ist oder lebt"
+]
+},
+{
+"word": "blasen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"Luft aus dem Mund ausstoßen; etwas in die Luft beziehungsweise Atmosphäre überleiten; in etwas hineinpusten",
+"auf einem Blasinstrument spielen"
+]
+},
+{
+"word": "zuletzt",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"als Letztes, zum Schluss",
+"in letzter Zeit"
+]
+},
+{
+"word": "orten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"den Standort (oder Ursprung) von etwas ausmachen"
+]
+},
+{
+"word": "Gebiet",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"räumlicher Bereich mit einer bestimmten Ausdehnung, Fläche",
+"ein fachlich begrenztes Gebiet, siehe auch Fachbereich"
+]
+},
+{
+"word": "Weg",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"einfache, oft geringer befestigte, aber auch unbefestigte, als allgemeiner Weg nicht klassifizierte Verkehrslinie zum Begehen oder Befahren",
+"bestimmte, zum Erreichen des Zieles einzuschlagende einzelne oder auch wechselnde Richtung"
+]
+},
+{
+"word": "rausfinden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"eine Information als Ergebnis einer Suche erhalten",
+"den Weg nach draußen kennen"
+]
+},
+{
+"word": "schiffen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mit dem Schiff fahren",
+"urinieren"
+]
+},
+{
+"word": "Narr",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Gaukler und Spaßmacher an einem Fürstenhof oder komische Figur im Theater",
+"Person, die (kostümiert) am Karneval/Fasching teilnimmt"
+]
+},
+{
+"word": "knapp",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"gerade noch ausreichend; weniger als das, was man eigentlich braucht oder gerne hätte",
+"etwas kleiner als angegeben"
+]
+},
+{
+"word": "spitzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas spitz machen",
+"etwas heimlich, versteckt, durch eine kleine Öffnung beobachten"
+]
+},
+{
+"word": "summen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ohne Text, meist mit geschlossenen Lippen, die Melodie zu einem Lied von sich geben",
+"etwas (leise) vor sich hin singen"
+]
+},
+{
+"word": "Prozent",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Anteil von Hundert",
+"Vergünstigung, Nachlass"
+]
+},
+{
+"word": "Rota",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"der höchste päpstliche Gerichtshof",
+"ein kreisförmiges Ornament auf einem Kleid"
+]
+},
+{
+"word": "rechen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas, häufig auf dem Boden Liegendes mit einem Rechen, einer Harke zusammentragen"
+]
+},
+{
+"word": "kündigen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Vertrag/eine Vertragsbeziehung einseitig beenden",
+"das Arbeitsverhältnis eines Mitarbeiters einseitig auflösen"
+]
+},
+{
+"word": "benötigen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas (Akkusativ) haben müssen, um ein bestimmtes Ziel erreichen zu können",
+"Zeit oder auch andere Ressourcen in Anspruch nehmen"
+]
+},
+{
+"word": "garantieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas zusichern"
+]
+},
+{
+"word": "Zugang",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"das Herangehen an etwas, das Hineingehen in etwas",
+"das Verstehen, Begreifen von etwas"
+]
+},
+{
+"word": "Berg",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"große, steile Erhebung auf der Landoberfläche der Erde und anderer Himmelskörper und des Meeresbodens",
+"feste Erdkruste, Untertagebereich; „im Berg“"
+]
+},
+{
+"word": "Unterstützung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Hilfe oder Mithilfe von jemandem (oder im übertragenen Sinne auch von etwas)",
+"technische Stütze"
+]
+},
+{
+"word": "weder",
+"pos": "conj",
+"art": "",
+"wiktionary": [
+"Das Wort „weder“ verneint die ihm folgende Aussage und kündigt mindestens eine weitere Verneinung an."
+]
+},
+{
+"word": "möglicherweise",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"so, dass es sein kann, aber dennoch nicht sicher ist"
+]
+},
+{
+"word": "definitiv",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"ohne Möglichkeit einer Veränderung",
+"unkündbar (ein Beamtenstatus)"
+]
+},
+{
+"word": "schwul",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"als Mann homosexuelle Neigungen besitzend",
+"für (männliche) Homosexuelle charakteristisch, zu Homosexuellen gehörend"
+]
+},
+{
+"word": "Priester",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Mittler zwischen dem menschlichen und göttlichen Bereich, zum Beispiel durch Opfer",
+"Amtsträger in der Kirche, dauerhaft bestellt durch die Priesterweihe"
+]
+},
+{
+"word": "Hof",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"umgrenzter Platz, Wirtschafts- und Verkehrsfläche auf einem Grundstück, in der Regel von Gebäuden umschlossen oder hinter, vor oder zwischen Gebäuden gelegen",
+"Landwirtschaftsbetrieb"
+]
+},
+{
+"word": "abends",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"am Abend, während des Abends"
+]
+},
+{
+"word": "bedenken",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich gedanklich mit etwas auseinandersetzen",
+"jemandem etwas zukommen lassen, jemandem etwas schenken"
+]
+},
+{
+"word": "gelingen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas erfolgreich zu Ende bringen, erfolgreich zustande kommen"
+]
+},
+{
+"word": "amüsieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas tun, so dass jemand lacht oder etwas lustig findet",
+"sich vergnügen; Spaß haben"
+]
+},
+{
+"word": "Tee",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Teedroge oder der fertige Teeaufguss aus den getrockneten oder mehr oder weniger fermentierten getrockneten Laubblättern des Teestrauchs",
+"Teeaufguss aus unterschiedlichen Teedrogen (unterschiedlichen Pflanzenarten, -sorten oder -teilen)"
+]
+},
+{
+"word": "Treppe",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Aufstieg und Abstieg aus Stufen in einem Gebäude oder im Freien"
+]
+},
+{
+"word": "Verlust",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"die Handlung des Verlierens",
+"etwas, das verloren gegangen ist"
+]
+},
+{
+"word": "Schönheit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"die Eigenschaft, schön zu sein",
+"die schönen Seiten, die schönen Eigenschaften von etwas"
+]
+},
+{
+"word": "gewiss",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"nicht genau bestimmbar oder bestimmt",
+"bekannt, aber nicht genannt"
+]
+},
+{
+"word": "ebenfalls",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"auch"
+]
+},
+{
+"word": "jederzeit",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"zu jeder Zeit"
+]
+},
+{
+"word": "durchmachen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas miterleben, etwas durchlaufen",
+"etwas Negatives erleiden, etwas Schweres durchleben"
+]
+},
+{
+"word": "füllen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Behälter voll machen, eine Aushöhlung stopfen",
+"voll werden"
+]
+},
+{
+"word": "mitteln",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"auf den Mittelwert bringen; den Durchschnitt berechnen"
+]
+},
+{
+"word": "Kerle",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"männliche Person, gelegentlich auch auf Gegenstände übertragen"
+]
+},
+{
+"word": "Hoheit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Anrede für Adlige, in der Regel Herzöge",
+"Souveränität eines Landes über seinen eigenen Bereich"
+]
+},
+{
+"word": "erheben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden oder etwas (physisch oder gesellschaftlich) in eine höhere Position bringen",
+"in die Höhe aufragen"
+]
+},
+{
+"word": "Station",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"eine Stelle, an der ein öffentliches Verkehrsmittel planmäßig hält",
+"Ort der Unterbrechung einer Reise oder Wanderung"
+]
+},
+{
+"word": "punkten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"für Leistungen Punkte vergeben",
+"Punkte sammeln"
+]
+},
+{
+"word": "Bühne",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Erhöhung zur Aufführung von Theater- oder Musikstücken",
+"Theater"
+]
+},
+{
+"word": "nackt",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"keine Bekleidung oder sonstige Bedeckung tragend; nicht bekleidet, nicht bedeckt",
+"keine (sonst oder normalerweise vorhandenen) Haare aufweisend"
+]
+},
+{
+"word": "vorn",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"an der Vorderseite, am Anfang, im Vordergrund"
+]
+},
+{
+"word": "Universum",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"der Weltraum",
+"Menge aller in einem bestimmten Kontext behandelter Objekte"
+]
+},
+{
+"word": "unterhalten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas aufsagen, vorführen, vorspielen zur Zerstreuung",
+"mit jemandem reden, sich etwas erzählen"
+]
+},
+{
+"word": "Elle",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"einer der beiden Unterarmknochen des Menschen",
+"ein altes Längenmaß von regional und zeitlich unterschiedlicher Länge"
+]
+},
+{
+"word": "Bauch",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"(bei Wirbeltieren samt Mensch) der sich zwischen Zwerchfell und Becken befindliche vordere Teil des Rumpfes",
+"subjektiver, gefühlsmäßiger Eindruck; (intuitives) Gefühl"
+]
+},
+{
+"word": "übertreiben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Sachverhalt in einer Weise darstellen, dass er mehr einer Eigenschaft besitzt als in Wirklichkeit",
+"zu viel einer Sache tun"
+]
+},
+{
+"word": "sexy",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"sexuell aufreizend oder erregend",
+"gut; cool; ein angenehmes Gefühl erzeugend"
+]
+},
+{
+"word": "Erlaubnis",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Genehmigung von etwas, Einverständnis mit etwas; Bestätigung, dass etwas Bestimmtes getan werden darf",
+"Verwaltungsakt, mit dem dem Bürger unter einem präventiven Verbot mit Erlaubnisvorbehalt stehende Vorhaben und Betätigungen gestattet werden, ohne bestimmte Vorhaben oder Betätigungen per se zu verbieten, sondern nur, um der Behörde im jeweiligen Einzelfall die Prüfung darüber zu ermöglichen, ob das Vorhaben oder die Betätigung gegen materielles Recht verstößt"
+]
+},
+{
+"word": "Eindruck",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"verbleibende Erinnerung, Vorstellung, die jemand oder etwas hinterlassen hat",
+"sichtbare Spur"
+]
+},
+{
+"word": "Jacke",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"ein Bekleidungsstück für Männer und Frauen, welches zum Bedecken des Oberkörpers vorgesehen ist"
+]
+},
+{
+"word": "Beerdigung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"meist feierliche Beisetzung der sterblichen Überreste eines Toten in der Erde"
+]
+},
+{
+"word": "Crew",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Besatzung eines Schiffes",
+"Besatzung eines Luftfahrzeugs"
+]
+},
+{
+"word": "Böses",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Inbegriff für alles, was nicht gut respektive ethisch falsch ist"
+]
+},
+{
+"word": "präsentieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandem etwas vorstellen, zeigen"
+]
+},
+{
+"word": "inzwischen",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"in der Zwischenzeit, nach Ablauf einer gewissen Zeit"
+]
+},
+{
+"word": "beleidigen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden in seiner Ehre oder Würde durch Worte oder Taten verletzen",
+"den Tatbestand der Beleidigung^([3]) verwirklichen"
+]
+},
+{
+"word": "Geduld",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Fähigkeit, auf etwas länger zu warten"
+]
+},
+{
+"word": "hä",
+"pos": "intj",
+"art": "",
+"wiktionary": [
+"eine als unhöflich oder unerzogen angesehene, stellvertretend für im Grunde alle Frageworte zur Nachfrage bei (vermeintlichen) Unklarheiten, Unverständlichkeit mit der Tendenz zur Sinnlosigkeit und Abwertung der vorhergehenden Aussage"
+]
+},
+{
+"word": "rühren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich bewegen",
+"eine Masse durch eine Kreisbewegung durchmischen"
+]
+},
+{
+"word": "Gerechtigkeit",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Einstellung, Prinzip, Zustand, bei denen jede Person das erhält, was ihr zusteht",
+"das Gerechtsein"
+]
+},
+{
+"word": "Lügner",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"jemand, der lügt, der die Unwahrheit spricht"
+]
+},
+{
+"word": "Penny",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Währungseinheit in Großbritannien"
+]
+},
+{
+"word": "Medizin",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"wissenschaftliche Heilkunde",
+"(flüssiges) Arzneimittel"
+]
+},
+{
+"word": "Alarm",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"zur Frühwarnung oder bei Eintritt eines Schadensereignisses erfolgender Ruf zur Bereitschaft oder zur Warnung vor Gefahr",
+"allgemeines Warnsignal oder ein Signal zum Beispiel als Weckruf"
+]
+},
+{
+"word": "Samstag",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"sechster Tag der Woche gemäß ISO 8601; siebter Wochentag nach jüdischer, christlicher und islamischer Zählung; Tag zwischen Freitag und Sonntag"
+]
+},
+{
+"word": "amen",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"Akklamationsformel im jüdischen, christlichen und islamischen Gottesdienst, die als Bekräftigung am Ende eines Gebets, Segens, einer Schriftlesung oder Predigt dient"
+]
+},
+{
+"word": "tschüs",
+"pos": "intj",
+"art": "",
+"wiktionary": [
+"Abschiedsgruß (besonders unter Verwandten und guten Bekannten) im Sinne von „auf Wiedersehen“"
+]
+},
+{
+"word": "Normale",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Gerade, die mit einem anderen Objekt einen rechten Winkel einschließt"
+]
+},
+{
+"word": "Marie",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Geld"
+]
+},
+{
+"word": "Fan",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"begeisterter Anhänger von etwas oder jemandem",
+"vorderer Teil eines Strahltriebwerks"
+]
+},
+{
+"word": "Chaos",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Zustand der Unordnung",
+"Urzustand vor Entstehung der Erde, unförmlicher Klumpen der ungeordneten Elemente, ungeordneter Urstoff, unermessliche Leere, leerer Raum, die Unermesslichkeit des großen Raumes"
+]
+},
+{
+"word": "Gemein",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"bei den Landsknechten der frühen Neuzeit eine Vollversammlung aller Söldner, die zu einem „Haufen“ gehörten",
+"Ort oder Gemeinde"
+]
+},
+{
+"word": "ausziehen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas (für jemanden) durch Ziehen entfernen",
+"etwas die farbliche Intensität nehmen, bleich machen"
+]
+},
+{
+"word": "Notfall",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"plötzliche, gefährliche Situation"
+]
+},
+{
+"word": "Bord",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Bücherbrett",
+"Abhang, Rand"
+]
+},
+{
+"word": "norden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"(zum Beispiel Landkarten, Baupläne) so ausrichten, dass Norden oben liegt"
+]
+},
+{
+"word": "widerstehen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"standhaft bleiben, einer Versuchung nicht erliegen",
+"trotzen, sich widersetzen, nicht nachgeben, Widerstand leisten"
+]
+},
+{
+"word": "begrüßen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden mit einem Gruß willkommen heißen",
+"etwas oder jemanden positiv annehmen; akzeptieren"
+]
+},
+{
+"word": "Leitung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Beaufsichtigung, Betreuung, Führung, Verwaltung",
+"längliche Röhre zum Hindurchleiten von Flüssigkeiten oder Gasen"
+]
+},
+{
+"word": "sperren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"den Zugang zu einem Gebiet oder Gebäude oder System verhindern",
+"ein Vertragsverhältnis von Seiten des Anbieters vorübergehend aussetzen oder endgültig beenden"
+]
+},
+{
+"word": "Deckung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Schutz durch ein Objekt davor, gesehen und/oder direkt angegriffen zu werden",
+"Maßnahme der Ab-/Bedeckung von etwas und Ergebnis dieser Maßnahme"
+]
+},
+{
+"word": "versetzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"vor einer Stelle zu einer anderen bewegen",
+"in einen anderen Zustand bringen"
+]
+},
+{
+"word": "Beruf",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"spezielle, erlernte Erwerbstätigkeit"
+]
+},
+{
+"word": "berühmen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ein Lob auf sich selbst aussprechen",
+"sich auf etwas berufen"
+]
+},
+{
+"word": "Brot",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"aus hauptsächlich Mehl, Wasser und Salz gebackenes Nahrungsmittel",
+"einzelner Brotlaib"
+]
+},
+{
+"word": "briefen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden in etwas einweisen, jemanden instruieren"
+]
+},
+{
+"word": "Deutsche",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"die deutsche Sprache"
+]
+},
+{
+"word": "schieben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"einen Gegenstand durch mechanischen Druck bewegen",
+"etwas an eine Stelle hineinstecken"
+]
+},
+{
+"word": "Verräter",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Person, die einen Verrat begangen hat, beziehungsweise immer noch begeht",
+"Name eines Kartenspiels"
+]
+},
+{
+"word": "aussuchen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"eine (oder auch mehrere) Alternativen aus einer Vielzahl von Möglichkeiten wählen"
+]
+},
+{
+"word": "entspinnen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich (über einen gewissen Zeitraum hinweg) aufbauen"
+]
+},
+{
+"word": "befürchten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"der Ansicht sein, dass etwas Unangenehmes eintreten oder geschehen könnte"
+]
+},
+{
+"word": "geheim",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht für jedermann erkennbar"
+]
+},
+{
+"word": "anlügen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandem bewusst die Unwahrheit sagen"
+]
+},
+{
+"word": "Weib",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"verächtliche Bezeichnung für eine Frau",
+"bewundernd für eine besonders weibliche Frau"
+]
+},
+{
+"word": "Herrgott",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Bezeichnung für (den christlichen) Gott",
+"Fluchwort, das meist Ungeduld ausdrückt"
+]
+},
+{
+"word": "statt",
+"pos": "conj",
+"art": "",
+"wiktionary": [
+"schließt zusammen mit der Infinitivkonjunktion ›zu‹ einen abhängigen Infinitiv an und zeigt einen Gegensatz/ eine SubstitutionSubstitutiondefiniert) -> »statt zu«",
+"leitet zusammen mit der Konjunktion (genauer: Subjunktion) ›dass‹ einen Adversativsatz/Substitutivsatz ein -> »statt dass«"
+]
+},
+{
+"word": "Anweisung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Bestimmung oder Vorgabe, wer etwas bekommen soll",
+"von einer Autorität erlassene Handlungsvorschrift; Anordnung, Befehl"
+]
+},
+{
+"word": "Zunge",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"das bewegliche Organ im Mund, mit dem man schmeckt, schleckt, leckt, die Nahrung hin und her schiebt und spricht",
+"bewegliche Lasche in der Mitte des Schuhs"
+]
+},
+{
+"word": "la",
+"pos": "intj",
+"art": "",
+"wiktionary": [
+"zum Singen einer Melodie ohne Text benutzte Silbe"
+]
+},
+{
+"word": "Montag",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"erster Wochentag gemäß ISO 8601;; zweiter Wochentag nach jüdischer, christlicher und islamischer Zählung; Tag zwischen Sonntag und Dienstag"
+]
+},
+{
+"word": "Perfekt",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Tempusform, die ausdrückt, dass das Geschehen vom Standpunkt des Sprechers aus zwar vergangen ist, sich aber noch auf seinen Standpunkt bezieht"
+]
+},
+{
+"word": "Explosion",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"plötzliche, mit lautem Knall verbundene Volumenausdehnung auf Grund von chemischen oder kernphysikalischen Reaktionen bei gleichzeitigem Temperatur- und Druckanstieg, die zur Beschädigung oder Zerstörung der Umgebung führt",
+"plötzlicher Zuwachs einer Sache; plötzlicher Anstieg der Artenvielfalt, Bevölkerung oder Kosten; enorme Steigerung sportlicher Leistung"
+]
+},
+{
+"word": "segnen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandem oder etwas den Segen erteilen"
+]
+},
+{
+"word": "Geburt",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Zeitpunkt nach der Entbindung",
+"Gebären eines Kindes"
+]
+},
+{
+"word": "on",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"bei Sendungen/Vorstellungen sichtbar, nicht aus dem Hintergrund beigesteuert"
+]
+},
+{
+"word": "offiziell",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"von einer dazu befugten Person oder Stelle ausgehend",
+"in öffentlichem, oftmals formalem und feierlichem Rahmen"
+]
+},
+{
+"word": "herein",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"von außen nach innen (zum Sprechenden hin)"
+]
+},
+{
+"word": "ablehnen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"zu etwas nein sagen; etwas zurückweisen oder missbilligen"
+]
+},
+{
+"word": "unterbrechen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"(eine bestehende Verbindung) vorübergehend trennen",
+"eine Kommunikation zwischen zwei Teilnehmern stören, kurzzeitig aufhalten"
+]
+},
+{
+"word": "schnauzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"etwas eher kurz angebunden und grob, barsch von sich geben"
+]
+},
+{
+"word": "loswerden",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich etwas entledigen/sich von etwas Unangenehmen oder jemandem befreien, mit dem man nichts mehr zu tun haben möchte",
+"etwas aussprechen/sagen"
+]
+},
+{
+"word": "ketten",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"ein aus Gliedern bestehendes Metallgebilde (Kette) benutzen, um jemanden oder etwas festzubinden",
+"sich eng an etwas oder jemanden binden; jemanden (zum Beispiel durch Manipulation oder moralische Erpressung) fest an sich binden"
+]
+},
+{
+"word": "jedoch",
+"pos": "adv",
+"art": "",
+"wiktionary": [
+"entgegensetzende Konjunktion, das Entgegenstehende einschränkend"
+]
+},
+{
+"word": "ächzen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"aufgrund einer schweren Last, einer körperlichen Anstrengung (wiederholt) aufstöhnen"
+]
+},
+{
+"word": "prost",
+"pos": "intj",
+"art": "",
+"wiktionary": [
+"Ausspruch zum Anstoßen beim Trinken bzw. bei einem Toast"
+]
+},
+{
+"word": "aktivieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden oder etwas in Bewegung versetzen, zu Handlungen, Tätigkeit veranlassen, in Aktion bringen, im Zustand verändern oder in einen Zustand bringen",
+"als Aktivposten in die Bilanz einstellen"
+]
+},
+{
+"word": "Brust",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"vorderer Oberkörper bei Wirbeltieren",
+"auf Höhe von [1] befindliches sekundäres Geschlechtsmerkmal"
+]
+},
+{
+"word": "Westen",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Himmelsrichtung, Haupthimmelsrichtung, die Osten gegenüber und zwischen Norden und Süden liegt; Himmelsrichtung, die, grob betrachtet, zur untergehenden Sonne zeigt und deren Richtung parallel zum Äquator und den übrigen Breitenkreisen verläuft",
+"Gebiete im Westen Europas sowie der übrigen demokratischen westlichen Welt im 20. Jahrhundert"
+]
+},
+{
+"word": "Gefangene",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"weibliche Person, die gefangen ist, sich also nicht frei bewegen kann"
+]
+},
+{
+"word": "Starke",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"starke weibliche Person"
+]
+},
+{
+"word": "ungefähr",
+"pos": "adj",
+"art": "",
+"wiktionary": [
+"nicht genau, ohne Details"
+]
+},
+{
+"word": "bedrohen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden durch die Ankündigung von Gewalt oder Sanktionen einschüchtern oder zwingen, etwas zu tun",
+"jemanden oder etwas durch äußere Umstände in existenzielle Not geraten lassen"
+]
+},
+{
+"word": "schwächen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"schwach machen"
+]
+},
+{
+"word": "Schlafzimmer",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Raum in einem Haus oder einer Wohnung, der zum Schlafen gedacht ist",
+"Einrichtung eines Schlafzimmers^([1])"
+]
+},
+{
+"word": "spazieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"gemächlich gehen zum Zwecke der Entspannung und Zerstreuung"
+]
+},
+{
+"word": "Feigling",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"furchtsame, ängstliche, risikoscheue Person"
+]
+},
+{
+"word": "verteilen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"mehreren Personen einen Teil von etwas geben",
+"etwas in gleicher Menge, Ausmaß an verschiedene Stellen bringen"
+]
+},
+{
+"word": "Tatort",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Ort, an dem eine Straftat stattfand"
+]
+},
+{
+"word": "Messer",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"Schneidewerkzeug mit Griff und Klinge",
+"Stichwaffe mit Griff und Klinge"
+]
+},
+{
+"word": "explodieren",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"plötzlich heftig auseinanderfliegen",
+"einen starken Gefühlsausbruch haben, richtig wütend werden"
+]
+},
+{
+"word": "Bedingung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Forderung, von der etwas abhängt",
+"Umstände, von denen etwas abhängt oder die etwas begleiten"
+]
+},
+{
+"word": "Gerücht",
+"pos": "noun",
+"art": "das",
+"wiktionary": [
+"eine Nachricht, die mündlich verbreitet wird und deren Wahrheitsgehalt zweifelhaft ist"
+]
+},
+{
+"word": "weglaufen",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"sich schneller als gehend (laufend) von einem Ort entfernen",
+"sich rinnend, fließend entfernen"
+]
+},
+{
+"word": "Einladung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Angebot (schriftlich oder mündlich) etwas zu essen/trinken oder zu jemandem zu kommen",
+"Einlagerung in einen Bereich oder Raum"
+]
+},
+{
+"word": "erben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"nach dem Tod eines anderen dessen Vermögen zu Eigentum erhalten",
+"etwas (Gebrauchtes) von jemandem geschenkt bekommen"
+]
+},
+{
+"word": "verloben",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemandem ein Eheversprechen geben",
+"jemanden einem anderen für eine zu schließende Ehe versprechen"
+]
+},
+{
+"word": "Müll",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"gemischte Abfälle, wertlose Abfallmischung",
+"Unsinn"
+]
+},
+{
+"word": "Pille",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Arzneimittel, Nahrungsergänzungsmittel oder anderes Mittel, welches zur bequemen, Einnahme über den Mund kugelförmig oder oval geformt ist",
+"für Antibabypille"
+]
+},
+{
+"word": "Cent",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Münze und deren Geldwert vom hundertsten Teil des Euros",
+"Münze und deren Geldwert in Währungssystemen anderer Länder; insbesondere vom Dollar, ein Hundertstel eines Dollars"
+]
+},
+{
+"word": "Ermittlung",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Aktivität, um noch Unbekanntes festzustellen",
+"Aktivität einer amtlichen Institution (Polizei, Zoll, …), um einen zweifelhaften Sachverhalt aufzuklären"
+]
+},
+{
+"word": "Mitte",
+"pos": "noun",
+"art": "die",
+"wiktionary": [
+"Mittelpunkt, Zentrum",
+"nähere Umgebung von ^([1])"
+]
+},
+{
+"word": "bedauern",
+"pos": "verb",
+"art": "",
+"wiktionary": [
+"jemanden bemitleiden, mit jemandem fühlen",
+"etwas unerfreulich finden, bereuen"
+]
+},
+{
+"word": "Jonathan",
+"pos": "noun",
+"art": "der",
+"wiktionary": [
+"Apfelsorte"
+]
+}
+]
