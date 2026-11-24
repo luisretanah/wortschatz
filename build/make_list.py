@@ -85,6 +85,37 @@ for i, n in score.most_common():
     if len(out) >= N:
         break
 
+# Word families (2026-11-24, "Vertrautheit"): subtitles underrate the written, abstract words of
+# course texts. A rarer word built from a word already on the list (vertraut -> Vertrautheit,
+# zuverlässig -> Zuverlässigkeit, bewerben -> Bewerbung) is added after the top N, most frequent first.
+FAM = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+SUFFIX = ('lichkeit', 'igkeit', 'heit', 'keit', 'ung', 'schaft', 'ität', 'ismus', 'lich', 'ig', 'bar', 'los', 'sam', 'isch')
+def bases(word):
+    w = word.lower()
+    for suf in SUFFIX:
+        if w.endswith(suf) and len(w) - len(suf) >= 3:
+            st = w[:-len(suf)]
+            yield from (st, st + 'en', st + 'n', st + 'e', st + 'lich' if suf == 'keit' else st, st + 'ig' if suf == 'keit' else st)
+            yield from ((st + 'ig', st + 'lich') if suf in ('igkeit', 'lichkeit') else ())
+            yield from ((st + 'isch',) if suf == 'ität' else ())
+listed = {o['word'].lower() for o in out}
+fam = []
+if FAM:
+    for i, n in score.most_common():
+        w = raw[i]
+        if len(fam) >= FAM:
+            break
+        if w['word'] in seen or w['pos'] not in ('noun', 'adj', 'adv', 'verb') or n < 3:
+            continue
+        b = next((x for x in bases(w['word']) if x in listed and x != w['word'].lower()), None)
+        if not b:
+            continue
+        seen.add(w['word'])
+        fam.append({'rank': len(out) + len(fam) + 1, 'word': w['word'], 'pos': w['pos'],
+                    'art': article(w) if w['pos'] == 'noun' else '', 'senses': [s['d'] for s in w['senses'][:3]], 'family': b})
+    print(len(fam), 'family words, e.g.', ', '.join(f"{f['word']} ({f['family']})" for f in fam[:12]), '...', ', '.join(f['word'] for f in fam[-8:]))
+    out += fam
+
 json.dump(out, open(os.path.join(HERE, 'top_words.json'), 'w'), ensure_ascii=False, indent=0)
 print(len(out), 'words. First 40:', ', '.join(o['word'] for o in out[:40]))
 print('Around 1000:', ', '.join(o['word'] for o in out[995:1010]))

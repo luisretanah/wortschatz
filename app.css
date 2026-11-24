@@ -395,6 +395,8 @@ a.card { display: block; text-decoration: none; color: inherit; }
 .simple ol { margin: 0; padding-left: 22px; font-size: 18px; line-height: 1.4; font-weight: 500; }
 .simple ol li + li { margin-top: 6px; }
 .simple .ex { background: var(--page-solid); margin-top: 12px; }
+.simple.fam small a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.simple.fam .m { font-size: 17px; color: var(--ink-2); }
 .near { margin-top: 8px; font-size: 15.5px; color: var(--ink-2); }
 .near a { font-weight: 600; text-decoration: none; }
 

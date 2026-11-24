@@ -72,6 +72,29 @@ function simpleFor(title) {
   if (!SIMPLE_LC) { SIMPLE_LC = {}; for (const k in SIMPLE) SIMPLE_LC[k.toLowerCase()] = SIMPLE[k]; }
   return SIMPLE_LC[title.toLowerCase()] || null;
 }
+// Word family (2026-11-24, "Vertrautheit"): a rarer word without its own simple explanation
+// borrows the one of the word it is built from (vertraut -> Vertrautheit, Freund -> freundlich).
+// -heit/-keit/-ung only from verbs and adjectives ("Satzung" is not about a Satz).
+const FAM_RULES = [
+  ['lichkeit', ['lich'], false], ['igkeit', ['ig', ''], false], ['heit', [''], false], ['keit', ['', 'ig', 'lich'], false],
+  ['ung', ['en', 'n'], false], ['schaft', ['', 'en', 'n'], true], ['ität', ['', 'isch'], false],
+  ['lich', ['', 'e', 'en'], true], ['isch', ['', 'e'], true], ['ig', ['', 'e', 'en'], true],
+  ['los', ['', 'e', 'en'], true], ['bar', ['en', 'n'], false], ['sam', ['en', 'n'], false],
+];
+function familyOf(title) {
+  if (!title || /\s/.test(title) || SIMPLE[title]) return null;
+  const w = title.toLowerCase();
+  for (const [suf, ends, nouns] of FAM_RULES) {
+    if (!w.endsWith(suf) || w.length - suf.length < 3) continue;
+    const st = w.slice(0, -suf.length);
+    const cands = ends.map(e => st + e);
+    const caps = nouns ? cands.map(c => c[0].toUpperCase() + c.slice(1)) : [];
+    // adjectives from nouns look for the noun first ("seitlich" -> Seite, not seit)
+    const order = suf.length <= 4 && nouns ? caps.concat(cands) : cands.concat(caps);
+    for (const c of order) if (c.toLowerCase() !== w && SIMPLE[c]) return { base: c, sim: SIMPLE[c] };
+  }
+  return null;
+}
 // The plain meaning a learner should see first: the simple one if we have it, else Wiktionary's.
 function plainMeaning(e, sense) {
   const s = simpleFor(e.title);
@@ -412,6 +435,7 @@ function entryHTML(r, e, i) {
   const idioms = e.idioms.slice(0, 5);
   const notes = e.notes.filter(n => !/Person|Indikativ|Konjunktiv/.test(n)).slice(0, 1);
   const simple = i === 0 ? simpleFor(title) : null;
+  const fam = i === 0 && !simple ? familyOf(title) : null;
   const mySentences = [...(sentences[key] || []), ...(i === 0 ? sentences['pool|' + title] || [] : [])];
   // easy-first for words without a simple explanation: only synonyms that are common words themselves
   const near = simple ? [] : e.syn.filter(s => !/\s/.test(s.w) && simpleFor(s.w)).slice(0, 2);
@@ -432,8 +456,9 @@ function entryHTML(r, e, i) {
     </div>
     <div class="entry-body">
     ${simple ? `<div class="simple"><small>Einfach erklärt</small>${simple[0].length > 1 ? `<ol>${simple[0].map(m => `<li>${esc(m)}</li>`).join('')}</ol>` : `<p class="m">${esc(simple[0][0])}</p>`}${simple[1] ? exHTML({ text: simple[1] }) : ''}</div>` : ''}
+    ${fam ? `<div class="simple fam"><small>Kommt von <a href="#/suchen/${encodeURIComponent(fam.base)}">${esc(fam.base)}</a></small><p class="m">${esc(fam.sim[0][0])}</p></div>` : ''}
     ${hint && i === 0 ? `<div class="usage"><small>Gut zu merken</small>${esc(hint)}</div>` : ''}
-    ${simple ? '<div class="lbl" style="margin-top:26px">Im Wörterbuch</div>' : ''}
+    ${simple || fam ? '<div class="lbl" style="margin-top:26px">Im Wörterbuch</div>' : ''}
     ${mySentences.length ? `<div class="mine"><small>Deine Sätze</small>${mySentences.map(s => `<p>${esc(s.text)}</p>`).join('')}</div>` : ''}
     ${notes.map(n => `<p class="note">${esc(n)}</p>`).join('')}
     <ol class="senses">${e.senses.map((s, j) => senseHTML(e, s, j, e.senses.length)).join('')}</ol>
