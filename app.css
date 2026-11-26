@@ -471,3 +471,20 @@ a.card { display: block; text-decoration: none; color: inherit; }
 .search input:focus-visible, .cloze input:focus-visible { outline: none; }
 @media (min-width: 700px) { #view { padding-top: 40px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before { animation: none !important; transition: none !important; } }
+
+/* Eselsbrücken */
+.ico.tricks { font-family: var(--serif, Georgia, serif); font-size: 15px; font-weight: 700; letter-spacing: .02em; color: var(--accent); background: var(--accent-soft); }
+.card.rule { margin-top: 14px; padding: 18px; }
+.card.rule h2 { font-size: 22px; margin: 0 0 10px; }
+.card.rule .chips { margin: 0 0 12px; }
+.card.rule .chip { pointer-events: none; }
+.rule-text { font-size: 17px; line-height: 1.45; font-weight: 500; margin: 0 0 10px; }
+.card.rule .ex { margin: 0 0 10px; }
+.rule-tip { font-size: 14.5px; line-height: 1.45; color: var(--ink-2); margin: 0; }
+.link-btn { margin-top: 12px; padding: 6px 0; border: 0; background: none; font: inherit; font-size: 15px; font-weight: 600; color: var(--accent); }
+.rule-why { margin: 16px 0 4px; padding: 12px 14px; border-radius: 14px; background: var(--accent-soft); font-size: 15px; line-height: 1.45; }
+.gap-line { color: var(--accent); font-weight: 700; }
+#all { margin: 6px 0 4px; }
+.vp-head { font-size: 13px; font-weight: 700; color: var(--accent); margin: 4px 0 6px; }
+.vp { list-style: none; margin: 0 0 14px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 15px; line-height: 1.35; }
+.vp b { color: var(--accent); font-weight: 700; }

@@ -751,7 +751,9 @@ async function renderPractice() {
     <button class="card mode" data-go="luecken" ${c.cloze ? '' : 'disabled'}>
       <span class="ico gap">a_c</span><div><h2>Lückentext</h2><p>${c.cloze ? `Das passende Wort im Satz ergänzen` : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="satz" ${c.meaning ? '' : 'disabled'}>
-      <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>`;
+      <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
+    <button class="card mode" data-go="regeln">
+      <span class="ico tricks">ADU</span><div><h2>Eselsbrücken</h2><p>Kleine Tricks für die Grammatik</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
   $$('[data-lvl]').forEach(b => b.onclick = () => { prefs.lvl = +b.dataset.lvl; store.set('prefs', prefs); renderPractice(); });
@@ -780,6 +782,9 @@ async function startSession(kind) {
   if (kind === 'formen') return formsSession();
   if (kind === 'bedeutung') return meaningSession();
   if (kind === 'satz') return sentenceSession();
+  if (kind === 'regeln') return rulesPage();
+  if (kind === 'regeln-quiz') return rulesQuiz();
+  if (kind.startsWith('regeln-')) return rulesQuiz(kind.slice(7));
   go('#/ueben');
 }
 
@@ -1117,6 +1122,82 @@ function meaningSession() {
       if (!ok) b.classList.add('wrong'); else right++;
       speak((isNoun(e) && e.genus.length ? artOf(e).split('/')[0] + ' ' : '') + e.title);
       $('#after').innerHTML = `${ex ? `<p class="ex">${markEx(ex.text)}</p>` : ''}<div class="btn-row">${w.virtual ? keepBtn(e.title, w.g) : ''}<button class="btn primary${w.virtual ? '' : ' wide'}" id="next">Weiter</button></div>`;
+      $('#next').onclick = () => { idx++; show(); };
+    });
+  };
+  show();
+}
+
+// --- Eselsbrücken: grammar memory tricks (rules.js) ---
+const RD = () => window.RULES_DAF || [];
+const VP = () => window.VERB_PREP || [];
+const CASE = { A: 'Akkusativ', D: 'Dativ' };
+const VERB_RULE = { id: 'verben', name: 'Verben mit Präposition' };
+function verbItems() {
+  return VP().flatMap(([v, pr, c, sent, wrong]) => [
+    { r: VERB_RULE, q: sent, opts: [pr, ...wrong], why: `${v} ${pr} + ${CASE[c]}` },
+    { r: VERB_RULE, q: `${v} ${pr} + ___`, opts: [CASE[c], CASE[c === 'A' ? 'D' : 'A']], why: `${v} ${pr} + ${CASE[c]}`, kind: 'case' },
+  ]);
+}
+function rulesPage() {
+  view.innerHTML = `<div class="session-top"><button class="round" id="quit" aria-label="Zurück">${ICON.x}</button><div class="progress" style="visibility:hidden"></div></div>
+    <div class="head"><h1 class="page-title">Eselsbrücken</h1><p class="page-sub">Kleine Tricks, damit du Regeln nicht vergisst.</p></div>
+    <button class="btn primary wide" id="all">Jetzt üben</button>
+    <section class="card rule" id="r-verben">
+      <h2>Verben mit Präposition</h2>
+      ${['A', 'D'].map(c => `<div class="vp-head">+ ${CASE[c]}</div><ul class="vp">${VP().filter(x => x[2] === c).map(([v, pr]) => `<li>${esc(v)} <b>${esc(pr)}</b></li>`).join('')}</ul>`).join('')}
+      <p class="rule-tip">${esc(window.VERB_PREP_TIP || '')}</p>
+      <button class="link-btn" data-one="verben">Nur das üben</button>
+    </section>
+    ${RD().map(r => `<section class="card rule" id="r-${r.id}">
+      <h2>${esc(r.name)}</h2>
+      <div class="chips">${r.words.map(w => `<span class="chip">${esc(w)}</span>`).join('')}</div>
+      <p class="rule-text">${esc(r.rule)}</p>
+      <p class="ex">${markEx(r.ex)}</p>
+      <p class="rule-tip">${esc(r.tip)}</p>
+      <button class="link-btn" data-one="${r.id}">Nur das üben</button>
+    </section>`).join('')}`;
+  bindQuit();
+  $('#all').onclick = () => go('#/ueben/regeln-quiz');
+  $$('[data-one]').forEach(b => b.onclick = () => go('#/ueben/regeln-' + b.dataset.one));
+}
+function rulesQuiz(only) {
+  const rules = only ? RD().filter(r => r.id === only) : RD();
+  if (!rules.length && only !== 'verben') return go('#/ueben/regeln');
+  const hash = location.hash;
+  const vItems = verbItems();
+  // one round of verbs: 7 "which preposition?" and 3 "which case?"
+  const items = only === 'verben' ? shuffle(vItems.filter(x => !x.kind)).slice(0, 7).concat(shuffle(vItems.filter(x => x.kind)).slice(0, 3))
+    : rules.flatMap(r => r.quiz.map(([q, opts]) => ({ r, q, opts }))).concat(only ? [] : shuffle(vItems.filter(x => !x.kind)).slice(0, 8));
+  // "which rule?" questions from the word lists (all rules only)
+  const groups = RD().filter(r => r.group !== false);
+  const which = only ? [] : groups.flatMap(r => r.words.map(w => ({ r, q: `Zu welcher Regel gehört „${w}“?`, opts: [r.name, ...shuffle(groups.filter(g => g !== r)).slice(0, 2).map(g => g.name)] })));
+  const n = only ? Math.min(10, items.length) : 10;
+  const picked = shuffle(shuffle(items).slice(0, only ? n : 7).concat(shuffle(which).slice(0, only ? 0 : 3)));
+  let idx = 0, right = 0;
+  const again = () => rulesQuiz(only);
+  const show = () => {
+    if (location.hash !== hash) return;
+    const it = picked[idx];
+    if (!it) return doneScreen(right === picked.length ? 'Alles richtig' : 'Runde geschafft', `<div class="stat-row"><div><b>${right} / ${picked.length}</b><span>richtig</span></div></div>`, again);
+    const opts = shuffle(it.opts.map((t, i) => ({ t, ok: i === 0 })));
+    const q = esc(it.q).replace('___', '<span class="gap-line">___</span>');
+    view.innerHTML = sessionTop(idx, picked.length) + `
+      <div class="card ex-card">
+        <div class="eyebrow">${esc(only ? it.r.name : 'Eselsbrücken')}</div>
+        <p class="ex-def">${q}</p>
+        <div class="options">${opts.map((o, i) => `<button class="option" data-i="${i}">${esc(o.t)}</button>`).join('')}</div>
+        <div id="after" aria-live="polite"></div>
+      </div>`;
+    bindQuit();
+    let answered = false;
+    $$('.option').forEach(b => b.onclick = () => {
+      if (answered) return; answered = true;
+      const ok = opts[+b.dataset.i].ok;
+      countPractice();
+      $$('.option').forEach(o => { o.disabled = true; if (opts[+o.dataset.i].ok) o.classList.add('right'); });
+      if (!ok) b.classList.add('wrong'); else right++;
+      $('#after').innerHTML = `<div class="rule-why">${it.why ? `<b>${esc(it.why)}</b>` : `<b>${esc(it.r.name)}:</b> ${esc(it.r.rule)}`}</div><div class="btn-row"><button class="btn primary wide" id="next">Weiter</button></div>`;
       $('#next').onclick = () => { idx++; show(); };
     });
   };
