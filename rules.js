@@ -118,6 +118,19 @@ window.RULES_DAF = [
     ],
   },
   {
+    id: 'nicht', name: 'Wo steht nicht?', words: ['ganzer Satz', 'ein Teil'], group: false,
+    rule: 'Ganzer Satz: nicht steht hinten, aber vor dem 2. Verbteil, vor Präposition + Wort und vor dem Ort. Nur ein Teil: nicht steht direkt vor diesem Teil, oft mit sondern.',
+    ex: 'Ich war heute ⟦nicht⟧ auf der Arbeit. Wir fahren ⟦nicht⟧ morgen, sondern übermorgen.',
+    tip: 'Ich kenne den Mann nicht. Ich bin nicht gekommen. Ich rede nicht mit ihm.',
+    quiz: [
+      ['Welcher Satz ist richtig?', ['Ich war heute nicht auf der Arbeit.', 'Ich war heute auf der Arbeit nicht.']],
+      ['Welcher Satz ist richtig?', ['Ich kenne den Mann nicht.', 'Ich nicht kenne den Mann.']],
+      ['Welcher Satz ist richtig?', ['Er ist heute nicht gekommen.', 'Er ist heute gekommen nicht.']],
+      ['Welcher Satz ist richtig?', ['Ich rede nicht mit meinem Chef.', 'Ich nicht rede mit meinem Chef.']],
+      ['Wir fahren ___ morgen, sondern übermorgen.', ['nicht', 'kein']],
+    ],
+  },
+  {
     id: 'perfekt', name: 'Perfekt mit sein', words: ['gehen', 'fahren', 'kommen', 'fliegen', 'aufstehen', 'einschlafen', 'sein', 'bleiben', 'werden'], group: false,
     rule: 'Bewegung von A nach B oder eine Veränderung → sein. Auch sein, bleiben, werden. Sonst fast immer haben.',
     ex: 'Ich ⟦bin⟧ nach Hause gegangen. Ich ⟦habe⟧ gut geschlafen.',
