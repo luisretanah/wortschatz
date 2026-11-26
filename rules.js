@@ -1,4 +1,5 @@
-// Eselsbrücken: memory tricks for German grammar (2026-11-26).
+// Grammatik: memory tricks for German grammar (2026-11-26), in the order of her course book
+// (Aspekte neu B2 Teil 1: Wortstellung, Negation, Vergleichssätze, zweiteilige Konnektoren, um zu, Passiv), then the basics.
 // Each rule: name, the words it covers, the rule in simple German, an example (⟦⟧ = highlight),
 // a tip, and quiz items [question with ___, [correct answer, wrong answers...]].
 // group: false = the words are not a word list, so no "which rule?" question is made from them.
@@ -25,6 +26,83 @@ window.RULES_DAF = [
       ['Ich weiß, dass ___.', ['du recht hast', 'du hast recht']],
       ['Ruf mich an, wenn ___.', ['du Zeit hast', 'du hast Zeit']],
       ['Sie fragt, ob ___.', ['der Kurs heute ist', 'der Kurs ist heute']],
+    ],
+  },
+  {
+    id: 'tekamolo', name: 'TeKaMoLo', words: ['wann?', 'warum?', 'wie?', 'wo?'], group: false,
+    rule: 'Die Reihenfolge im Satz: zuerst wann, dann warum, dann wie, zuletzt wo oder wohin.',
+    ex: 'Ich fahre ⟦morgen⟧ ⟦wegen der Arbeit⟧ ⟦mit dem Zug⟧ ⟦nach Berlin⟧.',
+    tip: 'Te = temporal (wann), Ka = kausal (warum), Mo = modal (wie), Lo = lokal (wo). Eine Hilfe, kein Gesetz.',
+    quiz: [
+      ['Welcher Satz ist richtig?', ['Ich fahre morgen mit dem Zug nach Berlin.', 'Ich fahre nach Berlin mit dem Zug morgen.']],
+      ['Welcher Satz ist richtig?', ['Sie kommt heute wegen der Kinder mit dem Auto.', 'Sie kommt mit dem Auto wegen der Kinder heute.']],
+      ['Welcher Satz ist richtig?', ['Wir essen am Abend gemütlich im Garten.', 'Wir essen im Garten gemütlich am Abend.']],
+      ['Welcher Satz ist richtig?', ['Er lernt jeden Tag fleißig in der Bibliothek.', 'Er lernt in der Bibliothek fleißig jeden Tag.']],
+    ],
+  },
+  {
+    id: 'nicht', name: 'Wo steht nicht?', words: ['ganzer Satz', 'ein Teil'], group: false,
+    rule: 'Ganzer Satz: nicht steht hinten, aber vor dem 2. Verbteil, vor Präposition + Wort und vor dem Ort. Nur ein Teil: nicht steht direkt vor diesem Teil, oft mit sondern.',
+    ex: 'Ich war heute ⟦nicht⟧ auf der Arbeit. Wir fahren ⟦nicht⟧ morgen, sondern übermorgen.',
+    tip: 'Ich kenne den Mann nicht. Ich bin nicht gekommen. Ich rede nicht mit ihm.',
+    quiz: [
+      ['Welcher Satz ist richtig?', ['Ich war heute nicht auf der Arbeit.', 'Ich war heute auf der Arbeit nicht.']],
+      ['Welcher Satz ist richtig?', ['Ich kenne den Mann nicht.', 'Ich nicht kenne den Mann.']],
+      ['Welcher Satz ist richtig?', ['Er ist heute nicht gekommen.', 'Er ist heute gekommen nicht.']],
+      ['Welcher Satz ist richtig?', ['Ich rede nicht mit meinem Chef.', 'Ich nicht rede mit meinem Chef.']],
+      ['Wir fahren ___ morgen, sondern übermorgen.', ['nicht', 'kein']],
+    ],
+  },
+  {
+    id: 'vergleich', name: 'als oder wie?', words: ['größer als', 'so groß wie', 'je … desto'], group: false,
+    rule: 'Anders → als (größer als). Gleich → wie (so groß wie). Nach je steht das Verb am Ende, nach desto kommt sofort das Verb.',
+    ex: 'Berlin ist ⟦größer als⟧ Hamburg. ⟦Je⟧ mehr ich übe, ⟦desto⟧ besser spreche ich.',
+    tip: 'Statt desto kann man auch umso sagen.',
+    quiz: [
+      ['Mein Bruder ist älter ___ ich.', ['als', 'wie']],
+      ['Sie ist so groß ___ ihre Mutter.', ['wie', 'als']],
+      ['Das Essen war besser, ___ ich dachte.', ['als', 'wie']],
+      ['Je mehr ich lerne, ___.', ['desto mehr verstehe ich', 'desto ich verstehe mehr']],
+      ['___, desto müder bin ich.', ['Je länger ich arbeite', 'Je länger arbeite ich']],
+    ],
+  },
+  {
+    id: 'paare', name: 'Wörter in Paaren', words: ['sowohl … als auch', 'weder … noch', 'entweder … oder', 'nicht nur … sondern auch', 'zwar … aber'], group: false,
+    rule: 'Diese Wörter kommen immer zu zweit. Lern sie als Paar.',
+    ex: 'Ich spreche ⟦sowohl⟧ Deutsch ⟦als auch⟧ Spanisch.',
+    tip: 'sowohl … als auch: beides. weder … noch: keins von beiden. entweder … oder: nur eins.',
+    quiz: [
+      ['Ich trinke weder Kaffee ___ Tee.', ['noch', 'oder', 'als auch']],
+      ['Wir fahren entweder mit dem Zug ___ mit dem Auto.', ['oder', 'noch', 'aber']],
+      ['Sie spricht sowohl Englisch ___ Französisch.', ['als auch', 'noch', 'oder']],
+      ['Er ist nicht nur nett, ___ klug.', ['sondern auch', 'aber auch', 'oder auch']],
+      ['Die Wohnung ist zwar klein, ___ sehr schön.', ['aber', 'sondern', 'noch']],
+    ],
+  },
+  {
+    id: 'umzu', name: 'um … zu', words: ['um … zu', 'ohne … zu', 'statt … zu', 'damit'], group: false,
+    rule: 'um … zu sagt das Ziel, wenn beide Satzteile dieselbe Person haben. Andere Person → damit.',
+    ex: 'Ich lerne Deutsch, ⟦um⟧ in Berlin ⟦zu⟧ arbeiten.',
+    tip: 'ohne … zu: etwas passiert nicht. statt … zu: man macht etwas anderes. Das Verb mit zu steht am Ende.',
+    quiz: [
+      ['Ich lerne viel, ___ die Prüfung zu bestehen.', ['um', 'damit']],
+      ['Ich erkläre es dir, ___ du es verstehst.', ['damit', 'um']],
+      ['Er ging nach Hause, ___ ein Wort zu sagen.', ['ohne', 'um']],
+      ['___ zu lernen, sieht er fern.', ['Statt', 'Um']],
+      ['Ich spare Geld, um ein Auto ___.', ['zu kaufen', 'kaufen zu']],
+    ],
+  },
+  {
+    id: 'passiv', name: 'Passiv', words: ['werden + Partizip II'], group: false,
+    rule: 'Im Passiv ist wichtig, was passiert, nicht wer es macht. Man bildet es mit werden und dem Partizip II am Ende.',
+    ex: 'Das Haus ⟦wird⟧ nächstes Jahr ⟦gebaut⟧.',
+    tip: 'Wer es macht, kommt mit von: Das Buch wird von vielen gelesen. Im Perfekt: Das Haus ist gebaut worden.',
+    quiz: [
+      ['Hier ___ ein neues Haus gebaut.', ['wird', 'hat']],
+      ['Die Briefe werden morgen ___.', ['geschickt', 'schicken']],
+      ['Der Film ___ von vielen Menschen gesehen.', ['wird', 'hat']],
+      ['Das Auto ist repariert ___.', ['worden', 'geworden']],
+      ['In Deutschland ___ viel Brot gegessen.', ['wird', 'ist']],
     ],
   },
   {
@@ -80,18 +158,6 @@ window.RULES_DAF = [
     ],
   },
   {
-    id: 'tekamolo', name: 'TeKaMoLo', words: ['wann?', 'warum?', 'wie?', 'wo?'], group: false,
-    rule: 'Die Reihenfolge im Satz: zuerst wann, dann warum, dann wie, zuletzt wo oder wohin.',
-    ex: 'Ich fahre ⟦morgen⟧ ⟦wegen der Arbeit⟧ ⟦mit dem Zug⟧ ⟦nach Berlin⟧.',
-    tip: 'Te = temporal (wann), Ka = kausal (warum), Mo = modal (wie), Lo = lokal (wo). Eine Hilfe, kein Gesetz.',
-    quiz: [
-      ['Welcher Satz ist richtig?', ['Ich fahre morgen mit dem Zug nach Berlin.', 'Ich fahre nach Berlin mit dem Zug morgen.']],
-      ['Welcher Satz ist richtig?', ['Sie kommt heute wegen der Kinder mit dem Auto.', 'Sie kommt mit dem Auto wegen der Kinder heute.']],
-      ['Welcher Satz ist richtig?', ['Wir essen am Abend gemütlich im Garten.', 'Wir essen im Garten gemütlich am Abend.']],
-      ['Welcher Satz ist richtig?', ['Er lernt jeden Tag fleißig in der Bibliothek.', 'Er lernt in der Bibliothek fleißig jeden Tag.']],
-    ],
-  },
-  {
     id: 'vorsilben', name: 'Untrennbare Vorsilben', words: ['be-', 'emp-', 'ent-', 'er-', 'ge-', 'miss-', 'ver-', 'zer-'],
     rule: 'Verben mit diesen Vorsilben trennt man nie. Im Perfekt kommt kein ge- dazu.',
     ex: 'Ich habe das Wort ⟦verstanden⟧.',
@@ -115,19 +181,6 @@ window.RULES_DAF = [
       ['___ Frühling', ['der', 'die', 'das']],
       ['___ Möglichkeit', ['die', 'das', 'der']],
       ['___ Brötchen', ['das', 'der', 'die']],
-    ],
-  },
-  {
-    id: 'nicht', name: 'Wo steht nicht?', words: ['ganzer Satz', 'ein Teil'], group: false,
-    rule: 'Ganzer Satz: nicht steht hinten, aber vor dem 2. Verbteil, vor Präposition + Wort und vor dem Ort. Nur ein Teil: nicht steht direkt vor diesem Teil, oft mit sondern.',
-    ex: 'Ich war heute ⟦nicht⟧ auf der Arbeit. Wir fahren ⟦nicht⟧ morgen, sondern übermorgen.',
-    tip: 'Ich kenne den Mann nicht. Ich bin nicht gekommen. Ich rede nicht mit ihm.',
-    quiz: [
-      ['Welcher Satz ist richtig?', ['Ich war heute nicht auf der Arbeit.', 'Ich war heute auf der Arbeit nicht.']],
-      ['Welcher Satz ist richtig?', ['Ich kenne den Mann nicht.', 'Ich nicht kenne den Mann.']],
-      ['Welcher Satz ist richtig?', ['Er ist heute nicht gekommen.', 'Er ist heute gekommen nicht.']],
-      ['Welcher Satz ist richtig?', ['Ich rede nicht mit meinem Chef.', 'Ich nicht rede mit meinem Chef.']],
-      ['Wir fahren ___ morgen, sondern übermorgen.', ['nicht', 'kein']],
     ],
   },
   {

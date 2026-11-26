@@ -472,14 +472,14 @@ a.card { display: block; text-decoration: none; color: inherit; }
 @media (min-width: 700px) { #view { padding-top: 40px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before { animation: none !important; transition: none !important; } }
 
-/* Eselsbrücken */
+/* Grammatik (rules) */
 .ico.tricks { font-family: var(--serif, Georgia, serif); font-size: 15px; font-weight: 700; letter-spacing: .02em; color: var(--accent); background: var(--accent-soft); }
-.card.rule { margin-top: 14px; padding: 18px; }
-.card.rule h2 { font-size: 22px; margin: 0 0 10px; }
-.card.rule .chips { margin: 0 0 12px; }
-.card.rule .chip { pointer-events: none; }
+.card.rcard { margin-top: 14px; padding: 18px; }
+.card.rcard h2 { font-size: 22px; margin: 0 0 10px; }
+.card.rcard .chips { margin: 0 0 12px; }
+.card.rcard .chip { pointer-events: none; }
 .rule-text { font-size: 17px; line-height: 1.45; font-weight: 500; margin: 0 0 10px; }
-.card.rule .ex { margin: 0 0 10px; }
+.card.rcard .ex { margin: 0 0 10px; }
 .rule-tip { font-size: 14.5px; line-height: 1.45; color: var(--ink-2); margin: 0; }
 .link-btn { margin-top: 12px; padding: 6px 0; border: 0; background: none; font: inherit; font-size: 15px; font-weight: 600; color: var(--accent); }
 .rule-why { margin: 16px 0 4px; padding: 12px 14px; border-radius: 14px; background: var(--accent-soft); font-size: 15px; line-height: 1.45; }
@@ -488,3 +488,16 @@ a.card { display: block; text-decoration: none; color: inherit; }
 .vp-head { font-size: 13px; font-weight: 700; color: var(--accent); margin: 4px 0 6px; }
 .vp { list-style: none; margin: 0 0 14px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 15px; line-height: 1.35; }
 .vp b { color: var(--accent); font-weight: 700; }
+.card.rcard { margin-top: 10px; padding: 0; }
+.card.rcard summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 16px 18px; cursor: pointer; }
+.card.rcard summary::-webkit-details-marker { display: none; }
+.card.rcard summary > span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.card.rcard summary b { font-size: 18px; font-weight: 700; }
+.card.rcard summary small { font-size: 14px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card.rcard summary .i { flex: none; width: 18px; height: 18px; color: var(--ink-3); transition: transform .2s; }
+.card.rcard[open] summary .i { transform: rotate(90deg); }
+.card.rcard[open] summary small { display: none; }
+.card.rcard > :not(summary) { margin-left: 18px; margin-right: 18px; }
+.card.rcard > .link-btn { margin-bottom: 12px; }
+@media (prefers-reduced-motion: reduce) { .card.rcard summary .i { transition: none; } }
+.card.rcard > p.ex { margin: 0 18px 12px !important; }

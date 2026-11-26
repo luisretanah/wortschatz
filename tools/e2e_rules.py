@@ -10,8 +10,8 @@ async def main():
         pg.on('pageerror', lambda e: errs.append('PAGEERROR ' + str(e)))
         pg.on('console', lambda m: errs.append(m.text) if m.type == 'error' else None)
         await pg.goto(BASE + '#/ueben'); await pg.wait_for_selector('[data-go="regeln"]')
-        await pg.click('[data-go="regeln"]'); await pg.wait_for_selector('.card.rule')
-        print('rules on page:', await pg.locator('.card.rule').count())
+        await pg.click('[data-go="regeln"]'); await pg.wait_for_selector('.card.rcard')
+        print('rules on page:', await pg.locator('.card.rcard').count())
         await pg.screenshot(path=f'{OUT}/r-page.png', full_page=True)
         await pg.click('#all')
         for i in range(10):

@@ -753,7 +753,7 @@ async function renderPractice() {
     <button class="card mode" data-go="satz" ${c.meaning ? '' : 'disabled'}>
       <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="regeln">
-      <span class="ico tricks">USA</span><div><h2>Eselsbrücken</h2><p>Kleine Tricks für die Grammatik</p></div><span class="chev">${ICON.chev}</span></button>`;
+      <span class="ico tricks">USA</span><div><h2>Grammatik</h2><p>Regeln leicht merken</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
   $$('[data-lvl]').forEach(b => b.onclick = () => { prefs.lvl = +b.dataset.lvl; store.set('prefs', prefs); renderPractice(); });
@@ -1140,23 +1140,18 @@ function verbItems() {
   ]);
 }
 function rulesPage() {
+  const card = (id, name, sub, body) => `<details class="card rcard" id="r-${id}"><summary><span><b>${esc(name)}</b><small>${esc(sub)}</small></span>${ICON.chev}</summary>${body}<button class="link-btn" data-one="${id}">Nur das üben</button></details>`;
+  const verbs = card('verben', 'Verben mit Präposition', 'warten auf, träumen von …',
+    ['A', 'D'].map(c => `<div class="vp-head">+ ${CASE[c]}</div><ul class="vp">${VP().filter(x => x[2] === c).map(([v, pr]) => `<li>${esc(v)} <b>${esc(pr)}</b></li>`).join('')}</ul>`).join('') +
+    `<p class="rule-tip">${esc(window.VERB_PREP_TIP || '')}</p>`);
+  const cards = RD().map(r => card(r.id, r.name, r.words.join(', '),
+    `<p class="rule-text">${esc(r.rule)}</p><p class="ex">${markEx(r.ex)}</p><p class="rule-tip">${esc(r.tip)}</p>`));
+  const at = RD().findIndex(r => r.id === 'passiv') + 1;
+  cards.splice(at || cards.length, 0, verbs);
   view.innerHTML = `<div class="session-top"><button class="round" id="quit" aria-label="Zurück">${ICON.x}</button><div class="progress" style="visibility:hidden"></div></div>
-    <div class="head"><h1 class="page-title">Eselsbrücken</h1><p class="page-sub">Kleine Tricks, damit du Regeln nicht vergisst.</p></div>
+    <div class="head"><h1 class="page-title">Grammatik</h1><p class="page-sub">Regeln leicht merken. Tipp auf eine Regel.</p></div>
     <button class="btn primary wide" id="all">Jetzt üben</button>
-    <section class="card rule" id="r-verben">
-      <h2>Verben mit Präposition</h2>
-      ${['A', 'D'].map(c => `<div class="vp-head">+ ${CASE[c]}</div><ul class="vp">${VP().filter(x => x[2] === c).map(([v, pr]) => `<li>${esc(v)} <b>${esc(pr)}</b></li>`).join('')}</ul>`).join('')}
-      <p class="rule-tip">${esc(window.VERB_PREP_TIP || '')}</p>
-      <button class="link-btn" data-one="verben">Nur das üben</button>
-    </section>
-    ${RD().map(r => `<section class="card rule" id="r-${r.id}">
-      <h2>${esc(r.name)}</h2>
-      <div class="chips">${r.words.map(w => `<span class="chip">${esc(w)}</span>`).join('')}</div>
-      <p class="rule-text">${esc(r.rule)}</p>
-      <p class="ex">${markEx(r.ex)}</p>
-      <p class="rule-tip">${esc(r.tip)}</p>
-      <button class="link-btn" data-one="${r.id}">Nur das üben</button>
-    </section>`).join('')}`;
+    ${cards.join('')}`;
   bindQuit();
   $('#all').onclick = () => go('#/ueben/regeln-quiz');
   $$('[data-one]').forEach(b => b.onclick = () => go('#/ueben/regeln-' + b.dataset.one));
@@ -1184,7 +1179,7 @@ function rulesQuiz(only) {
     const q = esc(it.q).replace('___', '<span class="gap-line">___</span>');
     view.innerHTML = sessionTop(idx, picked.length) + `
       <div class="card ex-card">
-        <div class="eyebrow">${esc(only ? it.r.name : 'Eselsbrücken')}</div>
+        <div class="eyebrow">${esc(only ? it.r.name : 'Grammatik')}</div>
         <p class="ex-def">${q}</p>
         <div class="options">${opts.map((o, i) => `<button class="option" data-i="${i}">${esc(o.t)}</button>`).join('')}</div>
         <div id="after" aria-live="polite"></div>
