@@ -4,10 +4,10 @@
 // group: false = the words are not a word list, so no "which rule?" question is made from them.
 window.RULES_DAF = [
   {
-    id: 'aduso', name: 'ADUSO', words: ['aber', 'denn', 'und', 'sondern', 'oder'],
+    id: 'usado', name: 'USADO', words: ['und', 'sondern', 'aber', 'denn', 'oder'],
     rule: 'Diese Wörter verbinden zwei Hauptsätze. Das Verb bleibt auf Platz 2.',
     ex: 'Ich bleibe zu Hause, ⟦denn⟧ ich ⟦bin⟧ krank.',
-    tip: 'Manche sagen USADO. Die Buchstaben sind dieselben.',
+    tip: 'Manche sagen ADUSO. Die Buchstaben sind dieselben.',
     quiz: [
       ['Ich bleibe zu Hause, denn ___.', ['ich bin krank', 'ich krank bin']],
       ['Er ist müde, aber ___.', ['er arbeitet weiter', 'er weiter arbeitet']],
@@ -19,7 +19,7 @@ window.RULES_DAF = [
     id: 'nebensatz', name: 'Verb am Ende', words: ['weil', 'dass', 'wenn', 'ob', 'obwohl', 'als', 'damit', 'bevor'],
     rule: 'Nach diesen Wörtern beginnt ein Nebensatz. Das Verb geht ans Ende.',
     ex: 'Ich bleibe zu Hause, ⟦weil⟧ ich krank ⟦bin⟧.',
-    tip: 'Das Gegenteil von ADUSO: denn → Verb auf Platz 2, weil → Verb am Ende.',
+    tip: 'Das Gegenteil von USADO: denn → Verb auf Platz 2, weil → Verb am Ende.',
     quiz: [
       ['Ich bleibe zu Hause, weil ___.', ['ich krank bin', 'ich bin krank']],
       ['Ich weiß, dass ___.', ['du recht hast', 'du hast recht']],

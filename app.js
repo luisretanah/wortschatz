@@ -753,7 +753,7 @@ async function renderPractice() {
     <button class="card mode" data-go="satz" ${c.meaning ? '' : 'disabled'}>
       <span class="ico pen">${ICON.pen}</span><div><h2>Eigener Satz</h2><p>${c.meaning ? 'Selbst schreiben und prüfen' : 'Erst Wörter merken'}</p></div><span class="chev">${ICON.chev}</span></button>
     <button class="card mode" data-go="regeln">
-      <span class="ico tricks">ADU</span><div><h2>Eselsbrücken</h2><p>Kleine Tricks für die Grammatik</p></div><span class="chev">${ICON.chev}</span></button>`;
+      <span class="ico tricks">USA</span><div><h2>Eselsbrücken</h2><p>Kleine Tricks für die Grammatik</p></div><span class="chev">${ICON.chev}</span></button>`;
   $$('[data-go]').forEach(b => b.onclick = () => go('#/ueben/' + b.dataset.go));
   $$('[data-dir]').forEach(b => b.onclick = () => { prefs.dir = b.dataset.dir; store.set('prefs', prefs); renderPractice(); });
   $$('[data-lvl]').forEach(b => b.onclick = () => { prefs.lvl = +b.dataset.lvl; store.set('prefs', prefs); renderPractice(); });
